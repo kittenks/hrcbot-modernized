@@ -344,6 +344,18 @@ Bot *GameManager::AddBot(int team, const char *forcedName)
 		HRC_WARN("CreateBot/CreateFakeClient failed (server full?)");
 		return NULL;
 	}
+
+	// Match the engine bot / Botrix defaults: do not auto-switch away from the
+	// spawn weapon, and preselect the configured starting weapon.
+	if (g_engine)
+	{
+		const char *w = g_cvSpawnWeapon ? g_cvSpawnWeapon->GetString()
+		                                : "smg1";
+		char defW[32];
+		snprintf(defW, sizeof(defW), "weapon_%s", w);
+		g_engine->SetFakeClientConVarValue(edict, "cl_autowepswitch", "0");
+		g_engine->SetFakeClientConVarValue(edict, "cl_defaultweapon", defW);
+	}
 	int chosen = PickTeam(team >= 0 ? team
 	                          : (g_cvForceTeam ? g_cvForceTeam->GetInt() : -1));
 	Bot *bot = new Bot(edict, netname, chosen, m_poseidon);

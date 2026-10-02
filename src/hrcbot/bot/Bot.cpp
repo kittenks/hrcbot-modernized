@@ -288,14 +288,21 @@ void Bot::StateSpawning()
 
 void Bot::StateDead()
 {
-	m_respawnTimer -= g_globals ? g_globals->frametime : 0.0f;
+	float dt = g_globals ? g_globals->frametime : 0.0f;
+	m_respawnTimer -= dt;
 	if (IsAlive())
 	{
 		m_state = BOT_STATE_IDLE;
+		m_stateTimer = 0.0f;
+		return;
 	}
-	else if (m_respawnTimer <= 0.0f)
+	// In HL2DM a dead player is in the death/observer camera and respawns once
+	// they press attack ("click to respawn").  Drive that with IN_ATTACK every
+	// frame; jointeam is only a fallback re-arm every few seconds.
+	m_cmd.buttons |= IN_ATTACK;
+	if (m_respawnTimer <= 0.0f)
 	{
-		RequestRespawn();
+		ClientCommandSafe(m_edict, "jointeam %i", m_team);
 		m_respawnTimer = 3.0f;
 	}
 }

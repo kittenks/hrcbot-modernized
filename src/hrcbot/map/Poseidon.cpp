@@ -12,9 +12,65 @@ namespace hrc
 static const float kInfinity = 1e18f;
 
 Poseidon::Poseidon(Network *network)
-	: m_network(network), m_cursor(0)
+	: m_network(network), m_cursor(0), m_adj(NULL), m_adjNodes(0)
 {
 	m_lastGoal.Init();
+}
+
+Poseidon::~Poseidon()
+{
+	delete[] m_adj;
+}
+
+void Poseidon::EnsureAdjacency()
+{
+	int n = m_network ? m_network->NodeCount() : 0;
+	if (m_adj && m_adjNodes == n)
+		return;
+	delete[] m_adj;
+	m_adj = NULL;
+	m_adjNodes = 0;
+	if (n <= 0)
+		return;
+
+	m_adj = new TList<int>[n];
+	m_adjNodes = n;
+
+	// Regular node arcs (already bidirectional, but add both ways defensively).
+	for (int i = 0; i < m_network->ArcCount(); ++i)
+	{
+		Arc *a = m_network->GetArc(i);
+		if (!a || !a->From() || !a->To())
+			continue;
+		int u = a->From()->Id();
+		int v = a->To()->Id();
+		if (u >= 0 && u < n && v >= 0 && v < n)
+		{
+			if (!m_adj[u].Contains(v))
+				m_adj[u].Add(v);
+			if (!m_adj[v].Contains(u))
+				m_adj[v].Add(u);
+		}
+	}
+
+	// Cross-room gateways are the missing edges that join each room's local
+	// arc graph into a single traversable map; without them A* cannot leave a
+	// room and bots near isolated nodes never find a destination.
+	for (int i = 0; i < m_network->GatewayCount(); ++i)
+	{
+		Gateway *g = m_network->GetGateway(i);
+		if (!g)
+			continue;
+		int u = g->NodeA();
+		int v = g->NodeB();
+		if (u >= 0 && u < n && v >= 0 && v < n)
+		{
+			if (!m_adj[u].Contains(v))
+				m_adj[u].Add(v);
+			if (!m_adj[v].Contains(u))
+				m_adj[v].Add(u);
+		}
+	}
 }
 
 void Poseidon::Invalidate()
@@ -29,6 +85,7 @@ bool Poseidon::AStar(int startNode, int goalNode, TList<int> &path)
 	int n = m_network->NodeCount();
 	if (startNode < 0 || goalNode < 0 || startNode >= n || goalNode >= n)
 		return false;
+	EnsureAdjacency();
 
 	float *gScore = new float[n];
 	float *fScore = new float[n];
@@ -74,12 +131,14 @@ bool Poseidon::AStar(int startNode, int goalNode, TList<int> &path)
 		closed[current] = true;
 
 		Node *cn = m_network->GetNode(current);
-		for (int a = 0; a < cn->ArcCount(); ++a)
+		for (int a = 0; a < m_adj[current].Count(); ++a)
 		{
-			int nid = cn->NeighborId(a);
+			int nid = m_adj[current][a];
 			if (nid < 0 || closed[nid])
 				continue;
 			Node *nn = m_network->GetNode(nid);
+			if (!nn || !cn)
+				continue;
 			float tentative = gScore[current] +
 			                  (nn->Origin() - cn->Origin()).Length();
 			if (!open[nid])
@@ -174,10 +233,12 @@ bool Poseidon::RandomGoal(const Vector &near, float minDist, Vector &goal)
 		return false;
 
 	int n = m_network->NodeCount();
+	EnsureAdjacency();
 
 	// Resolve the start node the same way FindPath does (horizontal first),
-	// then collect every node reachable from it along the arcs so the goal is
-	// guaranteed to be in the same connected component and A* can route to it.
+	// then collect every node reachable from it along the unified adjacency so
+	// the goal is guaranteed to be in the same connected component and A* can
+	// route to it.
 	Node *start = m_network->FindClosestNode2D(near, 1024.0f);
 	if (!start)
 		start = m_network->FindClosestNode(near, 1024.0f);
@@ -194,12 +255,9 @@ bool Poseidon::RandomGoal(const Vector &near, float minDist, Vector &goal)
 	while (top > 0)
 	{
 		int cur = stack[--top];
-		Node *cn = m_network->GetNode(cur);
-		if (!cn)
-			continue;
-		for (int a = 0; a < cn->ArcCount(); ++a)
+		for (int k = 0; k < m_adj[cur].Count(); ++k)
 		{
-			int nid = cn->NeighborId(a);
+			int nid = m_adj[cur][k];
 			if (nid >= 0 && nid < n && !seen[nid])
 			{
 				seen[nid] = true;

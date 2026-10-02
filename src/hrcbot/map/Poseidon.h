@@ -18,6 +18,7 @@ class Poseidon
 {
 public:
 	explicit Poseidon(Network *network);
+	~Poseidon();
 
 	// Build a path of node ids from the nearest node to start to the nearest
 	// node to goal.  Returns true and fills path on success.
@@ -45,11 +46,19 @@ public:
 
 private:
 	bool AStar(int startNode, int goalNode, TList<int> &path);
+	// Build the unified traversal adjacency (node arcs plus cross-room
+	// gateway links); cached and rebuilt only when the node count changes.
+	void EnsureAdjacency();
 
 	Network *m_network;
 	TList<int> m_cachedPath;
 	int m_cursor;
 	Vector m_lastGoal;
+
+	// Unified neighbour lists: m_adj[i] holds every node reachable from node i
+	// through either an Arc or a cross-room Gateway.
+	TList<int> *m_adj;
+	int m_adjNodes;
 };
 
 } // namespace hrc
