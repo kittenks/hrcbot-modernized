@@ -198,12 +198,15 @@ void Bot::ChooseTarget()
 		if (!ent || ent == m_edict || ent->IsFree())
 			continue;
 		IPlayerInfo *pi = g_playerInfoManager->GetPlayerInfo(ent);
-		if (!pi || pi->IsFakeClient())
-			continue; // bots do not hunt other bots
-		if (pi->IsDead() || !pi->IsConnected())
+		if (!pi)
 			continue;
-		// Respect teams only on team play servers; deathmatch is free-for-all.
+		// Deathmatch is a free-for-all: every other connected player is a
+		// legal target, other bots included (so an all-bot server still
+		// exercises combat and respawns).  On team-play servers skip
+		// team-mates, whether human or bot.
 		if (g_teamPlay && m_team >= 2 && pi->GetTeamIndex() == m_team)
+			continue;
+		if (pi->IsDead() || !pi->IsConnected())
 			continue;
 		Vector pe = pi->GetAbsOrigin();
 		pe.z += BOT_EYE_HEIGHT * 0.85f;
@@ -293,17 +296,26 @@ void Bot::StateDead()
 
 void Bot::PrepareTrip()
 {
-	// Pick a navigation goal when no enemy is known.  The path itself is
-	// resolved lazily by GoTo() through Poseidon.
-	if (!m_hasMoveGoal && g_globals)
+	// Pick a navigation goal when no enemy is known.  The destination must be
+	// a node on the navigation graph; an arbitrary world point rarely resolves
+	// to a nearby node and left bots idling at their spawn point forever.
+	if (!m_hasMoveGoal && m_pi)
 	{
-		// Roam toward a point a few hundred units ahead of the spawn area.
-		HRandomStream rng((unsigned int)(g_globals->curtime * 100.0f) +
-		                  m_commandNumber);
 		Vector origin = m_pi->GetAbsOrigin();
-		float ang = rng.RandomFloat(0.0f, 6.2831f);
-		float rad = rng.RandomFloat(150.0f, 900.0f);
-		m_moveGoal = origin + Vector(cos(ang) * rad, sin(ang) * rad, 0.0f);
+		Vector goal;
+		if (m_nav && m_nav->RandomGoal(origin, 500.0f, goal))
+		{
+			m_moveGoal = goal;
+		}
+		else
+		{
+			// No usable graph: wander to a short random point as a last resort.
+			HRandomStream rng((unsigned int)(g_globals->curtime * 100.0f) +
+			                  m_commandNumber);
+			float ang = rng.RandomFloat(0.0f, 6.2831f);
+			m_moveGoal = origin + Vector(cosf(ang) * 200.0f,
+			                             sinf(ang) * 200.0f, 0.0f);
+		}
 		m_hasMoveGoal = true;
 	}
 	m_state = BOT_STATE_GOTO;

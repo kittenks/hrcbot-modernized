@@ -30,6 +30,12 @@ public:
 	bool NextWaypoint(const Vector &from, const Vector &goal,
 	                  Vector &waypoint);
 
+	// Pick a connected navigation node at least minDist (2D) away from 'near'
+	// as a roam goal.  Choosing a node (rather than an arbitrary world point)
+	// guarantees the goal resolves on the graph.  Returns false if the
+	// network is empty.
+	bool RandomGoal(const Vector &near, float minDist, Vector &goal);
+
 	void Invalidate();
 
 private:

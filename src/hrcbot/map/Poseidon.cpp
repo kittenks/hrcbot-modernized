@@ -1,6 +1,7 @@
 // Poseidon.cpp - A* path finder.
 #include "Poseidon.h"
 #include <math.h>
+#include <time.h>
 #include <limits.h>
 #include "Navigation.h"
 #include "core/Tools.h"
@@ -160,6 +161,48 @@ bool Poseidon::NextWaypoint(const Vector &from, const Vector &goal,
 		return true;
 	}
 	return false;
+}
+
+bool Poseidon::RandomGoal(const Vector &near, float minDist, Vector &goal)
+{
+	if (!m_network || m_network->NodeCount() == 0)
+		return false;
+
+	int n = m_network->NodeCount();
+	HRandomStream rng((unsigned int)time(NULL) ^ 0x9e3779b9u);
+
+	// Prefer a connected node comfortably far from the current position.
+	for (int attempt = 0; attempt < 32; ++attempt)
+	{
+		Node *nd = m_network->GetNode(rng.RandomInt(0, n - 1));
+		if (!nd || nd->ArcCount() == 0)
+			continue;
+		if ((nd->Origin() - near).Length2D() >= minDist)
+		{
+			goal = nd->Origin();
+			return true;
+		}
+	}
+
+	// Fallback: the connected node farthest from the current position.
+	Node *best = NULL;
+	float bestDist = -1.0f;
+	for (int i = 0; i < n; ++i)
+	{
+		Node *nd = m_network->GetNode(i);
+		if (!nd || nd->ArcCount() == 0)
+			continue;
+		float d = (nd->Origin() - near).Length2D();
+		if (d > bestDist)
+		{
+			bestDist = d;
+			best = nd;
+		}
+	}
+	if (!best)
+		return false;
+	goal = best->Origin();
+	return true;
 }
 
 } // namespace hrc

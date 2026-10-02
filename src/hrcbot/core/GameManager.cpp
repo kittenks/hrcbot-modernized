@@ -622,9 +622,11 @@ void GameManager::CmdInfo(const CCommand &args)
 		if (pi && pi->IsConnected())
 		{
 			Vector o = pi->GetAbsOrigin();
-			HRC_MSG("  %-12s team=%i hp=%-3i state=%-9s pos=(%.0f,%.0f,%.0f)",
+			QAngle a = pi->GetAbsAngles();
+			HRC_MSG("  %-12s team=%i hp=%-3i state=%-9s pos=(%.0f,%.0f,%.0f) "
+			        "ang=(%.0f,%.0f)",
 			        b->GetName(), pi->GetTeamIndex(), pi->GetHealth(),
-			        stName, o.x, o.y, o.z);
+			        stName, o.x, o.y, o.z, a.x, a.y);
 		}
 		else
 		{
