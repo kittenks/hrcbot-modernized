@@ -165,9 +165,9 @@ class HRCConfig(object):
                 '/nologo',
             ]
             if builder.options.opt == '1':
-                cxx.cflags += ['/O2', '/MD']
+                cxx.cflags += ['/O2', '/MT']
             else:
-                cxx.cflags += ['/Od', '/MDd']
+                cxx.cflags += ['/Od', '/MTd']
             if builder.options.debug == '1':
                 cxx.cflags += ['/Zi']
 

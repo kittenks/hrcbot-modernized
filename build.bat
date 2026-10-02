@@ -18,4 +18,6 @@ shift
 goto parse
 :done
 powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0build.ps1" -Arch %ARCH% %SETUP%
+set EXITCODE=%ERRORLEVEL%
 endlocal
+exit /b %EXITCODE%
