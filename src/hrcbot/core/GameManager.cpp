@@ -8,6 +8,7 @@
 #include <tier1/convar.h>
 
 #include "HrcEngine.h"
+#include "Hibernate.h"
 #include "Tools.h"
 #include "bot/Bot.h"
 #include "plugin/hrcbot_cvars.h"
@@ -441,7 +442,7 @@ void GameManager::OnHibernatingFrame()
 	if (g_cvEnabled && g_cvEnabled->GetBool() &&
 	    (BotCount() > 0 || BotsWanted()))
 	{
-		g_engine->SetServerHibernation(false);
+		HibernateWake();
 	}
 
 	// Throttle the actual population work with a frame counter because the
