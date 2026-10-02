@@ -74,7 +74,11 @@ python "$Root\configure.py" --sdks hl2dm `
 
 Write-Host '[build] ambuild'
 ambuild
+if ($LASTEXITCODE -ne 0) { throw "ambuild failed with exit code $LASTEXITCODE" }
+
+$dlls = Get-ChildItem -Recurse -Filter 'hrcbot_mm*.dll'
+if (-not $dlls) { throw 'Build produced no hrcbot_mm*.dll' }
 
 Write-Host ''
 Write-Host 'Build finished. Artifacts:'
-Get-ChildItem -Recurse -Filter 'hrcbot_mm*.dll' | ForEach-Object { $_.FullName }
+$dlls | ForEach-Object { $_.FullName }
