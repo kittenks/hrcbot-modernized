@@ -235,6 +235,13 @@ bool Dedale::AnalyseMap(const Vector &seed)
 
 bool Dedale::Serialize(Stream &s)
 {
+	// Self-describing body header; Deserialize() reads these four counts
+	// before the payload.  They mirror the values in the container header.
+	if (!s.WriteInt(m_network->NodeCount()) ||
+	    !s.WriteInt(m_network->ArcCount()) ||
+	    !s.WriteInt(m_network->RoomCount()) ||
+	    !s.WriteInt(m_network->GatewayCount()))
+		return false;
 	for (int i = 0; i < m_network->NodeCount(); ++i)
 	{
 		Node *n = m_network->GetNode(i);
