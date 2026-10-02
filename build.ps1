@@ -53,11 +53,11 @@ if (-not (Test-Path (Join-Path $MmsPath 'core'))) {
     throw "metamod-source not found at $MmsPath. Run .\build.ps1 -Setup or set MMS_PATH."
 }
 
-# AMBuild / Python.
+# AMBuild / Python (AMBuild is not on PyPI; install from upstream).
 python -c "import ambuild2" 2>$null
 if ($LASTEXITCODE -ne 0) {
-    Write-Host 'AMBuild not found; installing with pip...'
-    python -m pip install ambuild
+    Write-Host 'AMBuild not found; installing from upstream...'
+    python -m pip install git+https://github.com/alliedmodders/ambuild
 }
 
 $AmArch = switch ($Arch) { 'x86' { 'x86' } 'x64' { 'x64' } default { 'x86,x64' } }

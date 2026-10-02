@@ -67,10 +67,10 @@ if [ ! -d "$MMS_PATH/core" ]; then
 	exit 1
 fi
 
-# Ensure AMBuild is importable.
+# Ensure AMBuild is importable (it is not on PyPI; install from upstream).
 if ! python3 -c "import ambuild2" >/dev/null 2>&1; then
-	echo "AMBuild not found; installing with pip..."
-	python3 -m pip install ambuild
+	echo "AMBuild not found; installing from upstream..."
+	python3 -m pip install git+https://github.com/alliedmodders/ambuild
 fi
 
 # Select the architecture list passed to configure.py (AMBuild then emits one
