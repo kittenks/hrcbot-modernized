@@ -407,6 +407,17 @@ void GameManager::OnGameFrame()
 	}
 }
 
+void GameManager::OnHibernatingFrame()
+{
+	// While hibernating the game clock does not advance, so spawn bots on
+	// every hibernation tick instead of using a time gate.  A connected fake
+	// client raises the engine's client count and pulls the server out of
+	// hibernation, after which normal OnGameFrame ticks take over.
+	if (!m_levelLoaded || !m_analysed)
+		return;
+	MaintainPopulation();
+}
+
 // ---------------------------------------------------------------------------
 // Console commands
 // ---------------------------------------------------------------------------

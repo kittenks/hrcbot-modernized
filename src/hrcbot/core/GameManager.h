@@ -32,6 +32,9 @@ public:
 	void OnLevelInit(const char *mapName);
 	void OnLevelShutdown();
 	void OnGameFrame();
+	// Called on hibernation frames (simulating == false).  Still maintains
+	// bot population so a fake client connects and wakes the server.
+	void OnHibernatingFrame();
 	void OnClientActive(edict_t *who);
 	void OnClientDisconnect(edict_t *who);
 

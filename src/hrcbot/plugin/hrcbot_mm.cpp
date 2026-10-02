@@ -302,8 +302,12 @@ void CHurricaneBotServerPlugin::Hook_ServerActivate(edict_t *pEdictList,
 
 void CHurricaneBotServerPlugin::Hook_GameFrame(bool simulating)
 {
-	if (simulating && hrc::g_gameManager)
+	if (!hrc::g_gameManager)
+		return;
+	if (simulating)
 		hrc::g_gameManager->OnGameFrame();
+	else
+		hrc::g_gameManager->OnHibernatingFrame();
 }
 
 void CHurricaneBotServerPlugin::Hook_LevelShutdown(void)
