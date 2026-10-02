@@ -525,10 +525,6 @@ void Bot::HandleEvents()
 			m_stuckCount = 0;
 			if (m_nav)
 				m_nav->Invalidate();
-			// Reliable death notice independent of the player_death game event
-			// (which is not always delivered for fake clients on every build).
-			if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
-				HRC_MSG("bot '%s' died", m_name);
 		}
 	}
 }
@@ -560,10 +556,16 @@ void Bot::Think()
 	}
 
 	bool aliveNow = IsAlive();
-	if (aliveNow && !m_wasAlive && g_cvStatusMsgs &&
-	    g_cvStatusMsgs->GetBool())
+	bool statusOn = g_cvStatusMsgs && g_cvStatusMsgs->GetBool();
+	if (aliveNow && !m_wasAlive && statusOn)
 	{
 		HRC_MSG("bot '%s' is now in the game (pawn ready)", m_name);
+	}
+	else if (!aliveNow && m_wasAlive && statusOn)
+	{
+		// Edge-triggered so a death is logged exactly once even though the bot
+		// spends several frames in the death/observer camera.
+		HRC_MSG("bot '%s' died", m_name);
 	}
 	m_wasAlive = aliveNow;
 
