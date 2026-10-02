@@ -82,7 +82,7 @@ jobs:
           }
 
       - name: Build
-        run: build.bat x86
+        run: .\build.bat x86
 
       - name: Stage x86 DLL
         shell: pwsh
@@ -133,7 +133,7 @@ jobs:
           }
 
       - name: Build
-        run: build.bat x64
+        run: .\build.bat x64
 
       - name: Stage x64 DLL
         shell: pwsh
