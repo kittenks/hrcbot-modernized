@@ -5,6 +5,7 @@
 #include <bspflags.h>
 #include <engine/IEngineTrace.h>
 #include <eiface.h>
+#include <engine/iserverplugin.h>
 
 namespace hrc
 {
@@ -102,14 +103,23 @@ bool CanStandMove(const Vector &a, const Vector &b, edict_t *ignore)
 
 void ClientCommandSafe(edict_t *who, const char *fmt, ...)
 {
-	if (!g_engine || !who)
+	if (!who)
 		return;
 	char buffer[512];
 	va_list args;
 	va_start(args, fmt);
 	vsnprintf(buffer, sizeof(buffer), fmt, args);
 	va_end(args);
-	g_engine->ClientCommand(who, "%s", buffer);
+
+	// Route bot commands through IServerPluginHelpers, the same path Botrix and
+	// other server-side bot plugins use.  On the 64-bit HL2DM rerelease the
+	// variadic IVEngineServer::ClientCommand loses tokens after the first
+	// space for fake clients ("jointeam 2" arrived as "jointeam", parsed as
+	// team 0), so bots could never pick a team or spawn.
+	if (g_helpers)
+		g_helpers->ClientCommand(who, buffer);
+	else if (g_engine)
+		g_engine->ClientCommand(who, "%s", buffer);
 }
 
 } // namespace hrc

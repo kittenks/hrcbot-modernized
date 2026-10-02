@@ -231,7 +231,7 @@ void GameManager::OnClientActive(edict_t *who)
 			// game" signal (also confirms the hibernation workaround worked).
 			if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
 			{
-				HRC_MSG("[HRCBot] bot '%s' joined the game (team %i)",
+				HRC_MSG("bot '%s' joined the game (team %i)",
 				        b->GetName(), b->GetTeam());
 			}
 			return;
@@ -249,7 +249,7 @@ void GameManager::OnClientDisconnect(edict_t *who)
 		if (b && b->GetEdict() == who)
 		{
 			if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
-				HRC_MSG("[HRCBot] bot '%s' left the game", b->GetName());
+				HRC_MSG("bot '%s' left the game", b->GetName());
 			m_bots.Remove(b, true);
 			return;
 		}
@@ -318,7 +318,7 @@ Bot *GameManager::AddBot(int team, const char *forcedName)
 	m_bots.Add(bot);
 	if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
 	{
-		HRC_MSG("[HRCBot] bot '%s' added to team %i (%i bots)", netname,
+		HRC_MSG("bot '%s' added to team %i (%i bots)", netname,
 		        chosen, BotCount());
 	}
 	return bot;
@@ -354,7 +354,7 @@ bool GameManager::KickBot(int team)
 				g_engine->ServerCommand(cmd);
 			}
 			if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
-				HRC_MSG("[HRCBot] kicking bot '%s'", b->GetName());
+				HRC_MSG("kicking bot '%s'", b->GetName());
 		}
 		m_bots.Remove(b, true);
 		return true;
@@ -547,7 +547,23 @@ void GameManager::CmdDo(const CCommand &args)
 		return;
 	}
 	const char *wanted = args.Arg(1);
-	const char *command = args.Arg(2);
+	// Join everything after the name so commands with arguments ("jointeam 2")
+	// survive as a single bot command line.
+	char command[256];
+	command[0] = '\0';
+	for (int a = 2; a < args.ArgC(); ++a)
+	{
+		if (a > 2)
+			snprintf(command + strlen(command),
+			         sizeof(command) - strlen(command), " ");
+		snprintf(command + strlen(command),
+		         sizeof(command) - strlen(command), "%s", args.Arg(a));
+	}
+	if (command[0] == '\0')
+	{
+		HRC_MSG("Missing bot command.");
+		return;
+	}
 	for (int i = 0; i < m_bots.Count(); ++i)
 	{
 		Bot *b = m_bots.Get(i);

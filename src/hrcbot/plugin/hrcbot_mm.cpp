@@ -395,18 +395,36 @@ bool CHurricaneBotServerPlugin::Hook_FireEvent(IGameEvent *pEvent,
 			{
 				if (attackerName)
 				{
-					hrc::LogMsg("[HRCBot] %s%s killed %s%s with %s\n",
+					hrc::LogMsg("%s%s killed %s%s with %s",
 					            attackerName, attackerBot ? " [BOT]" : "",
 					            victimName ? victimName : "?",
 					            victimBot ? " [BOT]" : "", weapon);
 				}
 				else
 				{
-					hrc::LogMsg("[HRCBot] %s%s died (%s)\n",
+					hrc::LogMsg("%s%s died (%s)",
 					            victimName ? victimName : "?",
 					            victimBot ? " [BOT]" : "", weapon);
 				}
 			}
+		}
+		else if (eventName && strcmp(eventName, "player_spawn") == 0)
+		{
+			// A fake client gained a pawn and entered the world: this is the
+			// authoritative "the bot is actually in the game" signal.
+			int uid = pEvent->GetInt("userid");
+			bool isBot = false;
+			const char *name = PlayerLabelForUserID(uid, &isBot);
+			if (isBot)
+				hrc::LogMsg("%s [BOT] spawned", name ? name : "?");
+		}
+		else if (eventName && strcmp(eventName, "player_connect") == 0)
+		{
+			int uid = pEvent->GetInt("userid");
+			bool isBot = false;
+			const char *name = PlayerLabelForUserID(uid, &isBot);
+			if (isBot)
+				hrc::LogMsg("%s [BOT] connected", name ? name : "?");
 		}
 	}
 
