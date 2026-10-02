@@ -179,14 +179,15 @@ jobs:
           $ErrorActionPreference = 'Stop'
           $ver = $env:VERSION
           $stage = "dist\.stage\hrcbot-$ver"
-          New-Item -ItemType Directory -Force -Path "$stage\addons" | Out-Null
+          New-Item -ItemType Directory -Force -Path "$stage\addons\hrcbot_server_plugin" | Out-Null
+          New-Item -ItemType Directory -Force -Path "$stage\docs" | Out-Null
           Copy-Item assets\addons\hrcbot_mm.vdf "$stage\addons\"
           Copy-Item "dl-x86\addons\hrcbot_mm.dll" "$stage\addons\"
           Copy-Item "dl-x64\addons\hrcbot_mm.x64.dll" "$stage\addons\"
-          Copy-Item -Recurse assets\addons\hrcbot "$stage\addons\"
-          Copy-Item README.md "$stage\"
-          Copy-Item README.zh-CN.md "$stage\"
-          Copy-Item LICENSE "$stage\" -ErrorAction SilentlyContinue
+          Copy-Item assets\addons\hrcbot_server_plugin\hrcbot_names.txt "$stage\addons\hrcbot_server_plugin\"
+          Copy-Item assets\addons\hrcbot_server_plugin\*.hrcbot "$stage\addons\hrcbot_server_plugin\"
+          Copy-Item README.md, README.zh-CN.md, LICENCE "$stage\"
+          Copy-Item -Recurse docs\original "$stage\docs\"
           New-Item -ItemType Directory -Force -Path dist | Out-Null
           $zip = "dist\hrcbot-$ver-windows.zip"
           if (Test-Path $zip) { Remove-Item $zip }
