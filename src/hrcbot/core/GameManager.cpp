@@ -61,7 +61,7 @@ static unsigned int StableHash(const char *s)
 GameManager::GameManager()
 	: m_dedale(NULL), m_poseidon(NULL), m_mapCrc(0), m_maxClients(0),
 	  m_teamPlay(false), m_levelLoaded(false), m_analysed(false),
-	  m_nextMaintenance(0.0f)
+	  m_nextMaintenance(0.0f), m_hibernateTicks(0)
 {
 	m_mapName[0] = '\0';
 	m_dedale = new Dedale(&m_network, &m_raster);
@@ -113,8 +113,10 @@ void GameManager::ReloadNames()
 		while (len && (p[len - 1] == ' ' || p[len - 1] == '\t' ||
 		               p[len - 1] == '\r' || p[len - 1] == '\n'))
 			p[--len] = '\0';
+		// The names list ends at the first blank line; everything after it
+		// is bilingual documentation and must be ignored.
 		if (!*p)
-			continue;
+			break;
 		char *copy = new char[len + 1];
 		strcpy(copy, p);
 		m_names.Add(copy);
@@ -141,10 +143,10 @@ int GameManager::PickTeam(int requested) const
 		return requested;
 	if (requested == 1)
 		return 1; // spectator slot as requested
-	// Auto balance: alternate teams on team play, otherwise deathmatch team.
-	if (m_teamPlay)
-		return (BotCount() % 2 == 0) ? 3 : 2;
-	return 0;
+	// hl2dm spawns players on combine (2) or rebels (3) even in free-for-all
+	// deathmatch; team 0 is unassigned and never receives a player spawn, so
+	// balance the bots across the two real teams in every game mode.
+	return (BotCount() % 2 == 0) ? 3 : 2;
 }
 
 // ---------------------------------------------------------------------------
@@ -169,6 +171,7 @@ void GameManager::OnLevelInit(const char *mapName)
 	m_mapCrc = (int)StableHash(m_mapName);
 	m_levelLoaded = true;
 	m_analysed = false;
+	m_hibernateTicks = 0;
 
 	// Detect team play mode through the game's own convar.
 	m_teamPlay = false;
@@ -178,6 +181,7 @@ void GameManager::OnLevelInit(const char *mapName)
 		if (mp)
 			m_teamPlay = mp->GetBool();
 	}
+	g_teamPlay = m_teamPlay;
 	HRC_MSG("game::teamplay: %i", m_teamPlay ? 1 : 0);
 
 	AnalyseOrLoad();
@@ -245,6 +249,21 @@ int GameManager::HumanPlayerCount() const
 	{
 		edict_t *ent = g_engine->PEntityOfEntIndex(i);
 		if (!ent || ent->IsFree())
+			continue;
+		// Never count our own bots as humans.  The IsFakeClient() flag can
+		// lag behind CreateFakeClient during the connection handshake, which
+		// otherwise makes population logic oscillate (add then kick).
+		bool isOurs = false;
+		for (int j = 0; j < m_bots.Count(); ++j)
+		{
+			Bot *b = m_bots.Get(j);
+			if (b && b->GetEdict() == ent)
+			{
+				isOurs = true;
+				break;
+			}
+		}
+		if (isOurs)
 			continue;
 		IPlayerInfo *pi = g_playerInfoManager->GetPlayerInfo(ent);
 		if (pi && pi->IsConnected() && !pi->IsFakeClient())
@@ -409,12 +428,17 @@ void GameManager::OnGameFrame()
 
 void GameManager::OnHibernatingFrame()
 {
-	// While hibernating the game clock does not advance, so spawn bots on
-	// every hibernation tick instead of using a time gate.  A connected fake
-	// client raises the engine's client count and pulls the server out of
-	// hibernation, after which normal OnGameFrame ticks take over.
+	// While hibernating the game clock does not advance, so throttle with a
+	// frame counter instead of a time gate.  Hibernation ticks run at a low
+	// rate; checking every 20 of them is roughly once per second.  A
+	// connected fake client raises the engine's client count and pulls the
+	// server out of hibernation, after which normal OnGameFrame ticks take
+	// over.
 	if (!m_levelLoaded || !m_analysed)
 		return;
+	if (++m_hibernateTicks < 20)
+		return;
+	m_hibernateTicks = 0;
 	MaintainPopulation();
 }
 

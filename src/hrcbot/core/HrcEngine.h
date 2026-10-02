@@ -39,6 +39,10 @@ extern IFileSystem *g_pFileSystem;
 extern const Vector g_playerMins;
 extern const Vector g_playerMaxs;
 
+// True when the current level uses team play (mp_teamplay 1).  In deathmatch
+// bots target every human regardless of their spawn team.
+extern bool g_teamPlay;
+
 // True once all interfaces are available.
 bool EngineReady();
 

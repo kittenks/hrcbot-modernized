@@ -80,6 +80,7 @@ private:
 	bool m_levelLoaded;
 	bool m_analysed;
 	float m_nextMaintenance;
+	int m_hibernateTicks;
 };
 
 // Single global instance used by the plugin.

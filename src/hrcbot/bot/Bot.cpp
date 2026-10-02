@@ -196,8 +196,8 @@ void Bot::ChooseTarget()
 			continue; // bots do not hunt other bots
 		if (pi->IsDead() || !pi->IsConnected())
 			continue;
-		// Respect teams on team play servers.
-		if (m_team >= 2 && pi->GetTeamIndex() == m_team)
+		// Respect teams only on team play servers; deathmatch is free-for-all.
+		if (g_teamPlay && m_team >= 2 && pi->GetTeamIndex() == m_team)
 			continue;
 		Vector pe = pi->GetAbsOrigin();
 		pe.z += BOT_EYE_HEIGHT * 0.85f;

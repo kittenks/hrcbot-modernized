@@ -25,6 +25,8 @@ IFileSystem *g_pFileSystem = NULL;
 const Vector g_playerMins(-16.0f, -16.0f, 0.0f);
 const Vector g_playerMaxs(16.0f, 16.0f, 72.0f);
 
+bool g_teamPlay = false;
+
 bool EngineReady()
 {
 	return g_engine && g_trace && g_playerInfoManager && g_globals;
