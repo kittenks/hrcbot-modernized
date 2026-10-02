@@ -1,0 +1,45 @@
+// Windows version resource for the HRCBot Metamod plugin.
+#include <winres.h>
+
+#define HRC_VERSION_FILE 2,0,0,0
+#define HRC_VERSION_STRING "2.0.0.0"
+
+#ifndef BINARY_NAME
+#define BINARY_NAME "hrcbot_mm.dll"
+#endif
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION  HRC_VERSION_FILE
+ PRODUCTVERSION HRC_VERSION_FILE
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "Hurricane Bot (HRCBot) modernized reconstruction"
+            VALUE "FileDescription", "Hurricane Bot server plugin for HL2DM"
+            VALUE "FileVersion", HRC_VERSION_STRING
+            VALUE "InternalName", "hrcbot_mm"
+            VALUE "LegalCopyright", "Original by Hurricane; freeware, must not be sold"
+            VALUE "OriginalFilename", BINARY_NAME
+            VALUE "ProductName", "Hurricane Bot"
+            VALUE "ProductVersion", HRC_VERSION_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END

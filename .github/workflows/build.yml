@@ -1,0 +1,143 @@
+name: build
+
+on:
+  push:
+    branches: [ main, master ]
+    tags: [ 'v*' ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-linux:
+    name: Linux (x86 + x64)
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install toolchain (32-bit and 64-bit)
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            gcc g++ gcc-multilib g++-multilib libc6-dev-i386 \
+            python3 python3-pip git
+          python3 -m pip install --upgrade pip
+          python3 -m pip install ambuild
+
+      - name: Fetch dependencies
+        run: |
+          mkdir -p deps
+          git clone --depth 1 -b hl2dm    https://github.com/alliedmodders/hl2sdk.git       deps/hl2sdk-hl2dm
+          git clone --depth 1 -b 1.12-dev https://github.com/alliedmodders/metamod-source.git deps/metamod-source
+
+      - name: Build
+        run: ./build.sh all
+
+      - name: Package Linux binaries
+        run: ./package.sh --prebuilt obj-linux
+
+      - name: Upload Linux artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hrcbot-linux
+          path: dist/hrcbot-*-linux.tar.gz
+          if-no-files-found: error
+
+  build-windows:
+    name: Windows (x86 + x64)
+    runs-on: windows-2022
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install AMBuild
+        run: python -m pip install ambuild
+
+      - name: Fetch dependencies
+        shell: cmd
+        run: |
+          mkdir deps
+          git clone --depth 1 -b hl2dm    https://github.com/alliedmodders/hl2sdk.git       deps\hl2sdk-hl2dm
+          git clone --depth 1 -b 1.12-dev https://github.com/alliedmodders/metamod-source.git deps\metamod-source
+
+      - name: Build
+        shell: cmd
+        run: build.bat all
+
+      - name: Package Windows binaries
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $ver = (Get-Content product.version -Raw).Trim()
+          $name = "hrcbot-$ver"
+          $stage = "dist\.stage\$name"
+          New-Item -ItemType Directory -Force -Path "$stage\addons\hrcbot_server_plugin","$stage\docs" | Out-Null
+          Copy-Item assets\addons\hrcbot_mm.vdf "$stage\addons\"
+          Copy-Item assets\addons\hrcbot_server_plugin\* "$stage\addons\hrcbot_server_plugin\" -Recurse
+          $dll32 = Get-ChildItem -Recurse -Filter hrcbot_mm.dll obj-windows | Select-Object -First 1
+          $dll64 = Get-ChildItem -Recurse -Filter hrcbot_mm.x64.dll obj-windows | Select-Object -First 1
+          if (-not $dll32 -or -not $dll64) { throw "Windows DLLs not found" }
+          Copy-Item $dll32.FullName "$stage\addons\hrcbot_mm.dll"
+          Copy-Item $dll64.FullName "$stage\addons\hrcbot_mm.x64.dll"
+          Copy-Item README.md,README.zh-CN.md,LICENCE "$stage\"
+          Copy-Item docs\original "$stage\docs\" -Recurse
+          New-Item -ItemType Directory -Force -Path dist | Out-Null
+          Compress-Archive -Path "$stage\*" -DestinationPath "dist\$name-windows.zip" -Force
+          Write-Output "packaged dist\$name-windows.zip"
+
+      - name: Upload Windows artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hrcbot-windows
+          path: dist/hrcbot-*-windows.zip
+          if-no-files-found: error
+
+  source:
+    name: Source tarball
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Create source archive
+        run: ./package.sh --source
+      - name: Upload source artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hrcbot-source
+          path: dist/hrcbot-*-source.tar.gz
+          if-no-files-found: error
+
+  release:
+    name: Publish release (tags only)
+    needs: [ build-linux, build-windows, source ]
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Flatten archives
+        run: |
+          mkdir -p dist
+          find artifacts -name 'hrcbot-*.tar.gz' -o -name 'hrcbot-*.zip' | xargs -I{} cp {} dist/
+          ls -l dist
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: |
+            dist/hrcbot-*-linux.tar.gz
+            dist/hrcbot-*-windows.zip
+            dist/hrcbot-*-source.tar.gz

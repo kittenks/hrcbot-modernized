@@ -1,0 +1,22 @@
+# Build trees
+obj-*/
+build/
+out/
+*.o
+*.os
+*.so
+*.dll
+*.exp
+*.lib
+*.pdb
+
+# Dependencies (fetched by build.sh --setup / CI)
+deps/
+
+# Packaging output
+dist/
+
+# Python
+__pycache__/
+*.pyc
+analysis/*.json

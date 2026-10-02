@@ -1,0 +1,2469 @@
+000000b6  td8S
+0000174c  	Q0R@
+000017d5  F6#@
+000017f7  %BB  h
+00001888   2@10
+0000196c  )2" 
+000019a2  `@  
+00001a08  ," "T
+00001a6d  B%(:
+00002408  y-UW
+00002415  ^_D&t
+00002432  ]+)q
+0000244d  xKn&
+0000247c  aq@>
+00002493  4f	e
+00002501  I3mO
+00002516  _J/s:
+00002578  ;u#e
+00002596  .z56
+00002664  D|WE
+000026ba  Sv>[
+000026ef  #nY7e1i
+00002705  #v(>K
+000027b9  ,}vWb
+00002815  ]7eO
+00002837  On`Y
+0000283f  lO)!
+000028c7  uDg+
+000028fc  }K?C
+00002921  1ra~2
+000029ee  _(K%
+00002a56  X6sPr:
+00002a6f  ;)Sp
+00002a75  b8(o
+00002b3d  msbR
+00002bae  ?)`b
+00002bca  0!)X
+00002e09  !l:!
+00002e72  ;ELWd
+00002e9b  1oas
+00002ef8  SoJ{g!
+00002f2c  <]vO
+00002f4d  %l:$
+00006791  __gmon_start__
+000067a0  _init
+000067a6  _fini
+000067ac  __cxa_finalize
+000067bb  _Jv_RegisterClasses
+000067cf  __gxx_personality_v0
+000067e4  _ZdlPv
+000067eb  _Unwind_Resume
+000067fa  __cxa_allocate_exception
+00006813  _ZTIi
+00006819  __cxa_throw
+00006825  _Znwj
+0000682b  _ZTVN10__cxxabiv120__si_class_type_infoE
+00006854  _ZTVN10__cxxabiv117__class_type_infoE
+0000687a  __cxa_pure_virtual
+0000688d  _ZN29CTraceFilterWorldAndPropsOnly15ShouldHitEntityEP13IHandleEntityi
+000068d3  _ZNK29CTraceFilterWorldAndPropsOnly12GetTraceTypeEv
+00006907  _Z15BotActivityName11BotActivity
+00006928  _ZTV29CTraceFilterWorldAndPropsOnly
+0000694c  _ZdaPv
+00006953  strlen
+0000695a  _Znaj
+00006960  strcpy
+00006967  _Z12GetBotSpeechv
+00006979  _Z16GetSuitableModel9BotGenderi
+00006999  _ZTI29CTraceFilterWorldAndPropsOnly
+000069bd  _ZTS29CTraceFilterWorldAndPropsOnly
+000069e1  _ZTI12ITraceFilter
+000069f4  _ZTS12ITraceFilter
+00006a07  _ZTV12ITraceFilter
+00006a1a  _ZTI17IEntityEnumerator
+00006a32  _ZTS17IEntityEnumerator
+00006a4a  _ZTV17IEntityEnumerator
+00006a62  hl2mp_models_male
+00006a74  hl2mp_models_nogender
+00006a8a  hl2mp_models_female
+00006a9e  speech_timid
+00006aab  speechs
+00006ab3  speech_terminator
+00006ac5  speech_moron
+00006ad2  speech_portal
+00006ae0  _ZN7CBotCmdD1Ev
+00006af0  _ZTV7CBotCmd
+00006afd  Warning
+00006b05  _ZN7CBotCmdD0Ev
+00006b15  _ZTI7CBotCmd
+00006b22  _ZTS7CBotCmd
+00006b2f  memcpy
+00006b36  memset
+00006b3d  sprintf
+00006b45  _ZN6ConVarC1EPKcS1_iS1_
+00006b5d  _ZN6ConVarD1Ev
+00006b6c  __cxa_atexit
+00006b79  hrcbot_namesfile
+00006b8a  strcmp
+00006b91  fwrite
+00006b98  fflush
+00006b9f  fopen
+00006ba5  time
+00006baa  _ZN15DummyGameModule4initEP7edict_ti
+00006bcf  _ZN15DummyGameModule5clearEv
+00006bec  _ZTV15DummyGameModule
+00006c02  _ZTI15DummyGameModule
+00006c18  _ZTS15DummyGameModule
+00006c2e  strcasecmp
+00006c39  __cxa_begin_catch
+00006c4b  __cxa_end_catch
+00006c5b  _ZN16IRecipientFilterD1Ev
+00006c75  _ZTV16IRecipientFilter
+00006c8c  _ZN16IRecipientFilterD0Ev
+00006ca6  _ZN12old_bf_write9WriteByteEi
+00006cc4  _ZN12old_bf_write11WriteStringEPKc
+00006ce7  _ZTI16IRecipientFilter
+00006cfe  _ZTS16IRecipientFilter
+00006d15  memmove
+00006d1d  _ZTVN10__cxxabiv121__vmi_class_type_infoE
+00006d47  asinf
+00006d4d  sincosf
+00006d55  _ZTI20IUniformRandomStream
+00006d70  _ZTS20IUniformRandomStream
+00006d8b  _ZTV20IUniformRandomStream
+00006da6  _ZN10CUtlVectorIP7edict_t10CUtlMemoryIS1_iEE12InsertBeforeEi
+00006de3  realloc
+00006deb  malloc
+00006df2  free
+00006df7  _ZN10CUtlVectorIP7edict_t10CUtlMemoryIS1_iEED1Ev
+00006e28  ceilf
+00006e2e  floorf
+00006e35  _ZN18IGameEventListenerD1Ev
+00006e51  _ZTV18IGameEventListener
+00006e6a  _ZN12InterfaceRegC1EPFPvvEPKc
+00006e88  _ZN9KeyValuesnwEj
+00006e9a  _ZN9KeyValuesC1EPKc
+00006eae  _ZN9KeyValues9SetStringEPKcS1_
+00006ecd  _ZN9KeyValues8SetColorEPKc5Color
+00006eee  _ZN9KeyValues6SetIntEPKci
+00006f08  _ZN9KeyValues10deleteThisEv
+00006f24  _ZN9KeyValuesdlEPv
+00006f37  _ZN18IGameEventListenerD0Ev
+00006f53  _Z17ConVar_Unregisterv
+00006f6a  _Z24DisconnectTier1Librariesv
+00006f88  _Z21ConnectTier1LibrariesPPFPvPKcPiEi
+00006fae  _Z12MathLib_Initfffibbbb
+00006fc7  Error
+00006fcd  _ZTI22IServerPluginCallbacks
+00006fea  _ZTI18IGameEventListener
+00007003  _ZTS22IServerPluginCallbacks
+00007020  _ZTS18IGameEventListener
+00007039  _ZTV22IServerPluginCallbacks
+00007056  strtol
+0000705d  sscanf
+00007064  _ZN6ConVar8SetValueEi
+0000707a  _Z15ConVar_RegisteriP23IConCommandBaseAccessor
+000070a9  _ZN10ConCommandC1EPKcPFvvES1_iPFiS1_PA64_cE
+000070d5  _ZN10ConCommandD1Ev
+000070e9  _ZN10ConCommandC1EPKcPFvRK8CCommandES1_iPFiS1_PA64_cE
+0000711f  _ZTI23IConCommandBaseAccessor
+0000713d  _ZTS23IConCommandBaseAccessor
+0000715b  _ZTV23IConCommandBaseAccessor
+00007179  _ZNK9KeyValues7GetNameEv
+00007192  _ZN9KeyValues6GetIntEPKci
+000071ac  _ZN9KeyValues9GetStringEPKcS1_
+000071cb  _ZN12InterfaceRegC2EPFPvvEPKc
+000071e9  _ZN12InterfaceReg16s_pInterfaceRegsE
+0000720e  _Z21Sys_IsDebuggerPresentv
+00007229  _Z18Sys_GetFactoryThisv
+00007241  CreateInterface
+00007251  _ZN16CDllDemandLoaderC2EPKc
+0000726d  _ZTV16CDllDemandLoader
+00007284  _ZN16CDllDemandLoaderC1EPKc
+000072a0  _Z14Sys_GetFactoryP10CSysModule
+000072c0  dlsym
+000072c6  _Z16Sys_UnloadModuleP10CSysModule
+000072e8  dlclose
+000072f0  _Z15Sys_LoadLibraryPKc
+00007307  _Z9V_strncpyPcPKci
+0000731a  _Z9V_stristrPcPKc
+0000732c  _Z12V_FixSlashesPcc
+00007340  dlopen
+00007347  dlerror
+0000734f  strstr
+00007356  _Z9V_strncatPcPKcji
+0000736a  _Z14Sys_LoadModulePKc
+00007380  _Z16V_IsAbsolutePathPKc
+00007398  CommandLine_Tier0
+000073aa  getcwd
+000073b1  _Z10V_snprintfPciPKcz
+000073c7  _Z15GetModuleHandlePKc
+000073de  _ZN16CDllDemandLoader6UnloadEv
+000073fd  _ZN16CDllDemandLoader10GetFactoryEv
+00007421  _Z17Sys_LoadInterfacePKcS0_PP10CSysModulePPv
+0000744e  _ZN16CDllDemandLoaderD0Ev
+00007468  _ZN16CDllDemandLoaderD1Ev
+00007482  _ZN16CDllDemandLoaderD2Ev
+0000749c  _Z14Sys_GetFactoryPKc
+000074b2  _ZTI16CDllDemandLoader
+000074c9  _ZTS16CDllDemandLoader
+000074e0  _ZN9KeyValues13ChainKeyValueEPS_
+00007501  _ZNK9KeyValues13GetNameSymbolEv
+00007521  _ZN9KeyValues19UsesEscapeSequencesEb
+00007546  _ZNK9KeyValues7FindKeyEi
+0000755f  _ZN9KeyValues9AddSubKeyEPS_
+0000757b  _ZN9KeyValues12RemoveSubKeyEPS_
+0000759b  _ZN9KeyValues14GetFirstSubKeyEv
+000075bb  _ZN9KeyValues10GetNextKeyEv
+000075d7  _ZN9KeyValues10SetNextKeyEPS_
+000075f5  _ZN9KeyValues18GetFirstTrueSubKeyEv
+00007619  _ZN9KeyValues17GetNextTrueSubKeyEv
+0000763c  _ZN9KeyValues13GetFirstValueEv
+0000765b  _ZN9KeyValues12GetNextValueEv
+00007679  _ZN9KeyValues18AppendIncludedKeysER10CUtlVectorIPS_10CUtlMemoryIS1_iEE
+000076c0  g_KeyValuesErrorStack
+000076d6  _Z19EvaluateConditionalPKc
+000076f1  _ZN9KeyValues4InitEv
+00007706  _ZN9KeyValuesdlEPviPKci
+0000771e  KeyValuesSystem
+0000772e  _ZN9KeyValuesnwEjiPKci
+00007745  _ZN9KeyValues7SetNameEPKc
+0000775f  _ZN9KeyValues14SetStringValueEPKc
+00007781  _ZN10CUtlVectorIP9KeyValues10CUtlMemoryIS1_iEED1Ev
+000077b4  _ZN9KeyValues10GetWStringEPKcPKw
+000077d5  _Z6DevMsgPKcz
+000077e3  _ZN10CUtlVectorIP9KeyValues10CUtlMemoryIS1_iEE12InsertBeforeEiRKS1_
+00007827  _ZN9KeyValues13InternalWriteEP15IBaseFileSystemPvP10CUtlBufferPKvi
+0000786a  _ZN10CUtlBuffer3PutEPKvi
+00007883  _ZN9KeyValues9ReadTokenER10CUtlBufferRbS2_
+000078ae  _ZN10CUtlBuffer13EatWhiteSpaceEv
+000078cf  _ZN10CUtlBuffer13EatCPPCommentEv
+000078f0  _ZN10CUtlBuffer7PeekGetEii
+0000790b  _ZN10CUtlBuffer7SeekGetENS_10SeekType_tEi
+00007935  isspace
+0000793d  _Z24GetCStringCharConversionv
+0000795b  _ZN10CUtlBuffer18GetDelimitedStringEP18CUtlCharConversionPci
+00007998  _Z22GetNoEscCharConversionv
+000079b4  _ZN9KeyValues16RemoveEverythingEv
+000079d6  _ZN9KeyValuesD1Ev
+000079e8  _ZN9KeyValuesD2Ev
+000079fa  _ZN9KeyValues5ClearEv
+00007a10  _ZN9KeyValues7FindKeyEPKcb
+00007a2b  strchr
+00007a32  _ZN9KeyValues21ProcessResolutionKeysEPKc
+00007a5b  _Z9V_stristrPKcS0_
+00007a6e  _ZN9KeyValues11GetDataTypeEPKc
+00007a8d  _ZN9KeyValues7IsEmptyEPKc
+00007aa7  _ZN9KeyValues6SetPtrEPKcPv
+00007ac2  _ZN9KeyValues8SetFloatEPKcf
+00007ade  _ZN9KeyValues9SetUint64EPKcy
+00007afb  _ZN9KeyValues10SetWStringEPKcPKw
+00007b1c  wcslen
+00007b23  _ZN9KeyValuesC1EPKcS1_PKw
+00007b3d  _ZN9KeyValuesC2EPKcS1_PKw
+00007b57  _ZN9KeyValuesC1EPKcS1_S1_S1_S1_
+00007b77  _ZN9KeyValuesC2EPKcS1_S1_S1_S1_
+00007b97  _ZN9KeyValuesC1EPKcS1_S1_
+00007bb1  _ZN9KeyValuesC2EPKcS1_S1_
+00007bcb  _ZN9KeyValues8GetColorEPKc
+00007be6  _ZN9KeyValues8GetFloatEPKcf
+00007c02  strtod
+00007c09  _ZN9KeyValues6GetPtrEPKcPv
+00007c24  _ZN9KeyValues9GetUint64EPKcy
+00007c41  _SpewInfo
+00007c4b  _SpewMessage
+00007c58  ShouldUseNewAssertDialog
+00007c71  _ExitOnFatalAssert
+00007c84  DoNewAssertDialog
+00007c96  _ZN9KeyValues19UnpackIntoStructureEPK24KeyValuesUnpackStructurePv
+00007cd8  strncpy
+00007ce0  _ZN9KeyValuesC2EPKc
+00007cf4  _ZN9KeyValuesC1EPKcS1_iS1_i
+00007d10  _ZN9KeyValuesC2EPKcS1_iS1_i
+00007d2c  _ZN9KeyValuesC1EPKcS1_i
+00007d44  _ZN9KeyValuesC2EPKcS1_i
+00007d5c  _ZNK9KeyValues8MakeCopyEv
+00007d76  _ZNK9KeyValues11CopySubkeysEPS_
+00007d96  _ZN9KeyValues9CreateKeyEPKc
+00007db2  _ZN9KeyValues12CreateNewKeyEv
+00007dd0  _ZN9KeyValues13WriteAsBinaryER10CUtlBuffer
+00007dfb  _ZN10CUtlBuffer8CheckPutEi
+00007e16  _ZN10CUtlBuffer9PutStringEPKc
+00007e34  _ZN10CUtlBuffer6PrintfEPKcz
+00007e50  _ZN10CUtlBuffer18AddNullTerminationEv
+00007e76  _ZN9KeyValues23RecursiveMergeKeyValuesEPS_
+00007ea1  _ZN9KeyValues13MergeBaseKeysER10CUtlVectorIPS_10CUtlMemoryIS1_iEE
+00007ee3  _ZN9KeyValues22RecursiveCopyKeyValuesERS_
+00007f0d  _ZN9KeyValuesaSERS_
+00007f21  _ZN9KeyValues12WriteIndentsEP15IBaseFileSystemPvP10CUtlBufferi
+00007f60  _ZN9KeyValues12ReadAsBinaryER10CUtlBuffer
+00007f8a  _ZN10CUtlBuffer5ScanfEPKcz
+00007fa5  _ZN10CUtlBuffer9GetStringEPci
+00007fc3  _ZN10CUtlBuffer8CheckGetEi
+00007fde  _ZN9KeyValues20WriteConvertedStringEP15IBaseFileSystemPvP10CUtlBufferPKc
+00008027  _ZN9KeyValues19RecursiveSaveToFileEP15IBaseFileSystemPvP10CUtlBufferi
+0000806d  DevMsg
+00008074  _ZN9KeyValues10SaveToFileEP15IBaseFileSystemPKcS3_
+000080a7  _ZN9KeyValues19RecursiveSaveToFileER10CUtlBufferi
+000080d9  _ZN9KeyValues23RecursiveLoadFromBufferEPKcR10CUtlBuffer
+00008111  _ZN10CUtlBufferC1EPKvii
+00008129  _ZN9KeyValues12LoadFromFileEP15IBaseFileSystemPKcS3_
+0000815e  _ZN9KeyValues17ParseIncludedKeysEPKcS1_P15IBaseFileSystemS1_R10CUtlVectorIPS_10CUtlMemoryIS5_iEE
+000081bf  _ZN9KeyValues14LoadFromBufferEPKcR10CUtlBufferP15IBaseFileSystemS1_
+00008203  _ZN9KeyValues14LoadFromBufferEPKcS1_P15IBaseFileSystemS1_
+0000823d  _ZN19CUtlNoEscConversion14FindConversionEPKcPi
+0000826c  s_StringCharConversion
+00008283  s_NoEscConversion
+00008295  _ZN21CUtlCStringConversion14FindConversionEPKcPi
+000082c6  _ZNK18CUtlCharConversion13GetEscapeCharEv
+000082f0  _ZNK18CUtlCharConversion12GetDelimiterEv
+00008319  _ZNK18CUtlCharConversion18GetDelimiterLengthEv
+00008348  _ZNK18CUtlCharConversion19GetConversionStringEc
+00008378  _ZNK18CUtlCharConversion19GetConversionLengthEc
+000083a8  _ZNK18CUtlCharConversion19MaxConversionLengthEv
+000083d8  _ZN10CUtlBuffer13SetBufferTypeEbb
+000083fa  _ZN10CUtlBuffer16SetOverflowFuncsEMS_FbiES1_
+00008427  _ZN10CUtlBuffer13OnPutOverflowEi
+00008448  _ZN10CUtlBuffer13OnGetOverflowEi
+00008469  _ZN10CUtlBuffer11GetOverflowEi
+00008488  _ZN10CUtlBuffer20ActivateByteSwappingEb
+000084b0  _ZN10CUtlBuffer12SetBigEndianEb
+000084d0  _ZN10CUtlBuffer11IsBigEndianEv
+000084ef  _ZN10CUtlMemoryIhiE5PurgeEv
+0000850b  _ZN18CUtlCharConversion14FindConversionEPKcPi
+00008539  _ZN18CUtlCharConversionC1EcPKciPNS_17ConversionArray_tE
+00008571  _ZTV18CUtlCharConversion
+0000858a  _ZN18CUtlCharConversionC2EcPKciPNS_17ConversionArray_tE
+000085c2  _ZN10CUtlBuffer14EnsureCapacityEi
+000085e4  _ZN10CUtlBuffer14PeekWhiteSpaceEi
+00008606  _ZN10CUtlBuffer3GetEPvi
+0000861e  _ZN10CUtlBuffer12CheckPeekGetEii
+0000863f  _ZN21CUtlCStringConversionC1EcPKciPN18CUtlCharConversion17ConversionArray_tE
+0000868c  _ZTV21CUtlCStringConversion
+000086a8  _ZN21CUtlCStringConversionC2EcPKciPN18CUtlCharConversion17ConversionArray_tE
+000086f5  _ZTV19CUtlNoEscConversion
+0000870f  _ZN10CUtlBuffer8VaPrintfEPKcPc
+0000872e  _Z11V_vsnprintfPciPKcS_
+00008746  _ZN10CUtlBufferC2EPKvii
+0000875e  _ZN10CUtlBuffer11PutOverflowEi
+0000877d  _ZN10CUtlBufferC2Eiii
+00008793  _ZN10CUtlBufferC1Eiii
+000087a9  _ZN10CUtlBuffer15PeekStringMatchEiPKci
+000087d0  _Z9V_strncmpPKcS0_i
+000087e4  _ZN10CUtlBuffer18PutDelimitedStringEP18CUtlCharConversionPKc
+00008821  _ZN10CUtlBuffer7SeekPutENS_10SeekType_tEi
+0000884b  _ZN10CUtlBuffer21CheckArbitraryPeekGetEiRi
+00008876  _ZN10CUtlBuffer12AssumeMemoryEPviii
+0000889a  _ZN17CUtlInplaceBufferC1Eiii
+000088b7  _ZN17CUtlInplaceBufferC2Eiii
+000088d4  _ZN10CUtlBuffer17SetExternalBufferEPviii
+000088fd  _ZN10CUtlBuffer11ConvertCRLFERS_
+0000891e  _Z10V_strnistrPKcS0_i
+00008934  _Z9V_strnchrPKcci
+00008946  _ZN10CUtlBuffer8GetTokenEPKc
+00008963  _ZN10CUtlBuffer7GetLineEPci
+0000897f  _ZN10CUtlBuffer16PutDelimitedCharEP18CUtlCharConversionc
+000089b8  _ZN10CUtlBuffer16PeekStringLengthEv
+000089dc  _ZN10CUtlBuffer7VaScanfEPKcPc
+000089fa  strtoul
+00008a02  _ZN10CUtlBuffer10ParseTokenEPKcS1_Pci
+00008a28  tolower
+00008a30  _ZN10CUtlBuffer24GetDelimitedCharInternalEP18CUtlCharConversion
+00008a70  _ZN10CUtlBuffer16GetDelimitedCharEP18CUtlCharConversion
+00008aa8  _ZN10CUtlBuffer10ParseTokenEP14characterset_tPcib
+00008ada  _ZN10CUtlBuffer7GetUpToEPvi
+00008af6  _ZN10CUtlBuffer25PeekDelimitedStringLengthEP18CUtlCharConversionb
+00008b38  _ZN17CUtlInplaceBuffer17InplaceGetLinePtrEPPcPi
+00008b68  _ZN10CUtlBuffer14PeekLineLengthEv
+00008b8a  _ZN17CUtlInplaceBuffer17InplaceGetLinePtrEv
+00008bb6  _ZTI18CUtlCharConversion
+00008bcf  _ZTI21CUtlCStringConversion
+00008beb  _ZTS21CUtlCStringConversion
+00008c07  _ZTS18CUtlCharConversion
+00008c20  _ZTI19CUtlNoEscConversion
+00008c3a  _ZTS19CUtlNoEscConversion
+00008c54  _Z15GetBitForBitnumi
+00008c69  _ZZ15GetBitForBitnumiE13bitsForBitnum
+00008c8f  _Z26InternalBitBufErrorHandler15BitBufErrorTypePKc
+00008cc2  _Z21SetBitBufErrorHandlerPFv15BitBufErrorTypePKcE
+00008cf4  _ZN12old_bf_writeC2Ev
+00008d0a  _ZN12old_bf_writeC1Ev
+00008d20  _ZN12old_bf_write12StartWritingEPviii
+00008d46  _ZN12old_bf_write5ResetEv
+00008d60  _ZN12old_bf_write19SetAssertOnOverflowEb
+00008d89  _ZN12old_bf_write12GetDebugNameEv
+00008dab  _ZN12old_bf_write12SetDebugNameEPKc
+00008dcf  _ZN12old_bf_write9SeekToBitEi
+00008ded  _ZN11old_bf_readC2Ev
+00008e02  _ZN11old_bf_readC1Ev
+00008e17  _ZN11old_bf_read12StartReadingEPKviii
+00008e3d  _ZN11old_bf_read5ResetEv
+00008e56  _ZN11old_bf_read19SetAssertOnOverflowEb
+00008e7e  _ZN11old_bf_read12GetDebugNameEv
+00008e9f  _ZN11old_bf_read12SetDebugNameEPKc
+00008ec2  _ZN11old_bf_read17CheckReadUBitLongEi
+00008ee8  _ZN12old_bf_writeC1EPvii
+00008f01  _ZN12old_bf_writeC2EPvii
+00008f1a  _ZN12old_bf_writeC1EPKcPvii
+00008f36  _ZN12old_bf_writeC2EPKcPvii
+00008f52  _ZN11old_bf_readC1EPKcPKvii
+00008f6e  _ZN11old_bf_readC2EPKcPKvii
+00008f8a  _ZN11old_bf_readC1EPKvii
+00008fa3  _ZN11old_bf_readC2EPKvii
+00008fbc  g_BitWriteMasks
+00008fcc  g_ExtraMasks
+00008fd9  _ZN11old_bf_read12PeekUBitLongEi
+00008ffa  _ZN11old_bf_read10ExciseBitsEii
+0000901a  _ZN11old_bf_read21ReadAndAllocateStringEPb
+00009045  _ZN11old_bf_read12ReadBitCoordEv
+00009066  _ZN11old_bf_read16ReadBitVec3CoordER6Vector
+00009092  _ZN11old_bf_read13ReadBitAnglesER6QAngle
+000090bb  _ZN11old_bf_read11ReadUBitVarEv
+000090db  _ZN11old_bf_read12ReadSBitLongEi
+000090fc  _ZN11old_bf_read12ReadBitAngleEi
+0000911d  _ZN11old_bf_read8ReadBitsEPvi
+0000913b  _ZN11old_bf_read9ReadBytesEPvi
+0000915a  _ZN11old_bf_read9ReadFloatEv
+00009177  _ZN11old_bf_read13ReadBitNormalEv
+00009199  _ZN11old_bf_read14ReadBitCoordMPEbb
+000091bd  _ZN11old_bf_read8ReadWordEv
+000091d9  _ZN11old_bf_read8ReadByteEv
+000091f5  _ZN11old_bf_read12ReadLongLongEv
+00009216  _ZN11old_bf_read17ReadBitVec3NormalER6Vector
+00009243  sqrtf
+00009249  _ZN11old_bf_read9ReadShortEv
+00009266  _ZN11old_bf_read8ReadCharEv
+00009282  _ZN11old_bf_read11ReadBitLongEib
+000092a3  _ZN11old_bf_read8ReadLongEv
+000092bf  _ZN11old_bf_read10ReadStringEPcibPi
+000092e3  _ZN12old_bf_write13WriteLongLongEx
+00009306  _ZN12old_bf_write9WriteWordEi
+00009324  _ZN12old_bf_write14WriteBitNormalEf
+00009348  _ZN12old_bf_write13WriteSBitLongEii
+0000936c  _ZN12old_bf_write9WriteLongEl
+0000938a  _ZN12old_bf_write10WriteShortEi
+000093aa  _ZN12old_bf_write9WriteCharEi
+000093c8  _ZN12old_bf_write13WriteBitFloatEf
+000093eb  _ZN12old_bf_write13WriteBitCoordEf
+0000940e  _ZN12old_bf_write17WriteBitVec3CoordERK6Vector
+0000943d  _ZN12old_bf_write14WriteBitAnglesERK6QAngle
+00009469  _ZN12old_bf_write15WriteBitCoordMPEfbb
+00009490  _ZN12old_bf_write13WriteBitAngleEfi
+000094b4  _ZN12old_bf_write19WriteBitsFromBufferEP7bf_readi
+000094e6  _ZN12old_bf_write9WriteBitsEPKvi
+00009507  _ZN12old_bf_write10WriteBytesEPKvi
+0000952a  _ZN12old_bf_write10WriteFloatEf
+0000954a  _ZN12old_bf_write12WriteBitLongEjib
+0000956e  _ZN12old_bf_write12WriteUBitVarEj
+00009590  _ZN12old_bf_write18WriteBitVec3NormalERK6Vector
+000095c0  g_BitWriteMasksInit
+000095d4  _ZN16CDefaultAccessor22RegisterConCommandBaseEP14ConCommandBase
+00009614  g_pCVar
+0000961c  _ZN14ConCommandBase18s_pConCommandBasesE
+00009645  _ZN14ConCommandBase11s_pAccessorE
+00009667  _ZN14ConCommandBaseC2Ev
+0000967f  _ZTV14ConCommandBase
+00009694  _ZN14ConCommandBaseC1Ev
+000096ac  _ZNK14ConCommandBase9IsCommandEv
+000096cd  _ZNK14ConCommandBase16GetDLLIdentifierEv
+000096f6  _ZN14ConCommandBase6CreateEPKcS1_i
+00009719  _ZN14ConCommandBase4InitEv
+00009734  _ZN14ConCommandBase8ShutdownEv
+00009753  _ZNK14ConCommandBase7GetNameEv
+00009772  _ZNK14ConCommandBase9IsFlagSetEi
+00009793  _ZN14ConCommandBase8AddFlagsEi
+000097b2  _ZNK14ConCommandBase7GetNextEv
+000097d1  _ZN14ConCommandBase7GetNextEv
+000097ef  _ZNK14ConCommandBase11GetHelpTextEv
+00009813  _ZNK14ConCommandBase12IsRegisteredEv
+00009838  _ZN8CCommand5ResetEv
+0000984d  _ZN8CCommand15DefaultBreakSetEv
+0000986d  _Z21DefaultCompletionFuncPKcPA64_c
+00009890  _ZNK10ConCommand9IsCommandEv
+000098ad  _ZN10ConCommand8DispatchERK8CCommand
+000098d2  _ZN10ConCommand15CanAutoCompleteEv
+000098f5  _ZN6ConVar21InstallChangeCallbackEPFvP7IConVarPKcfE
+00009929  _ZThn24_NK6ConVar9IsFlagSetEi
+00009947  _ZNK6ConVar9IsFlagSetEi
+0000995f  _ZNK6ConVar11GetHelpTextEv
+0000997a  _ZN6ConVar8AddFlagsEi
+00009990  _ZNK6ConVar12IsRegisteredEv
+000099ac  _ZThn24_NK6ConVar7GetNameEv
+000099c8  _ZNK6ConVar7GetNameEv
+000099de  _ZNK6ConVar9IsCommandEv
+000099f6  _ZN6ConVar10ClampValueERf
+00009a10  _ZThn24_N6ConVar8SetValueEPKc
+00009a2e  _ZN6ConVar8SetValueEPKc
+00009a46  _ZThn24_N6ConVar8SetValueEf
+00009a62  _ZN6ConVar8SetValueEf
+00009a78  _ZThn24_N6ConVar8SetValueEi
+00009a94  _ZN6ConVar6RevertEv
+00009aa8  _ZNK6ConVar6GetMinERf
+00009abe  _ZNK6ConVar6GetMaxERf
+00009ad4  _ZNK6ConVar10GetDefaultEv
+00009aee  _ZThn24_N12CEmptyConVar8SetValueEPKc
+00009b13  _ZN12CEmptyConVar8SetValueEPKc
+00009b32  _ZThn24_N12CEmptyConVar8SetValueEf
+00009b55  _ZN12CEmptyConVar8SetValueEf
+00009b72  _ZThn24_N12CEmptyConVar8SetValueEi
+00009b95  _ZN12CEmptyConVar8SetValueEi
+00009bb2  _ZThn24_NK12CEmptyConVar7GetNameEv
+00009bd5  _ZNK12CEmptyConVar7GetNameEv
+00009bf2  _ZThn24_NK12CEmptyConVar9IsFlagSetEi
+00009c17  _ZNK12CEmptyConVar9IsFlagSetEi
+00009c36  _ZN9ConVarRefC2EP7IConVar
+00009c50  _ZN9ConVarRefC1EP7IConVar
+00009c6a  _ZNK9ConVarRef7IsValidEv
+00009c83  _ZN14ConCommandBaseD0Ev
+00009c9b  _ZN14ConCommandBaseD1Ev
+00009cb3  _ZN14ConCommandBaseD2Ev
+00009ccb  _ZN6ConVar19InternalSetIntValueEi
+00009ced  _ZN6ConVar21InternalSetFloatValueEf
+00009d11  _ZNK8CCommand7FindArgEPKc
+00009d2b  _Z17ConVar_PrintFlagsPK14ConCommandBase
+00009d53  _Z6ConMsgPKcz
+00009d61  _ZN9ConVarRef4InitEPKcb
+00009d79  _ZN6ConVar16InternalSetValueEPKc
+00009d9a  atof
+00009d9f  _ZN10CUtlMemoryI10CUtlStringiE4GrowEi
+00009dc5  _ZN14ConCommandBase10CopyStringEPKc
+00009de9  _ZN8CCommandC1EiPPKc
+00009dfe  _Z17CharacterSetBuildP14characterset_tPKc
+00009e28  _ZN8CCommandC1Ev
+00009e39  _ZN8CCommandC2Ev
+00009e4a  _ZN8CCommandC2EiPPKc
+00009e5f  _ZN6ConVar17ChangeStringValueEPKcf
+00009e82  _Z23ConVar_PrintDescriptionPK14ConCommandBase
+00009eb0  _ZTI20ConVar_ServerBounded
+00009ecb  _ZTI6ConVar
+00009ed7  __dynamic_cast
+00009ee6  _Z11ConColorMsgRK5ColorPKcz
+00009f02  _ZN8CCommand8TokenizeEPKcP14characterset_t
+00009f2d  _ZN10ConCommand19AutoCompleteSuggestEPKcR10CUtlVectorI10CUtlString10CUtlMemoryIS3_iEE
+00009f83  _ZN10CUtlStringC1ERKS_
+00009f9a  _ZN10CUtlStringC1EPKc
+00009fb0  _ZN6ConVar4InitEv
+00009fc2  _ZNK8CCommand10FindArgIntEPKci
+00009fe1  atoi
+00009fe6  _ZTV6ConVar
+00009ff2  _ZN6ConVarD2Ev
+0000a001  _ZN6ConVarD0Ev
+0000a010  _ZN10ConCommandD0Ev
+0000a024  _ZN10ConCommandD2Ev
+0000a038  _ZN12CEmptyConVarD0Ev
+0000a04e  _ZN12CEmptyConVarD1Ev
+0000a064  _ZN14ConCommandBaseC1EPKcS1_i
+0000a082  _ZN14ConCommandBaseC2EPKcS1_i
+0000a0a0  _ZTV10ConCommand
+0000a0b1  _ZN10ConCommandC2EPKcPFvRK8CCommandES1_iPFiS1_PA64_cE
+0000a0e7  _ZN10ConCommandC2EPKcPFvvES1_iPFiS1_PA64_cE
+0000a113  _ZN6ConVar6CreateEPKcS1_iS1_bfbfPFvP7IConVarS1_fE
+0000a145  _ZN6ConVarC1EPKcS1_iS1_bfbfPFvP7IConVarS1_fE
+0000a172  _ZN6ConVarC2EPKcS1_iS1_bfbfPFvP7IConVarS1_fE
+0000a19f  _ZN6ConVarC1EPKcS1_iS1_PFvP7IConVarS1_fE
+0000a1c8  _ZN6ConVarC2EPKcS1_iS1_PFvP7IConVarS1_fE
+0000a1f1  _ZN6ConVarC1EPKcS1_iS1_bfbf
+0000a20d  _ZN6ConVarC2EPKcS1_iS1_bfbf
+0000a229  _ZN6ConVarC2EPKcS1_iS1_
+0000a241  _ZN6ConVarC1EPKcS1_i
+0000a256  _ZN6ConVarC2EPKcS1_i
+0000a26b  _ZTV16CDefaultAccessor
+0000a282  _ZTV12CEmptyConVar
+0000a295  _ZN10ConCommandC1EPKcP16ICommandCallbackS1_iP26ICommandCompletionCallback
+0000a2df  _ZN10ConCommandC2EPKcP16ICommandCallbackS1_iP26ICommandCompletionCallback
+0000a329  _ZN9ConVarRefC2EPKcb
+0000a33e  _ZN9ConVarRefC1EPKc
+0000a352  _ZN9ConVarRefC2EPKc
+0000a366  _ZN9ConVarRefC1EPKcb
+0000a37b  _ZTI10ConCommand
+0000a38c  _ZTI14ConCommandBase
+0000a3a1  _ZTS6ConVar
+0000a3ad  _ZTI7IConVar
+0000a3ba  _ZTS10ConCommand
+0000a3cb  _ZTS14ConCommandBase
+0000a3e0  _ZTS7IConVar
+0000a3ed  _ZTI16CDefaultAccessor
+0000a404  _ZTS16CDefaultAccessor
+0000a41b  _ZTI12CEmptyConVar
+0000a42e  _ZTS12CEmptyConVar
+0000a441  _ZTS20ConVar_ServerBounded
+0000a45c  _ZTV7IConVar
+0000a469  _Z9_V_wcscmpPKciPKwS2_
+0000a480  _Z30V_AddBackSlashesToSpecialCharsPKc
+0000a4a6  _Z10V_wcstostrPKwiPci
+0000a4bc  wcstombs
+0000a4c5  _Z10V_strtowcsPKciPwi
+0000a4db  mbstowcs
+0000a4e4  _Z18V_GetFileExtensionPKc
+0000a4fe  _Z21V_UnqualifiedFileNamePKc
+0000a51b  _Z10V_StrSlicePKciiPci
+0000a532  _Z9V_StrLeftPKciPci
+0000a546  _Z21V_SetCurrentDirectoryPKc
+0000a563  chdir
+0000a569  _Z21V_GetCurrentDirectoryPci
+0000a586  _ZN10CUtlMemoryIPciE4GrowEi
+0000a5a2  _Z18V_RemoveDotSlashesPcc
+0000a5bc  _Z18V_FixDoubleSlashesPc
+0000a5d5  _Z18V_MakeRelativePathPKcS0_Pci
+0000a5f5  _Z13V_AppendSlashPci
+0000a60a  AssertValidStringPtr
+0000a61f  _Z6V_atofPKc
+0000a62c  _Z6V_atoiPKc
+0000a639  _Z30StringAfterPrefixCaseSensitivePKcS0_
+0000a662  _Z17StringAfterPrefixPKcS0_
+0000a67e  _Z12V_strcasecmpPKcS0_
+0000a695  _Z13V_strncasecmpPKcS0_i
+0000a6ae  _Z9V_strnlwrPcj
+0000a6be  _Z9_V_strstrPKciS0_S0_
+0000a6d5  _Z10_V_stricmpPKciS0_S0_
+0000a6ee  _Z10_V_strrchrPKciS0_c
+0000a705  _Z9_V_strlenPKciS0_
+0000a719  _Z9_V_memsetPKciPvii
+0000a72e  _AssertValidWritePtr
+0000a743  strncat
+0000a74b  _Z18V_DefaultExtensionPcPKci
+0000a768  _Z9V_wcsncpyPwPKwi
+0000a77b  _AssertValidReadPtr
+0000a78f  wcsncpy
+0000a797  _Z9_V_struprPKciPc
+0000a7aa  toupper
+0000a7b2  _Z9_V_strcmpPKciS0_S0_
+0000a7c9  _Z9_V_wcslenPKciPKw
+0000a7dd  _Z9_V_strcpyPKciPcS0_
+0000a7f3  _Z9_V_memcpyPKciPvPKvi
+0000a80a  _Z9_V_memcmpPKciPKvS2_i
+0000a822  _Z10_V_memmovePKciPvPKvi
+0000a83b  vsnprintf
+0000a845  _Z13V_binarytohexPKhiPci
+0000a85e  _Z12V_pretifymemfib
+0000a872  _Z15V_UTF8ToUnicodePKcPwi
+0000a88c  _Z15V_UnicodeToUTF8PKwPci
+0000a8a6  _Z11V_snwprintfPwiPKwz
+0000a8bd  swprintf
+0000a8c6  _Z17V_ExtractFilePathPKcPci
+0000a8e2  _Z14V_StripLastDirPci
+0000a8f8  _Z15V_StripFilenamePc
+0000a90e  _Z20V_StripTrailingSlashPc
+0000a929  _Z13V_hextobinaryPKciPhi
+0000a942  __divdi3
+0000a94b  __moddi3
+0000a954  _Z12V_pretifynumx
+0000a966  _Z22V_normalizeFloatStringPc
+0000a983  _Z11_V_strlowerPKciPc
+0000a999  _Z10V_strnicmpPKcS0_i
+0000a9af  _Z10V_StrRightPKciPci
+0000a9c5  _Z10V_FileBasePKcPci
+0000a9da  _Z11AllocStringPKci
+0000a9ee  _Z14V_SplitString2PKcPS0_iR10CUtlVectorIPc10CUtlMemoryIS3_iEE
+0000aa2c  _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
+0000aa67  _Z10V_StrSubstPKcS0_S0_Pcib
+0000aa83  _Z15V_FixupPathNamePcjPKc
+0000aa9d  _Z18V_MakeAbsolutePathPciPKcS1_
+0000aabd  _Z22V_ExtractFileExtensionPKcPci
+0000aade  _Z17V_ComposeFileNamePKcS0_Pci
+0000aafd  _Z16V_StripExtensionPKcPci
+0000ab18  _Z14V_SetExtensionPcPKci
+0000ab31  g_pProcessUtils
+0000ab41  cvar
+0000ab46  g_pUtlSortVectorQSortContext
+0000ab63  _ZN15CUtlBinaryBlockC1EPvii
+0000ab7f  _ZN15CUtlBinaryBlockC1EPKvi
+0000ab9b  _ZNK10CUtlString6LengthEv
+0000abb5  _ZNK10CUtlString3GetEv
+0000abcc  _ZN15CUtlBinaryBlockC2EPvii
+0000abe8  _ZN15CUtlBinaryBlockC2EPKvi
+0000ac04  _ZNK15CUtlBinaryBlock3GetEPvi
+0000ac22  _ZNK15CUtlBinaryBlockeqERKS_
+0000ac3f  _ZN10CUtlMemoryIhiE4GrowEi
+0000ac5a  _ZN15CUtlBinaryBlock9SetLengthEi
+0000ac7b  _ZN15CUtlBinaryBlockC2Eii
+0000ac95  _ZNK10CUtlStringeqEPKc
+0000acac  _ZNK10CUtlStringcvPKcEv
+0000acc4  _ZN10CUtlStringC1EPvii
+0000acdb  _ZN10CUtlStringC2EPvii
+0000acf2  _ZN10CUtlStringC1EPKvi
+0000ad09  _ZN10CUtlStringC2EPKvi
+0000ad20  _ZN15CUtlBinaryBlockC1Eii
+0000ad3a  _ZNK10CUtlStringeqERKS_
+0000ad52  _ZN10CUtlStringC2Ev
+0000ad66  _ZN10CUtlStringC1Ev
+0000ad7a  _ZN10CUtlString3GetEv
+0000ad90  _ZN10CUtlString9SetLengthEi
+0000adac  _ZN15CUtlBinaryBlock3SetEPKvi
+0000adca  _ZN10CUtlString18StripTrailingSlashEv
+0000adf0  _ZN10CUtlStringpLEc
+0000ae04  _ZN10CUtlStringpLEPKc
+0000ae1a  _ZN10CUtlStringpLEd
+0000ae2e  _ZN10CUtlStringpLEi
+0000ae42  _ZN10CUtlStringpLERKS_
+0000ae59  _ZN15CUtlBinaryBlockC2ERKS_
+0000ae75  _ZN10CUtlString3SetEPKc
+0000ae8d  _ZN15CUtlBinaryBlockaSERKS_
+0000aea9  _ZN15CUtlBinaryBlockC1ERKS_
+0000aec5  _ZN10CUtlStringaSERKS_
+0000aedc  _ZN10CUtlStringC2EPKc
+0000aef2  _ZN10CUtlString6FormatEPKcz
+0000af0e  _ZN10CUtlStringaSEPKc
+0000af24  _ZN10CUtlStringC2ERKS_
+0000af3b  _Z6SinCosfPfS_
+0000af4a  _Z12_InvRSquaredPKf
+0000af5e  _Z12VectorsEqualPKfS0_
+0000af75  _Z15VectorTransformPKfRK11matrix3x4_tPf
+0000af9d  _Z16VectorITransformPKfRK11matrix3x4_tPf
+0000afc6  _Z12VectorRotatePKfRK11matrix3x4_tPf
+0000afeb  _Z13VectorIRotatePKfRK11matrix3x4_tPf
+0000b011  _Z12MatrixInvertRK11matrix3x4_tRS_
+0000b034  _Z15MatrixGetColumnRK11matrix3x4_tiR6Vector
+0000b060  _Z15MatrixSetColumnRK6VectoriR11matrix3x4_t
+0000b08c  _Z13VectorComparePKfS0_
+0000b0a4  _Z12CrossProductPKfS0_Pf
+0000b0bd  _Z6Q_log2i
+0000b0c8  _Z13VectorVectorsRK6VectorRS_S2_
+0000b0e9  pfVectorNormalize
+0000b0fb  _Z15ConcatRotationsPA3_KfS1_PA3_f
+0000b11d  _Z10IsDenormalRKf
+0000b12f  _Z16SignbitsForPlaneP8cplane_t
+0000b14e  _Z14BoxOnPlaneSidePKfS0_PK8cplane_t
+0000b172  _Z12AngleVectorsRK6QAngleP6VectorS3_S3_
+0000b19a  _Z11AngleMatrixRK6QAngleR11matrix3x4_t
+0000b1c1  _Z12AngleIMatrixRK6QAngleR11matrix3x4_t
+0000b1e9  _Z21SolveInverseQuadraticffffffRfS_S_
+0000b20f  _Z31SolveInverseReciprocalQuadraticffffffRfS_S_
+0000b23f  _Z15QuaternionAlignRK10QuaternionS1_RS_
+0000b267  _Z19QuaternionConjugateRK10QuaternionRS_
+0000b290  _Z20QuaternionDotProductRK10QuaternionS1_
+0000b2ba  _Z16QuaternionMatrixRK10QuaternionR11matrix3x4_t
+0000b2eb  _Z15AngleQuaternionRK6QAngleR10Quaternion
+0000b315  _Z16Spline_NormalizeRK6VectorS1_S1_S1_RS_S2_
+0000b342  _Z18Catmull_Rom_SplineRK6VectorS1_S1_S1_fRS_
+0000b36f  _Z27Catmull_Rom_Spline_IntegralRK6VectorS1_S1_S1_fRS_
+0000b3a5  _Z14Hermite_SplineRK6VectorS1_S1_S1_fRS_
+0000b3ce  _Z14Hermite_Splinefffff
+0000b3e6  _Z19Hermite_SplineBasisfPf
+0000b401  _Z14Hermite_Splineffff
+0000b418  _Z23Kochanek_Bartels_SplinefffRK6VectorS1_S1_S1_fRS_
+0000b44d  _Z12Cubic_SplineRK6VectorS1_S1_S1_fRS_
+0000b474  _Z7BSplineRK6VectorS1_S1_S1_fRS_
+0000b495  _Z16Parabolic_SplineRK6VectorS1_S1_S1_fRS_
+0000b4c0  _Z21CalcSqrDistanceToAABBRK6VectorS1_S1_
+0000b4e9  _Z22CalcClosestPointOnAABBRK6VectorS1_S1_RS_
+0000b516  _Z23CalcClosestPointToLineTRK6VectorS1_S1_RS_
+0000b544  _Z25CalcClosestPointToLineT2DRK8Vector2DS1_S1_RS_
+0000b576  _Z20MathLib_3DNowEnabledv
+0000b590  _Z18MathLib_MMXEnabledv
+0000b5a8  _Z18MathLib_SSEEnabledv
+0000b5c0  _Z19MathLib_SSE2Enabledv
+0000b5d9  _Z8Approachfff
+0000b5e8  _Z13AngleDistanceff
+0000b5fc  _Z8CeilPow2i
+0000b609  _Z9FloorPow2i
+0000b617  _Z8RGBtoHSVRK6VectorRS_
+0000b62f  _Z8CalcFovXff
+0000b63d  atan
+0000b642  _Z8CalcFovYff
+0000b650  _Z23ClipPolyToPlane_PrecisePdiS_PKddd
+0000b676  _Z22AngleNormalizePositivef
+0000b692  fmodf
+0000b698  _Z14AngleNormalizef
+0000b6ac  _Z9AngleDiffff
+0000b6bb  _Z19QuaternionAxisAngleRK10QuaternionR6VectorRf
+0000b6eb  acos
+0000b6f0  _Z19QuaternionNormalizeR10Quaternion
+0000b715  _Z14SolveQuadraticfffRfS_
+0000b72f  _Z15QuaternionScaleRK10QuaternionfRS_
+0000b755  asin
+0000b75a  _Z15InitSinCosTablev
+0000b76f  SinCosTable
+0000b77b  _Z22QuaternionSlerpNoAlignRK10QuaternionS1_fRS_
+0000b7ab  acosf
+0000b7b1  _Z11SmoothCurvef
+0000b7c2  _Z4Biasff
+0000b7d0  _Z20_VectorNormalizeFastR6Vector
+0000b7f1  _Z16_VectorNormalizeR6Vector
+0000b80e  _Z6_sqrtff
+0000b819  _Z12MatrixAnglesRK11matrix3x4_tPf
+0000b83b  atan2f
+0000b842  _Z12VectorAnglesPKfPf
+0000b858  atan2
+0000b85e  _Z10MatrixCopyRK11matrix3x4_tRS_
+0000b87f  _Z16MatricesAreEqualRK11matrix3x4_tS1_f
+0000b8a7  _Z17SetIdentityMatrixR11matrix3x4_t
+0000b8cb  _Z14SetScaleMatrixfffR11matrix3x4_t
+0000b8ef  _Z15MatrixTransposeRK11matrix3x4_tRS_
+0000b915  _Z15MatrixTransposeR11matrix3x4_t
+0000b937  _Z33CalcLineToLineIntersectionSegmentRK6VectorS1_S1_S1_PS_S2_PfS3_
+0000b97a  _Z28MatrixBuildRotationAboutAxisRK6VectorfR11matrix3x4_t
+0000b9b3  _Z11ClearBoundsR6VectorS0_
+0000b9ce  _Z32CalcSqrDistAndClosestPointOnAABBRK6VectorS1_S1_RS_Rf
+0000ba07  _Z16AddPointToBoundsRK6VectorRS_S2_
+0000ba2b  _Z8HSVtoRGBRK6VectorRS_
+0000ba43  _Z26Catmull_Rom_Spline_TangentRK6VectorS1_S1_S1_fRS_
+0000ba78  _Z15AngleQuaternionRK11RadianEulerR10Quaternion
+0000baa8  _Z19AxisAngleQuaternionRK6VectorfR10Quaternion
+0000bad7  _Z12VectorAnglesRK6VectorR6QAngle
+0000baf9  pfSqrt
+0000bb00  _Z12VectorMatrixRK6VectorR11matrix3x4_t
+0000bb28  _Z16MatrixInitializeR11matrix3x4_tRK6VectorS3_S3_S3_
+0000bb5d  _Z21AngleVectorsTransposeRK6QAngleP6VectorS3_S3_
+0000bb8e  _Z12AngleVectorsRK6QAngleP6Vector
+0000bbb0  _Z12VectorAnglesRK6VectorS1_R6QAngle
+0000bbd5  pfVectorNormalizeFast
+0000bbeb  _Z15ClipPolyToPlaneP6VectoriS0_RKS_ff
+0000bc11  vec3_origin
+0000bc1d  vec3_angle
+0000bc28  vec3_invalid
+0000bc35  _Z13MatrixVectorsRK11matrix3x4_tP6VectorS3_S3_
+0000bc64  _Z27Catmull_Rom_Spline_IntegralRK6VectorS1_S1_S1_RS_
+0000bc99  _Z13ApproachAnglefff
+0000bcae  _Z20GetInterpolationDataPKfS0_iifbPfS1_S1_
+0000bcd9  _Z17R_CullBoxSkipNearRK6VectorS1_RK9Frustum_t
+0000bd07  _Z9R_CullBoxRK6VectorS1_RK9Frustum_t
+0000bd2c  _Z11FloorDivModddPiS_
+0000bd42  floor
+0000bd48  _Z24CalcTriangleTangentSpaceRK6VectorS1_S1_RK8Vector2DS4_S4_RS_S5_
+0000bd8b  _Z13PolyFromPlaneP6VectorRKS_ff
+0000bdab  _Z20ComputeTrianglePlaneRK6VectorS1_S1_RS_Rf
+0000bdd8  _Z28Catmull_Rom_Spline_NormalizeRK6VectorS1_S1_S1_fRS_
+0000be0f  _Z12MatrixAnglesRK11matrix3x4_tR11RadianEulerR6Vector
+0000be45  _Z16QuaternionInvertRK10QuaternionRS_
+0000be6b  _Z26GeneratePerspectiveFrustumRK6VectorS1_S1_S1_ffffR9Frustum_t
+0000beab  tanf
+0000beb0  _Z15RangeCompressorffff
+0000bec8  _Z37Catmull_Rom_Spline_Integral_NormalizeRK6VectorS1_S1_S1_fRS_
+0000bf08  _Z7_rsqrtff
+0000bf14  _Z16ConcatTransformsRK11matrix3x4_tS1_RS_
+0000bf3e  _Z14AnglesAreEqualfff
+0000bf54  s_bMathlibInitialized
+0000bf6a  GetCPUInformation
+0000bf7c  pfRSqrt
+0000bf84  pfRSqrtFast
+0000bf90  pfInvRSquared
+0000bf9e  pfFastSinCos
+0000bfab  pfFastCos
+0000bfb5  _Z15BuildGammaTablefffi
+0000bfcd  _Z24_SSE_VectorNormalizeFastR6Vector
+0000bff2  _Z16_SSE_InvRSquaredPKf
+0000c00a  _Z9_SSE_Sqrtf
+0000c018  _Z18_SSE_RSqrtAccuratef
+0000c030  _Z14_SSE_RSqrtFastf
+0000c044  _Z22_3DNow_VectorNormalizeR6Vector
+0000c067  _Z26_3DNow_VectorNormalizeFastR6Vector
+0000c08e  _Z18_3DNow_InvRSquaredPKf
+0000c0a8  _Z11_3DNow_Sqrtf
+0000c0b9  _Z12_3DNow_RSqrtf
+0000c0cb  _Z31CalcClosestPointOnLineSegment2DRK8Vector2DS1_S1_RS_Pf
+0000c105  _Z24CalcClosestPointOnLine2DRK8Vector2DS1_S1_RS_Pf
+0000c138  _Z11IRotateAABBRK11matrix3x4_tRK6VectorS4_RS2_S5_
+0000c16a  _Z23CalcDistanceSqrToLine2DRK8Vector2DS1_S1_Pf
+0000c199  _Z20CalcDistanceToLine2DRK8Vector2DS1_S1_Pf
+0000c1c5  _Z14ITransformAABBRK11matrix3x4_tRK6VectorS4_RS2_S5_
+0000c1fa  _Z15VectorYawRotateRK6VectorfRS_
+0000c21b  _Z13TransformAABBRK11matrix3x4_tRK6VectorS4_RS2_S5_
+0000c24f  _Z14Hermite_SplineRK6VectorS1_S1_fRS_
+0000c275  _Z30CalcDistanceSqrToLineSegment2DRK8Vector2DS1_S1_Pf
+0000c2ab  _Z27CalcDistanceToLineSegment2DRK8Vector2DS1_S1_Pf
+0000c2de  _Z10RotateAABBRK11matrix3x4_tRK6VectorS4_RS2_S5_
+0000c30f  _Z29CalcClosestPointOnLineSegmentRK6VectorS1_S1_RS_Pf
+0000c345  _Z22CalcClosestPointOnLineRK6VectorS1_S1_RS_Pf
+0000c374  _Z28CalcDistanceSqrToLineSegmentRK6VectorS1_S1_Pf
+0000c3a6  _Z25CalcDistanceToLineSegmentRK6VectorS1_S1_Pf
+0000c3d5  _Z26GeneratePerspectiveFrustumRK6VectorRK6QAngleffffR9Frustum_t
+0000c415  _Z21CalcDistanceSqrToLineRK6VectorS1_S1_Pf
+0000c440  _Z4Gainff
+0000c44a  _Z30SolveInverseQuadraticMonotonicffffffRfS_S_
+0000c479  _Z18CalcDistanceToLineRK6VectorS1_S1_Pf
+0000c4a1  _Z16MatrixQuaternionRK11matrix3x4_tR10Quaternion
+0000c4d2  _Z17BasisToQuaternionRK6VectorS1_S1_R10Quaternion
+0000c504  _Z21GreatestCommonDivisorii
+0000c520  _Z12AngleIMatrixRK11RadianEulerR11matrix3x4_t
+0000c54e  _Z12AngleIMatrixRK6QAngleRK6VectorR11matrix3x4_t
+0000c57f  _Z17SmoothCurve_Tweakfff
+0000c598  _Z18BSpline_NormalizeXRK6VectorS1_S1_S1_fRS_
+0000c5c5  _Z23Cubic_Spline_NormalizeXRK6VectorS1_S1_S1_fRS_
+0000c5f7  _Z34Kochanek_Bartels_Spline_NormalizeXfffRK6VectorS1_S1_S1_fRS_
+0000c637  _Z29Catmull_Rom_Spline_NormalizeXRK6VectorS1_S1_S1_fRS_
+0000c66f  _Z27Parabolic_Spline_NormalizeXRK6VectorS1_S1_S1_fRS_
+0000c6a5  _Z16QuaternionAnglesRK10QuaternionR11RadianEuler
+0000c6d6  _Z16QuaternionAnglesRK10QuaternionR6QAngle
+0000c701  _Z16QuaternionMatrixRK10QuaternionRK6VectorR11matrix3x4_t
+0000c73b  _Z12VectorRotateRK6VectorRK10QuaternionRS_
+0000c766  _Z15QuaternionSlerpRK10QuaternionS1_fRS_
+0000c78f  _Z13QuaternionAddRK10QuaternionS1_RS_
+0000c7b5  _Z14QuaternionMultRK10QuaternionS1_RS_
+0000c7dc  _Z12VectorRotateRK6VectorRK6QAngleRS_
+0000c802  _Z27TransformAnglesToWorldSpaceRK6QAngleRK11matrix3x4_t
+0000c83a  _Z27TransformAnglesToLocalSpaceRK6QAngleRK11matrix3x4_t
+0000c872  _Z13RotationDeltaRK6QAngleS1_PS_
+0000c893  _Z11AngleMatrixRK6QAngleRK6VectorR11matrix3x4_t
+0000c8c3  _Z11AngleMatrixRK11RadianEulerR11matrix3x4_t
+0000c8f0  _Z22RotationDeltaAxisAngleRK6QAngleS1_R6VectorRf
+0000c921  _Z22QuaternionBlendNoAlignRK10QuaternionS1_fRS_
+0000c951  _Z12MatrixAnglesRK11matrix3x4_tR10QuaternionR6Vector
+0000c986  _Z14Hermite_SplineRK10QuaternionS1_S1_fRS_
+0000c9b1  _Z23QuaternionIdentityBlendRK10QuaternionfRS_
+0000c9df  _Z11AngleMatrixRK11RadianEulerRK6VectorR11matrix3x4_t
+0000ca15  _Z19QuaternionAngleDiffRK10QuaternionS1_
+0000ca3e  _Z15QuaternionBlendRK10QuaternionS1_fRS_
+0000ca67  nanmask
+0000ca6f  _Z20_SSE_VectorNormalizeR6Vector
+0000ca90  _Z11_SSE_SinCosfPfS_
+0000caa5  _Z8_SSE_cosf
+0000cab2  _Z12_SSE2_SinCosfPfS_
+0000cac8  _Z9_SSE2_cosf
+0000cad6  _Z15VectorRotateSSEPKfRK11matrix3x4_tPf
+0000cafe  _Z18VectorTransformSSEPKfRK11matrix3x4_tPf
+0000cb29  _Z13GammaToLinearf
+0000cb3c  _Z17X360LinearToGammaf
+0000cb53  _Z15TextureToLineari
+0000cb68  _Z15LinearToTexturef
+0000cb7d  _Z19LinearToScreenGammaf
+0000cb96  _Z21VectorToColorRGBExp32RK6VectorR13ColorRGBExp32
+0000cbc9  _Z17X360GammaToLinearf
+0000cbe0  _Z17SrgbLinearToGammaf
+0000cbf7  _Z17SrgbGammaToLinearf
+0000cc0e  _Z22LinearToGammaFullRangef
+0000cc2a  _Z22GammaToLinearFullRangef
+0000cc46  _Z13LinearToGammaf
+0000cc59  _Z21ColorRGBExp32ToVectorRK13ColorRGBExp32R6Vector
+0000cc8c  power2_n
+0000cc95  lineartovertex
+0000cca4  lineartolightmap
+0000ccb5  _Z19SrgbGammaTo360Gammaf
+0000ccce  libtier0_srv.so
+0000ccde  libvstdlib_srv.so
+0000ccf0  libpthread.so.0
+0000cd00  libdl.so.2
+0000cd0b  libstdc++.so.6
+0000cd1a  libm.so.6
+0000cd24  libgcc_s.so.1
+0000cd32  libc.so.6
+0000cd3c  _edata
+0000cd43  __bss_start
+0000cd4f  _end
+0000cd54  GLIBC_2.1
+0000cd5e  GLIBC_2.0
+0000cd68  CXXABI_1.3
+0000cd73  GLIBCXX_3.4
+0000cd7f  GCC_3.0
+0000cd87  GLIBC_2.2
+0000cd91  GLIBC_2.1.3
+000231e2  <[^_]
+000233bd  ,[^_]
+000233ea  ,[^_]
+0002360c  [^_]
+000236dc  [^_]
+000238b9  [^_]
+000240e2  =4k	
+000240f0  gfff
+00024110  gfff
+0002412a  gfff
+00024151  gfff
+00024177  gfff
+00024195  gfff
+000241bb  gfff
+00024286  9s\t
+00024867  [^_]
+00024bb5  [^_]
+00025074  [^_]
+0002521c  [^_]
+000254ee  ,[^_]
+0002586e  ,[^_]
+00025b14  [^_]
+000260d3  [^_]
+000260fd  [^_]
+000261ab  [^_]
+0002622e  [^_]
+000263a3  [^_]
+000263b4  [^_]
+000266ef  [^_]
+00026781  [^_]
+000268a2  [^_]
+00026992  [^_]
+00026cf6  [^_]
+00026d58  [^_]
+00026d71  [^_]
+00027016  [^_]
+000272c0  [^_]
+00027922  ;H0}
+00027a32  [^_]
+00027d97  [^_]
+00027db3  [^_]
+000283d1  [^_]
+000285a9  [^_]
+00028cae  uXzV
+0002907c  [^_]
+00029204  ,[^_]
+000292ee  [^_]
+0002939f  ,[^_]
+000293af  [^_]
+0002940b  [^_]
+00029594  [^_]
+00029620  [^_]
+000299c1  gfff
+00029c53  NULL
+00029db3  NULL
+00029dc6  NULL
+00029fcf  [^_]
+00029fdb  [^_]
+0002a134  [^_]
+0002a17b  [^_]
+0002a2f8  [^_]
+0002a4c2  ,[^_]
+0002a876  [^_]
+0002a9e2  ,[^_]
+0002b9ac  P[^]
+0002bd26  P[^]
+0002bf18  [^_]
+0002bf2d  [^_]
+0002c320  [^_]
+0002c332  [^_]
+0002c38a  [^_]
+0002c3af  [^_]
+0002c71a  [^_]
+0002c73c  [^_]
+0002c7ec  ,[^_]
+0002cbeb  <[^_]
+0002cc00  [^_]
+0002cf55  [^_]
+0002cfc7  ,[^_]
+0002d45e  ,[^_]
+0002d4db  ,[^_]
+0002d6a0  [^_]
+0002de57  [^_]
+0002de6c  [^_]
+0002df81  [^_]
+0002e0a2  [^_]
+0002e192  [^_]
+0002e470  [^_]
+0002e4b4  [^_]
+0002e5fe   [^]
+0002eb47  [^_]
+0002eb5c  [^_]
+0002ed71  [^_]
+0002ee92  [^_]
+0002ef82  [^_]
+0002f207  8St]
+0002fc42  8StZ
+0003067a  [^_]
+00030bf2  [^_]
+00030c92  [^_]
+00030d2f  [^_]
+00030f8f  [^_]
+00031960  u>z<
+00031970  u.z,
+00031c55   [^]
+00031cf5   [^]
+00032685  ,[^_]
+0003269c  ,[^_]
+0003277a  ,[^_]
+000327f6  [^_]
+000329a5  <[^_]
+00032ae1  [^_]
+00033710  [^_]
+00033c8f  VD;P
+00033f62  u\z^
+00034a53  [^_]
+00034e70  [^_]
+00034f74  [^_]
+00034f9f  [^_]
+00035770  [^_]
+0003588d  [^_]
+00035b8e  [^_]
+00036612  [^_]
+00036c47  [^_]
+00036c5c  [^_]
+000370aa  [^_]
+00037151  [^_]
+00037271  [^_]
+000373e2  [^_]
+00037482  [^_]
+00037524  [^_]
+000375ec  [^_]
+00037620  [^_]
+00037a17  [^_]
+00039086  [^_]
+000399eb  ,[^_]
+00039b1b  ,[^_]
+00039e25  <[^_]
+00039fa5  <[^_]
+0003a125  <[^_]
+0003a2a5  <[^_]
+0003a456  [^_]
+0003a64e  [^_]
+0003a83e  [^_]
+0003aa36  [^_]
+0003ab87  [^_]
+0003ace9  [^_]
+0003ae4d  <[^_]
+0003afaf  <[^_]
+0003b109  [^_]
+0003b267  [^_]
+0003b3cf  <[^_]
+0003b52d  <[^_]
+0003bc97  [^_]
+0003bcac  [^_]
+0003bdc1  [^_]
+0003bee2  [^_]
+0003bfd2  [^_]
+0003c315  [^_]
+0003c66b  [^_]
+0003c6ea  @@;E
+0003c8b3  [^_]
+0003d53b  P[^]
+0003d6a0  P[^]
+0003d853  ,[^_]
+0003dacc  L[^_]
+0003dbea  [^_]
+0003dd2a  [^_]
+0003df6e  <[^_]
+0003e1ee  <[^_]
+0003e479  [^_]
+0003e613  ,[^_]
+0003e967  [^_]
+0003eb69  ,[^_]
+0003ec12  [^_]
+0003ee96  [^_]
+0003f133  [^_]
+0003f23f  [^_]
+0003fda2  [^_]
+00040067  [^_]
+0004007c  [^_]
+00040101  [^_]
+00040272  [^_]
+000403cc  [^_]
+00040446  [^_]
+00040488  [^_]
+000405c1  [^_]
+000406e2  [^_]
+000407d2  [^_]
+00040907  [^_]
+00040e96  ,[^_]
+00041056  ,[^_]
+00041f10  [^_]
+0004240a  u,z*
+000428d9  [^_]
+000428fb  [^_]
+00042b80  <[^_]
+00042e36  <[^_]
+000430f6  <[^_]
+000431ea  [^_]
+00043617  [^_]
+0004362c  [^_]
+000437b1  [^_]
+00043922  [^_]
+000439c2  [^_]
+00043bbd  [^_]
+00043dda  S$[^]
+00043eac  P([^]
+00044217  [^_]
+000442fc  [^_]
+000445cf  [^_]
+00044c03  ,[^_]
+00044cbd  [^_]
+00044e14  [^_]
+00045648  [^_]
+000456d3  P$[]
+00045803  [^_]
+00045813  [^_]
+00045c5d  [^_]
+00045dfd  ,[^_]
+0004665c  [^_]
+00046d4a  ,[^_]
+0004730d  ,[^_]
+00047521  u}z{
+000477c3  [^_]
+00047927  [^_]
+00047a43  [^_]
+00047c7f  ,[^_]
+00047ce9  {,_~
+00047dd9  x,+{,
+000499d3  [^_]
+00049b1f  [^_]
+0004a835  9X(u
+0004a83b  0;1u
+0004a888  [^_]
+0004a895  [^_]
+0004a8e2  [^_]
+0004ad71  [^_]
+0004aea4  [^_]
+0004af82  [^_]
+0004afcc  W(9P(~&
+0004afdc  9P(~
+0004b021  [^_]
+0004b053  [^_]
+0004b09f  S(9P(t
+0004b13f  P(;S(u
+0004b211  [^_]
+0004b331  [^_]
+0004b434  S(9P(u
+0004b46c  [^_]
+0004b4db  P(;S(t>
+0004b514  [^_]
+0004b612  [^_]
+0004b74a  [^_]
+0004c26b  [^_]
+0004da61  <[^_]
+0004dbc1  <[^_]
+0004ddd5  [^_]
+0004df60  0[^]
+0004e10a  <[^_]
+0004e2ea  <[^_]
+0004e4cd  [^_]
+0004e5ad  [^_]
+0004e640  0[^]
+0004e886  [^_]
+0004ef4a  L[^_]
+0004f1ac  [^_]
+0004f836  [^_]
+0004fe0f  [^_]
+0004fef9  [^_]
+00050159  [^_]
+00050238  [^_]
+00050423  [^_]
+00050488  [^_]
+0005061c  @[^]
+00050782  \[^_]
+00050801  \[^_]
+000508bf  [^_]
+00050ae6  [^_]
+00050c37  [^_]
+00050dca  [^_]
+000511c8  P,;P0
+00051398  [^_]
+00051408  ;s t{
+00051482  [^_]
+00051728  [^_]
+0005173d  [^_]
+00052088  [^_]
+00054233  [^_]
+00054bd3  [^_]
+00054fb3  [^_]
+00054fc7  [^_]
+00055c5b  </tY<\tU
+00055d89  [^_]
+00055d99  [^_]
+00055dab  [^_]
+000561a3  [^_]
+0005696c  [^_]
+00056dc3  [^_]
+00056dd8  [^_]
+00057af7  l[^_]
+00058385  [^_]
+0005848b  [^_]
+000585df  ,[^_]
+0005867d  [^_]
+00058883  <[^_]
+00058c09  L[^_]
+0005905d  ,[^_]
+000591de  [^_]
+0005946c  [^_]
+000594f6  [^_]
+00059bfd  [^_]
+00059d8c  [^_]
+0005a087  |[^_]
+0005af81  [^_]
+0005bae7  [^_]
+0005c308  [^_]
+0005c406  [^_]
+0005c568  |[^_]
+0005c6a5  </t*<\t&
+0005c7c4  [^_]
+0005c7ef  [^_]
+0005ca6f  [^_]
+0005d1e3  [^_]
+0005d4d7  ,[^_]
+0005d4ee  [^_]
+0005d58f  ,[^_]
+0005d62f  ,[^_]
+0005d8c5  [^_]
+0005d8de  [^_]
+0005d914  [^_]
+0005d95c  [^_]
+0005d989  O ;M
+0005d9d0  [^_]
+0005dd2c  ,[^_]
+0005de1c  ,[^_]
+0005e2e1  l[^_]
+0005e42c  <[^_]
+0005e4ab  <[^_]
+0005ee68  <[^_]
+0005f0f9  <[^_]
+0005fd34  \[^_]
+00060022  \[^_]
+0006087d  ,[^_]
+0006092e  +C 9
+00060958  C 9E
+0006096d  <[^_]
+00060998  [^_]
+000609a5  <[^_]
+00060b6b  <[^_]
+00060cbc  L[^_]
+00060ccd  L[^_]
+00060d05  C 9E
+00060d8b  L[^_]
+00060dc3  C 9E
+00060e02  L[^_]
+00060ff2  <[^_]
+0006109a  <[^_]
+000612d5  <[^_]
+00061687  <[^_]
+000616e5  [^_]
+00061721  Q ;U
+000617b1  J ;M
+000619d4  <[^_]
+000619e8  <[^_]
+00061a0d  C 9E
+00061ac3  }K9}
+00061cf5  L[^_]
+00061d48  K 9M
+00062053  +s :
+00062132  L[^_]
+000623b9  C 9E
+00062630  C 9E
+0006264a  <[^_]
+0006305f  [^_]
+00063072  [^_]
+00063094  :/th
+000630d9  [^_]
+00063164  <[^_]
+000631d7  <[^_]
+0006355f  l[^_]
+0006359d  l[^_]
+00063654  l[^_]
+000636a8  l[^_]
+000636e1  C ;E
+00063c46  <[^_]
+00063ca5  S 9U
+00063e54  <[^_]
+00063e65  <[^_
+00063e7d  <[^_
+00064054  [^_]
+000640a5  ,[^_]
+000641f0  L[^_]
+00064498  L[^_]
+000644b3  }k9U
+00064512  L[^_]
+000646ca  L[^_]
+00064800  UWVS
+00064915  [^_]
+00064c70  UWVS
+00064d35  ;|$$
+00064d42  [^_]
+00065285  [^_]
+00065536  WVSt
+0006553b  [^_]
+000655e3  [^_]
+000656e4  [^_]
+000657f7  [^_]
+000659f8  [^_]
+00065aa4  [^_]
+00065b33  [^_]
+00065d13  [^_]
+00065f52  V ;U
+00066481  ([^_]
+000666a8  t[;}
+000666be  4[^_]
+0006678b  4[^_]
+00066976  4[^_]
+00066ce9  4[^_]
+00066fb2  ,[^_]
+000676d0  [^_]
+0006774b  ,[^_]
+00067817  ,[^_]
+00067f32  [^_]
+00067fb5  [^_]
+0006805f  [^_]
+000681ad  [^_]
+0006829e  [^_]
+00068484  D[^_]
+00068610  D[^_]
+000686fb  D[^_]
+00068b1e  [^_]
+00068bc6  [^_]
+00068c47  <[^_]
+00068db3  <[^_]
+000696b0  [^_]
+0006975b  [^_]
+0006994d  [^_]
+00069d25  t	[]
+0006a045  9^0t^S
+0006a075  ^0u/
+0006a1cb  [^_]
+0006a1d5  [^_]
+0006a6ad  [^_]
+0006a89d  [^_]
+0006a915  ;^(~
+0006a986  [^_]
+0006ab4a  \[^_]
+0006ab63  \[^_]
+0006ac43  WVS1
+0006acd9  ??~%
+0006ada2  [^_]
+0006adb8  [^_]
+0006ae81  [^_]
+0006af8a  [^_]
+0006b068  [^_]
+0006b073  [^_]
+0006b655  ,[^_]
+0006b672  ,[^_]
+0006b80e  D$$1
+0006b89e  D$$1
+0006c492   </t
+0006c5a6  [^_]
+0006c5c4  [^_]
+0006c900  <.tr
+0006c94c  [^_]
+0006c9be  [^_]
+0006ca96  [^_]
+0006cbc7  t]</u
+0006cbe5  [^_]
+0006cc3a  [^_]
+0006cd5c  ,[^_]
+0006ce6f  [^_]
+0006cf5c  <0t|<'
+0006cfd7  [^_]
+0006d06a  [^_]
+0006d0c4  <-t?<0tJ<'
+0006d102  [^_]
+0006d191  [^_]
+0006d25b  [^_]
+0006d324  [^_]
+0006d333  [^_]
+0006d398  [^_]
+0006d409  [^_]
+0006daf8  ,[^_]
+0006dbff  VUUU
+0006dc3c  l[^_]
+0006debe  [^_]
+0006df3e  </t.
+0006e0fa  [^_]
+0006e584  \[^_]
+0006e844  \[^_]
+0006ea27  [^_]
+0006eaf3  [^_]
+0006eb67  </tw
+0006ebcc  [^_]
+0006ecdc  [^_]
+0006ed37  [^_]
+0006f007  ,[^_]
+0006f034  [^_]
+0006f1ac  [^_]
+0006f2f4  [^_]
+0006f451  ;/tA
+0006f499  [^_]
+0006f556  [^_]
+0006f5f6  [^_]
+0006f624  [^_]
+0006f6a7  [^_]
+0006f7e2  [^_]
+0006ff3a  [^_]
+00070108  [^_]
+0007062b  [^_]
+0007066a  [^_]
+00070b13  u+z)
+00070d64  Y,[]
+00070e13  u,z*
+000710a6  [^_]
+00071cd2  0[^_]
+00071e81  ([^]
+0007230e  P[^_]
+0007262f  ,[^_]
+00072a99  z,u*
+00072ac9  u%z#
+00072d07  tl;D
+00072d91  [^_]
+00072e3b  [^_]
+00072e51  [^_]
+00073065  u)z'
+000731d1  [^_]
+000731eb  [^_]
+00073317  l[^_]
+000733ef  l[^_]
+0007380e  B(_]
+000738a7  B([]
+00073ab7  [^_]
+00073bc5  0[^]
+00073d9e  u1z/
+00074045  0[^_]
+000742a0  0[^]
+00074530  @[^]
+00074581  @[^]
+00074889  [^_]
+000748a3  u>z<
+00074904  [^_]
+00074bc9  ?[^_]
+00074c03  [^_]
+00075079  [^_]
+00075254   [^]
+00075417  \[^_]
+00075936  \[^_]
+00075b87  \[^_]
+00075d10  <[^]
+00075e7f  ,[^_]
+00075f8f  ,[^_]
+00076301  $[^]
+000765e2  $[^]
+0007682a  $[^]
+00076bf1  $[^]
+0007723a  z6u4
+0007747b  [^_]
+00077496  [^_]
+00077ab0  z^u\
+000786b5  [^_]
+0007880a  X[^_]
+0007895b  X[^_]
+00078dcf  [^_]
+00079514  zzux
+0007956f  |[^_]
+00079753  [^_]
+00079a5e  zPuN
+00079a66  <[^_]
+00079ae3  <[^_]
+00079fb4  z+u)
+00079fbc  ,[^_]
+0007a014  ,[^_]
+0007a4bf  8[^]
+0007a4e6  8[^]
+0007b020  THROW this==NULL "hrcbot_server_bot/Bot_events.cpp" 189
+0007b058  "hrcbot_server_bot/Bot_events.cpp"
+0007b07c  THROW this==NULL "hrcbot_server_bot/Bot_events.cpp" 160
+0007b0b4  THROW this==NULL "hrcbot_server_bot/Bot_events.cpp" 44
+0007b0ec  Spawning bot '%s' for team %i (actually in %i) (%i)
+0007b124  THROW this==NULL "hrcbot_server_bot/Bot_events.cpp" 204
+0007b15c  THROW this==NULL "hrcbot_server_bot/Bot_events.cpp" 113
+0007b194  THROW "hrcbot_server_bot/Bot_events.cpp" 117
+0007b1c9  team : '%i'
+0007b1d6  joinclass 0
+0007b1f0  THROW "hrcbot_server_core/TList.h" 113
+0007b218  THROW "hrcbot_server_core/TList.h" 119
+0007b240  THROW this==NULL "hrcbot_server_bot/Bot_idle.cpp" 33
+0007b278  "hrcbot_server_bot/Bot_idle.cpp"
+0007b299  "hrcbot_server_core/TList.h"
+0007b300  13TListIteratorI11ItemHistoryLb1EE
+0007b32c  9TIteratorI11ItemHistoryLb1EE
+0007b383  G460
+0007b388  "hrcbot_server_bot/Bot.cpp"
+0007b3cc  %s: %s
+0007b3d8  cl_autowepswitch
+0007b3e9  weapon_crowbar
+0007b3f8  FCVAR_NEVER_AS_STRING
+0007b40e  cl_playermodel
+0007b439  IDLE
+0007b43e  Dead
+0007b443  PathingToItem
+0007b451  WalkingToItem
+0007b45f  StartHunting
+0007b46c  ContinueHunting
+0007b47c  Stalking
+0007b485  Interrupted
+0007b491  Disintegrate
+0007b4a0  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 460
+0007b4d4  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 437
+0007b508  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 425
+0007b53c  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 364
+0007b570  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 573
+0007b5a4  THROW "hrcbot_server_bot/Bot.cpp" 581
+0007b5cc  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 556
+0007b600  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 496
+0007b634  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 528
+0007b668  HS P@%p H@%p f=%f ls=%f ss=%i as=%i c=%i hb=%i hg=%i
+0007b6a0  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 372
+0007b6d4  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 330
+0007b708  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 261
+0007b73c  THROW "hrcbot_server_core/TList.h" 731
+0007b764  THROW "hrcbot_server_core/TList.h" 755
+0007b78c  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 320
+0007b7c0  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 309
+0007b7f4  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 353
+0007b828  THROW this==NULL "hrcbot_server_bot/Bot.cpp" 342
+0007b8d0  3Bot
+0007b8f0  4IBot
+0007b920  29CTraceFilterWorldAndPropsOnly
+0007b948  12ITraceFilter
+0007b980  9BotCanSee
+0007b994  17IEntityEnumerator
+0007ba1c  5TListI11ItemHistoryLb1EE
+0007ba40  11TCollectionI11ItemHistoryLb1EE
+0007bb1c  5TListI6PlayerLb0EE
+0007bb38  11TCollectionI6PlayerLb0EE
+0007bb8c  13TListIteratorI6PlayerLb0EE
+0007bbb4  9TIteratorI6PlayerLb0EE
+0007bcef  BTHROW this==NULL "hrcbot_server_bot/Bot_goTo.cpp" 26
+0007bd28  "hrcbot_server_bot/Bot_goTo.cpp"
+0007bd4c  THROW this==NULL "hrcbot_server_bot/Bot_dead.cpp" 23
+0007bd84  "hrcbot_server_bot/Bot_dead.cpp"
+0007bdac  THROW this==NULL "hrcbot_server_bot/Bot_detectPlayers.cpp" 24
+0007bdec  "hrcbot_server_bot/Bot_detectPlayers.cpp"
+0007be23  CTHROW this==NULL "hrcbot_server_bot/Bot_hunt.cpp" 102
+0007be5c  "hrcbot_server_bot/Bot_hunt.cpp"
+0007be80  THROW this==NULL "hrcbot_server_bot/Bot_hunt.cpp" 53
+0007beb8  THROW this==NULL "hrcbot_server_bot/Bot_hunt.cpp" 17
+0007bef4  THROW this==NULL "hrcbot_server_bot/Bot_attack.cpp" 250
+0007bf2c  "hrcbot_server_bot/Bot_attack.cpp"
+0007bf50  THROW this==NULL "hrcbot_server_bot/Bot_attack.cpp" 104
+0007bf88  THROW this==NULL "hrcbot_server_bot/Bot_attack.cpp" 138
+0007bfdf  9models/Combine_Soldier.mdl
+0007bffb  models/Police.mdl
+0007c00d  Oh dear oh dear oh dear ...
+0007c029  I'm sorry.  Did that hurt ?
+0007c045  I don't blame you.
+0007c058  We've got science to do.
+0007c071  I am still alive.
+0007c083  Do not forget the cake.
+0007c09b  I'll be back !
+0007c0aa  You have been terminated !
+0007c0c5  %s is a cheater !!!!!!
+0007c0dc  0wn3d !
+0007c0e4  Loosers
+0007c0ec  models/Combine_Super_Soldier.mdl
+0007c110  models/Humans/Group03/Female_01.mdl
+0007c134  models/Humans/Group03/Female_02.mdl
+0007c158  models/Humans/Group03/Female_03.mdl
+0007c17c  models/Humans/Group03/Female_04.mdl
+0007c1a0  models/Humans/Group03/Female_05.mdl
+0007c1c4  models/Humans/Group03/Female_06.mdl
+0007c1e8  models/Humans/Group03/Female_07.mdl
+0007c20c  models/Humans/Group03/Male_01.mdl
+0007c230  models/Humans/Group03/male_02.mdl
+0007c254  models/Humans/Group03/male_03.mdl
+0007c278  models/Humans/Group03/Male_04.mdl
+0007c29c  models/Humans/Group03/Male_05.mdl
+0007c2c0  models/Humans/Group03/male_06.mdl
+0007c2e4  models/Humans/Group03/male_07.mdl
+0007c308  models/Humans/Group03/male_08.mdl
+0007c32c  models/Humans/Group03/male_09.mdl
+0007c350  I'm so sorry.  Are you okay %s ?
+0007c374  Please be careful %s, you could hurt someone.
+0007c3a4  Enough violence, let's be friends :)
+0007c3cc  Would you kindly stop moving ?
+0007c3ec  THROW this==NULL "hrcbot_server_bot/Bot_think.cpp" 55
+0007c424  "hrcbot_server_bot/Bot_think.cpp"
+0007c448  Bot '%s' is set for deathmatch in a team game
+0007c477  FROZEN
+0007c47f  weapon_physcannon
+0007c491  weapon_%s
+0007c49b  %i != %i
+0007c4a4  Bot '%s' in team %i (%i)
+0007c500  7CBotCmd
+0007c50c  THROW this==NULL "hrcbot_server_bot/Bot_prepareTrip.cpp" 48
+0007c548  "hrcbot_server_bot/Bot_prepareTrip.cpp"
+0007c570  THROW this==NULL "hrcbot_server_bot/Bot_prepareTrip.cpp" 32
+0007c5ac  THROW this==NULL "hrcbot_server_bot/Bot_prepareTrip.cpp" 17
+0007c5e8  THROW this==NULL "hrcbot_server_bot/Bot_doTrip.cpp" 22
+0007c620  "hrcbot_server_bot/Bot_doTrip.cpp"
+0007c64b  A***hstrtrimdup(NULL)***
+0007c664  Vector
+0007c66b  {%6.1f,%6.1f,%6.1f}
+0007c67f  QAngle
+0007c686  Bounds
+0007c68d  {%5.0f,%5.0f,%5.0f,%5.0f}
+0007c6a7  Rect
+0007c6ac  (%5.0f,%5.0f)-(%5.0f,%5.0f)
+0007c6c8  Unknown(
+0007c6d1  BADFORMAT
+0007c6db  BADVALUE
+0007c6e4  %%%i.%if
+0007c858  0123456789ABCDEF
+0007c870                  Prefixes the names of the bots
+0007c8a0  Path of a text file with the names available for the bots
+0007c8dc  addons/hrcbot_server_plugin/hrcbot_names.txt
+0007c90c  hrcbot namesfile not found.  Please use an absolute path into hrcbot_namesfile if you have trouble with its path.
+0007c980  ie: hrcbot_namesfile /my/full/path/to/the/hrcbot_namesfile.txt
+0007c9c0  [HRC]
+0007c9c6  hrcbot_clan
+0007c9d2  hrcbot_namesfile
+0007c9e3  Bot#%07i
+0007c9ec  Current directory: '%s'
+0007ca08  hrcbot namesfile found
+0007ca20  Zeus
+0007ca25  Hades
+0007ca2b  Hestia
+0007ca32  Hera
+0007ca37  Ares
+0007ca3c  Athena
+0007ca43  Apollo
+0007ca4a  Aphrodite
+0007ca54  Hermes
+0007ca5b  Artemis
+0007ca63  Hephaestus 
+0007ca6f  Gaea
+0007ca74  Uranus
+0007ca7b  Cronus
+0007ca82  Rhea
+0007ca87  Oceanus
+0007ca8f  Tethys
+0007ca96  Hyperion
+0007ca9f  Mnemosyne
+0007caa9  Themis
+0007cab0  Iapetus
+0007cab8  Coeus
+0007cabe  Crius
+0007cac4  Phoebe
+0007cacb  Thea
+0007cad0  Prometheus
+0007cadb  Epimetheus
+0007cae6  Atlas
+0007caec  Metis
+0007caf2  Demeter
+0007cafa  Persephone
+0007cb05  Dionysus
+0007cb0e  Eros
+0007cb13  Hebe
+0007cb18  Eris
+0007cb1d  Helios
+0007cb24  Thanatos
+0007cb31  Nemesis
+0007cb39  Brontes
+0007cb41  Steropes
+0007cb4a  Arges
+0007cb50  Briareus
+0007cb59  Cottus
+0007cb60  Gyges
+0007cb66  Typhoeus
+0007cb6f  Cerberus
+0007cb8c  10BasicNamer
+0007cbb4  6INamer
+0007cbc4  17IBotBaseInterface
+0007ccc0  hrcbot_log.txt
+0007ccd4  CHECK Failure occurred:
+0007ccec  File:	%s
+0007ccf5  Line:	%s
+0007cd04  THROW this==NULL "hrcbot_server_core/Object.cpp" 236
+0007cd3c  "hrcbot_server_core/Object.cpp"
+0007cd5c  THROW this==NULL "hrcbot_server_core/Object.cpp" 225
+0007cd94  THROW this==NULL "hrcbot_server_core/Object.cpp" 148
+0007cdcc  THROW this==NULL "hrcbot_server_core/Object.cpp" 123
+0007ce04  THROW this==NULL "hrcbot_server_core/Object.cpp" 115
+0007ce3c  THROW this==NULL "hrcbot_server_core/Object.cpp" 78
+0007ce70  THROW this==NULL "hrcbot_server_core/Object.cpp" 304
+0007cea8  THROW "hrcbot_server_core/Object.cpp" 308
+0007ced4  THROW "hrcbot_server_core/Object.cpp" 313
+0007cf00  THROW this==NULL "hrcbot_server_core/Object.cpp" 98
+0007cf34  THROW "hrcbot_server_core/Object.cpp" 102
+0007cf60  THROW this==NULL "hrcbot_server_core/Object.cpp" 138
+0007cf98  THROW this==NULL "hrcbot_server_core/Object.cpp" 286
+0007cfd0  THROW this==NULL "hrcbot_server_core/Object.cpp" 271
+0007d008  THROW this==NULL "hrcbot_server_core/Object.cpp" 255
+0007d040  THROW this==NULL "hrcbot_server_core/Object.cpp" 208
+0007d078  THROW this==NULL "hrcbot_server_core/Object.cpp" 163
+0007d0b0  THROW this==NULL "hrcbot_server_core/Object.cpp" 88
+0007d0fa  Object
+0007d121  NONE
+0007d12a  BBOX
+0007d133  OBB_YAW
+0007d13b  CUSTOM
+0007d142  VPHYSICS
+0007d168  6Object
+0007d194  %08x |
+0007d19b  log: NULL
+0007d1a8  THROW "hrcbot_server_core/Stream.cpp" 540
+0007d1d4  "hrcbot_server_core/Stream.cpp"
+0007d284  16DataOutputStream
+0007d2a4  15DataInputStream
+0007d2c4  16FileOutputStream
+0007d2e4  15FileInputStream
+0007d304  20BufferedOutputStream
+0007d328  19BufferedInputStream
+0007d35c  12OutputStream
+0007d36b  11InputStream
+0007d3d0  15TextInputStream
+0007d3e4  Loading relevant item and spawns
+0007d408  Relevant item and spawns loaded.
+0007d429  GameManager initializing
+0007d442  item_
+0007d448  info_player_deathmatch
+0007d45f  info_player_counterterrorist
+0007d47c  info_player_terrorist
+0007d492  info_player_start
+0007d4a4  GameManager initialized
+0007d51c  5TListI4ItemLb0EE
+0007d538  11TCollectionI4ItemLb0EE
+0007d58c  13TListIteratorI4ItemLb0EE
+0007d5b0  9TIteratorI4ItemLb0EE
+0007d658  15DummyGameModule
+0007d678  11IGameModule
+0007d6ec  13TListIteratorI4IBotLb0EE
+0007d710  9TIteratorI4IBotLb0EE
+0007d760  No bot manager available for this game.
+0007d78c  Unable to create a bot on this server ('%s').
+0007d7bc  THROW "hrcbot_server_core/GameManager_Bots.cpp" 223
+0007d7f0  "hrcbot_server_core/GameManager_Bots.cpp"
+0007d81c  THROW "hrcbot_server_core/GameManager_Bots.cpp" 273
+0007d850  Bot '%s' should spawn in %i
+0007d86d  Bot '%s' has spawn in %i
+0007d8fc  5TListI4IBotLb0EE
+0007d918  11TCollectionI4IBotLb0EE
+0007d977  func_brush
+0007d982  func_detail
+0007d98e  prop_static
+0007d99a  %s "%s"
+0007d9a3  jointeam %i
+0007d9af  team? '%s'
+0007d9c0  THROW this==NULL "hrcbot_server_core/Tools.cpp" 208
+0007d9f4  "hrcbot_server_core/Tools.cpp"
+0007da14  THROW this==NULL "hrcbot_server_core/Tools.cpp" 135
+0007da48  THROW this==NULL "hrcbot_server_core/Tools.cpp" 142
+0007da7c  THROW this==NULL "hrcbot_server_core/Tools.cpp" 65
+0007dab0  THROW "hrcbot_server_core/Tools.cpp" 330
+0007dadc  THROW "hrcbot_server_core/Tools.cpp" 542
+0007db28  24CGameMovementTraceFilter
+0007db50  28CAnalyserMovementTraceFilter
+0007db7c  THROW this==NULL "hrcbot_server_core/Door.cpp" 19
+0007dbae  "hrcbot_server_core/Door.cpp"
+0007dbec  4Door
+0007dc00  PlayerHurtEvent
+0007dc10  PlayerSpawnEvent
+0007dc21  PlayerDisconnectEvent
+0007dc37  PlayerDeathEvent
+0007dc48  THROW "hrcbot_server_core/Event.cpp" 223
+0007dc74  "hrcbot_server_core/Event.cpp"
+0007dd34  16PlayerDeathEvent
+0007dd54  21PlayerDisconnectEvent
+0007dd78  16PlayerSpawnEvent
+0007dd98  15PlayerHurtEvent
+0007ddb8  5Event
+0007de44  6TQueueI5EventLb1EE
+0007de64  5TListI5EventLb1EE
+0007de80  11TCollectionI5EventLb1EE
+0007decc  13TListIteratorI5EventLb1EE
+0007def0  9TIteratorI5EventLb1EE
+0007dfcc  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 266
+0007e004  "hrcbot_server_core/Bounds.cpp"
+0007e024  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 259
+0007e05c  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 214
+0007e094  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 203
+0007e0cc  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 196
+0007e104  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 187
+0007e13c  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 180
+0007e174  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 158
+0007e1ac  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 151
+0007e1e4  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 144
+0007e21c  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 137
+0007e254  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 130
+0007e28c  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 123
+0007e2c4  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 75
+0007e2f8  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 65
+0007e32c  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 85
+0007e360  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 47
+0007e394  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 27
+0007e3c8  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 173
+0007e400  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 40
+0007e434  THROW this==NULL "hrcbot_server_core/Bounds.cpp" 20
+0007e4a8  THROW this==NULL "hrcbot_server_core/Item.cpp" 76
+0007e4dc  THROW this==NULL "hrcbot_server_core/Item.cpp" 68
+0007e510  THROW this==NULL "hrcbot_server_core/Item.cpp" 49
+0007e542  "hrcbot_server_core/Item.cpp"
+0007e584  4Item
+0007e5cc  THROW this==NULL "hrcbot_server_core/Messages.cpp" 111
+0007e604  "hrcbot_server_core/Messages.cpp"
+0007e628  THROW this==NULL "hrcbot_server_core/Messages.cpp" 102
+0007e660  THROW this==NULL "hrcbot_server_core/Messages.cpp" 160
+0007e698  THROW this==NULL "hrcbot_server_core/Messages.cpp" 122
+0007e70c  10AllPlayers
+0007e724  16IRecipientFilter
+0007e760  THROW this==NULL "hrcbot_server_core/Player.cpp" 589
+0007e798  "hrcbot_server_core/Player.cpp"
+0007e7b8  THROW this==NULL "hrcbot_server_core/Player.cpp" 581
+0007e7f0  THROW this==NULL "hrcbot_server_core/Player.cpp" 535
+0007e828  THROW this==NULL "hrcbot_server_core/Player.cpp" 524
+0007e860  THROW this==NULL "hrcbot_server_core/Player.cpp" 514
+0007e898  THROW this==NULL "hrcbot_server_core/Player.cpp" 504
+0007e8d0  THROW this==NULL "hrcbot_server_core/Player.cpp" 492
+0007e908  THROW this==NULL "hrcbot_server_core/Player.cpp" 473
+0007e940  THROW this==NULL "hrcbot_server_core/Player.cpp" 463
+0007e978  THROW this==NULL "hrcbot_server_core/Player.cpp" 453
+0007e9b0  THROW this==NULL "hrcbot_server_core/Player.cpp" 443
+0007e9e8  THROW this==NULL "hrcbot_server_core/Player.cpp" 433
+0007ea20  THROW this==NULL "hrcbot_server_core/Player.cpp" 423
+0007ea58  THROW this==NULL "hrcbot_server_core/Player.cpp" 413
+0007ea90  THROW this==NULL "hrcbot_server_core/Player.cpp" 399
+0007eac8  THROW this==NULL "hrcbot_server_core/Player.cpp" 386
+0007eb00  THROW this==NULL "hrcbot_server_core/Player.cpp" 358
+0007eb38  THROW this==NULL "hrcbot_server_core/Player.cpp" 323
+0007eb70  THROW this==NULL "hrcbot_server_core/Player.cpp" 308
+0007eba8  THROW this==NULL "hrcbot_server_core/Player.cpp" 293
+0007ebe0  THROW this==NULL "hrcbot_server_core/Player.cpp" 278
+0007ec18  THROW this==NULL "hrcbot_server_core/Player.cpp" 141
+0007ec50  THROW this==NULL "hrcbot_server_core/Player.cpp" 338
+0007ec88  THROW this==NULL "hrcbot_server_core/Player.cpp" 190
+0007ecc0  THROW this==NULL "hrcbot_server_core/Player.cpp" 123
+0007ecf8  THROW this==NULL "hrcbot_server_core/Player.cpp" 102
+0007ed30  THROW this==NULL "hrcbot_server_core/Player.cpp" 77
+0007ed64  THROW "hrcbot_server_core/Player.cpp" 86
+0007ed90  THROW this==NULL "hrcbot_server_core/Player.cpp" 151
+0007edc8  THROW this==NULL "hrcbot_server_core/Player.cpp" 483
+0007ee3d  ?NO-INFO?
+0007ee5f  Player
+0007eed8  6Player
+0007ef08  6INamed
+0007ef33  <THROW this==NULL "hrcbot_server_core/Button.cpp" 18
+0007ef68  "hrcbot_server_core/Button.cpp"
+0007efa4  6Button
+0007efb8  THROW this==NULL "hrcbot_server_core/Weapon.cpp" 32
+0007efec  "hrcbot_server_core/Weapon.cpp"
+0007f028  6Weapon
+0007f03c  THROW "hrcbot_server_core/GameManager_Players.cpp" 24
+0007f074  "hrcbot_server_core/GameManager_Players.cpp"
+0007f0c0  28HurricaneUniformRandomStream
+0007f0f4  20IUniformRandomStream
+0007f12f  /Poseidon::Poseidon
+0007f143  Poseidon::analyseMap(%s,%i)
+0007f15f  spawn@%{Vector}
+0007f16f  Poseidon::analyseMap() done
+0007f18c  THROW this==NULL "hrcbot_server_map1/Poseidon.cpp" 43
+0007f1c4  "hrcbot_server_map1/Poseidon.cpp"
+0007f1e8  Poseidon::analyseMap() Retrieve the spawn points
+0007f21c  Poseidon::analyseMap() Flood instance
+0007f244  Poseidon::analyseMap() Flood init
+0007f268  Poseidon::analyseMap() Flood start
+0007f28c  Poseidon::analyseMap() Flood done
+0007f2ec  8Poseidon
+0007f310  4IMap
+0007f34f  ATHROW this==NULL "hrcbot_server_map1/Dedale_spreadNetwork.cpp" 20
+0007f394  "hrcbot_server_map1/Dedale_spreadNetwork.cpp"
+0007f3c4  THROW "hrcbot_server_core/TSortedList.h" 120
+0007f3f4  "hrcbot_server_core/TSortedList.h"
+0007f418  THROW "hrcbot_server_core/TSortedList.h" 142
+0007f448  THROW this==NULL "hrcbot_server_map1/Dedale_spreadNetwork.cpp" 134
+0007f4fc  11TSortedListI4NodeLb0EE
+0007f524  5TListI4NodeLb0EE
+0007f540  11TCollectionI4NodeLb0EE
+0007f58c  13TListIteratorI4NodeLb0EE
+0007f5b0  9TIteratorI4NodeLb0EE
+0007f693  FTHROW this==NULL "hrcbot_server_map1/Dedale_analyseMap.cpp" 83
+0007f6d4  "hrcbot_server_map1/Dedale_analyseMap.cpp"
+0007f6ff  dod_control_point
+0007f711  worldspawn
+0007f71c  func_button
+0007f728  func_door
+0007f732  ctf_combine_player_spawn
+0007f74b  ctf_rebel_player_spawn
+0007f762  info_player_allies
+0007f775  info_player_axis
+0007f786  info_player_combine
+0007f79a  info_player_rebel
+0007f7ac  dod_capture_area
+0007f7bd  ctf_rebel_flag
+0007f7cc  ctf_combine_flag
+0007f7dd  weapon_
+0007f7e5  func_
+0007f7eb  env_lightglow
+0007f7f9  ambient_generic
+0007f809  env_soundscape
+0007f818  infodecal
+0007f822  env_smokestack
+0007f831  team_manager
+0007f83e  soundent
+0007f847  bodyque
+0007f84f  ai_network
+0007f85a  env_sprite
+0007f865  point_spotlight
+0007f875  info_target
+0007f881  env_flare
+0007f88b  game_text
+0007f895  ctf_location_name
+0007f8a7  point_viewcontrol
+0007f9ac  13TListIteratorI4RoomLb0EE
+0007f9d0  9TIteratorI4RoomLb0EE
+0007fa4c  13TListIteratorI6ObjectLb0EE
+0007fa74  9TIteratorI6ObjectLb0EE
+0007fac0  THROW this==NULL "hrcbot_server_map1/Arc.cpp" 42
+0007faf4  THROW this==NULL "hrcbot_server_map1/Arc.cpp" 35
+0007fb28  THROW this==NULL "hrcbot_server_map1/Arc.cpp" 28
+0007fb5c  THROW this==NULL "hrcbot_server_map1/Arc.cpp" 20
+0007fb90  THROW this==NULL "hrcbot_server_map1/Arc.cpp" 12
+0007fbc1  "hrcbot_server_map1/Arc.cpp"
+0007fbe0  THROW this==NULL "hrcbot_server_map1/Gateway.cpp" 67
+0007fc18  "hrcbot_server_map1/Gateway.cpp"
+0007fc3c  THROW this==NULL "hrcbot_server_map1/Gateway.cpp" 46
+0007fc74  THROW this==NULL "hrcbot_server_map1/Gateway.cpp" 39
+0007fcac  THROW this==NULL "hrcbot_server_map1/Gateway.cpp" 32
+0007fce4  THROW this==NULL "hrcbot_server_map1/Gateway.cpp" 24
+0007fd1c  THROW this==NULL "hrcbot_server_map1/Gateway.cpp" 60
+0007fd54  THROW this==NULL "hrcbot_server_map1/Gateway.cpp" 53
+0007fd8c  THROW this==NULL "hrcbot_server_map1/Gateway.cpp" 14
+0007fdc4  THROW this==NULL "hrcbot_server_map1/Dedale_saveMap.cpp" 21
+0007fe00  "hrcbot_server_map1/Dedale_saveMap.cpp"
+0007fe28  addons/hrcbot_server_plugin/%s-%i.hrcbot
+0007fe54  Hurricane Bot ver 1.3.4-hl2sdk-amsdk20130427 (130501)
+0007fe8a  addons/hrcbot_server_plugin
+0007fea8  THROW this==NULL "hrcbot_server_map1/Node.cpp" 530
+0007fedc  THROW this==NULL "hrcbot_server_map1/Node.cpp" 523
+0007ff10  THROW this==NULL "hrcbot_server_map1/Node.cpp" 516
+0007ff44  THROW this==NULL "hrcbot_server_map1/Node.cpp" 212
+0007ff78  THROW this==NULL "hrcbot_server_map1/Node.cpp" 205
+0007ffac  THROW this==NULL "hrcbot_server_map1/Node.cpp" 198
+0007ffe0  THROW this==NULL "hrcbot_server_map1/Node.cpp" 191
+00080014  THROW this==NULL "hrcbot_server_map1/Node.cpp" 176
+00080048  THROW this==NULL "hrcbot_server_map1/Node.cpp" 169
+0008007c  THROW this==NULL "hrcbot_server_map1/Node.cpp" 162
+000800b0  THROW this==NULL "hrcbot_server_map1/Node.cpp" 97
+000800e4  THROW this==NULL "hrcbot_server_map1/Node.cpp" 90
+00080118  THROW this==NULL "hrcbot_server_map1/Node.cpp" 83
+0008014c  THROW this==NULL "hrcbot_server_map1/Node.cpp" 62
+00080180  THROW this==NULL "hrcbot_server_map1/Node.cpp" 76
+000801b4  THROW this==NULL "hrcbot_server_map1/Node.cpp" 69
+000801e8  THROW this==NULL "hrcbot_server_map1/Node.cpp" 184
+0008021c  THROW this==NULL "hrcbot_server_map1/Node.cpp" 50
+00080250  THROW this==NULL "hrcbot_server_map1/Node.cpp" 104
+00080284  THROW this==NULL "hrcbot_server_map1/Node.cpp" 135
+000802b8  THROW this==NULL "hrcbot_server_map1/Node.cpp" 122
+000802ec  THROW this==NULL "hrcbot_server_map1/Node.cpp" 496
+00080320  THROW this==NULL "hrcbot_server_map1/Node.cpp" 477
+00080354  THROW this==NULL "hrcbot_server_map1/Node.cpp" 458
+00080388  THROW this==NULL "hrcbot_server_map1/Node.cpp" 439
+000803bc  THROW this==NULL "hrcbot_server_map1/Node.cpp" 351
+000803f0  THROW this==NULL "hrcbot_server_map1/Node.cpp" 331
+00080424  THROW this==NULL "hrcbot_server_map1/Node.cpp" 311
+00080458  THROW this==NULL "hrcbot_server_map1/Node.cpp" 291
+0008048c  THROW this==NULL "hrcbot_server_map1/Node.cpp" 240
+000804c0  THROW this==NULL "hrcbot_server_map1/Node.cpp" 223
+000804f4  THROW this==NULL "hrcbot_server_map1/Node.cpp" 388
+00080528  THROW this==NULL "hrcbot_server_map1/Node.cpp" 371
+0008055c  THROW this==NULL "hrcbot_server_map1/Node.cpp" 274
+00080590  THROW this==NULL "hrcbot_server_map1/Node.cpp" 257
+000805c4  THROW this==NULL "hrcbot_server_map1/Node.cpp" 422
+000805f8  THROW this==NULL "hrcbot_server_map1/Node.cpp" 405
+0008062c  THROW this==NULL "hrcbot_server_map1/Node.cpp" 142
+00080663  "hrcbot_server_map1/Node.cpp"
+0008072c  13TListIteratorI3ArcLb0EE
+00080750  9TIteratorI3ArcLb0EE
+000807fc  5TListI3ArcLb0EE
+00080818  11TCollectionI3ArcLb0EE
+00080874  THROW this==NULL "hrcbot_server_map1/Dedale_optimizeRooms.cpp" 10
+000808b8  "hrcbot_server_map1/Dedale_optimizeRooms.cpp"
+000808e8  WARNING: weird 2  Room@%p %4i nodes %10.0f superficy %{Bounds} (ignored)
+00080934  THROW this==NULL "hrcbot_server_map1/Dedale_loadMap.cpp" 129
+00080974  "hrcbot_server_map1/Dedale_loadMap.cpp"
+0008099c  THROW this==NULL "hrcbot_server_map1/Dedale_loadMap.cpp" 151
+000809dc  File %s is broken (%x/%i). size=%d. lastbytepos=%d
+00080a10  There is something rotten in this filesystem behavior
+00080a4c  THROW this==NULL "hrcbot_server_map1/Room.cpp" 260
+00080a80  THROW this==NULL "hrcbot_server_map1/Room.cpp" 246
+00080ab4  THROW this==NULL "hrcbot_server_map1/Room.cpp" 239
+00080ae8  THROW this==NULL "hrcbot_server_map1/Room.cpp" 125
+00080b1c  THROW this==NULL "hrcbot_server_map1/Room.cpp" 118
+00080b50  THROW this==NULL "hrcbot_server_map1/Room.cpp" 56
+00080b84  THROW "hrcbot_server_map1/Room.cpp" 43
+00080bac  THROW this==NULL "hrcbot_server_map1/Room.cpp" 171
+00080be0  THROW this==NULL "hrcbot_server_map1/Room.cpp" 102
+00080c14  THROW this==NULL "hrcbot_server_map1/Room.cpp" 111
+00080c48  THROW this==NULL "hrcbot_server_map1/Room.cpp" 70
+00080c7c  THROW this==NULL "hrcbot_server_map1/Room.cpp" 86
+00080cb0  THROW this==NULL "hrcbot_server_map1/Room.cpp" 26
+00080ce4  THROW this==NULL "hrcbot_server_map1/Room.cpp" 63
+00080d18  THROW this==NULL "hrcbot_server_map1/Room.cpp" 253
+00080d4c  THROW this==NULL "hrcbot_server_map1/Room.cpp" 132
+00080d80  THROW this==NULL "hrcbot_server_map1/Room.cpp" 180
+00080db4  THROW this==NULL "hrcbot_server_map1/Room.cpp" 323
+00080de8  THROW this==NULL "hrcbot_server_map1/Room.cpp" 267
+00080e1f  "hrcbot_server_map1/Room.cpp"
+00080e8c  13TListIteratorI7GatewayLb0EE
+00080eb4  9TIteratorI7GatewayLb0EE
+00080f40  12TSetIteratorI4NodeLb0ELi127EE
+00080fbc  5TListI4RoomLb0EE
+00080fd8  11TCollectionI4RoomLb0EE
+0008109c  5TListI7GatewayLb0EE
+000810bc  11TCollectionI7GatewayLb0EE
+00081160  4TSetI4NodeLb0ELi127EE
+00081178  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 397
+000811b0  "hrcbot_server_map1/Dedale.cpp"
+000811d0  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 315
+00081208  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 290
+00081240  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 108
+00081278  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 322
+000812b0  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 308
+000812e8  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 331
+00081320  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 377
+00081358  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 364
+00081390  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 356
+000813c8  THROW this==NULL "hrcbot_server_map1/Dedale.cpp" 349
+00081411  Bad Z
+00081474  6Dedale
+000814fc  5TListI6ObjectLb0EE
+00081518  11TCollectionI6ObjectLb0EE
+00081577  FTHROW this==NULL "hrcbot_server_map1/Dedale_buildGateways.cpp" 10
+000815bc  "hrcbot_server_map1/Dedale_buildGateways.cpp"
+00081600  5Plane
+00081620  10BlockQueue
+00081638  10BlockStack
+00081668  THROW this==NULL "hrcbot_server_map1/Dedale_buildRooms.cpp" 12
+000816a8  "hrcbot_server_map1/Dedale_buildRooms.cpp"
+000816d4  THROW this==NULL "hrcbot_server_map1/Dedale_raster.cpp" 10
+00081710  "hrcbot_server_map1/Dedale_raster.cpp"
+0008177f  BTHROW this==NULL "hrcbot_server_map1/NetworkRaster.cpp" 91
+000817bc  "hrcbot_server_map1/NetworkRaster.cpp"
+000817e4  THROW this==NULL "hrcbot_server_map1/NetworkRaster.cpp" 84
+00081820  THROW this==NULL "hrcbot_server_map1/NetworkRaster.cpp" 77
+0008185c  THROW this==NULL "hrcbot_server_map1/NetworkRaster.cpp" 23
+00081898  THROW this==NULL "hrcbot_server_map1/NetworkRaster.cpp" 63
+000818d4  THROW this==NULL "hrcbot_server_map1/NetworkRaster.cpp" 32
+00081913  @THROW "hrcbot_server_map1/Dedale_buildPaths.cpp" 98
+00081948  "hrcbot_server_map1/Dedale_buildPaths.cpp"
+00081973  Adding flood at (%5i,%5i,%5i)
+00081991  NewMaxDelta: %s %08x %04x
+000819ab  NewMaxAlt: %s %08x %04x
+000819c3  Linked to higher step: %i
+000819dd  void Flood::flood()
+000819f1  Flooding ...
+000819fe  Block count : %i
+00081a0f  Phase1 lasted %i seconds
+00081a28  GOT %04x * %7i
+00081a37  Filtering pass ...
+00081a4a  	Dir#%i seems Contact
+00081a60  Max error count reached
+00081a78  Phase2 lasted %i seconds
+00081a91  %i Planes created
+00081aa3  %i Blocks still in the set
+00081abe  Phase3 lasted %i seconds
+00081ad7  Storage pass ...
+00081ae8  POSEIDON
+00081af1  BLOCK
+00081af7  PLANES
+00081b02  Storage lasted %i seconds
+00081b1c  Block limit reached (%i).  Skipping flooding.
+00081b4c  %9i | +=%9i -=%9i =%9i #%5i H=%5i Q=%5i(%5i) q=%5i(%5i) S=%6i A=%6i a=%6i r=%i
+00081b9c  Warning: %c%c %8x %5i %5i %5i %5i %5i %5i %6x (%2x) %8x %8x %8x %8x %8x %8x
+00081be8  	Dir#%i seems Empty or Blocked
+00081c08  Block: %8x %5i %5i %5i %5i %5i %5i %6x %8x %8x %8x %8x %8x %8x %i %i %i
+00081c50  Plane(%5i,%2i) {%6i,%6i,%6i}-{%6i,%6i,%6i}
+00081c7c  addons/hrcbot_server_plugin/%s-%i.hrcbot2
+00081e8c  13TListIteratorI5PlaneLb0EE
+00081eb0  9TIteratorI5PlaneLb0EE
+00081f5c  5TListI5PlaneLb0EE
+00081f78  11TCollectionI5PlaneLb0EE
+00082020  4TSetI5BlockLb0ELi2097152EE
+00082044  11TCollectionI5BlockLb0EE
+000820a0  12TSetIteratorI5BlockLb0ELi2097152EE
+000820d0  9TIteratorI5BlockLb0EE
+0008214c  13TListIteratorI5BlockLb0EE
+0008221c  11TSortedListI5BlockLb0EE
+00082244  5TListI5BlockLb0EE
+000822b6  5?THROW this==NULL "hrcbot_server_map1/Room_divideWith.cpp" 203
+000822f8  "hrcbot_server_map1/Room_divideWith.cpp"
+00082324  THROW this==NULL "hrcbot_server_map1/Network.cpp" 423
+0008235c  "hrcbot_server_map1/Network.cpp"
+00082380  THROW this==NULL "hrcbot_server_map1/Network.cpp" 397
+000823b8  THROW this==NULL "hrcbot_server_map1/Network.cpp" 344
+000823f0  THROW this==NULL "hrcbot_server_map1/Network.cpp" 153
+00082428  THROW this==NULL "hrcbot_server_map1/Network.cpp" 404
+00082460  THROW this==NULL "hrcbot_server_map1/Network.cpp" 435
+00082498  THROW this==NULL "hrcbot_server_map1/Network.cpp" 175
+000824d0  THROW this==NULL "hrcbot_server_map1/Network.cpp" 384
+00082508  THROW this==NULL "hrcbot_server_map1/Network.cpp" 355
+00082540  THROW this==NULL "hrcbot_server_map1/Network.cpp" 31
+00082578  THROW this==NULL "hrcbot_server_map1/Network.cpp" 411
+000825b0  THROW this==NULL "hrcbot_server_map1/Network.cpp" 288
+000825e8  THROW this==NULL "hrcbot_server_map1/Network.cpp" 234
+00082620  THROW this==NULL "hrcbot_server_map1/Network.cpp" 146
+00082658  THROW this==NULL "hrcbot_server_map1/Network.cpp" 259
+00082690  THROW this==NULL "hrcbot_server_map1/Network.cpp" 443
+000826c8  THROW this==NULL "hrcbot_server_map1/Network.cpp" 205
+00082700  THROW this==NULL "hrcbot_server_map1/Network.cpp" 313
+00082738  THROW this==NULL "hrcbot_server_map1/Network.cpp" 99
+00082770  THROW this==NULL "hrcbot_server_map1/Network.cpp" 56
+000827a8  THROW this==NULL "hrcbot_server_map1/Network.cpp" 372
+00082830  17MySolidEnumerator
+00082860  18MyEntityEnumerator
+000828d8  10PathMaster
+00082900  11IPathfinder
+0008297c  6TStackI4RoomLb0EE
+000829d0  THROW this==NULL "hrcbot_server_map1/Dedale_buildRoom.cpp" 10
+00082a10  "hrcbot_server_map1/Dedale_buildRoom.cpp"
+00082a3c  WARNING: Forgotten nodes added: %i
+00082a60  Hurricane Bot ver 1.3.4-hl2sdk-amsdk20130427 (130501), by Hurricane
+00082aa4  ServerActivate(edict_t@%p,count=%i,max_clients=%i)
+00082ad8  es_xset hrcbot_version "1.3.4-hl2sdk-amsdk20130427 Built: May  1 2013 10:28:16"
+00082b2c  es_xmakepublic hrcbot_version
+00082b4c  Logging Hurricane Bot Server Plugin loading steps ...
+00082b84  Hurricane Bot hrcbot_server_plugin Load@%p
+00082bb0  Hurricane Bot Run-Time checks enabled: %i
+00082bdc  Unable to connect to interface %s
+00082c00  Unable to connect to all the required interfaces : giving up
+00082c40  Hurricane Bot Server Plugin loaded
+00082c63  ISERVERPLUGINCALLBACKS002
+00082c7d  title
+00082c83  Built: May  1 2013 10:28:16
+00082c9f  color
+00082ca5  level
+00082cab  ClientDisconnect:
+00082cbd  	Handled bots: %i
+00082ccf  	Handled players: %i
+00082ce4  ClientDisconnect: (NULL)
+00082cfd  ClientActive:
+00082d0b  LevelShutdown:
+00082d1a  LevelInit:
+00082d25  ServerActivate:
+00082d35  	IMap: %p
+00082d3f  Unload:
+00082d47  hrcbot_server_plugin Load@%p
+00082d64  PlayerInfoManager002
+00082d79  %s: %p
+00082d80  BotManager001
+00082d8e  VEngineServer021
+00082d9f  GAMEEVENTSMANAGER001
+00082db4  VFileSystem022
+00082dc3  ISERVERPLUGINHELPERS001
+00082ddb  EngineTraceServer003
+00082df0  VEngineCvar004
+00082dff  ServerGameEnts001
+00082e11  VSERVERTOOLS002
+00082e21  VSERVERCHOREOTOOLS001
+00082e37  MapData001
+00082e42  VClientEntityList003
+00082e57  StaticPropMgrServer002
+00082e6e  GlobalVars : %p
+00082efc  25CHurricaneBotServerPlugin
+00082f50  22IServerPluginCallbacks
+00082f69  18IGameEventListener
+00082ff0  The bots were disabled at map load time.  Unable to add a bot.
+00083030  hrcbot_add can only work with 'hrcbot_autobalancebots 0'
+0008306c  Sets the minimum number of players
+00083090  Bots will balance down to this number of players
+000830c4  As long as the minplayers and maxplayers conditions are respected, the plugin will try to get at least this number of bots ingame.
+00083148  Force the bot into a preset team. -1=balanced teams; 0=deathmatch*; 1=spectator*; 2=combine; 3=rebels. (*does not make sense in HL2DM)
+000831d0  Set this to 0 to disable min,max,preferred and forceteam features.  hrcbot_add can only work in this mode.
+0008323c  Start filling the game with bots only if there are already players in it
+00083288  When the last human player leaves the game, the bots are disabled.
+000832cc  ie: smg1 pistol 357 crossbow shotgun ar2 frag rpg
+00083300  Set this to 0 for a very strong bot.  Set a higher integer for your little sister (100).
+0008335c  Set this to anything else than 0 to disable the bot chatter (default is 0).
+000833a8  When a player spawn, the bot will leave him alone for until this time has elapsed (1/60 seconds units)
+00083410  The bot will only use the crowbar
+00083434  Set this to 0 to disable the plugin notification
+00083468  Set this to 0 to prevent the bot from changing weapons
+000834a0  The bot will assume that a player with at least this amount of health is spawn protected.  The default value will change once the new version of 'Spawn & Chat Protect' is available (http://www.esteticas.se/catman.php)
+0008357c  All the bots will use the specified model.  Use '*' for the default random choice.
+000835d0  If enabled, the bot version will be displayed on each user's screen as they connect
+00083624  On some modded servers, the kick command does not work.  You can define what command will kick a player with this cvar.
+0008369c  If set to 0, the bots will cease all activity and the map will not be analysed at load time.  If you re-enable the bot in a level with an unanalysed map, you will have to change the level again to get it analyzed.
+00083774  If set to 1, the plugin will log critical sections of the status of the bots
+000837c4  List of the weapons known to the bots
+000837ec  weapon_smg1 weapon_pistol weapon_shotgun weapon_357 weapon_crossbow weapon_ar2 weapon_frag weapon_stunstick weapon_crowbar weapon_physcannon
+0008387c  Logs information about the internals of the bot on the console
+000838bc  When a player spawn, the bot will leave him alone for until this time has elapsed (seconds units).  Modifies hrcbot_spawnprotectiontime
+00083944  Add a bot.  You can use an optional [team] parameter. It should be 2 for combine or 3 for rebels.
+000839a8  Removes a bot. You can use an optional [team] parameter. It should be 2 for combine or 3 for rebels.
+00083a10  hrcbot_do "bot name" command : The bot will execute the command as himself. '"' are mandatory for composed names.
+00083a84  trace: allsolid=%i contents=%i dispFlags=%04x fraction=%f fractionleftsolid=%f hitbox=%i hitgroup=%i physicsbone=%i
+00083af8  	plane: dist=%f normal=%f,%f,%f pad=%i:%i signbits=%x type=%i
+00083b36  	surface: flags=%x name='%s' surfaceProps=%i
+00083b64  hrcbot_info: Hurricane Bot ver 1.3.4-hl2sdk-amsdk20130427 (130501) ; Built: May  1 2013 10:28:17 ; public release = %i
+00083bdc  These information are meant for debugging and are subject to change.
+00083c24  hrcbot_spawnprotectedhealth=%i
+00083c44  	[%3i] Name='%s' Team=%i (%i) Health=%i Armor=%i Frags=%i Deaths=%i Model='%s' Weapon='%s' Connected=%i Dead=%i Fake=%i Observer=%i Player=%i Protected=%i Solid=%i Valid=%i | BA={%s,%i,%i,%i,%i} P={%s,%f,%i,%i}
+00083d18  	[%3i] Name='%s' Team=%i Health=%i Armor=%i Frags=%i Deaths=%i Model='%s' Weapon='%s' Connected=%i Dead=%i Fake=%i Observer=%i Player=%i Protected=%i Solid=%i Valid=%i
+00083dc0  The bots were disabled at map load time.
+00083dec  hrcbot_kick can only work with 'hrcbot_autobalancebots 0'
+00083e26  hrcbot_spawnprotectiontime %i
+00083e44  hrcbot_minplayers
+00083e56  hrcbot_maxplayers
+00083e68  hrcbot_preferredcount
+00083e81  hrcbot_forceteam
+00083e92  hrcbot_autobalancebots
+00083ea9  hrcbot_waitforplayers
+00083ebf  hrcbot_freezeifnoplayers
+00083ed8  smg1
+00083edd  hrcbot_player_spawnweapon
+00083ef7  hrcbot_handicap
+00083f07  hrcbot_mute
+00083f13  hrcbot_spawnprotectiontime
+00083f2e  hrcbot_crowbarmaniacs
+00083f44  hrcbot_motd
+00083f50  hrcbot_autoweaponswitch
+00083f6c  hrcbot_spawnprotectedhealth
+00083f88  hrcbot_playermodel
+00083f9b  hrcbot_dialogmsg
+00083fac  hrcbot_kickcommand
+00083fbf  hrcbot_enabled
+00083fce  hrcbot_notifycriticals
+00083fe5  hrcbot_knownweapons
+00083ff9  hrcbot_info
+00084008  hrc__LINE__
+00084014  hrcbot_fire
+00084020  hrcbot_move
+0008402c  1800
+00084039  hrcbot_spawnprotectionseconds
+00084057  hrcbot_add
+00084062  hrcbot_kick
+0008406e  DEBUG
+00084074  hrcbot_analyseground
+00084089  hrcbot_do
+00084093  game::teamplay: %i
+000840a6  hrcbot_enabled=%i
+000840b8  hrcbot_minplayers=%i
+000840cd  hrcbot_maxplayers=%i
+000840e2  hrcbot_preferredcount=%i
+000840fb  hrcbot_forceteam=%i
+0008410f  hrcbot_autobalancebots=%i
+00084129  hrcbot_kickcommand=%s
+0008413f  hrcbot_waitforplayers=%i
+00084158  hrcbot_freezeifnoplayers=%i
+00084174  hrcbot_player_spawnweapon=%s
+00084191  hrcbot_handicap=%i
+000841a4  hrcbot_mute=%i
+000841b3  hrcbot_spawnprotectiontime=%i
+000841d1  hrcbot_crowbarmaniacs=%i
+000841ea  hrcbot_motd=%i
+000841f9  hrcbot_autoweaponswitch=%i
+00084214  hrcbot_playermodel=%s
+0008422a  hrcbot_dialogmsg=%i
+0008423e  hrcbot_knownweapons=%s
+00084255  Hurricane@%p
+00084262  bots count=%i
+00084270  !!!ERROR!!!
+0008427c  	[%3i] edict is NULL
+00084291  players count=%i
+000842a2  		ID='%s'
+000842ac  hrcbot_info : DONE
+000842bf  Kicking bot '%s'
+000842d1  No matching bot found
+000842e8  [%i] '%s'
+000842f3  Not enough parameters
+00084309  Unknown bot
+00084315  '%s' will do '%s'
+00084328  DelayedAttack
+00084350  22ConCommandBaseAccessor
+00084374  23IConCommandBaseAccessor
+000843ec  11HL2DMModule
+00084408  player_hurt
+00084414  userid
+0008441b  attacker
+00084424  player_disconnect
+00084436  reason
+0008443d  networkid
+00084447  player_death
+00084454  scp_start
+0008445e  scp_end
+00084466  CreateInterface
+00084476  _i486.so
+0008447f  No such file
+0008448c  bin/
+00084491  %s/%s
+00084497  %s/bin/%s
+000844a1  -allowdebug
+000844ad  BuiltDebug
+000844b8  Module %s is a debug build
+000844d4  DLOPEN Error:%s
+000844e8   failed to dlopen %s error=%s
+00084518  16CDllDemandLoader
+00084534  [$WIN32]
+0008453d  %s, 
+00084542  (*%s*), 
+0008454b   ReadToken overflow
+0008455f  %f %f %f %f
+0008456e  %I64i
+00084574  Assertion Failed: 0
+00084588  TODO: implement _wtoi
+000845a7  "		"
+000845ac  0x%016I64X
+000845bd  #include is NULL 
+000845cf  #base
+000845d5  #base is NULL 
+000845e4  LoadFromBuffer: missing {
+000845fe  #include
+00084607  unknown
+00084610  TODO: implement wide char functions
+00084638  KeyValues Error: %s in file %s
+00084658  /home/ediazfer/src/AMSDK20130501/utils/hrcbot/../../tier1/KeyValues.cpp
+000846a0  KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
+000846e4  KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
+00084724  RecursiveLoadFromBuffer:  got EOF instead of keyname
+0008475c  RecursiveLoadFromBuffer:  got empty keyname
+00084788  RecursiveLoadFromBuffer:  got NULL key
+000847b0  RecursiveLoadFromBuffer:  got } in key
+000847d8  RecursiveLoadFromBuffer:  got conditional between key and value
+00084818  KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
+000849c4  21CUtlCStringConversion
+000849e8  18CUtlCharConversion
+00084a20  19CUtlNoEscConversion
+00084a36  VStudioRender025
+00084a47  VGUI_ivgui008
+00084a55  VGUI_Input005
+00084a63  VGUI_Panel009
+00084a71  VGUI_Surface030
+00084a81  VGUI_Scheme010
+00084a90  VGUI_System010
+00084a9f  VGUI_Localize004
+00084ab0  MatSystemSurface006
+00084ac4  VDataCache003
+00084ad2  MDLCache004
+00084ade  VAvi001
+00084ae6  VBik001
+00084aee  VDmeMakeFileUtils001
+00084b03  VPhysicsCollision007
+00084b18  VSoundEmitter002
+00084b29  VFileSystem019
+00084b38  VMaterialSystem079
+00084b4b  InputSystemVersion001
+00084b61  NetworkSystemVersion001
+00084b79  DebugTextureInfo001
+00084b8d  VBAllocTracker001
+00084b9f  COLORCORRECTION_VERSION_1
+00084bb9  VP4001
+00084bc0  VMDLLIB001
+00084bcb  QueuedLoaderVersion001
+00084be4  MaterialSystemHardwareConfig012
+00084c28   game
+00084c2e   client
+00084c36   archive
+00084c3f   notify
+00084c47   singleplayer
+00084c55   notconnected
+00084c63   cheat
+00084c6a   replicated
+00084c76   server_can_execute
+00084c8a   clientcmd_can_execute
+00084ca1  {}()':
+00084ca8  "%s" = "%s"
+00084cb4   ( def. "%s" )
+00084cc3   min. %f
+00084ccc   max. %f
+00084cd5   - %s
+00084cdc  ConVarRef %s doesn't point to an existing ConVar
+00084d10  ** NOTE: The real value is %.3f but the server has temporarily restricted it to %.3f **
+00084d6c  CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
+00084dc8  CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!
+00084f14  6ConVar
+00084f40  10ConCommand
+00084f5c  14ConCommandBase
+00084f80  7IConVar
+00084fa8  16CDefaultAccessor
+00085040  12CEmptyConVar
+0008505c  20ConVar_ServerBounded
+000850ab  8V_AppendSlash: ran out of space on %s.
+000850d4  V_MakeAbsolutePath: _getcwd failed.
+000850f8  V_MakeAbsolutePath: tried to ".." past the root.
+0008512c  %02x
+00085139   bytes
+00085140  %i%s
+00085145  %%.%if%s
+0008515c  %03d,
+00085162  %03d
+00085187  >VProcessUtils001
+000852a8  33s?
+00085309  .M;R
+00085330  333333
+0008824d  zPLR
+00092471  zRPL
+000965ed  r""\\
+00096a7f  {GCC: (Debian 4.4.5-8) 4.4.5
+00096a9d  GCC: (GNU) 4.2.2
+00096aaf  GCC: (GNU) 4.2.2
+00096ac0  GCC: (GNU) 4.2.4
+00096ad2  .shstrtab
+00096adc  .note.gnu.build-id
+00096aef  .gnu.hash
+00096af9  .dynsym
+00096b01  .dynstr
+00096b09  .gnu.version
+00096b16  .gnu.version_r
+00096b25  .rel.dyn
+00096b2e  .rel.plt
+00096b37  .init
+00096b3d  .text
+00096b43  .fini
+00096b49  .rodata
+00096b51  .eh_frame_hdr
+00096b5f  .eh_frame
+00096b69  .gcc_except_table
+00096b7b  .ctors
+00096b82  .dtors
+00096b89  .jcr
+00096b8e  .dynamic
+00096b97  .got
+00096b9c  .got.plt
+00096ba5  .data
+00096bab  .bss
+00096bb0  .comment

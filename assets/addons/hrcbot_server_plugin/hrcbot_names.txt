@@ -1,0 +1,58 @@
+	Zeus
+	Poseidon
+	Hades
+	Hestia
+	Hera
+	Ares
+	Athena
+	Apollo
+	Aphrodite
+	Hermes
+	Artemis
+	Hephaestus 
+	Gaea
+	Uranus
+	Cronus
+	Rhea
+	Oceanus
+	Tethys
+	Hyperion
+	Mnemosyne
+	Themis
+	Iapetus
+	Coeus
+	Crius
+	Phoebe
+	Thea
+	Prometheus
+	Epimetheus
+	Atlas
+	Metis 
+	Demeter
+	Persephone
+	Dionysus
+	Eros
+	Hebe
+	Eris
+	Helios
+	Thanatos
+	Pan
+	Nemesis
+	Brontes
+	Steropes
+	Arges
+	Briareus
+	Cottus
+	Gyges
+	Typhoeus
+	Cerberus
+
+The names will only be read until an empty line is found ...
+So these two paragraphs lines will be ignored.
+Note: USE WORPAD OR A REAL EDITOR TO CHANGE THIS. (One supporting Unix EOL)
+NOTEPAD WILL NOT WORK
+
+Les noms sont lus jusqu'à la premier ligne vide.
+Donc les deux paragraphes à la fin de ce fichier seront ignorés.
+Note: UTILISEZ WORDPAD OU UN VERITABLE EDITEUR POUR MODIFIER CE FICHIER. (Un qui supporte les fin de ligne Unix)
+NOTEPAD NE MARCHERA PAS

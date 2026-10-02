@@ -1,0 +1,5 @@
+"Metamod Plugin"
+{
+	"alias"		"hrcbot"
+	"file"		"addons/hrcbot_mm"
+}

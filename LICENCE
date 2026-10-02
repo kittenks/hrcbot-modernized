@@ -1,0 +1,22 @@
+HURRICANE BOT (HRCBOT) - LICENCE
+================================
+
+Original work by "Hurricane" (hurricane.bot@gmail.com).
+The bot is FREE for everybody. It CANNOT be sold.
+
+You may use the bot in any Source-engine game it can run in.
+If you repack the binaries (mod packages, different directory layout, ...),
+you must always include all of the original text files (LICENCE.TXT,
+README.TXT, LISEZMOI.TXT, IMPORTANT.TXT).  Those are preserved verbatim under
+docs/original/.
+
+USAGE IS AT YOUR OWN RISK.
+
+Modernized reconstruction
+---------------------------
+This tree is a clean-room, syntax-modernized reconstruction of the 2013 binary
+(Hurricane Bot 1.3.4) built against Metamod:Source 1.12 and the hl2sdk
+hl2dm branch.  It is distributed under the same freeware, non-commercial
+terms as the original.  The original source code was never published, so the
+behavioural modules (map analysis and pathfinding) are functional reimplementations
+derived from the binary's observable interface, not a byte-exact translation.

@@ -1,0 +1,22 @@
+Since some people seems to be totally unaware of basic (n)etiquette or respect of somebody else's work ...
+
+The bot is free for everybody.  It cannot be sold.
+
+You can use the bot in whatever game it can work (many Source-engine games).
+
+If for whatever reason you repack the binaries (packages of mods, other directory structure, ...), you always must include all of the original texts files (LICENCE.TXT, README.TXT, LISEZMOI.TXT).
+
+Of course the usage of this binary is at your own risk (didn't got any complains though)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Vu qu'il y a des gens complètement ignorant des règles de bonne conduite ou du respect du travail d'autrui ...
+
+Le bot est gratuit pout tout le monde.  Il ne peut être vendu.
+
+Vous pouvez utiliser le bot dans n'importe quel jeu où il fonctionne (les jeux basés sur le moteur Source)
+
+Si pour quelque raison vous réarchivez les binaires (ensemble de mods, stucture de répertoires différente), vous devez toujours y inclure tout les fichiers textes originaux (LICENCE.TXT, README.TXT, LISEZMOI.TXT).
+
+Bien sûr l'utilisation de ce binaire est à vos risques et périls (cependant je n'ai jamais eu de plaintes)
+

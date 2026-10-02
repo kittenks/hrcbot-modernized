@@ -1,0 +1,308 @@
+Hurricane Bot version 1.3.4
+===========================
+
+Corrigé un changement qui n'affectait que le dernier build sous windows
+Corrigé le message "unknown error 38" (j'ai retiré un patch pour contourner un vieux bug du sdk)
+
+Hurricane Bot version 1.3.3
+===========================
+
+La création du binaire pour linux ne garde plus des bouts de code/données/métas sans importance.  C'était automatique sous Windows.
+La taille du binaire linux a été substanciellement réduite.
+
+hurricane bot version 1.3.2
+===========================
+
+Quelques bugs corrigés mais principalement une recompilation basée sur le SDK 2009 de Allied Modders.
+Cette release corrige le problème de la fin du mois d'octobre 2012 pour la version Linux.
+La version Windows n'ayant pas été affectée par le problème, le binaire est exactement le même. (Suivant la règle : "If it works : don't fix it")
+
+hurricane bot version 1.3.0
+===========================
+
+Modifications depuis la 1.3.0
+-----------------------------
+Les lignes de log pour le debugging ont été disablées
+Les CVars sans intérêt pour un serveur en production ont été désactivés
+Le bot est compilé avec le SDK de AlliedModders.
+
+Note
+====
+
+Je vous prierai de ne pas me poser des questions dont la réponse se trouve dans ce fichier.
+
+ex: "comment puis-je changer leur force, leur nombre, ..."
+
+J'efface systématiquement tout mail me demandant comment installer le bot.  Tout ce que je sais est dans ce texte.  Demandez à un "pro"
+
+Le texte anglais est plus complèt et plus juste.
+
+
+Readme / questions
+===============
+
+Si j'étais vous, je voudrais garder les vieux fichiers. hrcbot carte parce qu'ils sont toujours valables. (Si cela fonctionne: don't fix it)
+
+Si le serveur tombe en panne, assurez-vous d'abord que c'est à cause du bot: désactivez tous les autres modules et constatez un nouveau crash.
+Si l'erreur est reproductible, la carte et la configuration du serveur (sans votre mot de passe s'il vous plaît) peut aider. (je n'ai que les cartes originales)
+Si vous êtes IT: un stacktrace ne serait pas de refus (mais si vous êtes IT vous savez ce dont je pourrais avoir besoin)
+
+Installation manuelle
+===================
+
+Il suffit de copier le contenu de ce dossier dans votre "Half-Life 2 Deathmatch" répertoire.
+
+ex: / home/steam/orangebox/hl2mp/addons
+
+Je ne peux pas vraiment vous aider plus que ça : je ne joue pas et le seul serveur que j'ai sert à tester les binaires.
+Il ya beaucoup de monde capables de vous dire comment régler parfaitement vos serveurs. Je ne suis pas l'un d'eux.
+
+Commandes
+=========
+
+hrcbot_enabled N
+	If set to 0, the bots will cease all activity and the map will not be analysed at load time.
+	If you re-enable the bot in a level with an unanalysed map, you will have to change the level again to get it analyzed.
+	This feature has been suggested in order to disable to bot for badly-handled maps.
+
+	ie: hrcbot_enabled 1
+
+hrcbot_minplayers N
+	Remplis le serveur avec des bots pour avoir un minimum de B joueurs actifs
+
+	A partir de la version 1.0.57 les bots ne remplissent jamais le dernier slot joueur disponible (un nouveau joueur pourra donc toujours se connecter)
+	Ce changement règle également le problème dans lequel hrcbot_minplayers est plus grand que le nombre maximum de joueurs permis sur le serveur/la carte.
+
+	ex: hrcbot_minplayers 4
+
+hrcbot_maxplayers N
+	Aucun bot ne sera ajouté si au moins N joueurs sont en ligne (bots ou humains)
+	Les bots seront également retirés au fur et à mesure pour tenter d'avoir un nombre de joueurs égal à N.
+
+	ex: hrcbot_maxplayers 16
+
+hrcbot_preferredcount N
+	Si cette variable est plus grande que 0, le plugin essaiera d'avoir exactement ce nombre de bots en jeu.
+	Les conditions de min_players et max_players seront toujours respectées.
+
+	ex: hrcbot_preferredcount 4
+
+hrcbot_forceteam N
+	Force le spawn des bots dans une équipe donnée
+
+	Dans HL2DM N peut être:
+
+		-1 = équipes balancése (defaut)
+                 2 = combine
+                 3 = rebels
+
+		 Ne pas utiliser
+
+		 0 = automatic
+                 1 = spectator
+
+	ex: hrcbot_forceteam -1
+
+hrcbot_autobalancebots N
+	Si cette variable est mise à 0, le plugin ne tient plus compte des contraintes de hrcbot_minplayers, hrcbot_maxplayers,
+	hrcbot_preferredcount et hrcbot_forceteam.
+	hrcbot_add ne peut fonctionner que si N est à 0
+
+	ex: hrcbot_autobalancebots 1
+	
+hrcbot_add
+hrcbot_add T
+	Cette commande ne peut fonctionner que si hrcbot_autobalancebots est mis à 0
+	Sans paramètre, la commande ajoute un bot
+	Avec un paramètre, la commande ajoute un bot dans l'équipe T
+
+	Dans HL2DM N peut être:
+
+		 2 = combine
+                 3 = rebels
+
+		 Ne pas utiliser
+
+		 0 = automatic
+                 1 = spectator
+
+	ex: hrcbot_add
+	ex: hrcbot_add 2
+
+hrcbot_kick
+hrcbot_kick T
+	This command can only work if hrcbot_autobalancebots is set to 0
+	Without parameter, the command removes a bot.
+	With a parameter, removes a bot from the team T
+
+	In HL2DM T can be:
+
+                 2 = combine
+                 3 = rebels
+
+		 Do not use
+
+		 0 = automatic
+                 1 = spectator
+
+	ie: hrcbot_kick
+	ie: hrcbot_kick 2
+
+hrcbot_waitforplayers 0
+	The bots will only be added after the first player connects.
+
+hrcbot_freezeifnoplayers 0
+	When the last human player leaves the game, the bots are disabled.  They are enabled again when a player connects.
+
+	ie: hrcbot_freezeifnoplayers 1
+
+hrcbot_player_spawnweapon NAME
+	Change l'arme par défaut du bot.
+	Les valeurs possibles sont : smg1 pistol 357 crossbow shotgun ar2 rpg
+	Evitez le 357 si vous voulez avoir une chance de jouer
+	
+	ex: hrcbot_player_spawnweapon smg1
+
+hrcbot_handicap N
+	La force du bot (sa précision pour viser) peut être réduite avec cette option.
+	Si vous mettez le niveau à 0, votre survie dépendra surtout de votre chance.
+	Avec des valeurs supérieures (10 ou plus), même votre petite soeur (celle qui dort dans le berceau) devrait pouvoir les battre.
+	Utilisez uniquement des valeurs supérieures ou égales à 0.
+
+	ex: hrcbot_handicap 5
+
+hrcbot_mute N
+	Faites taire le bot en mettant ce paramètre à 1, laissez le parler avec la valeur 0
+
+	ex: hrcbot_mute 1
+
+hrcbot_motd N
+	Set this to 0 to disable the "advertising" of the bot.
+
+	ex: hrcbot_motd 0
+
+hrcbot_dialogmsg N
+	Set this to 0 in order to disable the displaying of the version of the bot on each client.
+
+	ex: hrcbot_dialogmsg 1
+
+hrcbot_spawnprotectiontime N
+	Un joueur qui respawn sera ignoré par le bot pendant ce laps de temps (une unité = 1/60 secondes)
+
+	ex: hrcbot_spawnprotectiontime 120
+
+	Protègera un joueur ressucité des bots pour 2 secondes.
+
+hrcbot_spawnprotectionseconds N
+	Un joueur qui respawn sera ignoré par le bot pendant ce laps de temps, exprimé en secondes.
+	Ce n'est pas une "variable" mais une "commande".  Ceci change en fait la valeur de hrcbot_spawnprotectiontime
+
+	ex: hrcbot_spawnprotectionseconds 30
+	
+	Est équivalent à
+
+	    hrcbot_spawnprotectiontime 1800
+
+	Et protègera un joueur ressucité des bots pour 30 secondes.
+
+hrcbot_clan NAME
+	Chaque nouveau bot aura ce préfixe ajouté à son nom.
+
+	ex: hrcbot_clan [HRC]
+
+hrcbot_namesfile NAME
+	NAME est le chemin (relatif ou absolu) vers un fichier text qui contient un nom de bot par ligne.
+	Le fichier sera lu jusqu'à la premiere ligne vide.
+	Le chemin par défaut pour le fichier est "hl2mp/addons/hrcbot_server_plugin/hrcbot_names.txt".
+	Jetez un oeil dans le fichier pour comprendre le format.
+
+	ex: hrcbot_namesfile "hl2mp/addons/hrcbot_server_plugin/hrcbot_names.txt"
+
+hrcbot_crowbarmaniacs N
+	L'activation de cette option donne une barre-à-mine au bot.  Et un bot aime une barre-à-mine bien plus qu'un Doom Space Marine aime son BFG-9000
+
+	ie: hrcbot_crowbarmaniacs 1
+
+hrcbot_autoweaponswitch N
+	La désactivation de cette option empêche les bots de changer d'arme quand ils en ramassent une nouvelle.
+	
+	ie: hrcbot_autoweaponswitch 0
+
+hrcbot_spawnprotectedhealth N
+	Les prochaines versions de "Spawn & Chat Protection" permettront au bot de savoir quand un joueur est protégé. (http://www.esteticas.se/catman.php)
+	En attendant, le bot considèrera que quiconque ayant au moins N points de vie est protégé.
+
+	ie: hrcbot_spawnprotectedhealth 500
+
+hrcbot_playermodel T
+	Tout les bots utiliseront le modèle T.  Utilisez "*" pour utiliser le choix aléatoire par défaut.
+
+	Les modèles par défaut dans HL2DM sont:
+
+	"models/Combine_Soldier.mdl"
+	"models/Combine_Super_Soldier.mdl"
+	"models/Police.mdl"
+
+	"models/Humans/Group03/Female_01.mdl"
+	"models/Humans/Group03/Female_02.mdl"
+	"models/Humans/Group03/Female_03.mdl"
+	"models/Humans/Group03/Female_04.mdl"
+	"models/Humans/Group03/Female_05.mdl"
+	"models/Humans/Group03/Female_06.mdl"
+	"models/Humans/Group03/Female_07.mdl"
+
+	"models/Humans/Group03/Male_01.mdl"
+	"models/Humans/Group03/male_02.mdl"
+	"models/Humans/Group03/male_03.mdl"
+	"models/Humans/Group03/Male_04.mdl"
+	"models/Humans/Group03/Male_05.mdl"
+	"models/Humans/Group03/male_06.mdl"
+	"models/Humans/Group03/male_07.mdl"
+	"models/Humans/Group03/male_08.mdl"
+	"models/Humans/Group03/male_09.mdl" 
+
+	ex: hrcbot_playermodel *
+	ex: hrcbot_playermodel models/Humans/Group03/male_09.mdl
+
+hrcbot_do "bot name" command
+	This command used to be only available for debugging.
+	The bot will execute the command as himself. '\"' are mandatory for composed names."
+
+	WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+	Please note that this command has to be used with care as some parameters (status change) can break the bot.
+
+	WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+	ie: hrcbot_do "[HRC]Zeus" say Hello
+	ie: hrcbot_do "[HRC]Zeus" joinclass 1
+
+	ie (could be dangerous because the bot is not supposed to switch team): hrcbot_do "[HRC]Zeus" jointeam 3
+
+
+Commandes spéciales
+===================
+
+Ces commandes servent à résoudre des problèmes du bot.  Elles ne sont utiles que pour ceux qui travaillent avec moi à la résolution
+des problèmes survenus sur leur(s) serveur(s).
+
+hrcbot_notifycriticals 1
+
+hrcbot_info
+
+Team Deathmatch
+===============
+
+Pour que le jeu se fasse en mode "par équipe", il faut mettre le paramètre mp_teamplay à 1
+
+============
+
+
+Amusez vous bien,
+
+Hurricane
+
+www.hurrikhan.eu
+
+Envoyez vos remarques, bugs, ... à : hurricane.bot@gmail.com
+

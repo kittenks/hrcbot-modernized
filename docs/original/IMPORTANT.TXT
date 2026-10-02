@@ -1,0 +1,6 @@
+* The windows version runs with the 2010 runtime.
+
+* The last version has been compiled months after my last work on the bot.  I was working on a better model but it was not done yet. (Then didn't got the time anymore)
+  KEEP your .hrcbot files.  They are a critical part of the AI. I'm not sure of how well the current model performs but I know it's different.
+  It looks OK but again : no time to throroughly check it.
+

@@ -1,0 +1,4383 @@
+0000004d  !This program cannot be run in DOS mode.
+000000e8  Rich
+00000200  .text
+00000227  `.rdata
+0000024f  @.data
+00000278  .reloc
+00000530  ^][_
+00000eaf  D$ h
+00000f5d  L$ h
+000011b8  L$$h
+000011d1  T$ RV
+00001201  _^][
+000013f5  T$$h
+0000140e  D$ PS
+0000142e  _^]2
+000015bc  L$$h
+000015d5  T$ RV
+000016af  D$ h
+0000175d  L$ h
+000028ef  D$ h
+0000299d  L$ h
+000030ff  L$$h
+00003118  T$ RV
+00003148  _^][
+0000333b  L$ h
+00003377  _^]2
+000034e7  L$$h
+00003500  T$ RV
+000035df  D$ h
+0000368d  L$ h
+00003d80  50c	
+0000431f  D$ h
+000043cd  L$ h
+000048a7  _^]3
+000048be  _^][
+00004eed  L$ h
+000052b1  L$ h
+0000538f  D$ h
+0000543d  L$ h
+0000576f  L$$h
+00005788  T$ RV
+000057b8  _^][
+000059ab  L$ h
+000059e7  _^]2
+00005b57  L$$h
+00005b70  T$ RV
+00005c4f  D$ h
+00005cfd  L$ h
+00006b9b  VW9C
+00006bf0  _^][
+00006d5f  D$ h
+00006e0d  L$ h
+0000739b  _^]2
+0000758f  D$ h
+0000763d  L$ h
+00007ad4  t$hd
+00008111  Q(;P(u
+000086c4  T$$Q
+000086c9  L$,R
+000086ce  T$4Q
+000086d3  L$<R
+000086d8  T$DQRV
+000086ee  RWUQPhX
+000086ff  H_^][
+00008fef  D$ h
+0000909d  L$ h
+000091a6  |OSW
+00009300  SUVW
+00009455  QVWj
+00009598  9P(~
+0000974f  D$ h
+000097fd  L$ h
+000098da  8;>u
+00009b61  H(;N(u
+00009d3c  Y(;Z(u
+00009e74  H(;N(u
+00009f4f  D$ h
+00009ffd  L$ h
+0000a7a5  QVWj
+0000af1f  L$$h
+0000af38  T$ RV
+0000af66  _^][
+0000b14b  L$ h
+0000b186  _^]2
+0000b2f7  L$$h
+0000b310  T$ RV
+0000b3ef  D$ h
+0000b49d  L$ h
+0000bb40  SUVW
+0000bcc5  QVWj
+0000c04f  L$$h
+0000c068  T$ RV
+0000c099  _^][
+0000c28b  L$ h
+0000c2cd  _^]2
+0000c4cf  D$ h
+0000c57d  L$ h
+0000c935  QVWj
+0000cd96  2;1u8
+0000ce3f  |8;A
+0000e0dd  VWu&
+0000e0e4  D$@R
+0000e108  t$@;
+0000e352  L$,+
+0000e764  D$$t
+0000f239  t$(;
+0000f77d  $PQR
+0000f7f9  t$ ;
+0000ff64  T$0V
+000102d1  D$ ^
+00010481  D$,P
+000104dc  T$$WR
+00010591  D$,P
+000105ec  T$$WR
+00010609  t$(W
+0001061e  QRVWP
+0001063f  D$$WP
+00010a78  D$8V
+00010ce9  t$4W
+00010cfe  QRVWP
+00010d1d  D$4RVW
+00010d24  D$(P
+00010e29  t$(W
+00010e3e  QRVWP
+00010e5f  D$$WP
+00010e9f  t$<W
+000110a9  t$(W
+000110be  QRVWP
+000110df  D$$WP
+00011239  t$(W
+0001124e  QRVWP
+0001126f  D$$WP
+00011644  PQVR
+000116a5  PQVW
+00011724  PQVR
+000117a9  QRPV
+00011864  PQVR
+000118b5  PQVW
+00011915  PQVW
+00011974  PQVR
+000119e9  QRPV
+00011a39  QRPV
+00011bbe  L$ V
+00011c51  = m	
+000120b7  T$8RP
+000120cb  L$ QQ
+000120e3  L$0Q
+000120e8  T$DR
+00012102  T$hQR
+00012108  D$$P
+000123c5  0SVW
+00012899  tV;E
+00012b76  _^][
+00012e12  u=8L$ t
+00012ebd  T$(^
+00013346  T$8R
+00013356  L$xQ
+0001335b  T$HR
+00013655  D$(W
+000138ad  $PQR
+00013a90  \$8Q
+00013a9a  T$TR
+00013af2  L$@Q
+00013f65  PQVW
+00013fd9  QRPV
+0001401b  D$lPQ
+0001402d  T$DRP
+00014052  L$(Q
+00014057  T$\R
+00014061  D$$P
+00014105  D$DQ
+000142f1  T$ RP
+0001432d  L$@Q
+00014373  T$@PQR
+000143c3  N(QWS
+000143d6  V<RWS
+000143e9  FPPWS
+000143fd  dVWS
+00014453  N(QWS
+00014466  V<RWS
+0001447a  dVWS
+000144bc  T$8RP
+000144c7  L$pQ
+000144cc  T$DR
+0001456d  $PQR
+00015909  _^[]
+00015953  QSVW
+00015cc6  I$QP
+00015d7d  F,WP
+00015e3c  ;~(~
+00015e64  V$WQR
+00015ea2  _^[]
+00015f40  F0u4
+00015f9d  ;~0t`
+00015fd6  ^,u(Wh
+00016047  V QRP
+0001633c  _^[]
+0001634f  _^[]
+0001638d  hDE	
+00016392  h(E	
+0001648f  B PS
+000164a9  H Qh
+00016aef  F p]
+00016b05  V QRP
+0001700e  j	WS
+00017410  [_^]
+00017590  _[^]
+00017712  t	[_3
+00018338  VWKS
+00018403  ^t"Ht
+000189de  _^[t
+00018b53  QVWj
+00018c23  QVWj
+00018cf3  QVWj
+00018d5f  A W;
+0001906b  _[^]
+0001907a  _[^]
+0001970e  _^[]
+00019cc6  WPQhl
+00019d3a  _^[]
+00019ea0  <"u3
+00019f0f  <"t|<{tx<}tt<[u
+0001a1b9  _^[]
+0001a67a  Qh0t
+0001a7dc  _^[]
+0001a87e  _^[]
+0001a8a5  PWSV
+0001a8f0  PWSV
+0001a926  PWSV
+0001a973  BRWSV
+0001a9b1  @PWSV
+0001a9fa  PWSV
+0001ab18  PWSV
+0001ab7c  @PWSV
+0001acb9  @PWSV
+0001af32  RWSV
+0001afb3  Vj/W
+0001b03e  uC8E
+0001bc4e  tHSW
+0001bd66  N,t$
+0001bd6d  +V j
+0001c41e  SPh,
+0001c4cc  _^[]
+0001c593  RPhp
+0001c7b2  ~4SW
+0001ca1d  <{u&
+0001ccc0  -DG	
+0001ce93  QSVh
+0001d176  N,t$
+0001d17d  +V j
+0001d1d6  N,t$
+0001d1dd  +V j
+0001d236  N,t$
+0001d23d  +V j
+0001d77f  +F A
+0001db2c  _u0j
+0001dd81  +W @
+0001e1da  t'Ph
+0001e43a  _^[]
+0001eb0c  _^[]
+0001eb4c  _^[]
+0001ecec  _^[]
+0001ed30  _^[]
+0001eede  <Xuy
+0001f106  _^[]
+0001f15c  _^[]
+0001f40b  _^[]
+0001f47b  <.to
+0001f482  I<\u
+0001f4ec  _^[]
+0001f5d4  [_^]
+0001f6b7  t	H;
+0001f782  8.uc
+0001f789  .u];
+0001f7d9  @PSQ
+0001f853  <\t!</t
+0001f8cd  1<\t
+0001f8e2  u9_^2
+0001f981  8\@;
+0001faee  ^[_]
+0001fb09  ^[_]
+0001fb50  PVQRj
+0001fb84  PVQRj
+0001fdfa  _^[]
+0001fe2a  _^[]
+0001ff47  _^[]
+0001ff88  _^[]
+0001ffb5  QRVW
+00020008  QRVW
+00020056  PSVW
+0002006d  _^[]
+00020135  PQh$
+000201b6  VUUU
+000201ca  u	;u
+000202cf  QRh\
+00020361  ;r+j
+00020383  RPhT
+00020446  RPh\
+0002049f  VWhL
+00020546  _^[]
+00020591  _^[]
+000206a8  <8.t
+000206c0  /tGIy
+00020705  [^_]
+00020760  /t9H
+0002076d  t(WV
+00020797  _^[]
+000207d0  _^[]
+0002087b  /t"H
+0002088a  j\hh
+00020913  <\t </t
+000209e9  t	N;
+000209fa  <\t1</t-W
+00020a2e  _^[]
+00020a5a  <\u7
+00020b14  <\t </t
+00020c4c  _^[]
+00020e55  _^[]
+00020eaf  _^[]
+000213e5  t	H3
+000216c8  _^[]
+000216da  _^[]
+0002172a  ^@PW
+00021b58  t>Ht;
+00021d09  _@PR
+000226ac  [_^]
+00022a4f  ta+F 
+00022a6b  taA;
+00022a9e  t<C;
+00022ab7  u	_[3
+00022b8e  t-+F 3
+00022baf  t#A;
+00022bbf  u	_[3
+00022c13  u	_^2
+00022c3b  ^@[]
+00022e49  _[^]
+00022e68  _[^]
+00022eb1  _[^]
+00022f53  +F W
+0002340b  F(0;
+00023491  F(0;
+000236ae  t	PV
+0002370a  _^[]
+0002375a  _^[]
+000238b9  [_^]
+000238c3  +F W
+00023a5f  Qtuh
+00023ccb  8/u.
+00023dcd  _[^]
+00023e32  u	_^[
+000240e3  +V :
+00024208  +F j
+000243d9  +N @
+0002470c  <"t6
+000247c0  u&<"t"< ~
+00025368  _^[]
+00025afd  _^[]
+00025d60  _^[]
+0002632a  t*8]
+00027746  _^[t
+000279ac  _[^]
+000281b5   SW3
+0002894a  |%=2
+00028990  8csm
+000289d4  8csm
+00028cc3  u[9=
+00028d10  =0K	
+00028d44  50K	
+00028e0b  u WPS
+00028e34  u&WVS
+00028fdb  <$tmf
+0002912b  <$tmf
+000294c9  <$Xf
+0002962a  |!=2
+00029d2c  t1F;
+0002a214  ^_[3
+0002a292   SW3
+0002ae08  <Xt	
+0002aedc  u+9u
+0002b148  ^[_3
+0002b1b6  @j:f
+0002b1c2  j\Xf
+0002b271  E	:.
+0002b2f5  t	;E
+0002b6d2  tXVS
+0002b7b1   SW3
+0002ba70  WVS3
+0002bc75  PPPPP
+0002bc89  <v*V
+0002bcf6  ^SSSSS
+0002bdfd  zuxVV
+0002be1e  tXFVP
+0002be8d  QSVP
+0002beb0  WWWWW
+0002c02d  G	PS
+0002c057  <0 u
+0002c0b9  QQQQQ
+0002c265  QQQQQ
+0002c318  t&:a
+0002c665  woVW
+0002caba  @u^V
+0002cbd7  t%HHt
+0002ce14  HHt$HHt
+0002d329  RPWS
+0002d374  90tW
+0002d389  ?If90t
+0002d489  YYt.
+0002d7f8  PPPPP
+0002d808  VPPPPP
+0002dac9   SW3
+0002dcde  8CSVh
+0002dcfa  8"uY
+0002dd2e  8"u%
+0002dd5a  _^[]
+0002dde8  ;5T%
+0002deb8  u,9E
+0002df0a  u,9E
+0002e0d9  uTVWhV)
+0002e32f  Y__^[
+0002e453  9csm
+0002e461  t h,
+0002e593  oV f
+0002e598  o^0f
+0002e5b0  of@f
+0002e5b5  onPf
+0002e5ba  ov`f
+0002e5bf  o~pf
+0002e62d  FGIu
+0002e632  X^_]
+0002e64e  FGIu
+0002e80f  tWItHIt9It 
+0002e9a3  QQSV
+0002e9ae  5 K	
+0002ecf0  @SurP
+0002f02a  jdX;
+0002f64b  F<-uq
+0002f658  ]tfF:
+0002f7b0  YYj0[
+0002fb4a  d<%u
+0002fbb9  ?%uN
+0002fdca  @SurP
+0003079e  F<-uk
+000307ab  ]t`F:
+000308ee  YYj0[
+00030ca3  l<%u
+00030f50  <Xt	
+00031088  u>9u
+000311b1  54K	
+000311cc  54K	
+000311ed  54K	
+00031315  50K	
+0003133f  50K	
+00031417  F\=8
+000314d2  =0K	
+000314e2  54K	
+000314f4  50K	
+000314fa  54K	
+0003150a  50K	
+00031689  50K	
+000316d4  j@j ^V
+0003173a  SWf9M
+00031776  j@j 
+000319d0  t?VSP
+00031a0c  Y[_^
+00031a2a  PPPPP
+00031b1e  >"u&
+00031b6a  < tK<	tG
+00031cb4  wf93t
+00031cbd  f90u
+00031cc5  f90u
+00031cd1  VVV+
+00031cd9  @PSVV
+00031cf6  t*VV
+00031fdb  5 S	
+00032292  80t/
+000322f9  PPPPP
+000326e3  SQRP
+00032709  jdRP
+00032804  @PVS
+00032828  @PVS
+00032864  Wj0S
+000329f5  |-;E
+00032b59  VVVVV
+00033d4f  T% 8
+00033d81  V%08
+00033f43  (5P8
+00033f92  (=`8
+00034571  (5P8
+000345d5  (=`8
+00034a6d  u:9U
+00034aac  u@9U
+00034af3  u(9U
+00034b20  uU9U
+00034b81  QQSV
+000354ba  _^[]
+0003556d  to=(X	
+0003569d  Y_^[]
+00035709  Fpt"
+0003578a  WWWWQ
+00035a50  u	9K
+00035f4f  9M$u
+0003600e  <+t"<-t
+00036115  +t HHt
+00036ed1  j0Xf
+00036fc5  RPWS
+00037013  80tT
+00037099  j Yf
+00037118  YYt/
+00037321  ji_jdZf;
+0003732a  t]f;
+00037342  Xt"f;
+00037364  Xulf;
+0003738f  t!f;
+000373ca  u53E
+00037676  8$u+
+0003796e  j*Yf
+00038074  j0Xf
+00038346  RPSW
+000383d6  99u#
+0003849a  Kf98t
+000384f8  j Yf
+00038577  YYt/
+000386f4  It2It/It%It"It&II
+000387c1  Wj6Y
+000388d6  =8R	
+00038a12  ^_[]
+00038a17  SSSSS
+00038a4e  <.u1
+00038a79  SSSSS
+00038aae  .t|PVj@
+00038ac7  _tcP
+00038ae7  ,uCP
+00038b30  _^[]
+00038b37  PPPPP
+00038ba1  SSSSS
+00038cb5  PPPPP
+00038d0b  ^H_[
+00038d95  >CuS
+00038de2  PPPPP
+00038ea1  @PVW
+00038f17  VVVVV
+00039171  5$S	
+00039261  PPPPP
+000393f3  VVVVV
+00039400  xSSSh
+00039491  VWw$
+0003964f  ~lSW
+000397e0  u)jAXf;
+00039877  u+9u
+00039a61  u)jAXf;
+00039b37  u>9u
+00039c7f  WWWWQ
+00039dc0  9M$u
+00039e97  -t!;
+00039fcf  +t +
+0003a080  9w#k
+0003a67a  j:Xf
+0003a923  9]$u
+0003a93b  9](SS
+0003aa81  t"SS9] u
+0003ae87   SW3
+0003b0fc  9~\u'
+0003b32f  t!Ht
+0003b65f  _^[]
+0003b6b3  t'Ou
+0003b7e6  VW9]
+0003b7f8  _^[]
+0003b843  t"Ou
+0003b92d  t VV9u
+0003bac3  9_u	A
+0003bb55  QufA
+0003bc1c  HHt*HHt
+0003bd7f  t=HHt
+0003c10a  [_^]
+0003c5e6  7_^]
+0003c7b7  >	t6W
+0003c9af  tAHS
+0003c9fc  _^[]
+0003ca5b  v	QP
+0003caa3  tK<_t<<$t8<<t4<>t0<-t,<a|
+0003cabd  <z~$<A|
+0003cae3  t;BA
+0003ce3b  t,<At
+0003d034  9	t	
+0003d04c  9=p(
+0003d1be  <0|L<9
+0003d218  tI<A|2<P
+0003d24c  <@t"
+0003d33b  HHu$
+0003d3f1  t]<@tS<Zt
+0003d4a7  tL<Zu
+0003d9ee  tp<@tl
+0003da86  8@u,
+0003dadc  <@u|
+0003daed  <_uk
+0003dc8a  PVje
+0003dce4  YPVh
+0003dd83  Yt*j
+0003ddc0  Du'h$F
+0003de27  Ft,Ot	OtFOt#OuV
+0003dece  8Xu2@
+0003def1  PhTF
+0003df40  PhHF
+0003df6b  Ph8F
+0003e0a8  Ytgj
+0003e0d9  Ph$F
+0003e119  Ph$F
+0003e186  9	t	
+0003e3ba  kt@;
+0003e47e  Sh`F
+0003e6e8  8?u%
+0003e9db  AFKu
+0003ea0a  Yt2j
+0003eab0  j@hp(
+0003ead8  9	t	
+0003eb44  t4<@t;V
+0003ec40  Tt^HtTHtJHt
+0003ec4f  Hu\h
+0003ed10  8?u'@
+0003ed81  0t1HHt
+0003edf2  XSVW3
+0003f7be  tG9U
+0003f7e6  Ph<G
+0003f8d1  Ph0G
+0003f949  Ph$G
+0003fb05  u#8H
+0003fde9  t^HH
+0003fe4d  8_uK
+0003fede  sj@hp(
+0003fef2  Ph`F
+0003ff19  9	tD
+0003ff75  <@tJ!~
+00040331  `<`t
+000403d1  <$u.
+000408ce  9>tZ
+000408de  98t:P
+0004096d  :?u]
+00040974  <@u2
+000409a9  3<$u 
+00040aa9  <_uN
+00040d20  $SVW
+00040edd  ~h\H
+00040ee4  whPH
+00040f9c  Ct@j
+00040fe6  Ph8H
+00041049  t!h0H
+0004105b  t!h$H
+00041107  t.Ht
+000411b7  AtJHt4Hu
+0004121d  Rt*Ht
+000412aa  <?tG<Xt
+000413df  URPQQh` 
+0004140a  L$,3
+000414c2  UVWS
+000414d4  [_^]
+000414f5  SVWj
+00041506  _^[]
+00041c26  VVhU
+00042335  QSWVj
+000424ab  v	N+D$
+00042532  tM<it-<ot)<ut%<xt!<Xt
+00042562  Xu^:
+000425ba  u;3E
+0004277d  @u^V
+000428e6  8$u'
+00042a12  t%HHt
+00042c9f  <dt{<itw<ots<uto<xtk<Xtg
+00042d4f  HHt HHt
+0004342f  @tM9
+000434da  @t?9
+000435ee  RPSW
+000436cf  	If9
+000437e9  YYt.
+00043b5b  @u^V
+00043c91  t$HHt
+00043ed0  HHt$HHt
+000443e1  RPWS
+0004442c  90tX
+00044542  YYt.
+00044883  _^[]
+00044a0f  _^[]
+00044aa3  Y_^[
+00044ad4  Y_^[
+00044aea  SVW3
+00044c8c  	X 9} 
+00044d46  t/Ht
+00044da5  9] t
+00044db6  _^[]
+00045351  C YY
+0004561a  @tH9
+000457b2  t$WV
+00045840  @uoV
+000458ad  _^[]
+000459f9  ~%9M
+00045a0c  QVj	
+00045a29  r 8^
+00045dc9  SSSSW
+00045e88  SSSj
+00045f48  SSSSW
+000460b3  @PWV
+000460c1  _^[]
+000461fc  PPPPP
+00046210  WVU3
+000462b6  v	N+D$
+000463b2  tRHtCHt4Ht%HtFHHt
+00046552  ubQQ
+000465a7  $j%j
+000465d6  $j%j
+000466b4  $j&j
+00046822  $j&j
+00046884  $j&j
+00046939  HYYt
+000469e2  9] SS
+00046b06  Pj1S
+00046b1a  Pj2S
+00046b2e  Pj3S
+00046b42  Pj4S
+00046b59  Pj5S
+00046b6d  Pj6S
+00046b7c  Vj7S
+00046b90  F Pj*S
+00046ba7  F$Pj+Sj
+00046bbb  F(Pj,S
+00046bcf  F,Pj-S
+00046be3  F0Pj.S
+00046bfa  F4Pj/S
+00046c10  Pj0S
+00046c22  F8PjDS
+00046c36  F<PjES
+00046c4d  F@PjFS
+00046c61  FDPjGS
+00046c75  FHPjHS
+00046c89  FLPjIS
+00046ca0  FPPjJS
+00046cb4  FTPjKS
+00046cc8  FXPjLS
+00046cdc  F\PjMS
+00046cf3  F`PjNS
+00046d07  FdPjOS
+00046d1b  FhPj8S
+00046d2f  FlPj9S
+00046d46  FpPj:S
+00046d5a  FtPj;S
+00046d6e  FxPj<S
+00046d82  F|Pj=S
+00046d9e  Pj>S
+00046db5  Pj?S
+00046dcc  Pj@S
+00046de3  PjAS
+00046dfd  PjBS
+00046e14  PjCS
+00046e2b  Pj(S
+00046e42  Pj)S
+00046ed2  Pj1S
+00046ee9  Pj2S
+00046f00  Pj3S
+00046f17  Pj4S
+00046f31  Pj5S
+00046f48  Pj6S
+00046f5f  Pj7S
+00046f76  Pj*S
+00046f90  Pj+S
+00046fa7  Pj,S
+00046fbe  Pj-S
+00046fd5  Pj.S
+00046fef  Pj/S
+00047006  Pj0S
+0004701d  PjDS
+00047034  PjES
+0004704e  PjFS
+00047065  PjGS
+0004707c  PjHS
+00047093  PjIS
+000470ad  PjJS
+000470c4  PjKS
+000470db  PjLS
+000470f2  PjMS
+0004710c  PjNS
+00047123  PjOSj
+0004713a  Pj8S
+00047151  Pj9S
+0004716b  Pj:S
+00047182  Pj;S
+00047199  Pj<S
+000471b0  Pj=S
+000471ca  Pj>S
+000471e1  Pj?S
+000471f8  Pj@S
+0004720f  PjAS
+00047229  PjBS
+00047240  PjCS
+00047257  Pj(S
+0004726e  Pj)Sj
+00047662  tBhd
+000476c6  _^[]
+00047750  v4;5\X	
+0004780f  v>Sj
+0004784b  C0Pj
+00047862  C4Pj
+00047a6e  vL;5tX	
+00047b7f  C PjPV
+00047b93  C$PjQV
+00047ba7  C(Pj
+00047bbe  C)Pj
+00047bd2  C*PjTV
+00047be6  C+PjUV
+00047bfa  C,PjVV
+00047c11  C-PjWV
+00047c25  C.PjRV
+00047c39  C/PjSV
+00047c4d  C8Pj
+00047c64  C<Pj
+00047c78  C@Pj
+00047c8c  CDPj
+00047ca0  CHPjPV
+00047cb7  CLPjQV
+000481e0  r"9U
+0004872f  r"9U
+00048c80  r"9U
+00049300  _^[]
+000497f6  ~.8]
+00049868  QW@Ph
+00049896  W@Ph
+000498e9  ~U8]
+00049bc6  PPPPPPPP
+00049c14  |FVW
+00049fe8  u/Vj
+00049ff2  u49^
+0004a0ac  u1Vj
+0004a24e  Wj@h
+0004a376  PPPPP
+0004a380  j@Sh
+0004a38f  t,j@
+0004a394  C@Ph
+0004a3bf  _^[]
+0004b915  Sj Z
+0004b91f  0;1tt
+0004ce68  tR:Q
+0004ce74  t<:Q
+0004ce80  t&:Q
+0004cedb  @FA;
+0004cf06  PPPPPPPP
+0004cfb9  Jvf;
+0004cfcd  Jvf;
+0004cfe1  Jvf;
+0004cff5  Jvf;
+0004d027  Jvf;
+0004d03f  Jvf;
+0004d06d  Jvf;
+0004d143  SVWUj
+0004d158  ]_^[
+0004d1e4  ;t$,v-
+0004d269  UQPXY]Y[
+0004d379  _^[]
+0004d5b5  j@j 
+0004d8aa  ~,WPV
+0004d968  98t^
+0004d972  tVPV
+0004d991  t/9U
+0004daad  uNSW
+0004e003  Ht%C
+0004e156  Ht(f
+0004e3e6  PPPPP
+0004e40e  u"9U
+0004e598  u	9p
+0004e82f  u	9E
+0004eb91  ;9u	
+0004eb97  0K;]
+0004ec71  VVVVV
+0004ed11  _^[t
+0004ee6a  @^[t
+0004fce6  uwQQ
+000500e5  u'9E
+0005020e  u09E
+00050307  _^[]
+00050b0f  YY;E
+00050b59  WVQS
+00050d4a  YY;E
+00050d91  WVQS
+00050eb1  Y_[t
+00050f61  @A;E
+000510a2  u#hx
+00051236  L4 UQ
+00051244  D4(" 
+000512aa  ]_^[d
+00051302  D$8P
+00051420  D$4jT
+00051432  D$(j
+00051453  D$$8
+00051470  \$tQ
+0005148d  D$HP
+000514cc  L$uP
+000514d2  D$xR
+00051555  $QRPh
+000517be  SUVWj
+000517f7  B0PhT
+0005180a  @0Phh
+0005181e  A0Ph
+00051832  B0Ph
+00051845  @0Ph
+00051859  A0Ph
+000518a2  @0Ph
+000518b6  A0Ph
+000518f8  @0PhT
+0005190c  A0Phh
+00051920  B0Phx
+00051933  @0Ph
+00051947  A0Ph
+0005195b  B0Ph
+0005196e  @0Ph
+000519b1  B0Ph
+00051a28  L$\Q
+00051acb  D$lt
+00051ae2  D$P@_
+00051aec  D$PH_
+00051af6  D$PP_
+00051b00  D$P`_
+00051b0a  D$Pd
+00051b14  D$Pp_
+00051b1e  D$Px_
+00051b50  D$Pt
+00051b5e  D$W;
+00051c6d  D$lQ
+00051c91  T$lP
+00051c97  D$wQRP
+00051cb7  D$|R
+00051cfe  B8QS
+00051d19  PQhh
+00051d32  T$XRh<
+00051d5b  D$pP
+00051d72  L$|QhT
+00051d84  T$PR
+00051e1d  T$W;
+00051f16  D$WP
+00051f34  D$UR
+00051f3a  T$ZP
+00051f40  D$_Q
+00051f46  L$`RPQ
+00051f83  PQhh
+00051fb6  L$XQh<
+000523d2  9Y0txS
+000523ea  PWVh
+00052490  UVWhX
+000524d1  9X0u
+00052522  9Y0tF
+00052582  9Y0t
+000525c8  @SUVW
+000525db  9h0txU
+000525f3  PWVh
+0005268b  _^][
+000526a8  @SUVW
+000526bb  9X0txS
+000526d3  PWVh
+000527ef  _^][
+0005281d  PSVW
+0005285a  PSWh
+00052b21  L$\d
+00052cf6  L$\_^
+00052e25  QVh(
+00052f34  t	VP
+0005301a  D$(h
+00053033  L$$Qj
+0005317e  T$(h
+00053197  D$$PU
+000532ed  _^][
+0005334c  L$(h
+00053365  T$$Rj
+000534bf  _^][
+00053d0b  L$4h
+00053d24  T$0RV
+00053f5e  D$Hh
+00053f77  L$DQj
+0005404e  L$Hh
+00054067  T$DRS
+000540cf  D$Hh
+000540e8  L$DQS
+0005432f  _^][
+0005433c  _^]2
+0005459f  D$ h
+0005464f  ^][d
+000546df  D$ h
+000547ab  _^][d
+000548b1  L$$h
+000548ca  T$ Rj
+00054974  T$$h
+0005498d  D$ PV
+00054a36  D$$h
+00054a4f  L$ QV
+00054af9  L$$h
+00054b12  T$ RV
+00054df5  D$ h
+00054f0e  ^][d
+00054f4c  Wh`w
+00054f61  \$(P
+00055178  @SWj
+00055195  PSWh
+0005520a  SUVW
+00055218  I@QPh|
+00055249  PUWh
+0005533e  ;L$ ~
+00055346  +L$ 
+000553c5  ;T$ ~
+000553cd  +L$ 
+0005544e  ;T$ ~
+00055456  +L$ 
+000554d5  ;T$ ~
+000554dd  +L$ 
+0005554e  PWVh
+0005556b  u Ph
+000555b2  L$DQP
+000555f3  D$xP
+00055614  PWVh
+00055631  u Ph
+00055672  L$DQP
+000556b2  9|$(
+0005578e  QRPh
+000557d7  ;|$(
+000557f6  PWVh
+00055813  u Sh
+00055852  T$4RQ
+00055858  L$DQP
+0005587f  u Sh
+000558ab  Qj"h(
+000558f7  T$xR
+00055913  PWVh
+00055930  u Sh
+00055971  T$4RQ
+00055977  L$DQP
+0005599e  u Sh
+000559ca  Qj!hL
+00055a22  PWVh
+00055a3f  u Sh
+00055a81  T$4RQ
+00055a87  L$DQP
+00055aae  u Sh
+00055b20  T$xR
+00055b44  \$(;
+00055df4  F(W3
+00055e0d  ~0_^
+00055e54  F(W3
+00055e73  ~0_^
+00055ebf  SUW3
+00055f3e  ~$;~ t.
+00055f6e  ;~ u
+00055fc3  ^ 9l$
+00056018  L$8h
+00056031  T$4RS
+00056957  _^[d
+00056a91  D$,h
+00056aaa  L$(Qj
+00056b11  D$,h
+00056b2a  L$(QV
+00056c31  D$,h
+00056c4a  L$(Qj
+00056cb1  D$,h
+00056cca  L$(QV
+00056df1  D$,h
+00056e0a  L$(Qj
+00056e82  L$,h
+00056e9b  T$(RV
+0005714a  D$$h
+00057163  L$ QU
+0005721c  D$4h
+00057235  L$0QV
+000572e6  $SUV
+0005738c  D$4h
+000573a5  L$0QV
+00057456  $SUV
+000574fb  D$8h
+00057514  L$4Qj
+00057540  T$8h
+00057559  D$4PU
+0005757d  $UWV
+000575aa  L$8h
+000575c3  T$4RU
+00057649  ;D$$t
+0005765d  $UWV
+0005770d  D$<h
+00057726  L$8QV
+0005776f  T$$R
+000577f5  D$<h
+0005780e  L$8QV
+00057892  L$$Q
+00057991  D$<h
+000579aa  L$8Qj
+000579f3  T$$R
+00057a90  D$<h
+00057aa9  L$8QV
+00057b2d  L$$Q
+00057bec  D$Dh
+00057c05  L$@QV
+00057c8c  L$0Q
+00057cdf  L$Dh
+00057cf8  T$@RV
+00057d80  B VW
+00057dd5  D$(_^d
+00057e43  D$$h
+00057e5c  L$ QU
+00057f81  ^][d
+0005804d  L$ h
+000580cc  l$ VW
+00058152  _^][
+000581b0  ;|$ ti
+00058258  PjTj
+00058327  D$ jTj
+0005832f  \$$V
+000583c9  T$dV
+000583d8  T$\P
+000583e6  \$Xh
+000583f5  \$<P
+000584a8  T$$Q
+0005856c  9h\u
+0005857f  u1_^]3
+00058598  HX9h\~
+00058615  QSU3
+00058621  t]9_h~X
+00058636  Od9_h~
+00058737  9_\t\
+0005874e  OX9_\~
+00058793  9_\u
+000587c2  T$ R
+00058961  H8!P$
+00058984  H8!P$
+000589a7  H8!P$
+000589bd  w\_d
+000589e5  QUVW
+000589ea  |$ 3
+00058ad5  _^]d
+00058c15  |$ 3
+00058ce4  ]_^[
+00058d14  ,`|'
+00058dd0  C,}^
+00058dd5  F +G,
+00058e20  VBQRPh
+00058e55  VBQRPh
+00058ea1  	G$^[
+00058ebb  C,+G,
+00058efe  VBQRPh
+00058f80  	W$^[
+00058f96  @	G$^[
+00058fb9  PQRh
+00059030  D$XPWh
+000590db  L$TPQWh
+0005913a  \$(9^htj
+00059150  Vd9^h~
+000591a7  9^hu
+000591dc  Np9^t~
+00059269  D$tQ
+0005926e  L$tR
+0005927a  D$@QR
+00059287  QPSRhh
+00059402  +D$H
+0005940b  T$LRPh
+00059426  L$L3
+00059469  T$<PRWh
+0005948d  u#Sh
+000594c9  D$$P+
+00059608  t$(V
+0005961d  t$hV
+00059622  t$pV
+00059627  t$HVSR
+0005963d  VQWRPj jFh
+00059658  |$ 3
+00059697  D$$H
+000596d2  PWVh
+000596f4  u Wh
+00059733  T$$RQ
+00059763  u Wh
+0005978c  L$(Qj
+000597a5  T$(Rj
+00059806  +L$H
+0005980d  T$LRQh
+000598c0  D$ ;
+000598e3  D$(3
+00059ab3  ;L$ 
+00059b14  ;D$$
+00059b2a  D$<9D$@|b
+00059bc5  T$8H
+00059bf6  RPQh
+00059c32  D$ P
+00059c72  L$ ;
+00059c9b  9X0t
+00059d43  D$P+D$H
+00059d4f  T$LRPh$
+00059d74  PWVh
+00059d94  u Sh
+00059dd3  T$$RQ
+00059e03  u Sh
+00059e2c  L$(Qj
+00059e45  T$(Rj
+00059e8c  P@RQhT
+00059ef3  L$8h
+00059f83  j5h@
+0005a12e  T$ R
+0005a455  D$,P
+0005a6dc  D$$P
+0005a777  +D$P
+0005a77c  T$TRPh
+0005a7b6  t$,;
+0005a808  9|$ht
+0005a828  L$lQ
+0005a847  9|$<t#
+0005b009  D$(P
+0005b14e  T$dR
+0005b15b  T$\R
+0005b182  D$$R
+0005b2e5  D$pP
+0005b31c  D$|P
+0005b36e  \$`V
+0005b3a0  A{_S
+0005b666  _^][d
+0005b695  QSU3
+0005b7a6  ^][d
+0005b8dd  A{ZS
+0005b94e  PWVh
+0005bae4  D$ UPV
+0005bb29  ^][Y
+0005bb67  Uj V
+0005bbae  t]SUV3
+0005bbf2  T$(SR
+0005bc08  _^][
+0005bf04  L$<Q
+0005bf12  8D$0t
+0005bf54  T$0+
+0005bfac  D$PP
+0005bfba  L$LR
+0005c009  D$PQ
+0005c035  l$LV
+0005c04e  |$` u
+0005c05f  )|$Xu	
+0005c072  gfff
+0005c09c  [8D$
+0005c0a4  |$`0u
+0005c0b3  T$XP
+0005c0e8  tSVW
+0005c130  D$0 
+0005c1d1  +D$<
+0005c2ca  \$$V
+0005c31a  \$$V
+0005c37b  D$@t
+0005c38f  t$@+
+0005c3e9  T$$RW
+0005c487  t$$VW
+0005c4d8  t$ +
+0005c539  D$00
+0005c5c2  D$<VW
+0005c613  )D$$3
+0005c628  D$0 
+0005caf1  8StH
+0005cb26  x	Lt
+0005cb7f  8Sum
+0005cbb4  x	:u7
+0005d24b  tBhX
+0005d25d  t$hd
+0005d2b6  8StH
+0005d2eb  x	Lt
+0005d3f9  L$(Q
+0005d407  L$4Q
+0005d427  L$@Q
+0005d4e9  D$(P
+0005d529  @0SV3
+0005d578  95\R
+0005da39  8_^]
+0005dd45  _]^[
+0005ddca  tMUW
+0005e0b3  y	_^
+0005e219  ^[_]
+0005edf7  \$T;
+0005ee18  D$dh
+0005ee31  L$`QS
+0005f0fc  D$Th
+0005f115  L$PQV
+0005f151  @,_^
+0005f392  L$4Q
+0005f3a0  L$(Q
+0005f3ca  L$@Q
+0005f6a4  N4^[
+0006054c  [_^]
+0006068f  SUVW
+000606ed  L$ h
+0006074a  _^][d
+00060842  L$ h
+000608a0  _^[d
+000608e4  SUV3
+00060969  D$ h
+000609c6  _^][d
+00060a1f  SUVW
+00060a7d  L$ h
+00060b62  _^][d
+00060bc1  SVW2
+00060d12  L$$h
+00060d2b  T$ Rj
+00060d6e  L$$h
+00060d87  T$ Rj
+00060ddf  SUVW
+00060e3d  L$ h
+00060e6c  9E<t;
+00060e9a  _^][d
+00060eef  SUVW
+00060f4d  L$ h
+00060faa  _^][d
+00060fff  SUVW
+0006105d  L$ h
+000610ba  _^][d
+0006111b  u'h 
+000611d2  8XOt
+0006140b  SUVW
+000614ac  D$ P
+000616c1  _^][d
+0006177f  PQWh
+000617ff  ?itemu#
+000618ff  PWVh
+00061935  PWVh
+00061cf0  \$(3
+00061ed6  H<;O
+000621a7  u Ph
+00062218  u Ph
+00062298  u Ph
+000624f3  PWVh
+00062601  PWVh
+00062677  L$LQ
+00062699  PWVh
+000626d8  HSWj
+000626ef  PSWh
+00062738  DSVWj
+00062752  PSWh
+000627a8  HSWj
+000627bf  PSWh
+00062808  HSWj
+0006281f  PSWh
+00062868  HSWj
+0006287f  PSWh
+000628c8  HSWj
+000628df  PSWh
+000629d7  L$LQ
+000629fc  PWVh
+00062a43  L$LQ
+00062a68  PWVh
+00062ab3  L$LQ
+00062ad8  PWVh
+00062b33  L$LQ
+00062b58  PWVh
+00062ba3  L$LQ
+00062bc8  PWVh
+00062c13  L$LQ
+00062c38  PWVh
+00062c83  L$LQ
+00062ca8  PWVh
+00062df0  QSUV
+00062e81  _^][Y
+00062f9b  |$ 3
+00063041  L$8;
+00063062  D$8+
+00063070  |$8 
+0006314f  L$(Q
+00063164  D$ 3
+00063275  L$<j
+00063526  T$ R
+000635f4  _^][
+00063655  8*uh
+000637c6  D$Lh
+000637df  L$HQS
+00063884  ;H0}@
+000638aa  A	O$
+00063b34  D$Lh
+00063b4d  L$HQS
+00063c1f  ;H0}H
+00063f70  QSVj
+00063f8e  gfff
+00063fa6  [HRC
+00063fad  ]Bot
+00063fd0  gfff
+00063ffe  gfff
+0006402c  gfff
+0006405a  gfff
+00064088  gfff
+000640af  gfff
+000641ec  9^\t
+00064462  D$$h
+0006447b  L$ QV
+000646ec  D$,h
+00064705  L$(QV
+00064829  T$0R
+00064860  T$<R
+00064b0c  _^][
+00064c5b  8XOtM
+00064c93  9wLu
+00064c9f  29wLt
+00064cd3  _P9_Xu
+00064ce5  GX9_\t
+00064dde  _^[d
+00064e68  PhX^
+00064f75  QVh(
+00065211  T$(Rh
+00065284  D$XQ
+0006528a  L$bR
+00065290  T$gPQR
+000652f9  SUVW
+000653b3  _^][
+000653db  _^][
+00065430  _^][
+0006544e  _^][
+000654fa  _^][
+00065564  t-SP
+00065589  _^][
+000655af  _^][
+00065614  _^]d
+000656f4  T$\R
+00065707  T$03
+00065712  D$h4
+00065786  9\$l~
+00065791  L$hd
+00065822  \$$j
+00065828  D$LP
+0006583f  D$$P
+00065844  D$4P
+0006584b  L$T;
+00065853  D$HP
+00065869  L$hd
+00065890  \$H3
+000658aa  \$D9\$@|
+000658eb  R<PV
+00065900  D$8G;|$X|
+00065911  \$D9\$@|
+00065941  \$D_9\$<|
+00065973  \$@9\$<|
+0006599f  D$D9\$<|
+000659d1  \$T9\$P|
+00065a01  D$X9\$P|
+00065a42  TVjT
+00065a66  D$`QP
+00065c73  D$$P
+00065cdf  D$$P
+00065cfa  Dzr8^7um8^6uh
+00065d94  PWVh
+00065e13  D$PP
+00065f02  \$L;
+00065fc8  At(S
+00065fe6  t$D;
+0006610d  \$<3
+00066113  T$tR
+0006612c  D$PF
+0006619d  9=8R
+000661c3  ,;=8R
+00066233  _]@[
+00066253  _][3
+00067218  D$$h
+00067237  L$ QS
+0006725e  T$$h
+00067277  D$ Pj
+00067544  D$ h
+000675eb  	V$3
+00067aae  	^$[
+00067b1c  	^$[
+00067ede  D$$h
+00067ef7  L$ Qj
+00067f6b  D$$h
+00067f84  L$ QS
+0006810e  D$$h
+00068127  L$ Qj
+0006819b  D$$h
+000681b4  L$ QS
+0006833e  D$$h
+00068357  L$ Qj
+000683cb  D$$h
+000683e4  L$ QS
+0006856e  D$$h
+00068587  L$ Qj
+000685fb  D$$h
+00068614  L$ QS
+0006879e  D$ h
+0006881e  D$ h
+00068943  _^][d
+000689ce  D$ h
+00068a4e  D$ h
+00068b73  _^][d
+00068bfe  D$ h
+00068c7e  D$ h
+00068da3  _^][d
+00068e2e  D$ h
+00068eae  D$ h
+00068fd3  _^][d
+0006905e  D$ h
+000690de  D$ h
+00069203  _^][d
+0006928e  D$ h
+0006930e  D$ h
+00069433  _^][d
+000694be  D$ h
+0006953e  D$ h
+00069663  _^][d
+000696ee  D$ h
+0006976e  D$ h
+00069893  _^][d
+00069925  D$ h
+000699a1  D$ h
+000699c7  9+tG
+000699fe  _^][d
+00069b6a  _^][
+00069f20  D$$h
+00069f39  L$ Qj
+00069fa4  D$$h
+00069fbd  L$ QS
+0006a1f0  D$$h
+0006a209  L$ Qj
+0006a274  D$$h
+0006a28d  L$ QS
+0006a4c0  D$$h
+0006a4d9  L$ Qj
+0006a544  D$$h
+0006a55d  L$ QS
+0006a790  D$$h
+0006a7a9  L$ Qj
+0006a814  D$$h
+0006a82d  L$ QS
+0006af77  C(_^[
+0006b036  C(_^[
+0006b24a  D$$h
+0006b263  L$ Qj
+0006b29a  D$$h
+0006b2b3  L$ Qj
+0006b5ec  D$Dh
+0006b605  L$@QV
+0006b7ac  D$ P
+0006bbb4  D$ h
+0006bc00  T$ h
+0006bd2f  _^][
+0006bd65  sTu(
+0006bd91  _^][
+0006be38  F WPS
+0006bfb4  D$<h
+0006bfd3  L$8QS
+0006bffa  T$<h
+0006c013  D$8PS
+0006c127  ~Tu,
+0006c1ca  D$4h
+0006c1e9  L$0QS
+0006c280  u Sh
+0006c2ac  Qj3h4
+0006c2ed  T$4h
+0006c306  D$0PS
+0006c3c0  t$ ;
+0006c3e1  L$4h
+0006c3fa  T$0RS
+0006c415  D$$;
+0006c461  u Sh
+0006c48a  L$ Qj1hx
+0006c4a3  T$ Rj
+0006c50b  u Sh
+0006c537  Qj3hl
+0006c578  T$4h
+0006c591  D$0PS
+0006c5a2  L$$;
+0006c5ae  T$ VRQ
+0006c82a  L$0QV
+0006c995  D$,h
+0006c9ae  L$(QV
+0006cb96  _^][
+0006cbaf  _^][
+0006cbc1  _^][
+0006cc49  D$th
+0006cc62  L$pQj
+0006cc9d  T$th
+0006ccb6  D$pPS
+0006cd75  D$LQ
+0006ce33  D$<P
+0006ce58  D$0P
+0006ce7a  D$dQ
+0006cf29  D$,_^][
+0006cfa6  L$|QU
+0006d065  t$83
+0006d0f6  D$PP
+0006d1ae  D$DP
+0006d1b3  L$0Q
+0006d1da  D$pQ
+0006d227  9D$ u
+0006d262  L$ P
+0006d2d2  D$(_^]d
+0006d348  D$Hh
+0006d361  L$DQS
+0006d41e  L$Hh
+0006d437  T$DRU
+0006d688  _^]d
+0006d6d6  SUVW
+0006d6df  l$<;
+0006d743  Q@RPh
+0006d7a6  L$(h
+0006dafc  u Ph
+0006db2c  L$$Qj1hx
+0006db4a  T$$Rj
+0006dbbc  u Ph
+0006dbec  L$(Qj6h
+0006dc0a  T$(Rj
+0006dcb0  ;\$8
+0006dd21  9\$8
+0006dd50  u Ph
+0006dd80  L$$Qj2h
+0006dd9e  T$$Rj
+0006de4f  u Ph
+0006de7f  L$(Qj1hx
+0006de9d  T$(Rj
+0006df0f  u Ph
+0006df3f  L$(Qj6h
+0006df5d  T$(Rj
+0006e0b5  ;\$8
+0006e0ee  9t$<
+0006e0ff  u Vh
+0006e12f  L$ Qj5h8
+0006e149  T$ Rj
+0006e286  u Ph
+0006e2b0  L$lQj5h
+0006e2ce  T$lRj
+0006e39e  u Ph
+0006e3c8  L$pQj5h$w
+0006e3e9  T$pRj
+0006e4b5  u Ph
+0006e4df  L$<Qj5h`w
+0006e4fd  T$<Rj
+0006e5ce  u Ph
+0006e5f8  L$8Qj5h
+0006e616  T$8Rj
+0006e787  L$4Qj6h
+0006e7a5  T$4Rj
+0006e917  L$<Q
+0006e98c  u Ph
+0006e9bc  L$(Qj5h4
+0006e9da  T$(Rj
+0006ea49  D$$;
+0006ea5b  u Uh
+0006ea8a  T$<Rj6h
+0006eaa4  D$<Pj
+0006eb20  9l$$
+0006eb31  u Uh
+0006eb5a  L$<Qj6h
+0006eb73  T$<Rj
+0006ee03  u Ph
+0006ee33  L$8Qj5h8
+0006ee51  T$8Rj
+0006ef48  D$pP
+0006f087  T$\R
+0006f1b4  L$XQ
+0006f319  u Ph
+0006f349  L$(Qj*h
+0006f367  T$(Rj
+0006f3c9  L$tQ
+0006f4b6  9l$Dt
+0006f4d6  L$HQ
+0006f4f9  9l$,t 
+0006f569  VW9]
+0006f58a  D$\h
+0006f5a3  L$XQS
+0006f5d5  T$\h
+0006f5ee  D$XPS
+0006f7bb  D$LP
+0006f7d2  L$,Q
+0006f80a  D$$;
+0006f81c  u Sh
+0006f845  L$4Qj2h
+0006f85e  T$4Rj
+0006f889  T$\h
+0006f8a2  D$XPS
+0006f8fb  u Sh
+0006f924  T$,Rj3h
+0006f93e  D$,Pj
+0006f99a  T$$RW
+0006fa0b  |$$;
+0006fc0e  Q@RPh
+0006fc96  SUVW
+0006fd00  Q@RPh
+0006fd54  _^][
+0006fdbc  D$7P
+0006fe03  D$ h
+0006feaa  _^][
+0006ff1b  B@;D$
+0006ff24  \$`h
+0006ff48  ntbS
+0006ffa5  _^][
+0007001e  _^][
+00070081  D$0P
+000700ca  D$0Q
+0007016c  _^][
+000701ce  _^][
+00070230  _^][
+00070292  _^][
+000702f4  _^][
+00070356  _^][
+000703cf  _^][
+000703f1  T$0R
+0007047a  rtrj
+000704e7  _^][
+000704f0  T$(R
+00070572  _^][
+000705c1  D$0P
+000705d0  T$XR
+000705df  L$\Q
+000705ee  D$xP
+000705fd  T$dR
+0007060c  L$TQ
+0007061b  D$PP
+00070697  L$0u
+000706ac  ;D$(
+000706d7  L$4Q
+00070743  _^][
+00070767  L$4Q
+000707d5  _^][
+000707e1  T$XR
+000707ff  D$TP
+0007080e  T$\R
+00070848  T$(R
+000708aa  L$(3
+000708e0  T$4R
+0007094c  D$@P
+0007099c  _^][
+000709c0  D$4P
+00070a40  _^][
+00070a85  L$(Q
+00070a99  D$(P
+00070ab8  D$(P
+00070b08  T$4R
+00070b74  D$@P
+00070bc4  _^][
+00070be8  D$4P
+00070c54  L$@Q
+00070ca4  _^][
+00070ce2  l$0;
+00070cf1  T$TR
+00070d67  T$0;
+00070d95  T$4R
+00070e01  D$@P
+00070e51  _^][
+00070e6d  L$4Q
+00070ed9  L$@Q
+00070f26  _^][
+00070f69  PSWh
+0007112b  L$ h
+000712f2  u Ph
+00071325  Qj3h
+0007136b  T$ph
+00071384  D$lPj
+000713b8  T$8A
+0007144e  \$0E
+0007145a  ;l$4
+00071465  t$43
+00071492  D$ p
+000714a9  T$$3
+000714e3  D$PP
+00071579  D$,P
+0007165b  D$ph
+00071674  L$lQj
+0007168c  T$0R
+0007171f  =;|$Lt7W
+000718f9  T$8R
+0007190c  _^]d
+00071a13  t$ ;
+00071ace  D$@;
+00071b89  D$8;
+00071c45  D$P;
+00071d01  D$H9l$(uF
+00071dc2  D$0;
+00071e7d  D$h;
+00071f39  D$X;
+00072521  L$`;
+000726fc  |$\@3
+00072742  9\$`
+00072770  9\$\
+00072843  D$<;
+00072855  u Sh
+00072881  Qj2h
+000728f5  u Sh
+0007291e  L$,Qj2h
+00072937  T$,Rj
+000729b3  t$L;
+000729c5  u Sh
+000729ee  L$8Qj2h
+00072a07  T$8Rj
+00072ab8  D$D@
+00072ad6  _^]d
+00072b5a  D$@h
+00072b79  L$<QS
+00072bfd  u Sh
+00072c26  L$$Qj3h
+00072c43  T$$Rj
+00072c72  T$@h
+00072c8b  D$<PS
+00072cca  t$$;
+00072d72  L$,;
+00072dbc  u Sh
+00072de5  L$ Qj3h
+00072e02  T$ Rj
+00072e31  T$@h
+00072e4a  D$<PS
+00072e92  $UVh
+00072f83  _^]d
+00073034  D$X8
+000730e4  D$8QQ
+00073100  $RWSVP
+00073115  L$lQQ
+0007311e  T$\RWj
+0007313b  L$TQ
+00073164  D$$8
+000731b3  T$ RP
+000731c4  L$ QR
+000731ce  9\$,
+000731d9  D$dP
+00073214  |$d9\$
+00073228  u Sh
+00073253  Qj2h
+000732d5  u Sh
+000732fd  L$8Qj2h
+00073316  T$8Rj
+000733ad  D$D8
+000733f8  T$hR
+00073409  D$HPQj
+00073428  D$<P
+00073435  L$HQRSPV
+00073484  T$@R
+00073496  D$@8
+000734d7  D$@|
+000734df  D$ 8
+00073520  D$ 8
+00073555  D$ 8
+00073590  D$@8
+000735cc  D$@|
+000735d4  D$ 8
+00073610  D$@8
+0007364c  D$@|
+00073654  D$ 8
+0007368d  D$@8
+000736c9  D$@|
+000736d1  D$ 8
+0007371d  D$ |
+000737f3  D$<;
+00073805  u Sh
+00073833  L$<Qj1hx
+0007384c  T$<Rj
+000738b6  D$4;
+000738c8  u Sh
+000738f3  Rj2h
+00073965  9\$p
+00073976  u Sh
+0007399e  T$4Rj2h
+000739b8  D$4Pj
+00073a55  u Sh
+00073a83  L$TQj3h
+00073a9c  T$TRj
+00073bd8  D$d;
+00073caa  L$|QQ
+00073cee  L$<QQ
+00073d2c  L$hQQ
+00073d75  L$8QQ
+00073f1e  D$ h
+00073fa1  L$ h
+00074055  _^]d
+000740ce  D$Lh
+000740e7  L$HQV
+00074273  D$4P
+00074361  D$ P
+000743a5  u Ph
+000743d5  L$(Qj5h
+000743f3  T$(Rj
+0007441e  T$Lh
+00074437  D$HPj
+0007448b  u Sh
+000744ba  L$ Qj'h8
+000744d3  T$ Rj
+000744fe  T$Lh
+00074517  D$HPS
+0007452e  L$ Q
+00074ac0  _^][
+00074af1  _^][
+00074b0c  _^][
+00074b26  _^][
+00074cd2  D$$h
+00074ceb  L$ QS
+00074e16  SUVW
+00074e88  T$(3
+00074f27  _^][
+00074f63  9]\u
+00075099  	T$<3
+000750ce  \$4J
+0007527d  Ph0q
+000752a0  D$XP
+000752e6  PQh<q
+00075356  9]Lu
+0007536f  } 8ZOt
+000753a5  Phxq
+00075490  QQSVWd
+0007574e  QSVW
+0007596b  <$tPf
+00075a9b  <$tPf
+00075c94  @_^]
+00075ca5  =RCC
+00075cac  =MOC
+00075cb3  =csm
+00075cea  hX.	
+00075dc7  8csm
+00075e1d  9csm
+00075eb0  >csm
+00075f5d  8csm
+00075fda  98uu
+0007605e  98uZ
+000762c3  >csm
+0007632a  j,hx/	
+00076402  ~A;L
+0007647c  >csm
+000765bd  taSV
+000765de  YYPV
+000765f5  t)SV
+00076686  Hu4j
+000766ff  =MOC
+0007670a  =RCC
+0007671f  >csm
+000767d4  H=csm
+0007681f  @_^[
+000768d0  =MOC
+000768d5  t*=RCC
+00076939  ;7|G;p
+00076a56  9>u&
+00076db6  tR99u2
+00076dc0  r,9Y
+00076e0c  @_^[]
+00076e97  f-00f=
+00077067  f-00f=
+000772ce  Y__^[
+00079211  50c	
+00079281  5\c	
+0007a319  .eBo
+0007a413  C33s?
+0007a431  .M;R
+0007a4c8  333333
+0007a68c   clientcmd_can_execute
+0007a6a4   server_can_execute
+0007a6b8   replicated
+0007a6c4   cheat
+0007a6cc   notconnected
+0007a6dc   singleplayer
+0007a6ec   notify
+0007a6f4   archive
+0007a700   client
+0007a708   game
+0007a710   - %s
+0007a718  "%s"
+0007a720  ** NOTE: The real value is %.3f but the server has temporarily restricted it to %.3f **
+0007a77f  8 max. %f
+0007a78c   min. %f
+0007a798   ( def. "%s" )
+0007a7a8  "%s" = "%s"
+0007a7c8  {}()':
+0007a82c  ConVarRef %s doesn't point to an existing ConVar
+0007a860  CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!
+0007a8b8  CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
+0007a950  unknown
+0007a958  (*%s*), 
+0007a964  %s, 
+0007a96c  KeyValues Error: %s in file %s
+0007a98c   ReadToken overflow
+0007a9a0  [$WIN32]
+0007a9b8  KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
+0007a9fc  0x%016I64X
+0007aa08  "		"
+0007aa1c  %f %f %f %f
+0007aa2c  KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
+0007aa70  %I64i
+0007aa98  RecursiveLoadFromBuffer:  got conditional between key and value
+0007aad8  RecursiveLoadFromBuffer:  got } in key
+0007ab00  RecursiveLoadFromBuffer:  got NULL key
+0007ab28  RecursiveLoadFromBuffer:  got empty keyname
+0007ab54  RecursiveLoadFromBuffer:  got EOF instead of keyname
+0007ab8c  %f %f
+0007ab94  %f %f %f
+0007aba8  KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
+0007abf0  LoadFromBuffer: missing {
+0007ac0c  #base is NULL 
+0007ac1c  #base
+0007ac24  #include is NULL 
+0007ac38  #include
+0007ac44  VProcessUtils001
+0007ac58  .dll
+0007ac60  Module %s is a debug build
+0007ac7c  BuiltDebug
+0007ac88  -allowdebug
+0007ac94  %s/bin/%s
+0007aca0  %s/%s
+0007aca8  bin/
+0007acb0  CreateInterface
+0007ace6  H@V_AppendSlash: ran out of space on %s.
+0007ad18  %%.%if%s
+0007ad24  %i%s
+0007ad37  > bytes
+0007ad4a  zD%03d
+0007ad54  %03d,
+0007ad60  %02x
+0007ad74  V_MakeAbsolutePath: tried to ".." past the root.
+0007ada8  V_MakeAbsolutePath: _getcwd failed.
+0007ae8c  QueuedLoaderVersion001
+0007aea4  VMDLLIB001
+0007aeb0  VP4001
+0007aeb8  COLORCORRECTION_VERSION_1
+0007aed4  VBAllocTracker001
+0007aee8  DebugTextureInfo001
+0007aefc  MaterialSystemHardwareConfig012
+0007af1c  NetworkSystemVersion001
+0007af34  InputSystemVersion001
+0007af4c  VMaterialSystem079
+0007af60  VFileSystem019
+0007af77  9VSoundEmitter002
+0007af8c  VPhysicsCollision007
+0007afa4  VDmeMakeFileUtils001
+0007afbc  VBik001
+0007afc4  VAvi001
+0007afcc  MDLCache004
+0007afd8  VDataCache003
+0007afe8  MatSystemSurface006
+0007affc  VGUI_Localize004
+0007b010  VGUI_System010
+0007b020  VGUI_Scheme010
+0007b030  VGUI_Surface030
+0007b040  VGUI_Panel009
+0007b050  VGUI_Input005
+0007b060  VGUI_ivgui008
+0007b070  VStudioRender025
+0007b098  bad allocation
+0007b101  fmod
+0007b1b4  Access violation - no RTTI data!
+0007b1d8  Bad read pointer - no RTTI data!
+0007b1fc  Attempted a typeid of NULL pointer!
+0007b220  Bad dynamic_cast!
+0007bc34  Unknown exception
+0007bc9c  (null)
+0007bcc9  ( 8PX
+0007bcd1  700WP
+0007bce1  `h````
+0007bce9  xpxxxx
+0007bd04  CorExitProcess
+0007bda4  modf
+0007bdac  floor
+0007bdb4  ceil
+0007bdbc  atan
+0007bdc4  exp10
+0007bdcc  acos
+0007bdd4  asin
+0007bde0  log10
+0007be0c  FlsFree
+0007be14  FlsSetValue
+0007be20  FlsGetValue
+0007be2c  FlsAlloc
+0007bed8  e+000
+0007bfcf  ?|}}
+0007bfef  ?)0>
+0007bffa  'HR%
+0007c022  cb~q
+0007c089  4lkQg
+0007c0d2  n@4`
+0007c182  ibzP
+0007c192    %X
+0007c1cf  ?iT	
+0007c1e9  w7H-
+0007c22f  ?ju!4
+0007c2d1  V-Ai
+0007c32f  ?Zxg
+0007c3ca  4{#s
+0007c542  PO79
+0007c55f  ?V:e:
+0007c57f  ?4Td
+0007c66a  o]2'
+0007c6df  ?o.x
+0007c714  @g	=
+0007c791  5SmT4
+0007c851  *+xi(
+0007c9d2  }Tw5
+0007ca0f  ?M]-
+0007ca8f  ?y]h
+0007cadf  ?FnH
+0007cc2f  ?dDR
+0007cc8f  ?ZEM-'^
+0007ccbf  ?m}I
+0007cd1f  ?VV&
+0007ce0f  ?>6)}
+0007cf11  fSOs
+0007cf2f  ?{yK+;
+0007cf87  ?i|e
+0007cfcf  ?)Ao
+0007d00f  ?765@Z
+0007d0da  ?}>v
+0007d0e2  H|As
+0007d137  ?B?}
+0007d261  D<xZu
+0007d267  ?`\@
+0007d26f  ?)]G
+0007d29f  ?KB	
+0007d2bf  ?KYC
+0007d357  ?$*2
+0007d377  ?l$G~
+0007d3fa  >|.~
+0007d409  ^\sY0
+0007d40f  ?:Rp
+0007d482  }6lw
+0007d491  7Z8>	
+0007d49f  ?e')lW
+0007d4a7  ?zD@
+0007d4d7  ?* A
+0007d502  yx|o
+0007d50a  6 d!
+0007d511  ZyrI
+0007d59f  ?PV3
+0007d658  UUUUUU
+0007d660  333333
+0007d677  ?333333
+0007d687  ?UUUUUU
+0007d69f  ?$rxxx
+0007d86f  ?|}}
+0007d88f  ?)0>
+0007d89a  'HR%
+0007d8c2  cb~q
+0007d929  4lkQg
+0007d972  n@4`
+0007da22  ibzP
+0007da32    %X
+0007da6f  ?iT	
+0007da89  w7H-
+0007dacf  ?ju!4
+0007db71  V-Ai
+0007dbcf  ?Zxg
+0007dc6a  4{#s
+0007dde2  PO79
+0007ddff  ?V:e:
+0007de1f  ?4Td
+0007df0a  o]2'
+0007df7f  ?o.x
+0007dfb4  @g	=
+0007e031  5SmT4
+0007e0f1  *+xi(
+0007e272  }Tw5
+0007e2af  ?M]-
+0007e32f  ?y]h
+0007e37f  ?FnH
+0007e4cf  ?dDR
+0007e52f  ?ZEM-'^
+0007e55f  ?m}I
+0007e5bf  ?VV&
+0007e6af  ?>6)}
+0007e7b1  fSOs
+0007e7cf  ?{yK+;
+0007e827  ?i|e
+0007e86f  ?)Ao
+0007e8af  ?765@Z
+0007e97a  ?}>v
+0007e982  H|As
+0007e9d7  ?B?}
+0007eb01  D<xZu
+0007eb07  ?`\@
+0007eb0f  ?)]G
+0007eb3f  ?KB	
+0007eb5f  ?KYC
+0007ebf7  ?$*2
+0007ec17  ?l$G~
+0007ec9a  >|.~
+0007eca9  ^\sY0
+0007ecaf  ?:Rp
+0007ed22  }6lw
+0007ed31  7Z8>	
+0007ed3f  ?e')lW
+0007ed47  ?zD@
+0007ed77  ?* A
+0007eda2  yx|o
+0007edaa  6 d!
+0007edb1  ZyrI
+0007ee3f  ?PV3
+0007eec8  UUUUUU
+0007eecf  ?333333
+0007eee7  ?333333
+0007eef7  ?UUUUUU
+0007ef0f  ?$rxxx
+0007f447  ?X&eB
+0007f477  ?Ltm
+0007f492  tLVv
+0007f4a7  ?h6_~
+0007f4ec  37.=
+0007f527  ?7Tf(
+0007f5cb  =\uI=
+0007f5d9  g:"(
+0007f5ec  $O1=
+0007f64c  uXO=
+0007f65c  1w<=
+0007f662  >'eH
+0007f6ec  pnJ=
+0007f751  Ht=c
+0007fb09  ]vQ<)8
+0007fb62  z1}B
+0007fb8b  X4I+
+0007ffd3  |)P!?Ua0
+0007ffdc  		!=
+0007ffe4  +34?
+0007fff6  ??7;
+00080014  MkK?
+00080044  R_V?
+00080064  9&\?
+0008007a  Eb2]A=
+0008008c  f#I=
+00080095  hb?O2
+0008009c  H`3=
+000800a6  c?e2
+000800b5  Le?2
+000800d5  0h?[
+000800db  2ieO=
+0008011b  |W8A=
+00080135  np?z 
+00080144  )(q?
+00080169  }~:f
+00080186  t?,&
+000801a6  u?^p?o4
+000801b4  !9v?
+000801cc  GYM=
+000801e4  Pex?0
+00080224  6K{?
+0008022c  E	M=
+0008024c  X-F=
+00080255  w}?0
+00080264  y1~?|"
+000802bb  V%A+=
+0008035c  4';=
+0008042b  q	! 
+000804f3  #D5p
+00080593  La8i
+000805d3  {4Wf
+000806e3  Ai0T
+00080703  @VNQ
+00080738  p4"%
+0008104c  P'E=
+0008114c  ls1=
+00081187  ?PiB
+0008118c  {^C=
+000812bc  n{;=
+000812fc  3<L=
+00081367  ?|I7Z#
+0008137c  aDJ=
+0008138a  >,'1D=
+0008139c  +NB=
+000813f7  ?g)([|X>=
+00081447  ?|[{
+0008144c  ~*L=
+0008147c  u!K=
+000814f7  ?IT$7
+00081584  -8 ?
+00081594  .h ?
+000815d4  2 !?
+000815e4  4P!?
+0008162a  !y##
+00081634  98"?
+00081644  :h"?bC
+00081684  ? #?
+00081694  @H#?43
+000816a4  Ax#?uN}*
+000816ba  r7Yr7=
+000816cb  .K="=
+000816e4  F0$?3=1
+000816f4  H`$?h|
+00081736  %?uY
+00081744  NH%?
+00081754  Px%?
+00081766  %?\9
+00081786  &?~YK|
+00081793  sU0&?W
+000817a4  VX&?
+00081898  4g%6
+0008192a  :]=O>
+00081938  #w_j
+0008194b  (+E 
+0008195a  V~|_
+00081ab8  !|.4
+00081ad8  G"jm
+00081d18  6(`J
+00081d6b  k:UG
+00081e8b  UY =
+00081f0b  Bfe9
+00081f9a  CqTR;
+00082009  AiFC.
+00082087  ?5a1
+0008210f  <{Q}<
+00082139  hI{L[
+0008218f  <8bunz8
+000821ff  <V/>
+00082247  ?(FN\
+0008230f  <'*6
+00082327  ?3xj
+0008238f  <)TH
+000823ad  K<<H!
+00082479  m1WY$
+00082547  ?#%X.y
+0008259c  F||<##
+000825ad  $x<e
+000825cf  <]%>
+0008265a  T~OXu
+00082667  ?.)T
+000826f9  zyC7
+000827c2  k7+%
+000827cf  <@En[vP
+00082b50  HH:mm:ss
+00082b5c  dddd, MMMM dd, yyyy
+00082b70  MM/dd/yy
+00082b84  December
+00082b90  November
+00082b9c  October
+00082ba4  September
+00082bb0  August
+00082bb8  July
+00082bc0  June
+00082bc8  April
+00082bd0  March
+00082bd8  February
+00082be4  January
+00082c1c  Saturday
+00082c28  Friday
+00082c30  Thursday
+00082c3c  Wednesday
+00082c48  Tuesday
+00082c50  Monday
+00082c58  Sunday
+00082c7c  LC_TIME
+00082c84  LC_NUMERIC
+00082c90  LC_MONETARY
+00082c9c  LC_CTYPE
+00082ca8  LC_COLLATE
+00082cb4  LC_ALL
+00082d27   !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+00082da0  GetProcessWindowStation
+00082db8  GetUserObjectInformationW
+00082dd4  GetLastActivePopup
+00082de8  GetActiveWindow
+00082df8  MessageBoxW
+00082e1c   Complete Object Locator'
+00082e38   Class Hierarchy Descriptor'
+00082e58   Base Class Array'
+00082e6c   Base Class Descriptor at (
+00082e88   Type Descriptor'
+00082e9c  `local static thread guard'
+00082eb8  `managed vector copy constructor iterator'
+00082ee4  `vector vbase copy constructor iterator'
+00082f10  `vector copy constructor iterator'
+00082f34  `dynamic atexit destructor for '
+00082f58  `dynamic initializer for '
+00082f74  `eh vector vbase copy constructor iterator'
+00082fa0  `eh vector copy constructor iterator'
+00082fc8  `managed vector destructor iterator'
+00082ff0  `managed vector constructor iterator'
+00083018  `placement delete[] closure'
+00083038  `placement delete closure'
+00083054  `omni callsig'
+00083064   delete[]
+00083070   new[]
+00083078  `local vftable constructor closure'
+0008309c  `local vftable'
+000830ac  `RTTI
+000830b8  `udt returning'
+000830c8  `copy constructor closure'
+000830e4  `eh vector vbase constructor iterator'
+0008310c  `eh vector destructor iterator'
+0008312c  `eh vector constructor iterator'
+00083150  `virtual displacement map'
+0008316c  `vector vbase constructor iterator'
+00083190  `vector destructor iterator'
+000831b0  `vector constructor iterator'
+000831d0  `scalar deleting destructor'
+000831f0  `default constructor closure'
+00083210  `vector deleting destructor'
+00083230  `vbase destructor'
+00083244  `string'
+00083250  `local static guard'
+00083268  `typeof'
+00083274  `vcall'
+0008327c  `vbtable'
+00083288  `vftable'
+00083308  operator
+0008332c   delete
+00083334   new
+0008333c  __unaligned
+00083348  __restrict
+00083354  __ptr64
+0008335c  __eabi
+00083364  __clrcall
+00083370  __fastcall
+0008337c  __thiscall
+00083388  __stdcall
+00083394  __pascal
+000833a0  __cdecl
+000833a8  __based(
+00083584   ?? 
+0008358c  {flat}
+00083594  {for 
+0008359c  `non-type-template-parameter
+000835bc  unsigned 
+000835c8  long 
+000835d0  int 
+000835d8  short 
+000835e0  char 
+000835e8  void
+000835f0  <ellipsis>
+00083600  ,<ellipsis>
+0008360c  ,...
+00083614   throw(
+00083624  `template-parameter
+00083638  cli::pin_ptr<
+00083648  cli::array<
+00083654  void 
+00083660  `anonymous namespace'
+0008367c  generic-type-
+0008368c  template-parameter-
+000836a4  `unknown ecsu'
+000836b4  union 
+000836bc  struct 
+000836c4  class 
+000836cc  enum 
+000836d4  coclass 
+000836e0  cointerface 
+000836f4  extern "C" 
+00083700  [thunk]:
+0008370c  public: 
+00083718  protected: 
+00083724  private: 
+00083730  virtual 
+0008373c  static 
+00083744  `template static data member destructor helper'
+00083774  `template static data member constructor helper'
+000837a8  `local static destructor helper'
+000837cc  `adjustor{
+000837d8  `vtordisp{
+000837e4  `vtordispex{
+000837fc  const 
+00083804  volatile 
+00083810  CV: 
+00083818  volatile
+00083824   volatile
+00083830  const
+00083838  signed 
+00083840  double
+00083848  bool
+00083850  <unknown>
+0008385c  wchar_t
+00083864  UNKNOWN
+0008386c  __int128
+00083878  __int32
+00083880  __int64
+00083888  __int16
+00083890  __w64 
+00083898  __int8
+000838a0  float
+000838a8  long
+000838b4  short
+000838bc  char
+000838c4  std::nullptr_t
+000838fd  ('8PW
+00083906  700PP
+00083918  `h`hhh
+00083921  xppwpp
+00083934  SystemFunction036
+00083964  _nextafter
+00083970  _logb
+00083984  frexp
+0008398c  fmod
+00083994  _hypot
+0008399c  _cabs
+000839a4  ldexp
+000839ac  fabs
+000839b4  sqrt
+000839bc  atan2
+000839c4  tanh
+000839cc  cosh
+000839d4  sinh
+00083f88   !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+00084108   !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+000841f0  united-states
+00084200  united-kingdom
+00084210  trinidad & tobago
+00084224  south-korea
+00084230  south-africa
+00084240  south korea
+0008424c  south africa
+0008425c  slovak
+00084264  puerto-rico
+00084270  pr-china
+0008427c  pr china
+0008428c  new-zealand
+00084298  hong-kong
+000842a4  holland
+000842ac  great britain
+000842bc  england
+000842c4  czech
+000842cc  china
+000842d4  britain
+000842dc  america
+000842f0  swiss
+000842f8  swedish-finland
+00084308  spanish-venezuela
+0008431c  spanish-uruguay
+0008432c  spanish-puerto rico
+00084340  spanish-peru
+00084350  spanish-paraguay
+00084364  spanish-panama
+00084374  spanish-nicaragua
+00084388  spanish-modern
+00084398  spanish-mexican
+000843a8  spanish-honduras
+000843bc  spanish-guatemala
+000843d0  spanish-el salvador
+000843e4  spanish-ecuador
+000843f4  spanish-dominican republic
+00084410  spanish-costa rica
+00084424  spanish-colombia
+00084438  spanish-chile
+00084448  spanish-bolivia
+00084458  spanish-argentina
+0008446c  portuguese-brazilian
+00084484  norwegian-nynorsk
+00084498  norwegian-bokmal
+000844ac  norwegian
+000844b8  italian-swiss
+000844c8  irish-english
+000844d8  german-swiss
+000844e8  german-luxembourg
+000844fc  german-lichtenstein
+00084510  german-austrian
+00084520  french-swiss
+00084530  french-luxembourg
+00084544  french-canadian
+00084554  french-belgian
+00084564  english-usa
+00084570  english-us
+0008457c  english-uk
+00084588  english-trinidad y tobago
+000845a4  english-south africa
+000845bc  english-nz
+000845c8  english-jamaica
+000845d8  english-ire
+000845e4  english-caribbean
+000845f8  english-can
+00084604  english-belize
+00084614  english-aus
+00084620  english-american
+00084634  dutch-belgian
+00084644  chinese-traditional
+00084658  chinese-singapore
+0008466c  chinese-simplified
+00084680  chinese-hongkong
+00084694  chinese
+000846a4  canadian
+000846b0  belgian
+000846b8  australian
+000846c4  american-english
+000846d8  american english
+000846ec  american
+000849d4  Norwegian-Nynorsk
+000849e8  1#QNAN
+000849f0  1#INF
+000849f8  1#IND
+00084a00  1#SNAN
+00084a20  FCVAR_NEVER_AS_STRING
+00084ca3  9THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 97
+00084cdc  "hrcbot_server_bot\\Bot.cpp"
+00084d00  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 244
+00084d38  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 261
+00084d74  cl_autowepswitch
+00084d88  weapon_crowbar
+00084d98  cl_playermodel
+00084da8  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 309
+00084de0  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 320
+00084e18  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 330
+00084e50  NULL
+00084e58  %s: %s
+00084e60  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 342
+00084e98  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 353
+00084ed0  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 364
+00084f08  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 372
+00084f40  IDLE
+00084f48  Dead
+00084f50  PathingToItem
+00084f60  WalkingToItem
+00084f70  Attack
+00084f78  StartHunting
+00084f88  ContinueHunting
+00084f98  Stalking
+00084fa4  Interrupted
+00084fb0  Disintegrate
+00084fc4  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 425
+00084ffc  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 437
+00085034  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 460
+0008506c  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 496
+000850a4  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 528
+000850dc  HS P@%p H@%p f=%f ls=%f ss=%i as=%i c=%i hb=%i hg=%i
+00085114  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 556
+0008514c  THROW this==NULL "hrcbot_server_bot\\Bot.cpp" 573
+00085184  THROW "hrcbot_server_bot\\Bot.cpp" 581
+000851b0  THROW "h:\\hurricane\\documents\\visual studio 2008\\projects\\hrcbot-amsdk2013\\utils\\hrcbot\\hrcbot_server_core\\TList.h" 731
+00085238  "h:\\hurricane\\documents\\visual studio 2008\\projects\\hrcbot-amsdk2013\\utils\\hrcbot\\hrcbot_server_core\\TList.h"
+000852b0  THROW "h:\\hurricane\\documents\\visual studio 2008\\projects\\hrcbot-amsdk2013\\utils\\hrcbot\\hrcbot_server_core\\TList.h" 755
+00085338  THROW "h:\\hurricane\\documents\\visual studio 2008\\projects\\hrcbot-amsdk2013\\utils\\hrcbot\\hrcbot_server_core\\TList.h" 113
+000853c0  THROW "h:\\hurricane\\documents\\visual studio 2008\\projects\\hrcbot-amsdk2013\\utils\\hrcbot\\hrcbot_server_core\\TList.h" 119
+00085618  THROW this==NULL "hrcbot_server_bot\\Bot_attack.cpp" 104
+00085658  "hrcbot_server_bot\\Bot_attack.cpp"
+0008567c  THROW this==NULL "hrcbot_server_bot\\Bot_attack.cpp" 138
+000856bc  THROW this==NULL "hrcbot_server_bot\\Bot_attack.cpp" 250
+000856fc  THROW this==NULL "hrcbot_server_bot\\Bot_dead.cpp" 23
+00085738  "hrcbot_server_bot\\Bot_dead.cpp"
+0008575c  THROW this==NULL "hrcbot_server_bot\\Bot_detectPlayers.cpp" 24
+000857a0  "hrcbot_server_bot\\Bot_detectPlayers.cpp"
+000857cc  THROW this==NULL "hrcbot_server_bot\\Bot_doTrip.cpp" 22
+00085808  "hrcbot_server_bot\\Bot_doTrip.cpp"
+0008582c  THROW this==NULL "hrcbot_server_bot\\Bot_events.cpp" 44
+00085868  "hrcbot_server_bot\\Bot_events.cpp"
+0008588c  Spawning bot '%s' for team %i (actually in %i) (%i)
+000858c4  team : '%i'
+000858d4  joinclass 0
+000858e0  THROW this==NULL "hrcbot_server_bot\\Bot_events.cpp" 113
+0008591c  THROW "hrcbot_server_bot\\Bot_events.cpp" 117
+00085950  THROW this==NULL "hrcbot_server_bot\\Bot_events.cpp" 160
+00085990  THROW this==NULL "hrcbot_server_bot\\Bot_events.cpp" 189
+000859d0  THROW this==NULL "hrcbot_server_bot\\Bot_events.cpp" 204
+00085a10  THROW this==NULL "hrcbot_server_bot\\Bot_goTo.cpp" 26
+00085a4c  "hrcbot_server_bot\\Bot_goTo.cpp"
+00085a70  THROW this==NULL "hrcbot_server_bot\\Bot_hunt.cpp" 17
+00085aac  "hrcbot_server_bot\\Bot_hunt.cpp"
+00085ad0  THROW this==NULL "hrcbot_server_bot\\Bot_hunt.cpp" 53
+00085b0c  THROW this==NULL "hrcbot_server_bot\\Bot_hunt.cpp" 102
+00085b48  THROW this==NULL "hrcbot_server_bot\\Bot_idle.cpp" 33
+00085b84  "hrcbot_server_bot\\Bot_idle.cpp"
+00085ba8  THROW this==NULL "hrcbot_server_bot\\Bot_prepareTrip.cpp" 17
+00085be8  "hrcbot_server_bot\\Bot_prepareTrip.cpp"
+00085c14  THROW this==NULL "hrcbot_server_bot\\Bot_prepareTrip.cpp" 32
+00085c58  THROW this==NULL "hrcbot_server_bot\\Bot_prepareTrip.cpp" 48
+00085c9c  Loosers
+00085ca4  0wn3d !
+00085cac  %s is a cheater !!!!!!
+00085cc4  You have been terminated !
+00085ce0  I'll be back !
+00085cf0  Do not forget the cake.
+00085d08  Would you kindly stop moving ?
+00085d28  I am still alive.
+00085d3c  We've got science to do.
+00085d58  I don't blame you.
+00085d6c  Enough violence, let's be friends :)
+00085d94  I'm sorry.  Did that hurt ?
+00085db0  Please be careful %s, you could hurt someone.
+00085de0  I'm so sorry.  Are you okay %s ?
+00085e04  Oh dear oh dear oh dear ...
+00085e20  models/Humans/Group03/male_09.mdl
+00085e44  models/Humans/Group03/male_08.mdl
+00085e68  models/Humans/Group03/male_07.mdl
+00085e8c  models/Humans/Group03/male_06.mdl
+00085eb0  models/Humans/Group03/Male_05.mdl
+00085ed4  models/Humans/Group03/Male_04.mdl
+00085ef8  models/Humans/Group03/male_03.mdl
+00085f1c  models/Humans/Group03/male_02.mdl
+00085f40  models/Humans/Group03/Male_01.mdl
+00085f64  models/Humans/Group03/Female_07.mdl
+00085f88  models/Humans/Group03/Female_06.mdl
+00085fac  models/Humans/Group03/Female_05.mdl
+00085fd0  models/Humans/Group03/Female_04.mdl
+00085ff4  models/Humans/Group03/Female_03.mdl
+00086018  models/Humans/Group03/Female_02.mdl
+0008603c  models/Humans/Group03/Female_01.mdl
+00086060  models/Police.mdl
+00086074  models/Combine_Super_Soldier.mdl
+00086098  models/Combine_Soldier.mdl
+000860b4  THROW this==NULL "hrcbot_server_bot\\Bot_think.cpp" 55
+000860f0  "hrcbot_server_bot\\Bot_think.cpp"
+00086114  FROZEN
+0008611c  weapon_physcannon
+00086130  weapon_%s
+0008613c  %i != %i
+00086148  Bot '%s' is set for deathmatch in a team game
+00086178  Bot '%s' in team %i (%i)
+00086194  name
+000861a0  Cerberus
+000861ac  Typhoeus
+000861b8  Gyges
+000861c0  Cottus
+000861c8  Briareus
+000861d4  Arges
+000861dc  Steropes
+000861e8  Brontes
+000861f0  Nemesis
+000861fc  Thanatos
+00086208  Helios
+00086210  Eris
+00086218  Hebe
+00086220  Eros
+00086228  Dionysus
+00086234  Persephone
+00086240  Demeter
+00086248  Metis
+00086250  Atlas
+00086258  Epimetheus
+00086264  Prometheus
+00086270  Thea
+00086278  Phoebe
+00086280  Crius
+00086288  Coeus
+00086290  Iapetus
+00086298  Themis
+000862a0  Mnemosyne
+000862ac  Hyperion
+000862b8  Tethys
+000862c0  Oceanus
+000862c8  Rhea
+000862d0  Cronus
+000862d8  Uranus
+000862e0  Gaea
+000862e8  Hephaestus 
+000862f4  Artemis
+000862fc  Hermes
+00086304  Aphrodite
+00086310  Apollo
+00086318  Athena
+00086320  Ares
+00086328  Hera
+00086330  Hestia
+00086338  Hades
+00086340  Poseidon
+0008634c  Zeus
+00086354  [HRC]
+0008635c  Prefixes the names of the bots
+0008637c  hrcbot_clan
+00086388  Path of a text file with the names available for the bots
+000863c4  addons/hrcbot_server_plugin/hrcbot_names.txt
+000863f4  hrcbot_namesfile
+00086408  Bot#%07i
+00086414  Current directory: '%s'
+00086434  hrcbot namesfile found
+00086450  hrcbot namesfile not found.  Please use an absolute path into hrcbot_namesfile if you have trouble with its path.
+000864c8  ie: hrcbot_namesfile /my/full/path/to/the/hrcbot_namesfile.txt
+00086520  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 20
+0008655c  "hrcbot_server_core\\Bounds.cpp"
+00086580  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 27
+000865bc  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 40
+000865f8  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 47
+00086634  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 65
+00086670  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 75
+000866ac  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 85
+000866e8  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 123
+00086724  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 130
+00086760  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 137
+0008679c  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 144
+000867d8  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 151
+00086814  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 158
+00086850  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 173
+0008688c  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 180
+000868c8  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 187
+00086904  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 196
+00086940  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 203
+0008697c  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 214
+000869b8  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 259
+000869f4  THROW this==NULL "hrcbot_server_core\\Bounds.cpp" 266
+00086a30  THROW this==NULL "hrcbot_server_core\\Button.cpp" 18
+00086a6c  "hrcbot_server_core\\Button.cpp"
+00086aa4  %08x | %08x |
+00086ab4  log: NULL
+00086ac4  hrcbot_log.txt
+00086ad4  CHECK Failure occurred:
+00086aec  File:	%s
+00086af5  Line:	%s
+00086b00  CHECK Failed... (debug?)
+00086b1c  THROW this==NULL "hrcbot_server_core\\Door.cpp" 19
+00086b54  "hrcbot_server_core\\Door.cpp"
+00086b84  Event
+00086b8c  PlayerHurtEvent
+00086b9c  PlayerSpawnEvent
+00086bb0  PlayerDisconnectEvent
+00086bc8  THROW "hrcbot_server_core\\Event.cpp" 223
+00086bf8  "hrcbot_server_core\\Event.cpp"
+00086c18  PlayerDeathEvent
+00086d5c  info_player_start
+00086d70  info_player_terrorist
+00086d88  info_player_counterterrorist
+00086da8  info_player_deathmatch
+00086dc0  GameManager initializing
+00086ddc  Loading relevant item and spawns
+00086e00  item_
+00086e08  Relevant item and spawns loaded.
+00086e2c  GameManager initialized
+00086f20  No bot manager available for this game.
+00086f4c  Unable to create a bot on this server ('%s').
+00086f7c  Bot '%s' should spawn in %i
+00086f9c  Bot '%s' has spawn in %i
+00086fb8  THROW "hrcbot_server_core\\GameManager_Bots.cpp" 223
+00086ff0  "hrcbot_server_core\\GameManager_Bots.cpp"
+0008701c  THROW "hrcbot_server_core\\GameManager_Bots.cpp" 273
+000870bc  THROW "hrcbot_server_core\\GameManager_Players.cpp" 24
+000870f4  "hrcbot_server_core\\GameManager_Players.cpp"
+00087124  THROW this==NULL "hrcbot_server_core\\Item.cpp" 16
+0008715c  "hrcbot_server_core\\Item.cpp"
+0008717c  Item
+00087184  THROW this==NULL "hrcbot_server_core\\Item.cpp" 36
+000871bc  THROW this==NULL "hrcbot_server_core\\Item.cpp" 49
+000871f4  THROW this==NULL "hrcbot_server_core\\Item.cpp" 68
+0008722c  THROW this==NULL "hrcbot_server_core\\Item.cpp" 76
+00087274  THROW this==NULL "hrcbot_server_core\\Messages.cpp" 86
+000872b0  "hrcbot_server_core\\Messages.cpp"
+000872d4  THROW this==NULL "hrcbot_server_core\\Messages.cpp" 94
+00087310  THROW this==NULL "hrcbot_server_core\\Messages.cpp" 102
+00087348  THROW this==NULL "hrcbot_server_core\\Messages.cpp" 111
+00087384  THROW this==NULL "hrcbot_server_core\\Messages.cpp" 122
+000873c0  THROW this==NULL "hrcbot_server_core\\Messages.cpp" 160
+00087420  THROW this==NULL "hrcbot_server_core\\Object.cpp" 34
+0008745c  "hrcbot_server_core\\Object.cpp"
+00087480  Object
+00087488  THROW this==NULL "hrcbot_server_core\\Object.cpp" 63
+000874c4  THROW this==NULL "hrcbot_server_core\\Object.cpp" 78
+00087500  THROW this==NULL "hrcbot_server_core\\Object.cpp" 88
+0008753c  THROW this==NULL "hrcbot_server_core\\Object.cpp" 98
+00087578  THROW "hrcbot_server_core\\Object.cpp" 102
+000875a4  THROW this==NULL "hrcbot_server_core\\Object.cpp" 115
+000875e0  THROW this==NULL "hrcbot_server_core\\Object.cpp" 123
+00087618  THROW this==NULL "hrcbot_server_core\\Object.cpp" 138
+00087650  THROW this==NULL "hrcbot_server_core\\Object.cpp" 148
+0008768c  THROW this==NULL "hrcbot_server_core\\Object.cpp" 163
+000876c8  NONE
+000876d4  BBOX
+000876e0  OBB_YAW
+000876e8  CUSTOM
+000876f0  VPHYSICS
+000876fc  THROW this==NULL "hrcbot_server_core\\Object.cpp" 208
+00087738  THROW this==NULL "hrcbot_server_core\\Object.cpp" 225
+0008777c  THROW this==NULL "hrcbot_server_core\\Object.cpp" 236
+000877b8  THROW this==NULL "hrcbot_server_core\\Object.cpp" 255
+000877f4  THROW this==NULL "hrcbot_server_core\\Object.cpp" 271
+00087830  THROW this==NULL "hrcbot_server_core\\Object.cpp" 286
+0008786c  THROW this==NULL "hrcbot_server_core\\Object.cpp" 304
+000878a8  THROW "hrcbot_server_core\\Object.cpp" 308
+000878d8  THROW "hrcbot_server_core\\Object.cpp" 313
+00087914  THROW this==NULL "hrcbot_server_core\\Player.cpp" 20
+0008794c  "hrcbot_server_core\\Player.cpp"
+00087970  Player
+00087978  THROW this==NULL "hrcbot_server_core\\Player.cpp" 55
+000879b0  THROW this==NULL "hrcbot_server_core\\Player.cpp" 77
+000879ec  THROW "hrcbot_server_core\\Player.cpp" 86
+00087a18  THROW this==NULL "hrcbot_server_core\\Player.cpp" 102
+00087a50  THROW this==NULL "hrcbot_server_core\\Player.cpp" 123
+00087a88  THROW this==NULL "hrcbot_server_core\\Player.cpp" 141
+00087ac4  THROW this==NULL "hrcbot_server_core\\Player.cpp" 151
+00087afc  THROW this==NULL "hrcbot_server_core\\Player.cpp" 190
+00087b38  DISABLED
+00087b44  THROW this==NULL "hrcbot_server_core\\Player.cpp" 278
+00087b80  THROW this==NULL "hrcbot_server_core\\Player.cpp" 293
+00087bbc  THROW this==NULL "hrcbot_server_core\\Player.cpp" 308
+00087bf4  THROW this==NULL "hrcbot_server_core\\Player.cpp" 323
+00087c30  THROW this==NULL "hrcbot_server_core\\Player.cpp" 338
+00087c6c  THROW this==NULL "hrcbot_server_core\\Player.cpp" 358
+00087ca8  ?NO-INFO?
+00087cb4  THROW this==NULL "hrcbot_server_core\\Player.cpp" 386
+00087cf0  THROW this==NULL "hrcbot_server_core\\Player.cpp" 399
+00087d2c  THROW this==NULL "hrcbot_server_core\\Player.cpp" 413
+00087d68  THROW this==NULL "hrcbot_server_core\\Player.cpp" 423
+00087da4  THROW this==NULL "hrcbot_server_core\\Player.cpp" 433
+00087de0  THROW this==NULL "hrcbot_server_core\\Player.cpp" 443
+00087e1c  THROW this==NULL "hrcbot_server_core\\Player.cpp" 453
+00087e58  THROW this==NULL "hrcbot_server_core\\Player.cpp" 463
+00087e94  THROW this==NULL "hrcbot_server_core\\Player.cpp" 473
+00087ed0  THROW this==NULL "hrcbot_server_core\\Player.cpp" 483
+00087f0c  THROW this==NULL "hrcbot_server_core\\Player.cpp" 492
+00087f48  THROW this==NULL "hrcbot_server_core\\Player.cpp" 504
+00087f84  THROW this==NULL "hrcbot_server_core\\Player.cpp" 514
+00087fc0  THROW this==NULL "hrcbot_server_core\\Player.cpp" 524
+00087ffc  THROW this==NULL "hrcbot_server_core\\Player.cpp" 535
+00088038  THROW this==NULL "hrcbot_server_core\\Player.cpp" 581
+00088070  THROW this==NULL "hrcbot_server_core\\Player.cpp" 589
+00088110  THROW "hrcbot_server_core\\Stream.cpp" 540
+00088140  "hrcbot_server_core\\Stream.cpp"
+000881e0  jointeam %i
+000881ec  team? '%s'
+000881f8  %s "%s"
+00088204  THROW this==NULL "hrcbot_server_core\\Tools.cpp" 65
+00088238  "hrcbot_server_core\\Tools.cpp"
+00088258  func_brush
+00088264  func_detail
+00088270  prop_static
+0008827c  THROW this==NULL "hrcbot_server_core\\Tools.cpp" 135
+000882b8  THROW this==NULL "hrcbot_server_core\\Tools.cpp" 142
+000882f4  player
+000882fc  THROW this==NULL "hrcbot_server_core\\Tools.cpp" 208
+00088334  THROW "hrcbot_server_core\\Tools.cpp" 330
+00088360  THROW "hrcbot_server_core\\Tools.cpp" 542
+00088390  ***hstrtrimdup(NULL)***
+000883a8  %%%i.%if
+000883b4  {%6.1f,%6.1f,%6.1f}
+000883c8  {%5.0f,%5.0f,%5.0f,%5.0f}
+000883e4  (%5.0f,%5.0f)-(%5.0f,%5.0f)
+00088400  Vector
+00088408  QAngle
+00088410  Bounds
+00088418  Rect
+00088420  Unknown(
+00088430  BADFORMAT
+0008843c  BADVALUE
+0008844c  THROW this==NULL "hrcbot_server_core\\Weapon.cpp" 32
+00088484  "hrcbot_server_core\\Weapon.cpp"
+000884b4  THROW this==NULL "hrcbot_server_map1\\Arc.cpp" 12
+000884ec  "hrcbot_server_map1\\Arc.cpp"
+0008850c  THROW this==NULL "hrcbot_server_map1\\Arc.cpp" 20
+00088540  THROW this==NULL "hrcbot_server_map1\\Arc.cpp" 28
+00088578  THROW this==NULL "hrcbot_server_map1\\Arc.cpp" 35
+000885b0  THROW this==NULL "hrcbot_server_map1\\Arc.cpp" 42
+000885e8  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 32
+00088620  "hrcbot_server_map1\\Dedale.cpp"
+00088644  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 61
+00088680  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 108
+000886bc  Bad Z
+000886c4  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 290
+00088700  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 308
+00088738  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 315
+00088774  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 322
+000887b0  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 331
+000887ec  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 349
+00088828  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 356
+00088864  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 364
+0008889c  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 377
+000888d8  THROW this==NULL "hrcbot_server_map1\\Dedale.cpp" 397
+00088a8c  point_viewcontrol
+00088aa0  ctf_location_name
+00088ab4  game_text
+00088ac0  env_flare
+00088acc  info_target
+00088ad8  point_spotlight
+00088ae8  env_sprite
+00088af4  ai_network
+00088b00  bodyque
+00088b08  soundent
+00088b14  team_manager
+00088b24  env_smokestack
+00088b34  infodecal
+00088b40  env_soundscape
+00088b50  ambient_generic
+00088b60  env_lightglow
+00088b70  worldspawn
+00088b7c  info_player_rebel
+00088b90  info_player_combine
+00088ba4  info_player_axis
+00088bb8  info_player_allies
+00088bcc  ctf_rebel_player_spawn
+00088be4  ctf_combine_player_spawn
+00088c00  func_
+00088c08  weapon_
+00088c10  ctf_combine_flag
+00088c24  ctf_rebel_flag
+00088c34  dod_capture_area
+00088c48  dod_control_point
+00088c60  THROW this==NULL "hrcbot_server_map1\\Dedale_analyseMap.cpp" 83
+00088ca4  "hrcbot_server_map1\\Dedale_analyseMap.cpp"
+00088cd0  func_button
+00088cdc  func_door
+00088ce8  THROW this==NULL "hrcbot_server_map1\\Dedale_buildGateways.cpp" 10
+00088d30  "hrcbot_server_map1\\Dedale_buildGateways.cpp"
+00088d60  THROW "hrcbot_server_map1\\Dedale_buildPaths.cpp" 98
+00088d98  "hrcbot_server_map1\\Dedale_buildPaths.cpp"
+00088dc4  THROW this==NULL "hrcbot_server_map1\\Dedale_buildRoom.cpp" 10
+00088e04  "hrcbot_server_map1\\Dedale_buildRoom.cpp"
+00088e30  WARNING: Forgotten nodes added: %i
+00088e58  THROW "h:\\hurricane\\documents\\visual studio 2008\\projects\\hrcbot-amsdk2013\\utils\\hrcbot\\hrcbot_server_core\\TSortedList.h" 120
+00088ee8  "h:\\hurricane\\documents\\visual studio 2008\\projects\\hrcbot-amsdk2013\\utils\\hrcbot\\hrcbot_server_core\\TSortedList.h"
+00088f68  THROW "h:\\hurricane\\documents\\visual studio 2008\\projects\\hrcbot-amsdk2013\\utils\\hrcbot\\hrcbot_server_core\\TSortedList.h" 142
+000890c8  THROW this==NULL "hrcbot_server_map1\\Dedale_buildRooms.cpp" 12
+00089108  "hrcbot_server_map1\\Dedale_buildRooms.cpp"
+0008913c  THROW this==NULL "hrcbot_server_map1\\Dedale_loadMap.cpp" 129
+00089180  "hrcbot_server_map1\\Dedale_loadMap.cpp"
+000891ac  addons/hrcbot_server_plugin/%s-%i.hrcbot
+000891d8  THROW this==NULL "hrcbot_server_map1\\Dedale_loadMap.cpp" 151
+00089218  File %s is broken (%x/%i). size=%d. lastbytepos=%d
+0008924c  There is something rotten in this filesystem behavior
+00089288  THROW this==NULL "hrcbot_server_map1\\Dedale_optimizeRooms.cpp" 10
+000892cc  "hrcbot_server_map1\\Dedale_optimizeRooms.cpp"
+00089300  WARNING: weird 2  Room@%p %4i nodes %10.0f superficy %{Bounds} (ignored)
+0008934c  THROW this==NULL "hrcbot_server_map1\\Dedale_raster.cpp" 10
+00089388  "hrcbot_server_map1\\Dedale_raster.cpp"
+000893b0  THROW this==NULL "hrcbot_server_map1\\Dedale_saveMap.cpp" 21
+000893f4  "hrcbot_server_map1\\Dedale_saveMap.cpp"
+00089420  addons/hrcbot_server_plugin
+00089440  Hurricane Bot ver 1.3.4-hl2sdk-amsdk20130427 (130501)
+00089498  THROW this==NULL "hrcbot_server_map1\\Dedale_spreadNetwork.cpp" 20
+000894dc  "hrcbot_server_map1\\Dedale_spreadNetwork.cpp"
+00089510  THROW this==NULL "hrcbot_server_map1\\Dedale_spreadNetwork.cpp" 134
+00089558  Block: %8x %5i %5i %5i %5i %5i %5i %6x %8x %8x %8x %8x %8x %8x %i %i %i
+000895a0  Adding flood at (%5i,%5i,%5i)
+000895c0  NewMaxDelta: %s %08x %04x
+000895dc  NewMaxAlt: %s %08x %04x
+000895f4  Linked to higher step: %i
+00089610  void Flood::flood()
+00089624  Flooding ...
+00089634  Block limit reached (%i).  Skipping flooding.
+00089668  %9i | +=%9i -=%9i =%9i #%5i H=%5i Q=%5i(%5i) q=%5i(%5i) S=%6i A=%6i a=%6i r=%i
+000896b8  Block count : %i
+000896cc  Phase1 lasted %i seconds
+000896e8  GOT %04x * %7i
+000896f8  Filtering pass ...
+00089710  Warning: %c%c %8x %5i %5i %5i %5i %5i %5i %6x (%2x) %8x %8x %8x %8x %8x %8x
+0008975c  	Dir#%i seems Empty or Blocked
+0008977c  	Dir#%i seems Contact
+00089794  Max error count reached
+000897ac  Phase2 lasted %i seconds
+000897c8  Plane(%5i,%2i) {%6i,%6i,%6i}-{%6i,%6i,%6i}
+000897f4  %i Planes created
+00089808  %i Blocks still in the set
+00089824  Phase3 lasted %i seconds
+00089840  Storage pass ...
+00089854  addons/hrcbot_server_plugin/%s-%i.hrcbot2
+00089880  POSEIDON
+0008988c  BLOCK
+00089894  PLANES
+000898a0  Storage lasted %i seconds
+00089a64  THROW this==NULL "hrcbot_server_map1\\Gateway.cpp" 14
+00089aa0  "hrcbot_server_map1\\Gateway.cpp"
+00089ac4  THROW this==NULL "hrcbot_server_map1\\Gateway.cpp" 24
+00089afc  THROW this==NULL "hrcbot_server_map1\\Gateway.cpp" 32
+00089b34  THROW this==NULL "hrcbot_server_map1\\Gateway.cpp" 39
+00089b70  THROW this==NULL "hrcbot_server_map1\\Gateway.cpp" 46
+00089bac  THROW this==NULL "hrcbot_server_map1\\Gateway.cpp" 53
+00089be4  THROW this==NULL "hrcbot_server_map1\\Gateway.cpp" 60
+00089c20  THROW this==NULL "hrcbot_server_map1\\Gateway.cpp" 67
+00089c5c  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 15
+00089c98  "hrcbot_server_map1\\Network.cpp"
+00089cbc  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 31
+00089cf8  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 56
+00089d34  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 99
+00089d70  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 146
+00089dac  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 153
+00089de8  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 175
+00089e24  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 205
+00089e60  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 234
+00089e9c  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 259
+00089ed4  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 288
+00089f10  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 313
+00089f48  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 344
+00089f84  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 355
+00089fc0  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 372
+00089ff8  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 384
+0008a034  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 397
+0008a06c  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 404
+0008a0a8  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 411
+0008a0e4  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 423
+0008a11c  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 435
+0008a158  THROW this==NULL "hrcbot_server_map1\\Network.cpp" 443
+0008a190  THROW this==NULL "hrcbot_server_map1\\NetworkRaster.cpp" 14
+0008a1cc  "hrcbot_server_map1\\NetworkRaster.cpp"
+0008a1f4  THROW this==NULL "hrcbot_server_map1\\NetworkRaster.cpp" 23
+0008a230  THROW this==NULL "hrcbot_server_map1\\NetworkRaster.cpp" 32
+0008a26c  THROW this==NULL "hrcbot_server_map1\\NetworkRaster.cpp" 63
+0008a2a8  THROW this==NULL "hrcbot_server_map1\\NetworkRaster.cpp" 77
+0008a2e4  THROW this==NULL "hrcbot_server_map1\\NetworkRaster.cpp" 84
+0008a324  THROW this==NULL "hrcbot_server_map1\\NetworkRaster.cpp" 91
+0008a364  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 18
+0008a398  "hrcbot_server_map1\\Node.cpp"
+0008a3b8  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 50
+0008a3f0  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 62
+0008a428  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 69
+0008a460  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 76
+0008a494  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 83
+0008a4c8  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 90
+0008a500  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 97
+0008a534  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 104
+0008a568  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 122
+0008a59c  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 135
+0008a5d0  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 142
+0008a604  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 162
+0008a63c  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 169
+0008a674  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 176
+0008a6ac  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 184
+0008a6e4  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 191
+0008a71c  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 198
+0008a754  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 205
+0008a788  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 212
+0008a7c0  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 223
+0008a7f4  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 240
+0008a82c  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 257
+0008a864  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 274
+0008a89c  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 291
+0008a8d4  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 311
+0008a90c  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 331
+0008a940  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 351
+0008a978  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 371
+0008a9b0  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 388
+0008a9e8  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 405
+0008aa20  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 422
+0008aa58  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 439
+0008aa90  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 458
+0008aac8  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 477
+0008ab00  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 496
+0008ab34  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 516
+0008ab6c  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 523
+0008aba4  THROW this==NULL "hrcbot_server_map1\\Node.cpp" 530
+0008ad08  Poseidon::Poseidon
+0008ad1c  THROW this==NULL "hrcbot_server_map1\\Poseidon.cpp" 43
+0008ad58  "hrcbot_server_map1\\Poseidon.cpp"
+0008ad7c  Poseidon::analyseMap(%s,%i)
+0008ad98  Poseidon::analyseMap() Retrieve the spawn points
+0008adcc  Poseidon::analyseMap() Flood instance
+0008adf4  Poseidon::analyseMap() Flood init
+0008ae18  spawn@%{Vector}
+0008ae28  Poseidon::analyseMap() Flood start
+0008ae4c  Poseidon::analyseMap() Flood done
+0008ae70  Poseidon::analyseMap() done
+0008aeb0  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 17
+0008aee4  "hrcbot_server_map1\\Room.cpp"
+0008af04  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 26
+0008af38  THROW "hrcbot_server_map1\\Room.cpp" 43
+0008af60  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 56
+0008af94  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 63
+0008afc8  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 70
+0008b000  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 86
+0008b034  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 102
+0008b068  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 111
+0008b09c  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 118
+0008b0d4  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 125
+0008b10c  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 132
+0008b144  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 171
+0008b17c  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 180
+0008b1b0  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 239
+0008b1e8  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 246
+0008b220  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 253
+0008b258  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 260
+0008b290  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 267
+0008b2c8  THROW this==NULL "hrcbot_server_map1\\Room.cpp" 323
+0008b3c8  THROW this==NULL "hrcbot_server_map1\\Room_divideWith.cpp" 203
+0008b408  "hrcbot_server_map1\\Room_divideWith.cpp"
+0008b448  ISERVERPLUGINCALLBACKS002
+0008b464  Logging Hurricane Bot Server Plugin loading steps ...
+0008b49c  hrcbot_server_plugin Load@%p
+0008b4bc  Hurricane Bot hrcbot_server_plugin Load@%p
+0008b4e8  Hurricane Bot Run-Time checks enabled: %i
+0008b514  PlayerInfoManager002
+0008b52c  Unable to connect to interface %s
+0008b550  %s: %p
+0008b558  BotManager001
+0008b568  VEngineServer021
+0008b57c  GAMEEVENTSMANAGER001
+0008b594  VFileSystem022
+0008b5a4  ISERVERPLUGINHELPERS001
+0008b5bc  EngineTraceServer003
+0008b5d4  VEngineCvar004
+0008b5e4  ServerGameEnts001
+0008b5f8  Unable to connect to all the required interfaces : giving up
+0008b638  VSERVERTOOLS002
+0008b648  VSERVERCHOREOTOOLS001
+0008b660  MapData001
+0008b66c  VClientEntityList003
+0008b684  StaticPropMgrServer002
+0008b69c  GlobalVars : %p
+0008b6ac  Hurricane Bot Server Plugin loaded
+0008b6d0  Unload:
+0008b6d8  	Handled bots: %i
+0008b6ec  	Handled players: %i
+0008b708  Hurricane Bot ver 1.3.4-hl2sdk-amsdk20130427 (130501), by Hurricane
+0008b74c  LevelInit:
+0008b758  ServerActivate(edict_t@%p,count=%i,max_clients=%i)
+0008b790  es_xset hrcbot_version "1.3.4-hl2sdk-amsdk20130427 Built: May  1 2013 11:15:34"
+0008b7e4  es_xmakepublic hrcbot_version
+0008b804  ServerActivate:
+0008b814  	IMap: %p
+0008b820  LevelShutdown:
+0008b830  ClientActive:
+0008b840  ClientDisconnect:
+0008b854  ClientDisconnect: (NULL)
+0008b874  title
+0008b87c  Built: May  1 2013 11:15:34
+0008b898  color
+0008b8a0  level
+0008b8a8  time
+0008b95c  Sets the minimum number of players
+0008b984  hrcbot_minplayers
+0008b998  Bots will balance down to this number of players
+0008b9cc  hrcbot_maxplayers
+0008b9e0  As long as the minplayers and maxplayers conditions are respected, the plugin will try to get at least this number of bots ingame.
+0008ba68  hrcbot_preferredcount
+0008ba80  Force the bot into a preset team. -1=balanced teams; 0=deathmatch*; 1=spectator*; 2=combine; 3=rebels. (*does not make sense in HL2DM)
+0008bb0c  hrcbot_forceteam
+0008bb20  Set this to 0 to disable min,max,preferred and forceteam features.  hrcbot_add can only work in this mode.
+0008bb90  hrcbot_autobalancebots
+0008bba8  Start filling the game with bots only if there are already players in it
+0008bbf4  hrcbot_waitforplayers
+0008bc10  When the last human player leaves the game, the bots are disabled.
+0008bc54  hrcbot_freezeifnoplayers
+0008bc70  ie: smg1 pistol 357 crossbow shotgun ar2 frag rpg
+0008bca4  smg1
+0008bcac  hrcbot_player_spawnweapon
+0008bcc8  Set this to 0 for a very strong bot.  Set a higher integer for your little sister (100).
+0008bd28  hrcbot_handicap
+0008bd38  Set this to anything else than 0 to disable the bot chatter (default is 0).
+0008bd84  hrcbot_mute
+0008bd90  When a player spawn, the bot will leave him alone for until this time has elapsed (1/60 seconds units)
+0008bdf8  hrcbot_spawnprotectiontime
+0008be14  The bot will only use the crowbar
+0008be38  hrcbot_crowbarmaniacs
+0008be50  Set this to 0 to disable the plugin notification
+0008be84  hrcbot_motd
+0008be90  Set this to 0 to prevent the bot from changing weapons
+0008bec8  hrcbot_autoweaponswitch
+0008bee0  The bot will assume that a player with at least this amount of health is spawn protected.  The default value will change once the new version of 'Spawn & Chat Protect' is available (http://www.esteticas.se/catman.php)
+0008bfc0  hrcbot_spawnprotectedhealth
+0008bfe0  All the bots will use the specified model.  Use '*' for the default random choice.
+0008c034  hrcbot_playermodel
+0008c048  If enabled, the bot version will be displayed on each user's screen as they connect
+0008c09c  hrcbot_dialogmsg
+0008c0b0  On some modded servers, the kick command does not work.  You can define what command will kick a player with this cvar.
+0008c128  kick
+0008c130  hrcbot_kickcommand
+0008c148  If set to 0, the bots will cease all activity and the map will not be analysed at load time.  If you re-enable the bot in a level with an unanalysed map, you will have to change the level again to get it analyzed.
+0008c220  hrcbot_enabled
+0008c230  If set to 1, the plugin will log critical sections of the status of the bots
+0008c280  hrcbot_notifycriticals
+0008c298  List of the weapons known to the bots
+0008c2c0  weapon_smg1 weapon_pistol weapon_shotgun weapon_357 weapon_crossbow weapon_ar2 weapon_frag weapon_stunstick weapon_crowbar weapon_physcannon
+0008c350  hrcbot_knownweapons
+0008c364  DelayedAttack
+0008c374  !!!ERROR!!!
+0008c380  hrcbot_info: Hurricane Bot ver 1.3.4-hl2sdk-amsdk20130427 (130501) ; Built: May  1 2013 11:15:34 ; public release = %i
+0008c3f8  These information are meant for debugging and are subject to change.
+0008c440  game::teamplay: %i
+0008c454  hrcbot_enabled=%i
+0008c468  hrcbot_minplayers=%i
+0008c480  hrcbot_maxplayers=%i
+0008c498  hrcbot_preferredcount=%i
+0008c4b4  hrcbot_forceteam=%i
+0008c4c8  hrcbot_autobalancebots=%i
+0008c4e4  hrcbot_kickcommand=%s
+0008c4fc  hrcbot_waitforplayers=%i
+0008c518  hrcbot_freezeifnoplayers=%i
+0008c534  hrcbot_player_spawnweapon=%s
+0008c554  hrcbot_handicap=%i
+0008c568  hrcbot_mute=%i
+0008c578  hrcbot_spawnprotectiontime=%i
+0008c598  hrcbot_crowbarmaniacs=%i
+0008c5b4  hrcbot_motd=%i
+0008c5c4  hrcbot_autoweaponswitch=%i
+0008c5e0  hrcbot_spawnprotectedhealth=%i
+0008c600  hrcbot_playermodel=%s
+0008c618  hrcbot_dialogmsg=%i
+0008c62c  hrcbot_knownweapons=%s
+0008c644  Hurricane@%p
+0008c654  bots count=%i
+0008c668  	[%3i] Name='%s' Team=%i (%i) Health=%i Armor=%i Frags=%i Deaths=%i Model='%s' Weapon='%s' Connected=%i Dead=%i Fake=%i Observer=%i Player=%i Protected=%i Solid=%i Valid=%i | BA={%s,%i,%i,%i,%i} P={%s,%f,%i,%i}
+0008c73c  	[%3i] edict is NULL
+0008c754  players count=%i
+0008c768  	[%3i] Name='%s' Team=%i Health=%i Armor=%i Frags=%i Deaths=%i Model='%s' Weapon='%s' Connected=%i Dead=%i Fake=%i Observer=%i Player=%i Protected=%i Solid=%i Valid=%i
+0008c810  		ID='%s'
+0008c81c  hrcbot_info : DONE
+0008c830  Logs information about the internals of the bot on the console
+0008c870  hrcbot_info
+0008c880  hrc__LINE__
+0008c88c  hrcbot_fire
+0008c898  hrcbot_move
+0008c8a4  1800
+0008c8bc  hrcbot_spawnprotectiontime %i
+0008c8e0  When a player spawn, the bot will leave him alone for until this time has elapsed (seconds units).  Modifies hrcbot_spawnprotectiontime
+0008c968  hrcbot_spawnprotectionseconds
+0008c988  The bots were disabled at map load time.  Unable to add a bot.
+0008c9c8  hrcbot_add can only work with 'hrcbot_autobalancebots 0'
+0008ca08  Add a bot.  You can use an optional [team] parameter. It should be 2 for combine or 3 for rebels.
+0008ca6c  hrcbot_add
+0008ca78  The bots were disabled at map load time.
+0008caa4  hrcbot_kick can only work with 'hrcbot_autobalancebots 0'
+0008cae0  Kicking bot '%s'
+0008caf4  No matching bot found
+0008cb10  Removes a bot. You can use an optional [team] parameter. It should be 2 for combine or 3 for rebels.
+0008cb78  hrcbot_kick
+0008cb88  trace: allsolid=%i contents=%i dispFlags=%04x fraction=%f fractionleftsolid=%f hitbox=%i hitgroup=%i physicsbone=%i
+0008cbfc  	plane: dist=%f normal=%f,%f,%f pad=%i:%i signbits=%x type=%i
+0008cc3a  	surface: flags=%x name='%s' surfaceProps=%i
+0008cc68  DEBUG
+0008cc70  hrcbot_analyseground
+0008cc88  [%i] '%s'
+0008cc94  Not enough parameters
+0008ccac  Unknown bot
+0008ccb8  '%s' will do '%s'
+0008ccd0  hrcbot_do "bot name" command : The bot will execute the command as himself. '"' are mandatory for composed names.
+0008cd44  hrcbot_do
+0008cd54  player_hurt
+0008cd60  userid
+0008cd68  attacker
+0008cd74  health
+0008cd7c  player_spawn
+0008cd8c  player_disconnect
+0008cda0  reason
+0008cda8  networkid
+0008cdb4  player_death
+0008cdc4  weapon
+0008cdcc  scp_start
+0008cdd8  scp_end
+0008cf04  Mb0?
+0008cf29  $tI	j
+0008cf3c  bad exception
+0008cf6f  ?1mm
+0008d06f  ?Xw$
+0008d0cf  ?uZEeu
+0008d12f  ?P/Y
+0008d1d0  uZEeu
+0008d4d0  uZEeu
+0008d5cf  ?uZEeu
+0008d62f  ?Xw$
+0008d72f  ?1mm
+0008d74f  ?UUUUUU
+0008d767  ?UUUUUU
+0008d793  m0_$@
+0008d80f  ?1mm
+0008d90f  ?Xw$
+0008d96f  ?uZEeu
+0008d9cf  ?P/Y
+0008da70  uZEeu
+0008dd70  uZEeu
+0008de6f  ?uZEeu
+0008decf  ?Xw$
+0008dfcf  ?1mm
+0008dfef  ?UUUUUU
+0008e007  ?UUUUUU
+0008e033  m0_$@
+0008e0e8  RSDSs
+0008e0f8  #VES
+0008e100  H:\Hurricane\Documents\Visual Studio 2008\Projects\HRCBOT-AMSDK2013\utils\hrcbot\Release\hrbot_server_plugin_i486.pdb
+0009222e  CreateFileA
+0009223c  GetCurrentThread
+00092250  WriteFile
+0009225c  FlushFileBuffers
+0009226e  KERNEL32.dll
+0009227e  MessageBoxA
+0009228a  USER32.dll
+0009229e  Warning
+000922a8  g_pMemAlloc
+000922b6  Error
+000922be  GetCPUInformation
+000922d0  tier0.dll
+000922dc  KeyValuesSystem
+000922ec  vstdlib.dll
+000922fa  WideCharToMultiByte
+00092310  MultiByteToWideChar
+00092326  GetProcAddress
+00092338  GetModuleHandleA
+0009234c  LoadLibraryExA
+0009235e  FreeLibrary
+0009236c  DecodePointer
+0009237c  EncodePointer
+0009238c  GetSystemTimeAsFileTime
+000923a6  GetCurrentThreadId
+000923bc  GetCommandLineA
+000923ce  GetDriveTypeW
+000923de  GetLastError
+000923ee  GetFullPathNameA
+00092402  SetEnvironmentVariableA
+0009241c  GetCurrentDirectoryA
+00092434  SetCurrentDirectoryA
+0009244c  GetStdHandle
+0009245c  GetModuleFileNameW
+00092472  GetLocaleInfoW
+00092484  HeapFree
+00092490  HeapAlloc
+0009249c  RaiseException
+000924ae  UnhandledExceptionFilter
+000924ca  SetUnhandledExceptionFilter
+000924e8  IsDebuggerPresent
+000924fc  TerminateProcess
+00092510  GetCurrentProcess
+00092524  Sleep
+0009252c  HeapSize
+00092538  GetModuleHandleW
+0009254c  ExitProcess
+0009255a  IsProcessorFeaturePresent
+00092576  TlsAlloc
+00092582  TlsGetValue
+00092590  TlsSetValue
+0009259e  TlsFree
+000925a8  InterlockedIncrement
+000925c0  SetLastError
+000925d0  InterlockedDecrement
+000925e8  SetHandleCount
+000925fa  InitializeCriticalSectionAndSpinCount
+00092622  GetFileType
+00092630  GetStartupInfoW
+00092642  DeleteCriticalSection
+0009265a  GetModuleFileNameA
+00092670  FreeEnvironmentStringsW
+0009268a  GetEnvironmentStringsW
+000926a4  HeapCreate
+000926b2  HeapDestroy
+000926c0  QueryPerformanceCounter
+000926da  GetTickCount
+000926ea  GetCurrentProcessId
+00092700  GetCPInfo
+0009270c  GetACP
+00092716  GetOEMCP
+00092722  IsValidCodePage
+00092734  GetStringTypeW
+00092746  GetCurrentDirectoryW
+0009275e  SetCurrentDirectoryW
+00092776  LeaveCriticalSection
+0009278e  FatalAppExitA
+0009279e  EnterCriticalSection
+000927b6  LCMapStringW
+000927c6  SetConsoleCtrlHandler
+000927de  LoadLibraryW
+000927ee  RtlUnwind
+000927fa  SetFilePointer
+0009280c  GetConsoleCP
+0009281c  GetConsoleMode
+0009282e  HeapReAlloc
+0009283c  InterlockedExchange
+00092852  GetUserDefaultLCID
+00092868  GetLocaleInfoA
+0009287a  EnumSystemLocalesA
+00092890  IsValidLocale
+000928a0  SetStdHandle
+000928b0  WriteConsoleW
+000928c0  ReadFile
+000928cc  CreateFileW
+000928da  CloseHandle
+000928e8  ?ConMsg@@YAXPBDZZ
+000928fc  ?ConColorMsg@@YAXABVColor@@PBDZZ
+00092920  DevMsg
+0009292a  ?DevMsg@@YAXPBDZZ
+0009293e  ThreadWaitForObjects
+00092956  Plat_IsInDebugSession
+0009296e  ReleaseThreadHandle
+00092984  CreateSimpleThread
+0009299a  GetThreadedLoadLibraryFunc
+000929b8  CommandLine_Tier0
+000929cc  AssertValidStringPtr
+000929e4  _AssertValidWritePtr
+000929fc  _AssertValidReadPtr
+00092a56  hrcbot_server_plugin.dll
+00092a6f  CreateInterface
+00092a7f  cvar
+00092a84  g_pCVar
+000930b0  .?AVIConCommandBaseAccessor@@
+000930d8  .?AVConCommandBase@@
+000930fc  .?AVConCommand@@
+00093118  .?AVIConVar@@
+00093130  .?AVConVar@@
+0009314c  .?AVConVar_ServerBounded@@
+00093170  .?AVCDefaultAccessor@@
+00093190  .?AVCEmptyConVar@@
+0009335c  .?AVCDllDemandLoader@@
+00093379  r""\\
+000933f8  .?AVCUtlCharConversion@@
+0009341c  .?AVCUtlNoEscConversion@@
+00093440  .?AVCUtlCStringConversion@@
+000934a0  .?AVtype_info@@
+000934b8  .?AVbad_alloc@std@@
+000934d4  .?AVexception@std@@
+00093500  acos
+00093510  asin
+00093527  ?pow
+00093538  .?AVbad_typeid@std@@
+00093558  .?AV__non_rtti_object@std@@
+0009357c  .?AVbad_cast@std@@
+00093826                            
+00093906  abcdefghijklmnopqrstuvwxyz
+00093926  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+00093a2a                            
+00093b11  abcdefghijklmnopqrstuvwxyz
+00093b31  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0009457a  kU'9
+000945ca  HMXB
+0009462f  ?Zd;
+00094677  ?/L[
+00094686  S;uD
+000946a6  z?aUY
+000946be  D?$?
+000946d6  U>c{
+000946e8  zc%C1
+00094712  .:3q
+0009473b  -64OS
+0009475c  NKeb
+00094a7a   A0123456789ABCDEF
+000954f0  sqrt
+00095500  .?AVbad_exception@std@@
+00095608  Z2j2
+00095611  21383I3Y3
+0009562b  4"4B4R4i4
+00095639  4*5s5s6/9
+00095653  :D;N;S;X;q;~;
+00095667  <S<s<
+0009566d  <)=q=
+000956b1  2D3N3S3X3q3~3
+000956c9  4R5i5
+000956dd  6#6(6-6F6S6^6
+000956f9  838@8K8i8s8x8}8
+0009570d  8S9r9
+00095719  :":B:R:r:
+00095735  =,=c={=
+00095753  =*>J>j>
+000957b1  5"6z6
+000957bb  6"797
+000957d7  8#8.8
+000957e1  9:9R9r9
+000957f1  :/:i:
+000957fb  :*;s;y<
+0009580f  ?"?,?1?6?O?
+00095841  2t2~2
+00095853  4"4b4y4
+00095867  5)53585=5V5c5n5
+00095877  6"6R6i6
+0009588d  7#7(7-7F7S7^7
+0009589d  818Z8
+000958ad  9#9;9I9M9W9]9b9k9t9
+000958cb  :S:S;	>
+000958db  ?3?@?K?
+00095903  1 1L1
+00095919  2*2P2Z2_2d2}2
+0009594d  4+454:4?4X4
+0009595f  4G5W5
+0009596b  5R6b6r6
+0009597b  7"8Y8u8
+00095987  9c9i:
+000959a5  =)>|>
+000959b3  >I?v?
+000959cc  $0.03080Q0^0i0
+000959df  031Q1
+000959e9  293V3`3e3j3
+00095a05  6 7>7H7M7R7k7	868@8E8J8c8p8{8
+00095a39  :R;i;
+00095a4d  <#<(<-<F<S<^<
+00095a5d  =B=Y=
+00095a77  >6>C>N>
+00095a81  ?!?J?q?
+00095a99  090a0
+00095aad  7D798
+00095ab3  9F9P9U9Z9s9
+00095ac9  :!:.:9:
+00095ad9  ;*<s<s=
+00095ae9  0y0I1v1
+00095afb  1$2.23282Q2^2i2
+00095b0b  2:3R3
+00095b1b  434@4K4i4s4x4}4
+00095b2f  4C5b5
+00095b3b  5B6p6
+00095b4b  6;7l7|7
+00095b89  3(3J4
+00095b97  536Q6
+00095bc3  <"=I>[>`>y>
+00095be9  2	363@3E3J3c3p3{3
+00095c15  9):	;6;@;E;J;c;p;{;
+00095c33  <)<z=
+00095c41  >8>d>
+00095c47  >"?2?I?e?
+00095c5c  	0V0`0e0j0
+00095c83  2I2]2
+00095c91  424I4
+00095cab  5&535>5
+00095cb5  6*6C6_6
+00095cc3  727I7h7
+00095ccd  7 8*8/848M8Y8
+00095cf5  =2=<=A=F=_=
+00095d37  0"1z1
+00095d41  1F2P2U2Z2s2
+00095d67  4"484
+00095d73  4Z5 6*6/646M6Y6
+00095d9d  :1:z:
+00095da7  <6<@<E<J<c<^>r>|>
+00095ddb  0d1n1s1x1
+00095deb  232O2V2
+00095df5  3"3Y3v3
+00095e05  4#5[5
+00095e0f  6 6%6*6C6P6[6y6
+00095e29  6S7r7
+00095e35  8:8Y8x8
+00095e47  ;2;6;;;B;
+00095e7d  2f3v3V4n4
+00095e8d  5M6l6
+00095e95  9$:l:
+00095e9b  :M;b;z;
+00095ebd  2 2$2G2m2
+00095ecd  3'4M4|4~5
+00095f0d  ?"?;?P?V?b?m?
+00095f37  0D0S0>1
+00095f4d  6,6>6
+00095f69  9[:{:n;
+00095f73  ;+<G<
+00095f8b  ?3?k?
+00095f9d  0f0r0%1v1
+00095fab  203:3
+00095fb3  3p4z4
+00095fe9  >Q?y?
+00096007  7R8`8j8o8u8y8
+00096047  92989>9B9H9L9R9V9\9`9f9j9p9t9z9~9
+0009607d  :!:v:
+0009608b  ::;T;c;j;y;
+000960a9  <:<T<c<k<z<
+000960d1  1c5t5z5
+000960e5  677f7p7
+000960ed  798J8T8g8
+0009611d  1A3>5?6
+00096125  7M7]8m9m:
+0009612f  =*=r=
+00096137  =:>`>l>
+0009613f  ?"?(?6?T?
+00096159  2-2B2y2
+00096171  3$3:3E3V3w3}3
+00096193  4%4/4g4m4
+000961ad  485F5X5l5
+000961c5  7[7p7z7
+000961d7  8 8&858U8x8
+000961f1  9%929V9j9|9
+00096205  ;%;/;
+0009621b  =(=0=<=[=g=v=
+00096235  >+>7>
+00096247  ?1?9?I?e?
+00096260  N2T2Z2`2
+0009627b  373R3\3g3s3}3
+00096295  414Q4A5
+0009629f  5J6U6|6
+000962b1  7.777B7
+000962c3  7d8x8
+000962eb  >!><>Z>x>
+000962fd  ?)?3?F?
+00096314  20D0_0
+00096329  1=1D1[1b1h1
+00096335  142E2l2
+0009634d  383H3M3S3\4
+00096363  5f5o5v5
+0009636f  5)62696
+00096383  697F7R7[7a7r7y7
+00096397  808X8v8
+000963b3  :6:I:V:^:g:p:v:
+000963eb  1d2 3l3
+000963fd  464R4{4
+00096417  :*:?:
+00096471  >@>U>
+00096480  '051Q1
+00096489  2,3@3<4
+0009649d  919R9k9
+000964b5  :O;];b;
+000964c9  =8>U>u>
+000964dc  g1x1~1
+000964f5  2C2|2
+00096509  5<5K5
+00096519  6I6\6
+00096529  6.7=7L7i7
+0009653b  8.8A8
+00096549  9\9k9
+00096561  ;H;W;l;p;t;x;|;
+00096579  =T=X=\=`=d=h=l=
+000965b5  0;1v2
+000965c3  4C4|4
+000965d7  5,6064686<6@6D6
+00096613  0!0)0j0
+0009661b  0$121a1
+0009662d  2 2$2(2d2u2
+00096641  3@3D3H3L3P3T3X324F4
+0009665b  5!5)555>5G5P5X5
+000966bf  5D5t5
+000966c7  6'6O6{6
+000966d1  7b7|7
+000966e3  7+8R8X8l8
+000966f7  9@:D:H:L:P:T:X:\:
+0009670d  ;G<M<
+00096719  <0=5=E=|=
+00096723  =#>(>P>
+0009674f  0"0)0.0D0K0P0U0Z0s0
+00096767  0&111D1R1g1
+0009677b  2#23292u2
+00096787  3*3h3t3
+000967a5  474>4I4
+000967b7  5+565
+000967c3  6+7o7
+000967ed  ;v<;=y=
+00096801  0e4k4]7
+00096811  768F8V8f8v8a9~9
+0009682f  : ;/;`;l;
+0009683f  ;@<O<
+00096853  <'=8=T=
+00096861  >$>J>
+00096883  1;1`1l1
+00096897  3!474
+000968a1  4$5*595
+000968ab  6h6t6
+000968b3  6%7+7:7
+000968c5  9/:;:
+000968d7  =h>t>
+0009692d  0V1c6
+00096954  #2\2
+00096967  6\7c8k9@:
+00096979  =E={>)?
+000969b1  8(9B:
+00096a04  P0|0
+00096a0b  3:3@3i5?6w7
+00096a37  8$8*878A8G8T8^8d8q8{8
+00096a6d  9'949>9C9I9V9`9f9s9}9
+00096aa1  :!:+:1:>:H:N:[:e:j:p:}:
+00096ad7  ;";';,;1;6;;;@;E;J;O;T;Y;^;c;h;p;v;|;
+00096b13  <#=V=\=a=i=y=
+00096b25  =s?z?
+00096b3b  02070<0S0
+00096b45  0*1\1t1{1
+00096b69  2 2j2p2t2x2|2
+00096b83  3=3g3
+00096ba9  4W5l5u5~5
+00096bb5  6c6F7i7
+00096bbf  748l8q8{8
+00096bd1  9E9K9Q9f9
+00096c15  <^<i<{<
+00096c1f  <S=e=
+00096c37  ?'?4?
+00096c53  172Q2Z2b2
+00096c5d  2V3^3s3~3
+00096c67  3*5\5t5{5
+00096c8b  6 6j6p6t6x6|6
+00096ca5  7=7g7
+00096cc5  8d8u8
+00096cd7  9P<D=Q=z=
+00096d23  8];d;
+00096d4b  3.3-7V7h7
+00096d5b  8 8*8E8M8S8a8
+00096d7b  :0;R;j;p;
+00096d8d  <"<'<
+00096dc1  1:1X1
+00096dcf  2!2M2S2k2
+00096de5  3$3>3D3P3V3
+00096dfd  6	7i7x7
+00096e09  ;2=u=
+00096e2b  2'292
+00096e31  3#303^3d3o3t3
+00096e49  3(4/4L4h4
+00096e55  4^6{6
+00096e73  :':0:<:s:|:
+00096e89  ;(;e;k;w;};
+00096eb1  =)=4=N=Y=a=q=w=
+00096ee0  \0d0|0
+00096ee9  0o2t2
+00096efd  2;3y3
+00096f0d  4+444=4S4~4
+00096f2d  4A5E5I5M5Q5U5Y5]5a5e5i5m5q5
+00096f74  +010Q9
+00096f88  k1q1
+00096f8f  =T=g=
+00096faf  >&>,>4>:>F>L>Y>c>i>s>
+00096fcd  ?@?F?L?b?z?
+00096fe5  0=0G0
+00096ffd  1&141<1B1J1P1f1k1s1y1
+0009703b  2!2&2.232;2@2G2V2[2a2j2
+0009705d  2&3k3r3
+0009706d  494]4
+0009707d  5+5P5[5j5
+000970ab  9%94999Z9_9
+000970c1  9S;v;
+000970e5  4k5"7(7.7
+000970f7  8=8E8h8
+000970ff  849L9`9p9|9
+00097121  ;d<l<
+0009712f  >|>;?
+0009713c  <0L0]0e0u0
+0009714d  0$111]1e1
+0009715b  2E2Q2q2
+00097179  4"4W4
+00097183  5$6a6
+00097189  6j7z7
+0009719f  9;9Q9g9p9{9
+000971bf  ;%;=;E;t;
+000971d3  <V=^=
+000971e9  >N?V?x?
+000971fc  90h0
+00097201  0?1S1k1s1
+0009720f  3:3B3O3^4
+0009721d  5%595D5
+0009722d  6H7h7
+0009723b  94;E;
+00097253  <#<6<Z<
+0009725f  <I=f=
+0009726f  ?!?<?D?L?c?|?
+00097295  0%090
+0009729f  1p132a2
+000972ab  3=3r3
+000972b9  8#8>8
+000972c1  ;U>l>
+000972f9  :<:^:3<
+0009731b  2/2 379~;
+00097334  -0~0
+0009734b  3*454A4M4X4`4
+00097371  8C8^8o8
+0009737f  :>;B=r=
+00097389  >">x>
+0009738f  > ?W?_?
+000973a3  1'2;2i2s2
+000973b9  8/8g8-9E9
+000973c5  :(=?=
+00097405  3B3I3b3v3|3
+00097425  6w;|;
+0009743b  ;2<a<g<
+00097463  >#>+>1>?>D>L>R>`>e>
+0009747b  ?G?L?S?X?_?d?r?
+000974bb  1(131n1
+000974d1  4I5R6r6
+000974e3  7[7t7
+000974ef  :8:H:T;r;v;z;~;
+0009751b  <#<.<9<D<R<]<p<~<
+0009752d  <k>|>
+00097533  >8?]?e?j?q?w?}?
+00097577  1!1E1
+0009758b  3U4g4
+000975a7  93:Y:^:
+000975bb  ; </<N<
+000975cf  =9>H>
+000975df  ?!?*?H?
+00097607  0!0(0L0^0d0p0w0
+00097621  161;1n1
+0009762d  2=2G2
+0009763b  2?3X3i4
+00097649  566A6P6f6
+00097661  7"787K7w7
+0009768f  ;B;m;
+0009769b  <0<7<Y<^<z<
+000976af  =8=s=
+000976bb  =#>=>
+000976d9  0I0i0
+000976e9  1-1(2
+000976f9  3%3H3X3k3
+00097725  5#5[5f5w5
+00097737  6'6C6n6
+00097745  6<7P7{7
+00097753  818S8Z8r8
+00097767  909k9y9
+0009777f  = >x>
+000977b3  566I6y6
+000977d9  8<9T9\9p9
+000977e5  9&:X:
+000977f3  ;3;k;
+00097803  <B=Y=_=
+0009780f  >+?G?
+00097827  0U1Z1
+00097835  3*3B3O3
+0009783f  3d5z5
+00097851  6,696?6I6W6
+0009786b  8$8*8Q8{8
+00097881  9.9d9k9p9z9
+00097897  :':=:Q:j:t:~:
+000978ad  ;4;Q;X;v;
+000978bb  ;L<^<r<
+000978d3  =8=C=l=
+000978e5  >/>4>A>K>f>
+0009790d  0f1s1
+00097929  6}7M8~8
+00097945  ;";1;>;J;Z;a;p;|;
+00097963  <E<T<]<
+00097973  >">)>4>H?f?
+00097999  ;$>Y>
+000979c9  8&8L8d;[<
+000979d3  =/>[>|>
+000979f5  2*303:3
+00097a15  5;5H5P5^5(6-6?6]6q6w6
+00097a39  <2<y<
+00097a61  2O2{2
+00097a6f  3K4h4
+00097a7d  9e:%;
+00097aaf  303B3T3
+00097ad3  6*6<6N6`6r6
+00097b03  3H4)5
+00097b0b  5h6n6|6
+00097b13  7/7i7
+00097b57  >!>+>4>?>K>P>`>e>k>q>
+00097b7b  151~1
+00097b89  5I6_6i6s6
+00097b9d  7/777q8
+00097bb3  9;:|:
+00097bbf  =!=p=y=
+00097bd5  ?#?R?a?
+00097bf0  ^4b4f4j4n4r4v4z4~4
+00097c73  :":&:*:.:
+00097c85  =5>O>X>
+00097c97  ?6?V?
+00097cad  030`0k0
+00097cbd  1>1c1p1
+00097ccb  2I2|2
+00097cd3  2I3d3q3
+00097ce3  484E4J4X435V5a5
+00097d03  8 8<8X8
+00097d17  ;V<c<8=B=
+00097d21  = >R>z>
+00097d4f  4#769
+00097d57  :u;|;
+00097d79  2S2]2(3e3o3
+00097db5  5"5(5.545:5@5F5L5R5X5^5d5j5p5v5|5
+00097e0b  6$6*60666<6B6H6N6T6Z6`6f6l6r6x6~6
+00097e81  <%<U<_<l<
+00097e99  =0=H=U=
+00097ea7  =h>n>t>
+00097eb3  ?D?X?b?g?l?
+00097ec9  0N0V0
+00097ed1  0Z1`1
+00097ee7  2 2&2=2H2N2u2}2
+00097efb  293?3E3i3o3
+00097f1d  4"4-464@4I4T4]4r4y4
+00097f51  5$5.575B5K5V5_5i5r5
+00097f87  6-6c6m6r6w6
+00097fa5  7!7+757?7I7S7
+00097fb3  979`9w9
+00097fd1  ;D<H<L<P<T<X<\<`<d<h<l<
+00097feb  ="=1=B=I=S=X=^=b=h=l=q=
+0009800f  >$>2>@>M>
+0009802d  ?2?A?L?T?\?g?r?z?
+00098055  0%000;0C0S0Y0_0e0k0q0
+00098087  1(131;1C1N1Y1a1o1|1
+000980ad  2&2.292D2L2Z2`2f2l2}2
+000980d1  3$3,3=3A3W3_3f3t3z3
+000980fd  3	4V4^4z4
+00098125  5'50555>5G5L5[5f5o5t5}5
+0009815d  6#6,616:6C6H6W6b6k6p6y6
+00098195  777B7L7V7\7a7p7{7
+000981c7  8&808:8@8E8P8`8e8
+000981f9  <.<M<W<\<a<}<
+00098219  =e=o=t=y=
+00098235  >1>R>\>a>f>
+00098243  >*?3?=?B?G?`?
+0009826d  0!0+00050Q0o0
+00098285  1@1J1O1T1m1
+0009829b  1@2J2O2T2m2y2
+000982b3  2 3*3/343M3Y3
+000982db  5"5'5,5E5Q5
+000982f1  5	6-676<6A6Z6f6 7*7/747M7Y7
+0009831f  8)868B8i8
+00098333  989B9G9L9h9C:
+00098341  ;;;E;O;T;Y;r;5<?<D<I<b<
+00098361  <->7>A>F>K>d>
+00098381  >i?s?x?}?
+00098398  	0.080=0B0[0g0S1
+000983d9  5[5e5j5o5
+000983ef  6'6,616J6h6r6w6|6
+0009840b  7+757:7?7[7A8K8P8U8q8
+0009843d  ;3;N;S;g;
+00098455  = =Y=
+0009846d  >(>.>E>M>i>u>
+0009848f  0A1R1b1~1
+000984a9  2(2D2J2O2
+000984c7  4&4,414M4e4l4q4y4
+000984f1  5'5C5I5N5l5
+00098519  6&666R6X6]6|6
+00098541  7Q7v7
+00098549  8D9J9[9b9n9[:
+00098565  <,<8<I<S<X<]<y<
+0009858d  >D>N>S>X>q>~>
+0009859b  >2?<?A?F?_?l?x?
+000985c0  f0p0u0z0
+000985e3  102:2?2D2]2i2
+000985fb  2	3(32373<3U3a3
+00098611  4%414s4
+0009862f  5I6m6x6
+0009864d  8"8'8,8E8
+0009866d  :i:s:x:}:
+00098699  <1=;=@=E=^=j=
+000986ad  >0><>
+000986b9  ?s?}?
+000986d1  0g0u0
+000986e1  1'11161;1T1
+000986f9  2n2|2
+00098707  3!3-3
+00098717  4Y4I5m5x5
+00098743  818e8
+00098755  9*:4:9:>:W:c:
+00098763  ;2;};
+00098771  <4<><C<H<a<m<
+00098781  =.>|>
+0009879d  4Q5{5
+000987a7  5#6{6
+000987b1  6m9t9
+000987c1  :&:K:[:
+000987d1  ;*<6<U<a<k<
+000987f9  030>0d0p0
+00098815  1G2l2{2
+00098827  3.3I3P3U3]3v3|3
+00098855  8U9p9x9
+00098871  :!:3:?:L:U:\:b:g:q:x:
+000988b9  4C4S4Y4
+000988c3  4 5*5/545M5Y5y5
+000988eb  6"7,71767O7
+00098901  708:8?8D8]8i8
+00098919  8&90959:9S9`9
+00098933  :$:=:I:y:
+00098951  <<=o=
+00098975  0X0b0g0l0
+00098985  0(2O2
+00098993  3E3O3X3
+000989b1  5J5R5n5
+000989bf  8K9\9b9
+000989cb  9h:y:
+000989e1  >6?S?
+000989fb  1d2h2l2p2t2x2|2
+00098a1b  5/5f5
+00098a27  898G8
+00098a33  9C:#;8;F;
+00098a41  <$<=<J<p<z<
+00098a5b  <`=j=o=t=
+00098a75  >&>7>N>`>r>I?y?
+00098a90  N0S0Y0g0u0|0
+00098aa7  1$1=1E1M1W1h1z1
+00098acb  2&2/272?2
+00098ae5  314;4@4M4V5`5u6
+00098af9  7F7P7V7
+00098b07  8V9`9
+00098b15  ="=2=E=|=
+00098b1f  =3>=>B>G>`>m>x>
+00098b38  ?0E0Y0
+00098b4b  2%212`2j2o2t2
+00098b67  2 3*3/343M3Z3
+00098b8b  4C4M4R4W4p4|4
+00098ba7  4@5J5O5T5m5y5
+00098bbf  5@6J6O6T6m6y6
+00098bd7  6@7J7O7T7m7y7
+00098bef  7@8J8O8T8m8y8
+00098c09  8	9+9V9`9e9j9
+00098c25  :,:8:
+00098c37  ;`;j;o;t;
+00098c4f  <`<j<o<t<
+00098c67  =L=p=z=
+00098c81  > >+>z>
+00098ca9  0(040
+00098ccd  2(2-222K2_2w2
+00098cfd  4.4B4_4i4n4s4
+00098d19  5V5_5h5r5z5
+00098d33  6@6J6O6T6m6y6
+00098d4b  6	7;7G7p7z7
+00098d69  8-898
+00098d79  8 9*9/949M9Y9
+00098d93  90:::?:D:]:i:
+00098db5  ;';i;s;x;};
+00098dc3  ;@<J<O<T<m<y<
+00098ddd  = =,=E=J=V=b=n=z=
+00098e05  =B>R>b>}>
+00098e17  ?S?l?
+00098e2f  0@0J0O0T0m0y0
+00098e47  0)1c1
+00098e57  2R2a2y2
+00098e6f  3)43484=4V4c4n4
+00098e85  595P5Z5_5d5}5	6)6P6d6n6s6x6
+00098ea5  7&7+7@7
+00098ebd  8_8w8
+00098ed1  9&939>9U9_9d9i9
+00098eeb  :$:.:3:8:Q:
+00098ef9  : ;4;>;C;H;a;
+00098f07  ;	<0<D<N<S<X<q<
+00098f1b  =$=F=f=
+00098f31  >B>N>W>\>i>
+00098f49  ?,?5?E?
+00098f6d  0Z0_0e0s0
+00098f7d  031~1
+00098f8d  3+3;3M3Y3_3w3
+00098fa1  4*4b4
+00098fb7  595U5
+00098fbf  6!6a6
+00098fd5  737O7m7
+00098fe3  8O8i8
+00098fe9  8B9R9b9}9
+00098ffd  :);3;8;=;V;c;n;
+0009900f  <"<'<@<L<s<
+00099023  =$===J=
+00099033  >+>1>6>W>j>x>
+00099051  >#?+?C?K?c?
+00099068  T0`0
+00099075  1[1g1
+00099081  2!2:2B2
+00099091  3N3V3r3
+000990a3  4#4?4{4
+000990b7  6d6l6
+000990c3  7T7\7
+000990cb  748<8
+000990db  909<9c9
+000990ef  ;-;:;E;P;X;d;j;w;
+00099107  ;7=t=~=
+00099129  0&0W0t0
+00099139  2$222=2C2O2m2r2z2
+00099169  3Q4z4
+0009917f  6(646
+00099187  7%7*7/7H7T7
+00099197  8)8m8
+000991ef  =%=1=>=S=
+00099205  >">'>,>E>Q>]?j?t?y?~?
+00099231  0I0S0X0]0v0
+00099251  282Z2d2i2n2
+00099269  3m3w3|3
+00099279  3D4V4
+0009928b  5"515B5p5z5
+000992a3  6	6"6.6]6y6
+000992c5  7#7D7Q7X7
+000992d7  8>8E8a8l8t8
+000992f3  :8:G:Y:j:
+00099301  :6;C;c;
+00099311  <*<<<
+00099323  <-=7=<=A=]=l=
+00099337  >H>V>
+00099341  ?#?;?I?Y?{?
+0009935d  0Y0p0|0
+00099371  1*181=1
+0009937f  1K2Q2b2
+0009939d  4 5Q5
+000993b7  768i8
+000993c1  8	9K9\9b9
+000993cf  9!:=:
+000993d9  <7<R<X<
+000993ef  >(>8>H>x>
+00099401  >(?2?7?<?U?a?
+00099423  002:2?2D2]2i2(32373<3U3a3
+00099469  6)6P6Z6_6d6}6
+00099489  7$7=7I7
+00099491  8"8'8,8E8Q8
+000994cb  ;s<}<
+000994df  =#=/=v=
+000994f7  >(>2>E>O>T>Y>r>
+0009952f  0-090
+0009953f  0+151:1?1X1d1p1
+00099567  3H3R3W3\3u3
+0009957f  304:4?4D4]4i4
+0009959f  5-595
+000995b9  6)6h6r6w6|6
+000995d3  7@7J7O7T7m7y7
+000995f1  8$8=8I8x8
+00099603  889B9G9L9e9q9
+00099617  :%:1:
+00099629  :R;\;a;f;
+00099653  =	="=
+0009966d  >->7><>A>]>
+0009967b  ?%?/?4?9?R?
+000996a1  0(0L0^0h0m0r0
+000996af  0)1K1U1_1d1i1
+000996c7  2(22272<2X2|2
+000996dd  2Y3{3
+000996f3  424L4V4[4`4|4
+00099719  556?6D6I6b6|6
+00099747  8e8o8t8y8
+00099761  9"9'9C9
+0009976f  :$:):B:
+00099789  ;0;C;M;R;W;s;
+00099797  <;<E<O<T<Y<r<
+000997b3  = =<=^=q={=
+000997c3  =I>k>u>
+000997d7  ?	?"?<?F?K?P?l?
+00099809  0%1/14191R1l1v1{1
+00099837  3U3_3d3i3
+00099861  5 595
+0009986f  5]6g6q6v6{6
+000998a1  8$8=8I8
+000998c1  :5:A:
+000998e9  <9<C<H<M<i<
+0009990b  >[>e>j>o>
+00099929  ?9?k?u?z?
+0009994d  0+151:1?1X1q1{1
+0009996d  2;2E2J2O2k2I3m3w3
+0009998d  4(4A4K4P4U4q4
+000999ad  5;5 6*6/646M6Y6
+000999d1  7)7Y7}7
+000999e1  7W8a8k8p8u8
+00099a23  ;7;A;F;K;d;
+00099a41  <#<`<j<o<t<
+00099a5b  <(=2=7=<=U=a=
+00099a73  ='>1>;>@>E>^>
+00099aaf  0-090`0j0o0t0
+00099ac9  0	1@1J1O1T1m1y1
+00099ae7  2,242
+00099af7  2g5o5
+00099b05  5-6:6D6I6N6g6
+00099b33  828<8A8F8b8V9\9j9
+00099b53  :s:}:
+00099b61  :	;4;D;
+00099b7d  <&<u<{<
+00099b91  =,=I=
+00099bdb  0[0t0z0
+00099bf9  1$1)1;1G1T1]1d1i1n1s1
+00099c0f  1S2]2b2g2
+00099c25  3[3e3j3o3
+00099c3b  5.5|5
+00099c49  5A6n6
+00099c53  7&808:8?8D8]8
+00099c77  :C;q;{;
+00099c85  ;?<w<
+00099c8b  <!===r=
+00099c99  ?/?9?>?C?\?h?z?
+00099cbf  020>0?1d1j1
+00099cdd  3&323>3H3_3m3u3
+00099d11  6,6;6
+00099d1d  7%737C7Q7Z7a7f7k7p7
+00099d45  8!8&8+808L8\8
+00099d53  8J9c9i9n9y9
+00099d71  9I:b:h:m:x:
+00099d8f  :	;";(;-;8;F;V;d;m;t;y;~;
+00099db7  =#=6=B=P=Y=`=e=j=o=
+00099e0b  0+0;0
+00099e25  1#1?1O1
+00099e39  2&2-22272<2X2h293[3t3{3
+00099e81  6,6U6n6t6y6
+00099ea3  7+7D7J7O7a7m7z7
+00099ec7  :!:,:::J:X:a:h:m:r:w:
+00099ee3  :`;g;
+00099eed  ?,?2?7?B?P?`?n?w?~?
+00099f23  1I1q1{1
+00099f3f  2.2f2}2
+00099f55  4/454:4L4X4e4n4u4z4
+00099f79  5+585E5N5U5Z5_5d5
+00099f9d  7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+00099fdb  8'8:8T8y8
+00099ff7  9/9^9~9
+0009a015  585o5y5
+0009a01d  5=7`7
+0009a027  8@8w8
+0009a031  9$:.:
+0009a03d  ;>;e;m;
+0009a051  </<8<><D<S<[<d<l<t<
+0009a075  =!=&=?=
+0009a091  ?)?9?G?P?W?\?a?f?
+0009a0b1  0B2L2Q2V2o2|2
+0009a0c3  4#5B5W5a5f5k5
+0009a0d3  6%6*6/6K6k6u6z6
+0009a0ef  7&70757:7V7
+0009a10d  8M8W8\8a8}8
+0009a129  9;9_9i9n9s9
+0009a141  :$:):.:J:
+0009a15d  ;A;K;P;U;q;
+0009a17c  #0R3X3O4h4n4s4
+0009a1a3  5%515>5G5N5S5X5]5y5
+0009a1c7  6#6(6-6I6
+0009a1dd  7A7K7P7U7j7t7
+0009a1f5  8-888=8J8Q8W8^8c8h8m8
+0009a221  :":':,:E:
+0009a23b  <7<k<
+0009a24f  =.=U=g=
+0009a257  =">;>A>F>W>c>p>y>
+0009a281  ?&?-?2?7?<?X?g?
+0009a2a5  0#1X1
+0009a2b1  2O2W2
+0009a2c3  4#4)4:4F4S4\4c4h4m4r4
+0009a2ed  5!5&5+505L5[5p5
+0009a313  5	656O6h6n6s6}6
+0009a335  657?7D7I7e7t7
+0009a343  7M8W8\8a8}8
+0009a353  8 9i9
+0009a385  =8=?={=
+0009a38d  =4>8>5?9???G?
+0009a3bd  020?0
+0009a3df  1)1@1G1Q1Z1
+0009a3f5  2U2f2
+0009a407  4	4:4G4
+0009a415  495B5
+0009a42d  64787<7@7i7s7x7}7
+0009a453  9#:-:2:7:S:b:p:
+0009a46b  ;!<N<k<
+0009a479  > >[>f>m>y>
+0009a48f  ?h?w?
+0009a4a5  0 0$0(0,0004080<0@0
+0009a4ff  =I={=,>
+0009a52d  :	;.;s;
+0009a539  < <y<
+0009a54b  <C=O=
+0009a553  >7>m>
+0009a559  >9?Y?y?
+0009a571  090a0y0
+0009a581  191Y1y1
+0009a591  2A2Y2y2
+0009a5a1  3A3d3
+0009a5b1  494Y4y4
+0009a5c1  5 555G5Y5k5}5
+0009a5db  6*6?6T6i6
+0009a5f1  7'7<7Q7f7x7
+0009a607  818F8X8m8
+0009a61f  9*9?9T9i9~9
+0009a63b  ;';<;Q;q;
+0009a64b  ;"<7<o<
+0009a65b  =!=6=K=`=r=
+0009a675  >	?^?
+0009a69b  2!363V3
+0009a6ad  4A4Y4
+0009a6bd  5<5Y5|5
+0009a6cd  696\6y6
+0009a6dd  7<7\7|7
+0009a6ed  8<8\8y8
+0009a6fd  999Y9y9
+0009a70d  :9:Y:y:
+0009a71d  ;9;Q;[;q;{;
+0009a73f  <1<;<@<E<O<i<
+0009a769  =!=&=,=2=Y=t=z=
+0009a795  >9>T>Z>_>h>q>v>|>
+0009a7bd  ?!?+?0?5???Q?[?`?e?o?
+0009a7f9  0!0+00050?0Q0[0`0e0o0
+0009a82f  1 1%1/1A1K1P1U1_1q1{1
+0009a867  212;2@2E2O2a2k2p2u2
+0009a899  3!3+30353?3Q3[3`3e3o3
+0009a8cf  4 4%4/4A4K4P4U4_4q4{4
+0009a907  515;5@5E5O5a5k5p5u5
+0009a939  6(6-62676A6U6Z6_6d6n6
+0009a96f  72787Q7[7q7
+0009a997  8!818A8Q8a8q8
+0009a9b9  9!919A9Q9a9q9
+0009a9d9  :!:1:A:Q:a:q:
+0009a9f9  ;!;1;A;Q;a;g;k;q;u;
+0009aa53  2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+0009aae3  6 6$6(6,6064686@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+0009ab3f  8 8$8(8
+0009ab73  1 1$1(1,1014181<1@1D1H1L1
+0009aba5  ;$;,;4;<;D;L;T;\;d;(<,<0<H<L<P<T<X<\<`<d<h<
+0009abdb  9"9&9
+0009ac3f  4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+0009acbf  5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+0009ad09  7 7(70787@7H7P7X7`7h7p7x7
+0009ad49  8 8(80888@8H8P8X8`8h8p8x8
+0009ad89  9 9(90989@9H9P9X9`9h9p9x9
+0009adbc  H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+0009ae25  5 5$5(5,5054585@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+0009aebd  :t;x;|;
+0009aec5  ;,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<
+0009af3b  = =$=(=,=0=4=8=<=@=D=H=L=P=T=X=D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+0009afd0  X0\0`0d0h0l0p0t0x0|0
+0009b001  0d2h2l2p2
+0009b05d  1d1h1l1p1t1x1|1
+0009b0a7  9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+0009b125  : :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+0009b17b  0 0$0(0,00080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+0009b1cb  04181
+0009b1ff  9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+0009b27d  : :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:
+0009b2c7  < <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+0009b369  3 3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+0009b3bb  34484<4@4D4
+0009b3fd  9 9$9(9,9094989<9@9D9H9L9P9T9X9
+0009b424  P=,?0?4?8?
+0009b457  2(2,20282P2`2d2t2x2
+0009b485  3(3,3<3@3D3L3d3t3x3
+0009b4b5  4$4(484<4D4\4l4p4
+0009b4e5  5$5<5L5P5`5d5h5p5
+0009b511  6,606@6D6H6P6h6x6|6
+0009b54d  ;(;D;H;h;
+0009b56f  <0<8<<<@<H<\<t<x<
+0009b593  =0=P=p=
+0009b5a7  >0><>X>d>
+0009b5bd  ?0?<?H?h?
+0009b5d9  0(0H0h0
+0009b5ed  1(1H1T1p1
+0009b601  282X2x2
+0009b617  3,383X3`3l3
+0009b631  4$4D4P4p4x4
+0009b64b  505<5\5h5
+0009b663  686D6d6p6
+0009b67b  7(7H7T7t7
+0009b695  848@8`8l8
+0009b6af  9(949T9`9
+0009b6c9  :8:D:d:p:
+0009b6e1  ;(;L;X;x;
+0009b6f7  <(<4<T<`<
+0009b711  =8=D=d=p=
+0009b727  > >@>L>l>t>|>
+0009b743  ?4?@?`?l?
+0009b763  0<0H0h0t0
+0009b779  1 1(141T1\1h1
+0009b795  2 2@2L2l2x2
+0009b7ad  3(3H3T3t3
+0009b7c3  4$404P4\4|4
+0009b7df  5 5(545T5\5d5l5t5|5
+0009b805  6(646T6`6
+0009b825  747@7`7h7t7
+0009b83f  8(848T8\8d8l8t8
+0009b861  9<9H9h9t9
+0009b87d  : :@:L:l:x:
+0009b897  ;,;4;<;D;P;p;x;
+0009b8b9  <$<,<4<<<D<L<T<\<d<l<x<
+0009b8df  =,=4=<=D=L=T=\=h=
+0009b907  > >,>L>T>`>
+0009b92d  ?(?0?8?D?d?p?
+0009b951  0$0,040<0D0L0T0\0h0
+0009b983  1$1,141<1D1L1T1\1d1l1t1|1
+0009b9b3  282@2H2T2t2
+0009b9cd  3,383X3`3l3
+0009b9e7  4$4D4P4p4|4
+0009b9fd  5 5,5L5X5x5
+0009ba15  6(646T6`6
+0009ba2d  707<7\7h7
+0009ba45  888D8d8p8
+0009ba5b  9 9@9L9l9x9
+0009ba73  :(:H:T:t:
+0009ba89  ;,;8;\;h;
+0009ba9f  <(<L<X<|<
+0009bab5  =<=H=l=x=
+0009bac9  >,>8>p>x>|>
+0009bae7  ?(?L?X?`?
+0009bb37  5(5@5D5h5
+0009bb41  506@7T7
+0009bb6b  809P9t9
+0009bb75  9x;|;
+0009bbbb  1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1
+0009bc35  2 2$2(2,202
+0009bc59  3$3`4h4
+0009bc6d  7$7,747<7D7L7T7\7d7l7t7|7
+0009bc99  7(8,8084888<8@8D8H8L8X8\8`8d8h8l8p8t8x8|8
+0009bce3  > >(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>
+0009bd53  ? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?l?p?t?|?
+0009bdbb  0,040\0d0|0
+0009bdcf  3$3P3
+0009bde7  8 8(888@8h8p8

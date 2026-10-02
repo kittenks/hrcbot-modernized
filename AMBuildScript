@@ -1,0 +1,314 @@
+# AMBuild 2.1 build script for the modernized HRCBot (Hurricane Bot).
+#
+# Target : Half-Life 2: Deathmatch (hl2dm)
+# Loader : Metamod:Source 1.12
+# Output : a single Metamod plugin binary per architecture
+#           linux x86 -> hrcbot_mm_i486.so
+#           linux x64 -> hrcbot_mm.x64.so
+#           win   x86 -> hrcbot_mm.dll
+#           win   x64 -> hrcbot_mm.x64.dll
+
+import os
+import glob
+
+proj_name = 'hrcbot_mm'
+
+# Every translation unit lives below src/.  Headers are picked up automatically
+# by the include directories configured below.
+src_root = os.path.join(builder.currentSourcePath, 'src', 'hrcbot')
+proj_srcs = []
+for dirpath, _dirs, files in os.walk(src_root):
+    for f in files:
+        if f.endswith('.cpp'):
+            proj_srcs.append(os.path.join(dirpath, f))
+proj_srcs.sort()
+
+# Version resource is compiled on Windows only.
+proj_rc = os.path.join('src', 'hrcbot', 'plugin', 'version.rc')
+
+
+def Normalize(path):
+    return os.path.abspath(os.path.normpath(path))
+
+
+def ResolvePath(candidates):
+    for c in candidates:
+        if c and os.path.isdir(c):
+            return Normalize(c)
+    return None
+
+
+class HRCConfig(object):
+    def __init__(self):
+        self.sdks = {}
+        self.binaries = []
+        self.hl2sdk = None
+        self.mms_root = None
+        self.archs = builder.target.arch.replace('x86_64', 'x64').split(',')
+
+    def detect(self):
+        opt = builder.options
+
+        # --- hl2sdk (hl2dm branch) ---
+        sdk = None
+        if opt.hl2sdk_hl2dm:
+            sdk = opt.hl2sdk_hl2dm
+        elif opt.hl2sdk_root:
+            sdk = os.path.join(opt.hl2sdk_root, 'hl2sdk-hl2dm')
+        sdk = ResolvePath([sdk])
+        if sdk is None:
+            # Walk parent directories like the upstream samples do.
+            head = os.getcwd()
+            old = None
+            while head and head != old:
+                cand = os.path.join(head, 'hl2sdk-hl2dm')
+                if os.path.isdir(cand):
+                    sdk = Normalize(cand)
+                    break
+                cand = os.path.join(head, 'hl2sdk')
+                if os.path.isdir(cand):
+                    sdk = Normalize(cand)
+                    break
+                old = head
+                head, _tail = os.path.split(head)
+        if sdk is None:
+            raise Exception('Could not find hl2sdk-hl2dm. Use --hl2sdk-root or '
+                            '--hl2sdk-hl2dm, or set HL2SDKHL2DM.')
+        self.hl2sdk = sdk
+
+        # --- Metamod:Source 1.12 ---
+        mms = ResolvePath([opt.mms_path,
+                           os.environ.get('MMSOURCE112'),
+                           os.environ.get('MMSOURCE_DEV')])
+        if mms is None:
+            head = os.getcwd()
+            old = None
+            while head and head != old:
+                for name in ('metamod-source-1.12', 'metamod-source',
+                             'mmsource-1.12', 'mmsource-central'):
+                    cand = os.path.join(head, name)
+                    if os.path.isdir(cand):
+                        mms = Normalize(cand)
+                        break
+                if mms:
+                    break
+                old = head
+                head, _tail = os.path.split(head)
+        if mms is None:
+            raise Exception('Could not find Metamod:Source 1.12. Use --mms-path '
+                            'or set MMSOURCE112.')
+        self.mms_root = mms
+
+        builder.AddConfigureFile('product.version')
+
+    def configure_compiler(self):
+        cxx = builder.DetectCxx()
+
+        if cxx.behavior == 'gcc':
+            cxx.defines += [
+                'stricmp=strcasecmp',
+                '_stricmp=strcasecmp',
+                'strnicmp=strncasecmp',
+                '_strnicmp=strncasecmp',
+                '_snprintf=snprintf',
+                '_vsnprintf=vsnprintf',
+                '_alloca=alloca',
+                'GNUC',
+                'COMPILER_GCC',
+            ]
+            cxx.cflags += [
+                '-Wall',
+                '-Wno-unused',
+                '-Wno-unused-variable',
+                '-Wno-unused-function',
+                '-Wno-unused-but-set-variable',
+                '-Wno-non-virtual-dtor',
+                '-Wno-overloaded-virtual',
+                '-Wno-delete-non-virtual-dtor',
+                '-Wno-unused-private-field',
+                '-Wno-register',
+                '-Wno-implicit-fallthrough',
+                '-Wno-parentheses',
+                '-Wno-sign-compare',
+                '-Wno-narrowing',
+                '-fPIC',
+                '-fno-exceptions',
+                '-fno-rtti',
+                '-fno-strict-aliasing',
+                '-msse',
+                '-std=c++17',
+            ]
+            if cxx.family == 'clang' or 'clang' in str(cxx.family):
+                cxx.cflags += ['-Wno-expansion-to-defined']
+            if builder.options.opt == '1':
+                cxx.cflags += ['-O3', '-funroll-loops', '-pipe']
+            if builder.options.debug == '1':
+                cxx.cflags += ['-g', '-ggdb3']
+            else:
+                cxx.cflags += ['-DNDEBUG']
+        elif cxx.like('msvc'):
+            cxx.defines += [
+                'COMPILER_MSVC',
+                '_CRT_SECURE_NO_WARNINGS',
+                '_CRT_NONSTDC_NO_DEPRECATE',
+                'WIN32',
+                '_WINDOWS',
+            ]
+            cxx.cflags += [
+                '/EHsc',
+                '/GR-',
+                '/W3',
+                '/wd4244', '/wd4267', '/wd4305', '/wd4800',
+                '/wd4018', '/wd4101', '/wd4189', '/wd4996',
+                '/wd4530', '/wd4146', '/wd4099', '/wd4838',
+                '/MP',
+                '/nologo',
+            ]
+            if builder.options.opt == '1':
+                cxx.cflags += ['/O2', '/MD']
+            else:
+                cxx.cflags += ['/Od', '/MDd']
+            if builder.options.debug == '1':
+                cxx.cflags += ['/Zi']
+
+        # Platform defines
+        if builder.target.platform == 'linux':
+            cxx.defines += ['POSIX', '_LINUX', 'LINUX',
+                            'stricmp=strcasecmp']
+            cxx.linkflags += ['-shared', '-lm', '-ldl',
+                              '-static-libgcc', '-static-libstdc++']
+        elif builder.target.platform == 'mac':
+            cxx.defines += ['POSIX', 'OSX', '_OSX']
+        elif builder.target.platform == 'windows':
+            cxx.defines += ['_WIN32', 'WIN32', 'RAD_TELEMETRY_DISABLED']
+
+        return cxx
+
+    def make_compiler(self, context, arch):
+        compiler = context.cxx.clone()
+
+        sdk = self.hl2sdk
+        compiler.cxxincludes += [
+            os.path.join(context.currentSourcePath, 'src'),
+            os.path.join(context.currentSourcePath, 'src', 'hrcbot'),
+            os.path.join(self.mms_root, 'core'),
+            os.path.join(self.mms_root, 'core', 'sourcehook'),
+            os.path.join(sdk, 'public'),
+            os.path.join(sdk, 'public', 'engine'),
+            os.path.join(sdk, 'public', 'mathlib'),
+            os.path.join(sdk, 'public', 'vstdlib'),
+            os.path.join(sdk, 'public', 'tier0'),
+            os.path.join(sdk, 'public', 'tier1'),
+            os.path.join(sdk, 'public', 'game', 'server'),
+            os.path.join(sdk, 'public', 'game', 'shared'),
+            os.path.join(sdk, 'common'),
+        ]
+
+        # Source engine selection macro used by the SDK headers.
+        compiler.defines += ['SOURCE_ENGINE=7', 'SE_HL2DM=7', 'HL2DM']
+
+        # Architecture flags.
+        if compiler.behavior == 'gcc':
+            if arch == 'x86':
+                compiler.cflags += ['-m32']
+                compiler.linkflags += ['-m32']
+            elif arch == 'x64':
+                compiler.cflags += ['-m64', '-fPIC']
+                compiler.linkflags += ['-m64']
+        elif compiler.like('msvc'):
+            compiler.linkflags += ['/MACHINE:X64' if arch == 'x64'
+                                   else '/MACHINE:X86']
+            if arch == 'x64':
+                compiler.defines += ['COMPILER_MSVC64', 'WIN64', '_WIN64',
+                                     'PLATFORM_64BITS']
+            else:
+                compiler.defines += ['COMPILER_MSVC32', 'PLATFORM_32BITS']
+
+        if arch == 'x64' and compiler.behavior == 'gcc':
+            compiler.defines += ['PLATFORM_64BITS']
+        elif arch == 'x86' and compiler.behavior == 'gcc':
+            compiler.defines += ['PLATFORM_32BITS']
+
+        return compiler
+
+    def lib_folder(self, arch):
+        sdk = self.hl2sdk
+        plat = builder.target.platform
+        if plat == 'linux':
+            if arch == 'x64':
+                return os.path.join(sdk, 'lib', 'public', 'linux64')
+            return os.path.join(sdk, 'lib', 'public', 'linux')
+        if plat == 'windows':
+            if arch == 'x64':
+                return os.path.join(sdk, 'lib', 'public', 'x64')
+            return os.path.join(sdk, 'lib', 'public', 'x86')
+        if plat == 'mac':
+            return os.path.join(sdk, 'lib', 'public', 'osx64'
+                                if arch == 'x64' else 'osx32')
+        return sdk
+
+    def output_name(self, arch):
+        # Base name only: AMBuild appends the platform extension (.so/.dll).
+        plat = builder.target.platform
+        if plat == 'linux':
+            return proj_name + ('.x64' if arch == 'x64' else '_i486')
+        if plat == 'windows':
+            return proj_name + ('.x64' if arch == 'x64' else '')
+        return proj_name + ('.x64' if arch == 'x64' else '')
+
+    def build_binary(self, context, arch):
+        compiler = self.make_compiler(context, arch)
+        libs = self.lib_folder(arch)
+        plat = builder.target.platform
+        name = self.output_name(arch)
+
+        if plat == 'linux':
+            # Static helper libraries.
+            if arch == 'x64':
+                static_libs = ['tier1.a', 'mathlib.a']
+            else:
+                static_libs = ['tier1_i486.a', 'mathlib_i486.a']
+            for lib in static_libs:
+                compiler.postlink += [compiler.Dep(os.path.join(libs, lib))]
+
+            # The engine shared libraries already live in the game's bin
+            # directory and are loaded globally by the server.  Link by soname
+            # (-L + -l) so the recorded NEEDED entry is the plain library name
+            # rather than an absolute build-machine path; the game itself
+            # provides the libraries at runtime.
+            compiler.linkflags += ['-L' + libs, '-ltier0_srv', '-lvstdlib_srv',
+                                   '-lm', '-ldl', '-Wl,-rpath,$ORIGIN']
+            for dyn in ('libtier0_srv.so', 'libvstdlib_srv.so'):
+                compiler.Dep(os.path.join(libs, dyn))
+
+        elif plat == 'windows':
+            for lib in ('tier0.lib', 'tier1.lib', 'vstdlib.lib', 'mathlib.lib'):
+                compiler.linkflags.append(compiler.Dep(os.path.join(libs, lib)))
+            compiler.linkflags += ['legacy_stdio_definitions.lib',
+                                   'user32.lib', 'ws2_32.lib']
+
+        binary = compiler.Library(name)
+        binary.sources += proj_srcs
+        binary.out = name
+
+        if plat == 'windows':
+            binary.sources += [proj_rc]
+            binary.compiler.rcdefines += [
+                'BINARY_NAME="{0}.dll"'.format(name),
+                'RC_COMPILE',
+            ]
+
+        return binary
+
+
+CFG = HRCConfig()
+CFG.detect()
+base_cxx = CFG.configure_compiler()
+
+for arch in CFG.archs:
+    cxx = CFG.make_compiler(builder, arch)
+    binary = CFG.build_binary(builder, arch)
+    nodes = builder.Add(binary)
+    CFG.binaries += [nodes]
+
+builder.Build([], {'CFG': CFG})
