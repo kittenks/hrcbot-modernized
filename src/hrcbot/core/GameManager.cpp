@@ -133,9 +133,31 @@ const char *GameManager::PickName()
 	static unsigned int seed = 0;
 	if (!seed)
 		seed = (unsigned int)time(NULL);
+
+	// Draw a name that no live bot is using, so the engine does not rename a
+	// duplicate fake client to "(1)Name".  Fall back to the raw draw once the
+	// pool is exhausted.
+	int total = m_names.Count();
+	for (int attempt = 0; attempt < total; ++attempt)
+	{
+		seed = seed * 1103515245u + 12345u;
+		int idx = (seed / 65536) % total;
+		const char *candidate = m_names[idx];
+		bool inUse = false;
+		for (int i = 0; i < m_bots.Count(); ++i)
+		{
+			Bot *b = m_bots.Get(i);
+			if (b && strcmp(b->GetName(), candidate) == 0)
+			{
+				inUse = true;
+				break;
+			}
+		}
+		if (!inUse)
+			return candidate;
+	}
 	seed = seed * 1103515245u + 12345u;
-	int idx = (seed / 65536) % m_names.Count();
-	return m_names[idx];
+	return m_names[(seed / 65536) % total];
 }
 
 int GameManager::PickTeam(int requested) const
@@ -586,6 +608,30 @@ void GameManager::CmdInfo(const CCommand &args)
 	HRC_MSG("Nodes=%i arcs=%i rooms=%i gateways=%i", m_network.NodeCount(),
 	        m_network.ArcCount(), m_network.RoomCount(),
 	        m_network.GatewayCount());
+	static const char *stateNames[] = {
+		"connecting", "spawning", "idle", "preparing", "goto",
+		"hunting", "attacking", "dead"};
+	for (int i = 0; i < m_bots.Count(); ++i)
+	{
+		Bot *b = m_bots.Get(i);
+		if (!b)
+			continue;
+		IPlayerInfo *pi = b->PlayerInfo();
+		int st = (int)b->State();
+		const char *stName = (st >= 0 && st < 8) ? stateNames[st] : "?";
+		if (pi && pi->IsConnected())
+		{
+			Vector o = pi->GetAbsOrigin();
+			HRC_MSG("  %-12s team=%i hp=%-3i state=%-9s pos=(%.0f,%.0f,%.0f)",
+			        b->GetName(), pi->GetTeamIndex(), pi->GetHealth(),
+			        stName, o.x, o.y, o.z);
+		}
+		else
+		{
+			HRC_MSG("  %-12s team=%i state=%-9s (not connected)",
+			        b->GetName(), b->GetTeam(), stName);
+		}
+	}
 	HRC_MSG("These information are meant for debugging and are subject to "
 	        "change.");
 }

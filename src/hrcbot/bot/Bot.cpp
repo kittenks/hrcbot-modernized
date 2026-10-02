@@ -50,7 +50,8 @@ Bot::Bot(edict_t *edict, const char *name, int team, Poseidon *nav)
 	  m_team(team), m_state(BOT_STATE_CONNECTING), m_commandNumber(0),
 	  m_nextThink(0.0f), m_stateTimer(0.0f), m_retargetTimer(0.0f),
 	  m_respawnTimer(0.0f), m_jumpTimer(0.0f), m_target(NULL),
-	  m_hasMoveGoal(false), m_warnedNoDrive(false), m_wasAlive(false)
+	  m_hasMoveGoal(false), m_warnedNoDrive(false), m_wasAlive(false),
+	  m_driveWait(0.0f)
 {
 	snprintf(m_name, sizeof(m_name), "%s", name ? name : "Bot");
 	m_aimPoint.Init();
@@ -427,15 +428,25 @@ void Bot::Think()
 	if (!m_edict || !EngineReady())
 		return;
 	RefreshInfo();
+	float dt = g_globals ? g_globals->frametime : 0.016f;
 
 	// Diagnostics: a connected fake client without a bot controller can never
-	// be driven and will never spawn.  Warn exactly once so the cause is
-	// visible in the server console instead of looking like silent AI failure.
-	if (m_pi && m_pi->IsConnected() && !m_controller && !m_warnedNoDrive)
+	// be driven and will never spawn.  The controller is normally created a
+	// frame or two after the player info appears, so only warn once it has been
+	// missing for a couple of seconds (avoids a harmless startup race warning).
+	if (m_pi && m_pi->IsConnected() && !m_controller)
 	{
-		m_warnedNoDrive = true;
-		HRC_WARN("bot '%s' has no IBotController; cannot send user commands "
-		         "(IBotManager interface missing?)", m_name);
+		m_driveWait += dt;
+		if (m_driveWait > 2.5f && !m_warnedNoDrive)
+		{
+			m_warnedNoDrive = true;
+			HRC_WARN("bot '%s' has no IBotController; cannot send user commands "
+			         "(IBotManager interface missing?)", m_name);
+		}
+	}
+	else
+	{
+		m_driveWait = 0.0f;
 	}
 
 	bool aliveNow = IsAlive();
@@ -447,7 +458,6 @@ void Bot::Think()
 	m_wasAlive = aliveNow;
 
 	m_cmd.Reset();
-	float dt = g_globals ? g_globals->frametime : 0.016f;
 
 	switch (m_state)
 	{

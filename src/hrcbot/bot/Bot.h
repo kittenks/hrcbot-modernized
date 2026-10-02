@@ -110,6 +110,7 @@ private:
 	bool m_hasMoveGoal;
 	bool m_warnedNoDrive;
 	bool m_wasAlive;
+	float m_driveWait;
 };
 
 } // namespace hrc
