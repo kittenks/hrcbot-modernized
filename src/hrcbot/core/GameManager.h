@@ -63,6 +63,7 @@ public:
 
 private:
 	void MaintainPopulation();
+	bool BotsWanted() const;
 	void AnalyseOrLoad();
 
 	TCollection<Bot> m_bots;

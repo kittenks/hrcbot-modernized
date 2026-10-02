@@ -428,18 +428,52 @@ void GameManager::OnGameFrame()
 
 void GameManager::OnHibernatingFrame()
 {
-	// While hibernating the game clock does not advance, so throttle with a
-	// frame counter instead of a time gate.  Hibernation ticks run at a low
-	// rate; checking every 20 of them is roughly once per second.  A
-	// connected fake client raises the engine's client count and pulls the
-	// server out of hibernation, after which normal OnGameFrame ticks take
-	// over.
+	// An empty dedicated server hibernates: the engine stops simulating, so a
+	// freshly created fake client can never run its connection handshake,
+	// never becomes "active", and never pulls the server out of hibernation
+	// (a chicken-and-egg deadlock).  The engine exposes an explicit wake API,
+	// so while this plugin is expected to keep bots on the server we hold
+	// hibernation off every hibernation tick.  Once the fake clients become
+	// fully active the engine stays awake on its own; if the plugin is
+	// disabled we stop calling this and normal hibernation resumes.
 	if (!m_levelLoaded || !m_analysed)
 		return;
+	if (g_cvEnabled && g_cvEnabled->GetBool() &&
+	    (BotCount() > 0 || BotsWanted()))
+	{
+		g_engine->SetServerHibernation(false);
+	}
+
+	// Throttle the actual population work with a frame counter because the
+	// game clock does not advance while hibernating.  Checking every 20
+	// hibernation ticks is roughly once per second.
 	if (++m_hibernateTicks < 20)
 		return;
 	m_hibernateTicks = 0;
 	MaintainPopulation();
+}
+
+bool GameManager::BotsWanted() const
+{
+	if (!g_cvEnabled || !g_cvEnabled->GetBool())
+		return false;
+	// Manual mode only adds bots through hrcbot_add; do not wake for that.
+	if (g_cvAutoBalance && !g_cvAutoBalance->GetBool())
+		return false;
+	// Modes that deliberately keep an empty server frozen/waiting.
+	if (g_cvWaitForPlayers && g_cvWaitForPlayers->GetBool() &&
+	    HumanPlayerCount() == 0)
+		return false;
+	if (g_cvFreezeIfNoPlayers && g_cvFreezeIfNoPlayers->GetBool() &&
+	    HumanPlayerCount() == 0)
+		return false;
+	int minPlayers = g_cvMinPlayers ? g_cvMinPlayers->GetInt() : 0;
+	int maxPlayers = g_cvMaxPlayers ? g_cvMaxPlayers->GetInt() : 5;
+	int preferred = g_cvPreferredCount ? g_cvPreferredCount->GetInt() : 0;
+	int desiredTotal = preferred > 0 ? preferred : maxPlayers;
+	if (desiredTotal < minPlayers)
+		desiredTotal = minPlayers;
+	return desiredTotal > HumanPlayerCount();
 }
 
 // ---------------------------------------------------------------------------
