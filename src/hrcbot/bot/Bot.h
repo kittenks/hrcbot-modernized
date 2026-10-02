@@ -108,6 +108,9 @@ private:
 	float m_jumpTimer;
 	float m_wanderTimer;
 	float m_wanderYaw;
+	float m_stuckTimer;
+	int m_stuckCount;
+	Vector m_lastStuckPos;
 	edict_t *m_target;
 	Vector m_moveGoal;
 	Vector m_aimPoint;

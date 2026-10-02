@@ -50,13 +50,14 @@ Bot::Bot(edict_t *edict, const char *name, int team, Poseidon *nav)
 	  m_team(team), m_state(BOT_STATE_CONNECTING), m_commandNumber(0),
 	  m_nextThink(0.0f), m_stateTimer(0.0f), m_retargetTimer(0.0f),
 	  m_respawnTimer(0.0f), m_jumpTimer(0.0f), m_wanderTimer(0.0f),
-	  m_wanderYaw(0.0f), m_target(NULL),
+	  m_wanderYaw(0.0f), m_stuckTimer(0.0f), m_stuckCount(0), m_target(NULL),
 	  m_hasMoveGoal(false), m_warnedNoDrive(false), m_wasAlive(false),
 	  m_driveWait(0.0f)
 {
 	snprintf(m_name, sizeof(m_name), "%s", name ? name : "Bot");
 	m_aimPoint.Init();
 	m_moveGoal.Init();
+	m_lastStuckPos.Init();
 }
 
 Bot::~Bot() {}
@@ -139,12 +140,16 @@ void Bot::AimAt(const Vector &point, float dt)
 	target.z = 0.0f;
 
 	QAngle cur = m_pi->GetAbsAngles();
-	// Handicap widens the reaction cone and lowers turn speed.
+	// Handicap widens the reaction cone and lowers turn speed.  One RunPlayerMove
+	// is injected per server command, so turn a fixed number of degrees per
+	// command rather than integrating by g_globals->frametime (whose units are
+	// not reliable across the 64-bit engine's frame hooks).
 	float handicap = g_cvHandicap ? (float)g_cvHandicap->GetInt() : 0.0f;
-	float turnRate = 30.0f - handicap * 0.15f;
-	if (turnRate < 6.0f)
-		turnRate = 6.0f;
-	float step = turnRate * (dt > 0.0f ? dt : 0.016f) * 60.0f * 0.15f;
+	float step = 12.0f - handicap * 0.06f; // degrees per command
+	if (step < 3.0f)
+		step = 3.0f;
+	if (step > 12.0f)
+		step = 12.0f;
 
 	cur.y = ApproachAngle(target.y, cur.y, step);
 	cur.x = ApproachAngle(target.x, cur.x, step);
@@ -359,6 +364,37 @@ void Bot::GoTo()
 	{
 		AimAt(Vector(wp.x, wp.y, origin.z + 48.0f), dt);
 		MoveToward(wp, dt);
+
+		// Stuck detection: if the bot barely translates over successive
+		// windows it is caught on geometry.  Hop to clear a lip, and after a
+		// few failed hops give up on this goal and wander to a new heading.
+		m_stuckTimer -= dt;
+		if (m_stuckTimer <= 0.0f)
+		{
+			if ((origin - m_lastStuckPos).Length2D() < 24.0f)
+			{
+				m_cmd.buttons |= IN_JUMP;
+				++m_stuckCount;
+				if (m_stuckCount >= 3)
+				{
+					m_stuckCount = 0;
+					m_hasMoveGoal = false;
+					if (m_nav)
+						m_nav->Invalidate();
+					HRandomStream rng((unsigned int)(g_globals->curtime * 100.0f)
+					                  + m_commandNumber);
+					m_wanderYaw = rng.RandomFloat(-180.0f, 180.0f);
+					m_wanderTimer = rng.RandomFloat(3.0f, 5.0f);
+					m_state = BOT_STATE_WANDER;
+				}
+			}
+			else
+			{
+				m_stuckCount = 0;
+			}
+			m_lastStuckPos = origin;
+			m_stuckTimer = 0.8f;
+		}
 	}
 	else
 	{
@@ -414,6 +450,24 @@ void Bot::Attack()
 	}
 	AimAt(m_aimPoint, dt);
 
+	// Keep closing on a distant target; once near enough, orbit/strafe instead
+	// of standing still (which previously left long-range bots frozen and
+	// never firing a hit).  Back-pedal if the target is point-blank.
+	Vector myOrigin = m_pi->GetAbsOrigin();
+	Vector flat = m_aimPoint - myOrigin;
+	flat.z = 0.0f;
+	float hd = flat.Length();
+	if (hd > 420.0f)
+	{
+		MoveToward(m_aimPoint, dt);
+	}
+	else
+	{
+		m_cmd.forwardmove = (hd < 160.0f) ? -BOT_MAX_SPEED * 0.6f : 0.0f;
+		float dir = (fmodf(g_globals->curtime, 2.0f) < 1.0f) ? 1.0f : -1.0f;
+		m_cmd.sidemove = BOT_MAX_SPEED * 0.55f * dir;
+	}
+
 	// Fire only when roughly facing the target; handicap lowers accuracy.
 	QAngle cur = m_cmd.viewangles;
 	Vector to = m_aimPoint - EyePosition();
@@ -461,8 +515,13 @@ void Bot::HandleEvents()
 			m_respawnTimer = 1.5f;
 			m_target = NULL;
 			m_hasMoveGoal = false;
+			m_stuckCount = 0;
 			if (m_nav)
 				m_nav->Invalidate();
+			// Reliable death notice independent of the player_death game event
+			// (which is not always delivered for fake clients on every build).
+			if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
+				HRC_MSG("bot '%s' died", m_name);
 		}
 	}
 }

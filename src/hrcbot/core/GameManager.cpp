@@ -618,6 +618,11 @@ void GameManager::CmdInfo(const CCommand &args)
 	HRC_MSG("Nodes=%i arcs=%i rooms=%i gateways=%i", m_network.NodeCount(),
 	        m_network.ArcCount(), m_network.RoomCount(),
 	        m_network.GatewayCount());
+	if (g_globals)
+	{
+		HRC_MSG("tick=%i curtime=%.2f frametime=%.5f", g_globals->tickcount,
+		        g_globals->curtime, g_globals->frametime);
+	}
 	static const char *stateNames[] = {
 		"connecting", "spawning", "idle", "preparing", "goto",
 		"wander", "hunting", "attacking", "dead"};
