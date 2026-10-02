@@ -1,28 +1,34 @@
 // Hibernate.h
-// Force a hibernating dedicated server to keep simulating.
+// Keep a dedicated server simulating while bots are expected.
 //
 // An empty Source dedicated server hibernates: the engine stops advancing the
-// game, so a fake client created during hibernation never runs its connection
-// handshake and is eventually kicked ("Punting bot, server is hibernating").
-// This build of HL2DM exposes no hibernation ConVar and IVEngineServer does not
-// implement SetServerHibernation, so we resolve the engine's internal
-// CGameServer::SetHibernating(bool) at runtime and call it with false while
-// bots are expected.  The engine object is the same singleton exposed as
-// IVEngineServer, so g_engine is the method's `this` pointer.
+// game, so a fake client created during hibernation never finishes its
+// connection handshake and is eventually kicked ("Punting bot, server is
+// hibernating").  This HL2DM build exposes no hibernation ConVar and its
+// IVEngineServer does not implement SetServerHibernation.
+//
+// Crucially, once a server is fully hibernating the engine no longer calls the
+// game DLL's GameFrame, so waking it from a GameFrame hook is impossible.
+// Instead we install an inline detour on the engine's internal
+// CGameServer::SetHibernating(bool), which the engine keeps calling from its
+// own frame loop while it decides whether to hibernate.  While HRCBot wants
+// bots on the server the detour forces the argument to false, preventing the
+// server from ever entering hibernation; when no bots are wanted the engine
+// hibernates normally.
 #ifndef HRCBOT_CORE_HIBERNATE_H_
 #define HRCBOT_CORE_HIBERNATE_H_
 
 namespace hrc
 {
 
-// Resolve the engine hibernation setter once.  Returns true on success.
-bool HibernateResolve();
+// Resolve the engine routine and install the detour once.  Safe to call every
+// frame; returns true when the detour is active.
+bool HibernateReady();
 
-// If resolution succeeded, tell the engine the server must not hibernate.
-// Safe to call every frame; it is a no-op when the setter is unavailable.
-void HibernateWake();
+// Tell the detour whether it should block hibernation this frame.
+void HibernateSetKeepAwake(bool keep);
 
-// Whether the hibernation setter was located for this build.
+// Whether the wake detour was installed for this build.
 bool HibernateAvailable();
 
 } // namespace hrc

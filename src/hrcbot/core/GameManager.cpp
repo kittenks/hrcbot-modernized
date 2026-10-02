@@ -411,8 +411,23 @@ void GameManager::MaintainPopulation()
 	}
 }
 
+void GameManager::UpdateHibernateControl()
+{
+	// Install the engine wake detour lazily on the first frame (the engine is
+	// awake and running on its own thread here, well before the empty-server
+	// hibernation delay elapses).
+	if (!HibernateReady())
+		return;
+
+	bool want = false;
+	if (m_levelLoaded && m_analysed && g_cvEnabled && g_cvEnabled->GetBool())
+		want = (BotCount() > 0 || BotsWanted());
+	HibernateSetKeepAwake(want);
+}
+
 void GameManager::OnGameFrame()
 {
+	UpdateHibernateControl();
 	float now = g_globals ? g_globals->curtime : 0.0f;
 	for (int i = 0; i < m_bots.Count(); ++i)
 	{
@@ -429,21 +444,14 @@ void GameManager::OnGameFrame()
 
 void GameManager::OnHibernatingFrame()
 {
-	// An empty dedicated server hibernates: the engine stops simulating, so a
-	// freshly created fake client can never run its connection handshake,
-	// never becomes "active", and never pulls the server out of hibernation
-	// (a chicken-and-egg deadlock).  The engine exposes an explicit wake API,
-	// so while this plugin is expected to keep bots on the server we hold
-	// hibernation off every hibernation tick.  Once the fake clients become
-	// fully active the engine stays awake on its own; if the plugin is
-	// disabled we stop calling this and normal hibernation resumes.
+	// Safety net for the case where the detour was not installed (unsupported
+	// build): if the engine ever reports a hibernation frame while bots are
+	// expected, keep the control flag current and still try to maintain the
+	// population.  With the detour active this path is normally never reached
+	// because the server is prevented from hibernating at all.
+	UpdateHibernateControl();
 	if (!m_levelLoaded || !m_analysed)
 		return;
-	if (g_cvEnabled && g_cvEnabled->GetBool() &&
-	    (BotCount() > 0 || BotsWanted()))
-	{
-		HibernateWake();
-	}
 
 	// Throttle the actual population work with a frame counter because the
 	// game clock does not advance while hibernating.  Checking every 20

@@ -64,6 +64,7 @@ public:
 private:
 	void MaintainPopulation();
 	bool BotsWanted() const;
+	void UpdateHibernateControl();
 	void AnalyseOrLoad();
 
 	TCollection<Bot> m_bots;

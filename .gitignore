@@ -12,6 +12,12 @@ out/
 
 # Dependencies (fetched by build.sh --setup / CI)
 deps/
+hl2sdk/
+hl2sdk-*/
+metamod-source*/
+mmsource*/
+sourcemod*/
+alliedmodders/
 
 # Packaging output
 dist/
