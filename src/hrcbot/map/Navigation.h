@@ -204,6 +204,10 @@ public:
 	int GatewayCount() const { return m_gatewayCount; }
 
 	Node *FindClosestNode(const Vector &v, float maxDist = 1e9f) const;
+	// Same as FindClosestNode but uses horizontal (X/Y) distance only, which
+	// keeps a spawn point on a different vertical level tied to its floor's
+	// node instead of failing the three-dimensional radius test.
+	Node *FindClosestNode2D(const Vector &v, float maxDist = 1e9f) const;
 
 private:
 	Node *m_nodes[HRC_NAV_CAPACITY];

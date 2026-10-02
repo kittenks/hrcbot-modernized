@@ -22,8 +22,8 @@ public:
 	// Build a path of node ids from the nearest node to start to the nearest
 	// node to goal.  Returns true and fills path on success.
 	bool FindPath(const Vector &start, const Vector &goal,
-	              TList<int> &path, float maxStartDist = 512.0f,
-	              float maxGoalDist = 512.0f);
+	              TList<int> &path, float maxStartDist = 1024.0f,
+	              float maxGoalDist = 640.0f);
 
 	// Convenience: next walkable waypoint toward a moving goal, given the
 	// mover's current position and an existing path index cursor.
@@ -35,6 +35,11 @@ public:
 	// guarantees the goal resolves on the graph.  Returns false if the
 	// network is empty.
 	bool RandomGoal(const Vector &near, float minDist, Vector &goal);
+
+	// Horizontal distance from a world position to the nearest navigation
+	// node; used to tell whether a spot (e.g. a spawn point) is covered by the
+	// graph so the path finder can resolve a start node.
+	float NearestNodeDistance(const Vector &v) const;
 
 	void Invalidate();
 

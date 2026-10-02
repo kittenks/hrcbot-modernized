@@ -623,10 +623,12 @@ void GameManager::CmdInfo(const CCommand &args)
 		{
 			Vector o = pi->GetAbsOrigin();
 			QAngle a = pi->GetAbsAngles();
+			float nearNode = m_poseidon
+			                 ? m_poseidon->NearestNodeDistance(o) : -1.0f;
 			HRC_MSG("  %-12s team=%i hp=%-3i state=%-9s pos=(%.0f,%.0f,%.0f) "
-			        "ang=(%.0f,%.0f)",
+			        "ang=(%.0f,%.0f) node=%.0f",
 			        b->GetName(), pi->GetTeamIndex(), pi->GetHealth(),
-			        stName, o.x, o.y, o.z, a.x, a.y);
+			        stName, o.x, o.y, o.z, a.x, a.y, nearNode);
 		}
 		else
 		{

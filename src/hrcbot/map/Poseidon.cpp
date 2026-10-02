@@ -120,7 +120,12 @@ bool Poseidon::FindPath(const Vector &start, const Vector &goal,
 {
 	if (!m_network || m_network->NodeCount() == 0)
 		return false;
-	Node *sn = m_network->FindClosestNode(start, maxStartDist);
+	// Resolve the start on horizontal distance so a vertical offset between a
+	// spawn point and its floor node does not abort the path.  Roam goals are
+	// nodes themselves, but keep the 3D goal test for caller-supplied points.
+	Node *sn = m_network->FindClosestNode2D(start, maxStartDist);
+	if (!sn)
+		sn = m_network->FindClosestNode(start, maxStartDist);
 	Node *gn = m_network->FindClosestNode(goal, maxGoalDist);
 	if (!sn || !gn)
 		return false;
@@ -203,6 +208,24 @@ bool Poseidon::RandomGoal(const Vector &near, float minDist, Vector &goal)
 		return false;
 	goal = best->Origin();
 	return true;
+}
+
+float Poseidon::NearestNodeDistance(const Vector &v) const
+{
+	if (!m_network || m_network->NodeCount() == 0)
+		return -1.0f;
+	float best = kInfinity;
+	for (int i = 0; i < m_network->NodeCount(); ++i)
+	{
+		Node *nd = m_network->GetNode(i);
+		if (nd)
+		{
+			float d = (nd->Origin() - v).Length2D();
+			if (d < best)
+				best = d;
+		}
+	}
+	return best;
 }
 
 } // namespace hrc

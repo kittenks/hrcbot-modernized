@@ -235,6 +235,24 @@ Node *Network::FindClosestNode(const Vector &v, float maxDist) const
 	return best;
 }
 
+Node *Network::FindClosestNode2D(const Vector &v, float maxDist) const
+{
+	Node *best = NULL;
+	float bestDist = maxDist * maxDist;
+	for (int i = 0; i < m_nodeCount; ++i)
+	{
+		float dx = m_nodes[i]->Origin().x - v.x;
+		float dy = m_nodes[i]->Origin().y - v.y;
+		float d = dx * dx + dy * dy;
+		if (d < bestDist)
+		{
+			bestDist = d;
+			best = m_nodes[i];
+		}
+	}
+	return best;
+}
+
 // ---------------------------------------------------------------------------
 // NetworkRaster
 // ---------------------------------------------------------------------------
