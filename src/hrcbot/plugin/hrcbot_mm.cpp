@@ -13,6 +13,7 @@
 #include "hrcbot_version.h"
 #include "core/HrcEngine.h"
 #include "core/GameManager.h"
+#include "core/Tools.h"
 #include "hrcbot_cvars.h"
 
 // SourceHook declarations for the game DLL / clients callbacks we consume.
@@ -334,12 +335,81 @@ void CHurricaneBotServerPlugin::Hook_ClientPutInServer(edict_t *pEntity,
 {
 }
 
+// Resolve a player/bot name (and whether it is a fake client) from a network
+// user id as carried by game events.  The server engine only exposes edict ->
+// user id, so scan the player slots and match IPlayerInfo::GetUserID().  The
+// returned name pointer belongs to the engine and is only valid during this
+// call.
+static const char *PlayerLabelForUserID(int userId, bool *isFakeClient)
+{
+	if (isFakeClient)
+		*isFakeClient = false;
+	if (!hrc::g_engine || !hrc::g_playerInfoManager || userId <= 0)
+		return NULL;
+
+	int maxClients = hrc::g_globals ? hrc::g_globals->maxClients : 64;
+	for (int i = 1; i <= maxClients; ++i)
+	{
+		edict_t *ed = hrc::g_engine->PEntityOfEntIndex(i);
+		if (!ed || ed->IsFree())
+			continue;
+		IPlayerInfo *pi = hrc::g_playerInfoManager->GetPlayerInfo(ed);
+		if (!pi || !pi->IsConnected())
+			continue;
+		if (pi->GetUserID() != userId)
+			continue;
+		if (isFakeClient)
+			*isFakeClient = pi->IsFakeClient();
+		return pi->GetName();
+	}
+	return NULL;
+}
+
 bool CHurricaneBotServerPlugin::Hook_FireEvent(IGameEvent *pEvent,
     bool bDontBroadcast)
 {
-	// The bot behaviour is poll based each frame; events are observed here for
-	// future spawn-protection work.  Always let the event pass through.
-	(void)pEvent;
+	// Report bot kills/deaths to the dedicated SERVER CONSOLE (not chat).
+	// Only events that involve at least one fake client are logged, so human
+	// versus human action stays quiet.  Gated by hrcbot_statusmsgs.
+	if (pEvent && hrc::g_cvStatusMsgs && hrc::g_cvStatusMsgs->GetBool())
+	{
+		const char *eventName = pEvent->GetName();
+		if (eventName && strcmp(eventName, "player_death") == 0)
+		{
+			int victimUid = pEvent->GetInt("userid");
+			int attackerUid = pEvent->GetInt("attacker");
+			const char *weapon = pEvent->GetString("weapon");
+			if (!weapon || !*weapon)
+				weapon = "world";
+
+			bool victimBot = false;
+			bool attackerBot = false;
+			const char *victimName = PlayerLabelForUserID(victimUid,
+			                                             &victimBot);
+			const char *attackerName = NULL;
+			if (attackerUid > 0 && attackerUid != victimUid)
+				attackerName = PlayerLabelForUserID(attackerUid,
+				                                    &attackerBot);
+
+			if (victimBot || attackerBot)
+			{
+				if (attackerName)
+				{
+					hrc::LogMsg("[HRCBot] %s%s killed %s%s with %s\n",
+					            attackerName, attackerBot ? " [BOT]" : "",
+					            victimName ? victimName : "?",
+					            victimBot ? " [BOT]" : "", weapon);
+				}
+				else
+				{
+					hrc::LogMsg("[HRCBot] %s%s died (%s)\n",
+					            victimName ? victimName : "?",
+					            victimBot ? " [BOT]" : "", weapon);
+				}
+			}
+		}
+	}
+
 	(void)bDontBroadcast;
 	RETURN_META_VALUE(MRES_IGNORED, true);
 }

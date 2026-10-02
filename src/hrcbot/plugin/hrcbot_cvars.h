@@ -38,6 +38,7 @@ extern ConVar *g_cvKnownWeapons;
 extern ConVar *g_cvNamesFile;
 extern ConVar *g_cvClan;
 extern ConVar *g_cvLog;
+extern ConVar *g_cvStatusMsgs;
 
 // Creates and registers every convar through Metamod (META_REGCVAR).  The
 // accessor is supplied by the plugin because it owns g_PLAPI.

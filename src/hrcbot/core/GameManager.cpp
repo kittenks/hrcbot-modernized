@@ -220,7 +220,23 @@ void GameManager::OnLevelShutdown()
 
 void GameManager::OnClientActive(edict_t *who)
 {
-	(void)who;
+	if (!who)
+		return;
+	for (int i = 0; i < m_bots.Count(); ++i)
+	{
+		Bot *b = m_bots.Get(i);
+		if (b && b->GetEdict() == who)
+		{
+			// Fully connected and active: this is the authoritative "in the
+			// game" signal (also confirms the hibernation workaround worked).
+			if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
+			{
+				HRC_MSG("[HRCBot] bot '%s' joined the game (team %i)",
+				        b->GetName(), b->GetTeam());
+			}
+			return;
+		}
+	}
 }
 
 void GameManager::OnClientDisconnect(edict_t *who)
@@ -232,6 +248,8 @@ void GameManager::OnClientDisconnect(edict_t *who)
 		Bot *b = m_bots.Get(i);
 		if (b && b->GetEdict() == who)
 		{
+			if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
+				HRC_MSG("[HRCBot] bot '%s' left the game", b->GetName());
 			m_bots.Remove(b, true);
 			return;
 		}
@@ -298,8 +316,11 @@ Bot *GameManager::AddBot(int team, const char *forcedName)
 	                          : (g_cvForceTeam ? g_cvForceTeam->GetInt() : -1));
 	Bot *bot = new Bot(edict, netname, chosen, m_poseidon);
 	m_bots.Add(bot);
-	HRC_MSG("Bot '%s' is set for team %i (%i bots)", netname, chosen,
-	        BotCount());
+	if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
+	{
+		HRC_MSG("[HRCBot] bot '%s' added to team %i (%i bots)", netname,
+		        chosen, BotCount());
+	}
 	return bot;
 }
 
@@ -332,7 +353,8 @@ bool GameManager::KickBot(int team)
 				snprintf(cmd, sizeof(cmd), "%s %d\n", kickCmd, userId);
 				g_engine->ServerCommand(cmd);
 			}
-			HRC_MSG("Kicking bot '%s'", b->GetName());
+			if (g_cvStatusMsgs && g_cvStatusMsgs->GetBool())
+				HRC_MSG("[HRCBot] kicking bot '%s'", b->GetName());
 		}
 		m_bots.Remove(b, true);
 		return true;

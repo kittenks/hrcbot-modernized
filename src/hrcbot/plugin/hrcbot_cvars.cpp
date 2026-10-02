@@ -29,6 +29,7 @@ ConVar *g_cvKnownWeapons = NULL;
 ConVar *g_cvNamesFile = NULL;
 ConVar *g_cvClan = NULL;
 ConVar *g_cvLog = NULL;
+ConVar *g_cvStatusMsgs = NULL;
 
 struct CvarSpec
 {
@@ -115,6 +116,9 @@ static const CvarSpec s_specs[] =
 	{ "hrcbot_log", "0", FCVAR_DEVELOPMENTONLY,
 	  "Logs information about the internals of the bot on the console",
 	  &g_cvLog },
+	{ "hrcbot_statusmsgs", "1", A,
+	  "Print bot join, kick, kill and death status lines to the server "
+	  "console (1=on, 0=off)", &g_cvStatusMsgs },
 };
 
 void RegisterConvars(IConCommandBaseAccessor *accessor)

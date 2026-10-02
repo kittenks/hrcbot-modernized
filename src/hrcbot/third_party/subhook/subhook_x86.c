@@ -214,7 +214,7 @@ SUBHOOK_EXPORT int SUBHOOK_API subhook_disasm(void *src, int *reloc_op_offset) {
     /* XOR r32, r/m32    */ {0x33, 0, MODRM}
   };
 
-  uint8_t *code = src;
+  uint8_t *code = (uint8_t *)src;
   size_t i;
   int len = 0;
   int operand_size = 4;
