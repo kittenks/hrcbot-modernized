@@ -2,6 +2,7 @@
 #include "Stream.h"
 #include <string.h>
 #include <stdlib.h>
+#include "Tools.h"
 
 namespace hrc
 {
@@ -18,7 +19,10 @@ Stream::~Stream()
 bool Stream::OpenForWrite(const char *path)
 {
 	Close();
-	m_fp = fopen(path, "wb");
+	char full[512];
+	if (!ResolveGamePath(path, full, sizeof(full)))
+		return false;
+	m_fp = fopen(full, "wb");
 	m_mode = 2;
 	m_good = m_fp != NULL;
 	return m_good;
@@ -27,7 +31,10 @@ bool Stream::OpenForWrite(const char *path)
 bool Stream::OpenForRead(const char *path)
 {
 	Close();
-	m_fp = fopen(path, "rb");
+	char full[512];
+	if (!ResolveGamePath(path, full, sizeof(full)))
+		return false;
+	m_fp = fopen(full, "rb");
 	m_mode = 1;
 	m_good = m_fp != NULL;
 	return m_good;
@@ -123,7 +130,10 @@ void Stream::ReadString(char *out, size_t outLen)
 
 bool Stream::IsLegacyContainer(const char *path)
 {
-	FILE *fp = fopen(path, "rb");
+	char full[512];
+	if (!ResolveGamePath(path, full, sizeof(full)))
+		return false;
+	FILE *fp = fopen(full, "rb");
 	if (!fp)
 		return false;
 	char probe[64];

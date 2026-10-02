@@ -51,6 +51,11 @@ int SplitString(const char *in, const char *separator, char *out[], int maxOut,
                 int maxToken);
 const char *SkipPath(const char *path);
 
+// Resolve a game-relative path (e.g. "addons/...") to a local filesystem path
+// suitable for fopen.  The engine CWD is the engine root; game files live
+// under the game directory.  Returns buf, or NULL on invalid input.
+const char *ResolveGamePath(const char *relative, char *buf, size_t bufLen);
+
 } // namespace hrc
 
 // Convenience macros used across the source tree.

@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <tier0/platform.h>
 #include <mathlib/mathlib.h>
+#include <filesystem.h>
+#include "HrcEngine.h"
 #include "plugin/hrcbot_cvars.h"
 
 namespace hrc
@@ -199,6 +201,31 @@ const char *SkipPath(const char *path)
 	const char *bslash = strrchr(path, '\\');
 	const char *last = slash > bslash ? slash : bslash;
 	return last ? last + 1 : path;
+}
+
+const char *ResolveGamePath(const char *relative, char *buf, size_t bufLen)
+{
+	if (!relative || !buf || bufLen == 0)
+		return NULL;
+	// Already absolute (POSIX root, Windows drive, or UNC).
+	if (relative[0] == '/' || relative[0] == '\\' ||
+	    (relative[0] && relative[1] == ':'))
+	{
+		strncpy(buf, relative, bufLen - 1);
+		buf[bufLen - 1] = '\0';
+		return buf;
+	}
+	// Ask the engine filesystem to resolve against the GAME search path.
+	if (g_pFileSystem)
+	{
+		g_pFileSystem->GetLocalPath(relative, buf, (int)bufLen, "GAME");
+		if (buf[0])
+			return buf;
+	}
+	// Fallback: the engine CWD is the engine root and the game directory is
+	// a subdirectory.  hl2dm uses "hl2mp".
+	snprintf(buf, bufLen, "hl2mp/%s", relative);
+	return buf;
 }
 
 } // namespace hrc

@@ -8,6 +8,7 @@
 #include <iplayerinfo.h>
 #include <eiface.h>
 #include <tier1/convar.h>
+#include <filesystem.h>
 
 #include "hrcbot_version.h"
 #include "core/HrcEngine.h"
@@ -146,6 +147,8 @@ bool CHurricaneBotServerPlugin::Load(PluginId id, ISmmAPI *ismm,
 	                    CVAR_INTERFACE_VERSION);
 	GET_V_IFACE_CURRENT(GetEngineFactory, hrc::g_trace, IEngineTrace,
 	                    INTERFACEVERSION_ENGINETRACE_SERVER);
+	GET_V_IFACE_CURRENT(GetEngineFactory, hrc::g_pFileSystem, IFileSystem,
+	                    FILESYSTEM_INTERFACE_VERSION);
 
 	GET_V_IFACE_ANY(GetServerFactory, s_server, IServerGameDLL,
 	                INTERFACEVERSION_SERVERGAMEDLL);

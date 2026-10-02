@@ -20,6 +20,7 @@ IGameEventManager2 *g_gameEvents = NULL;
 IServerPluginHelpers *g_helpers = NULL;
 ICvar *g_cvar = NULL;
 CGlobalVars *g_globals = NULL;
+IFileSystem *g_pFileSystem = NULL;
 
 const Vector g_playerMins(-16.0f, -16.0f, 0.0f);
 const Vector g_playerMaxs(16.0f, 16.0f, 72.0f);

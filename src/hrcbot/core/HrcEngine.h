@@ -16,6 +16,7 @@ class IGameEventManager2;
 class IServerPluginHelpers;
 class ICvar;
 class CGlobalVars;
+class IFileSystem;
 
 namespace hrc
 {
@@ -32,6 +33,7 @@ extern IGameEventManager2 *g_gameEvents;
 extern IServerPluginHelpers *g_helpers;
 extern ICvar *g_cvar;
 extern CGlobalVars *g_globals;
+extern IFileSystem *g_pFileSystem;
 
 // Player standing hull used for walkability probes.
 extern const Vector g_playerMins;

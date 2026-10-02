@@ -90,7 +90,13 @@ void GameManager::ReloadNames()
 
 	const char *path = g_cvNamesFile ? g_cvNamesFile->GetString()
 	                                 : HRC_DEFAULT_NAMES_FILE;
-	FILE *fp = fopen(path, "r");
+	char full[512];
+	if (!ResolveGamePath(path, full, sizeof(full)))
+	{
+		HRC_WARN("Could not resolve names file %s", path);
+		return;
+	}
+	FILE *fp = fopen(full, "r");
 	if (!fp)
 	{
 		HRC_WARN("Could not open names file %s", path);
