@@ -174,36 +174,79 @@ bool Poseidon::RandomGoal(const Vector &near, float minDist, Vector &goal)
 		return false;
 
 	int n = m_network->NodeCount();
+
+	// Resolve the start node the same way FindPath does (horizontal first),
+	// then collect every node reachable from it along the arcs so the goal is
+	// guaranteed to be in the same connected component and A* can route to it.
+	Node *start = m_network->FindClosestNode2D(near, 1024.0f);
+	if (!start)
+		start = m_network->FindClosestNode(near, 1024.0f);
+	if (!start)
+		return false;
+
+	bool *seen = new bool[n];
+	int *stack = new int[n];
+	for (int i = 0; i < n; ++i)
+		seen[i] = false;
+	int top = 0;
+	stack[top++] = start->Id();
+	seen[start->Id()] = true;
+	while (top > 0)
+	{
+		int cur = stack[--top];
+		Node *cn = m_network->GetNode(cur);
+		if (!cn)
+			continue;
+		for (int a = 0; a < cn->ArcCount(); ++a)
+		{
+			int nid = cn->NeighborId(a);
+			if (nid >= 0 && nid < n && !seen[nid])
+			{
+				seen[nid] = true;
+				stack[top++] = nid;
+			}
+		}
+	}
+
 	HRandomStream rng((unsigned int)time(NULL) ^ 0x9e3779b9u);
 
-	// Prefer a connected node comfortably far from the current position.
+	// Prefer a random reachable node comfortably far from the start.
 	for (int attempt = 0; attempt < 32; ++attempt)
 	{
-		Node *nd = m_network->GetNode(rng.RandomInt(0, n - 1));
-		if (!nd || nd->ArcCount() == 0)
+		int id = rng.RandomInt(0, n - 1);
+		if (!seen[id])
 			continue;
-		if ((nd->Origin() - near).Length2D() >= minDist)
+		Node *nd = m_network->GetNode(id);
+		if (nd && (nd->Origin() - near).Length2D() >= minDist)
 		{
 			goal = nd->Origin();
+			delete[] seen;
+			delete[] stack;
 			return true;
 		}
 	}
 
-	// Fallback: the connected node farthest from the current position.
+	// Fallback: the reachable node farthest from the start (may be the start
+	// node itself if it is isolated).
 	Node *best = NULL;
 	float bestDist = -1.0f;
 	for (int i = 0; i < n; ++i)
 	{
-		Node *nd = m_network->GetNode(i);
-		if (!nd || nd->ArcCount() == 0)
+		if (!seen[i])
 			continue;
-		float d = (nd->Origin() - near).Length2D();
-		if (d > bestDist)
+		Node *nd = m_network->GetNode(i);
+		if (nd)
 		{
-			bestDist = d;
-			best = nd;
+			float d = (nd->Origin() - near).Length2D();
+			if (d > bestDist)
+			{
+				bestDist = d;
+				best = nd;
+			}
 		}
 	}
+	delete[] seen;
+	delete[] stack;
 	if (!best)
 		return false;
 	goal = best->Origin();

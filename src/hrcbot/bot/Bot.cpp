@@ -49,7 +49,8 @@ Bot::Bot(edict_t *edict, const char *name, int team, Poseidon *nav)
 	: m_edict(edict), m_pi(NULL), m_controller(NULL), m_nav(nav),
 	  m_team(team), m_state(BOT_STATE_CONNECTING), m_commandNumber(0),
 	  m_nextThink(0.0f), m_stateTimer(0.0f), m_retargetTimer(0.0f),
-	  m_respawnTimer(0.0f), m_jumpTimer(0.0f), m_target(NULL),
+	  m_respawnTimer(0.0f), m_jumpTimer(0.0f), m_wanderTimer(0.0f),
+	  m_wanderYaw(0.0f), m_target(NULL),
 	  m_hasMoveGoal(false), m_warnedNoDrive(false), m_wasAlive(false),
 	  m_driveWait(0.0f)
 {
@@ -297,28 +298,56 @@ void Bot::StateDead()
 void Bot::PrepareTrip()
 {
 	// Pick a navigation goal when no enemy is known.  The destination must be
-	// a node on the navigation graph; an arbitrary world point rarely resolves
-	// to a nearby node and left bots idling at their spawn point forever.
-	if (!m_hasMoveGoal && m_pi)
+	// a node reachable from the bot's start node on the navigation graph.  If
+	// the spawn area is not covered by the graph (no start node within range),
+	// fall back to an obstacle-sliding random wander so the bot still moves and
+	// can stumble into contact.
+	if (!m_pi)
 	{
-		Vector origin = m_pi->GetAbsOrigin();
-		Vector goal;
-		if (m_nav && m_nav->RandomGoal(origin, 500.0f, goal))
-		{
-			m_moveGoal = goal;
-		}
-		else
-		{
-			// No usable graph: wander to a short random point as a last resort.
-			HRandomStream rng((unsigned int)(g_globals->curtime * 100.0f) +
-			                  m_commandNumber);
-			float ang = rng.RandomFloat(0.0f, 6.2831f);
-			m_moveGoal = origin + Vector(cosf(ang) * 200.0f,
-			                             sinf(ang) * 200.0f, 0.0f);
-		}
-		m_hasMoveGoal = true;
+		m_state = BOT_STATE_IDLE;
+		return;
 	}
-	m_state = BOT_STATE_GOTO;
+	Vector origin = m_pi->GetAbsOrigin();
+	Vector goal;
+	if (m_nav && m_nav->RandomGoal(origin, 400.0f, goal))
+	{
+		m_moveGoal = goal;
+		m_hasMoveGoal = true;
+		m_state = BOT_STATE_GOTO;
+	}
+	else
+	{
+		HRandomStream rng((unsigned int)(g_globals->curtime * 100.0f) +
+		                  m_commandNumber);
+		m_wanderYaw = rng.RandomFloat(-180.0f, 180.0f);
+		m_wanderTimer = rng.RandomFloat(3.0f, 6.0f);
+		m_hasMoveGoal = false;
+		m_state = BOT_STATE_WANDER;
+	}
+}
+
+void Bot::StateWander()
+{
+	float dt = g_globals ? g_globals->frametime : 0.016f;
+	if (!m_pi)
+	{
+		m_state = BOT_STATE_IDLE;
+		return;
+	}
+	m_wanderTimer -= dt;
+	if (m_wanderTimer <= 0.0f)
+	{
+		m_cmd.forwardmove = 0.0f;
+		m_cmd.sidemove = 0.0f;
+		m_state = BOT_STATE_IDLE;
+		return;
+	}
+	Vector origin = m_pi->GetAbsOrigin();
+	float rad = m_wanderYaw * 3.14159265f / 180.0f;
+	Vector ahead(origin.x + cosf(rad) * 120.0f,
+	             origin.y + sinf(rad) * 120.0f, origin.z + 48.0f);
+	AimAt(ahead, dt);
+	MoveToward(ahead, dt);
 }
 
 void Bot::GoTo()
@@ -388,11 +417,14 @@ void Bot::Attack()
 	// Fire only when roughly facing the target; handicap lowers accuracy.
 	QAngle cur = m_cmd.viewangles;
 	Vector to = m_aimPoint - EyePosition();
+	float distTo = to.Length();
 	float yaw = RAD2DEG(atan2(to.y, to.x));
+	float pitch = -RAD2DEG(asin(distTo > 1.0f ? to.z / distTo : 0.0f));
 	float yawErr = fabs(WrapAngle(yaw - cur.y));
+	float pitchErr = fabs(WrapAngle(pitch - cur.x));
 	float handicap = g_cvHandicap ? (float)g_cvHandicap->GetInt() : 0.0f;
 	float tolerance = 8.0f + handicap * 0.25f;
-	if (yawErr < tolerance)
+	if (yawErr < tolerance && pitchErr < tolerance + 12.0f)
 		m_cmd.buttons |= IN_ATTACK;
 	else
 		m_cmd.buttons &= ~IN_ATTACK;
@@ -479,11 +511,20 @@ void Bot::Think()
 	default:
 		HandleEvents();
 		DetectPlayers();
+		// A known enemy overrides any navigation or wandering.
+		if (m_target && (m_state == BOT_STATE_IDLE ||
+		                 m_state == BOT_STATE_PREPARE_TRIP ||
+		                 m_state == BOT_STATE_GOTO ||
+		                 m_state == BOT_STATE_WANDER))
+		{
+			m_state = BOT_STATE_HUNT;
+		}
 		switch (m_state)
 		{
 		case BOT_STATE_IDLE:         StateIdle();    break;
 		case BOT_STATE_PREPARE_TRIP: PrepareTrip();  break;
 		case BOT_STATE_GOTO:         GoTo();         break;
+		case BOT_STATE_WANDER:       StateWander();  break;
 		case BOT_STATE_HUNT:         Hunt();         break;
 		case BOT_STATE_ATTACK:       Attack();       break;
 		default:                     StateIdle();    break;

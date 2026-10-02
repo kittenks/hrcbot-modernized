@@ -23,6 +23,7 @@ enum BotState
 	BOT_STATE_IDLE,
 	BOT_STATE_PREPARE_TRIP,
 	BOT_STATE_GOTO,
+	BOT_STATE_WANDER,
 	BOT_STATE_HUNT,
 	BOT_STATE_ATTACK,
 	BOT_STATE_DEAD,
@@ -77,6 +78,7 @@ private:
 	void StateIdle();
 	void PrepareTrip();
 	void GoTo();
+	void StateWander();
 	void Hunt();
 	void Attack();
 	void DetectPlayers();
@@ -104,6 +106,8 @@ private:
 	float m_retargetTimer;
 	float m_respawnTimer;
 	float m_jumpTimer;
+	float m_wanderTimer;
+	float m_wanderYaw;
 	edict_t *m_target;
 	Vector m_moveGoal;
 	Vector m_aimPoint;

@@ -328,10 +328,20 @@ Bot *GameManager::AddBot(int team, const char *forcedName)
 	char netname[64];
 	snprintf(netname, sizeof(netname), "%s", picked);
 
-	edict_t *edict = g_engine->CreateFakeClient(netname);
+	// Create the fake client through IBotManager::CreateBot, not the engine's
+	// raw CreateFakeClient.  Bots made the raw way are pumped for queued
+	// console commands but their IBotController::RunPlayerMove never drives the
+	// player movement, so they spawn and then stand frozen forever (no view
+	// angle, no analog move, no buttons).  CreateBot wires the client into the
+	// engine bot system so injected CBotCmd are actually executed.
+	edict_t *edict = NULL;
+	if (g_botManager)
+		edict = g_botManager->CreateBot(netname);
+	if (!edict)
+		edict = g_engine->CreateFakeClient(netname);
 	if (!edict)
 	{
-		HRC_WARN("CreateFakeClient failed (server full?)");
+		HRC_WARN("CreateBot/CreateFakeClient failed (server full?)");
 		return NULL;
 	}
 	int chosen = PickTeam(team >= 0 ? team
@@ -610,7 +620,7 @@ void GameManager::CmdInfo(const CCommand &args)
 	        m_network.GatewayCount());
 	static const char *stateNames[] = {
 		"connecting", "spawning", "idle", "preparing", "goto",
-		"hunting", "attacking", "dead"};
+		"wander", "hunting", "attacking", "dead"};
 	for (int i = 0; i < m_bots.Count(); ++i)
 	{
 		Bot *b = m_bots.Get(i);
@@ -618,7 +628,7 @@ void GameManager::CmdInfo(const CCommand &args)
 			continue;
 		IPlayerInfo *pi = b->PlayerInfo();
 		int st = (int)b->State();
-		const char *stName = (st >= 0 && st < 8) ? stateNames[st] : "?";
+		const char *stName = (st >= 0 && st < 9) ? stateNames[st] : "?";
 		if (pi && pi->IsConnected())
 		{
 			Vector o = pi->GetAbsOrigin();
