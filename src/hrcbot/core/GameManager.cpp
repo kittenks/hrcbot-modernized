@@ -62,6 +62,7 @@ static unsigned int StableHash(const char *s)
 GameManager::GameManager()
 	: m_dedale(NULL), m_poseidon(NULL), m_mapCrc(0), m_maxClients(0),
 	  m_teamPlay(false), m_levelLoaded(false), m_analysed(false),
+	  m_navLoaded(false), m_pendingSeed(false),
 	  m_nextMaintenance(0.0f), m_hibernateTicks(0)
 {
 	m_mapName[0] = '\0';
@@ -194,7 +195,14 @@ void GameManager::OnLevelInit(const char *mapName)
 	m_mapCrc = (int)StableHash(m_mapName);
 	m_levelLoaded = true;
 	m_analysed = false;
+	m_navLoaded = false;
+	m_pendingSeed = false;
 	m_hibernateTicks = 0;
+	// curtime restarts at zero on every level.  Without resetting the
+	// maintenance deadline it keeps the previous map's timestamp, which would
+	// stall population balancing (auto bot add/remove) for several minutes
+	// after a map change until the new clock caught up with the old value.
+	m_nextMaintenance = 0.0f;
 
 	// Detect team play mode through the game's own convar.
 	m_teamPlay = false;
@@ -220,13 +228,43 @@ void GameManager::AnalyseOrLoad()
 	if (m_dedale->LoadMap(m_mapName, m_mapCrc))
 	{
 		m_analysed = true;
+		m_navLoaded = true;
 		return;
 	}
-	Vector seed(0, 0, 0);
-	if (m_dedale->AnalyseMap(seed))
+	// No saved container for this map.  Do not rasterize around the world
+	// origin: on maps whose playable space sits far from (0,0,0) the fixed
+	// analysis window misses it entirely and produces a handful of junk
+	// nodes.  Defer until the first bot has spawned at a genuine player
+	// spawn point, then analyse centred on that location.  Bots use the
+	// wander fallback in the meantime, so they still move and fight.
+	m_analysed = false;
+	m_pendingSeed = true;
+	HRC_MSG("No saved navigation for this map; analysing from the first "
+	        "bot spawn point once a bot is in the game.");
+}
+
+void GameManager::MaybeSeedAnalysis()
+{
+	if (!m_pendingSeed || !m_levelLoaded)
+		return;
+
+	for (int i = 0; i < m_bots.Count(); ++i)
 	{
-		m_dedale->SaveMap(m_mapName, m_mapCrc);
-		m_analysed = true;
+		Bot *b = m_bots.Get(i);
+		if (!b || !b->IsAlive())
+			continue;
+		Vector seed = b->GetEyePosition();
+		m_network.Clear();
+		bool ok = m_dedale->AnalyseMap(seed);
+		if (ok)
+			m_dedale->SaveMap(m_mapName, m_mapCrc);
+		if (m_poseidon)
+			m_poseidon->Invalidate();
+		m_analysed = ok;
+		m_pendingSeed = false;
+		HRC_MSG("Navigation seeded from bot '%s' spawn (%s).", b->GetName(),
+		        ok ? "saved" : "analysis failed");
+		return;
 	}
 }
 
@@ -238,6 +276,8 @@ void GameManager::OnLevelShutdown()
 		m_poseidon->Invalidate();
 	m_levelLoaded = false;
 	m_analysed = false;
+	m_navLoaded = false;
+	m_pendingSeed = false;
 }
 
 void GameManager::OnClientActive(edict_t *who)
@@ -486,8 +526,10 @@ void GameManager::UpdateHibernateControl()
 		return;
 
 	bool want = false;
-	if (m_levelLoaded && m_analysed && g_cvEnabled && g_cvEnabled->GetBool())
-		want = (BotCount() > 0 || BotsWanted());
+	// Stay awake even before navigation analysis finishes on a fresh map:
+	// bots must be able to spawn so we can use their spawn point as the seed.
+	if (m_levelLoaded && g_cvEnabled && g_cvEnabled->GetBool())
+		want = (BotCount() > 0 || BotsWanted() || m_pendingSeed);
 	HibernateSetKeepAwake(want);
 }
 
@@ -501,6 +543,7 @@ void GameManager::OnGameFrame()
 		if (b)
 			b->Think();
 	}
+	MaybeSeedAnalysis();
 	if (now >= m_nextMaintenance)
 	{
 		MaintainPopulation();
@@ -688,13 +731,25 @@ void GameManager::CmdMove(const CCommand &args)
 
 void GameManager::CmdAnalyseGround(const CCommand &args)
 {
-	(void)args;
-	if (m_levelLoaded)
+	if (!m_levelLoaded)
+		return;
+	// Optional explicit seed: hrcbot_analyseground [x y].  Defaults to the
+	// world origin, matching the original console command.
+	Vector seed(0, 0, 0);
+	if (args.ArgC() >= 3)
 	{
-		Vector seed(0, 0, 0);
-		if (m_dedale->AnalyseMap(seed))
-			m_dedale->SaveMap(m_mapName, m_mapCrc);
+		seed.x = (float)atof(args.Arg(1));
+		seed.y = (float)atof(args.Arg(2));
 	}
+	m_network.Clear();
+	if (m_poseidon)
+		m_poseidon->Invalidate();
+	if (m_dedale->AnalyseMap(seed))
+	{
+		m_dedale->SaveMap(m_mapName, m_mapCrc);
+		m_analysed = true;
+	}
+	m_pendingSeed = false;
 }
 
 } // namespace hrc

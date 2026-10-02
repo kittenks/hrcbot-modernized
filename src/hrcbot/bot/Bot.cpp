@@ -108,6 +108,11 @@ Vector Bot::EyePosition() const
 	return v;
 }
 
+Vector Bot::GetEyePosition() const
+{
+	return EyePosition();
+}
+
 void Bot::EmitCommand()
 {
 	// The user command pump must run every frame from the moment the fake

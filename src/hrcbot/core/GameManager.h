@@ -66,6 +66,10 @@ private:
 	bool BotsWanted() const;
 	void UpdateHibernateControl();
 	void AnalyseOrLoad();
+	// On a map with no saved navigation, defer raster analysis until a bot has
+	// spawned at a real player spawn and analyse around that point (analysing
+	// around the world origin yields an empty graph on most maps).
+	void MaybeSeedAnalysis();
 
 	TCollection<Bot> m_bots;
 	TList<char *> m_names;
@@ -81,6 +85,8 @@ private:
 	bool m_teamPlay;
 	bool m_levelLoaded;
 	bool m_analysed;
+	bool m_navLoaded;   // Navigation came from a saved container this level.
+	bool m_pendingSeed; // Fresh map: analyse once the first bot has spawned.
 	float m_nextMaintenance;
 	int m_hibernateTicks;
 };

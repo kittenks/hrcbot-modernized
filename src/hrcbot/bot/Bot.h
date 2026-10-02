@@ -64,6 +64,9 @@ public:
 	IPlayerInfo *PlayerInfo() const { return m_pi; }
 	BotState State() const { return m_state; }
 
+	// Public eye/world position, used to seed ground analysis at a real spawn.
+	Vector GetEyePosition() const;
+
 	// Run a console command as the bot (hrcbot_do).
 	void RunCommand(const char *command);
 
