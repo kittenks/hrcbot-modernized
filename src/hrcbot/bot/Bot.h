@@ -108,6 +108,8 @@ private:
 	Vector m_moveGoal;
 	Vector m_aimPoint;
 	bool m_hasMoveGoal;
+	bool m_warnedNoDrive;
+	bool m_wasAlive;
 };
 
 } // namespace hrc

@@ -50,7 +50,7 @@ Bot::Bot(edict_t *edict, const char *name, int team, Poseidon *nav)
 	  m_team(team), m_state(BOT_STATE_CONNECTING), m_commandNumber(0),
 	  m_nextThink(0.0f), m_stateTimer(0.0f), m_retargetTimer(0.0f),
 	  m_respawnTimer(0.0f), m_jumpTimer(0.0f), m_target(NULL),
-	  m_hasMoveGoal(false)
+	  m_hasMoveGoal(false), m_warnedNoDrive(false), m_wasAlive(false)
 {
 	snprintf(m_name, sizeof(m_name), "%s", name ? name : "Bot");
 	m_aimPoint.Init();
@@ -107,7 +107,12 @@ Vector Bot::EyePosition() const
 
 void Bot::EmitCommand()
 {
-	if (!m_pi || !m_controller)
+	// The user command pump must run every frame from the moment the fake
+	// client exists, even before it has a player info / pawn.  The engine
+	// processes queued console commands (such as "jointeam") and drives the
+	// connection/spawn handshake from RunPlayerMove; without it a bot sits
+	// forever at the origin with no team and no pawn.
+	if (!m_controller)
 		return;
 	++m_commandNumber;
 	m_cmd.command_number = m_commandNumber;
@@ -422,6 +427,24 @@ void Bot::Think()
 	if (!m_edict || !EngineReady())
 		return;
 	RefreshInfo();
+
+	// Diagnostics: a connected fake client without a bot controller can never
+	// be driven and will never spawn.  Warn exactly once so the cause is
+	// visible in the server console instead of looking like silent AI failure.
+	if (m_pi && m_pi->IsConnected() && !m_controller && !m_warnedNoDrive)
+	{
+		m_warnedNoDrive = true;
+		HRC_WARN("bot '%s' has no IBotController; cannot send user commands "
+		         "(IBotManager interface missing?)", m_name);
+	}
+
+	bool aliveNow = IsAlive();
+	if (aliveNow && !m_wasAlive && g_cvStatusMsgs &&
+	    g_cvStatusMsgs->GetBool())
+	{
+		HRC_MSG("bot '%s' is now in the game (pawn ready)", m_name);
+	}
+	m_wasAlive = aliveNow;
 
 	m_cmd.Reset();
 	float dt = g_globals ? g_globals->frametime : 0.016f;

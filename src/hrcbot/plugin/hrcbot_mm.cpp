@@ -163,6 +163,8 @@ bool CHurricaneBotServerPlugin::Load(PluginId id, ISmmAPI *ismm,
 	// support will not expose it, so a NULL result here is non-fatal.
 	hrc::g_botManager = (IBotManager *)ismm->GetServerFactory()(
 	    INTERFACEVERSION_PLAYERBOTMANAGER, NULL);
+	hrc::LogMsg("IBotManager (%s): %s", INTERFACEVERSION_PLAYERBOTMANAGER,
+	            hrc::g_botManager ? "available" : "NOT available");
 	GET_V_IFACE_ANY(GetServerFactory, hrc::g_gameEnts, IServerGameEnts,
 	                INTERFACEVERSION_SERVERGAMEENTS);
 
