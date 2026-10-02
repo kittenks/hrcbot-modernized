@@ -215,12 +215,19 @@ const char *ResolveGamePath(const char *relative, char *buf, size_t bufLen)
 		buf[bufLen - 1] = '\0';
 		return buf;
 	}
-	// Ask the engine filesystem to resolve against the GAME search path.
+	// Ask the engine filesystem for the GAME search path; the first entry is
+	// the writable game directory (a null-separated list).
 	if (g_pFileSystem)
 	{
-		g_pFileSystem->GetLocalPath(relative, buf, (int)bufLen, "GAME");
-		if (buf[0])
+		char searchPath[1024];
+		searchPath[0] = '\0';
+		g_pFileSystem->GetSearchPath("GAME", false, searchPath,
+		                             sizeof(searchPath));
+		if (searchPath[0])
+		{
+			snprintf(buf, bufLen, "%s/%s", searchPath, relative);
 			return buf;
+		}
 	}
 	// Fallback: the engine CWD is the engine root and the game directory is
 	// a subdirectory.  hl2dm uses "hl2mp".
