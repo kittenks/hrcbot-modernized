@@ -99,7 +99,7 @@ void GameManager::ReloadNames()
 	FILE *fp = fopen(full, "r");
 	if (!fp)
 	{
-		HRC_WARN("Could not open names file %s", path);
+		HRC_WARN("Could not open names file %s (resolved: %s)", path, full);
 		return;
 	}
 	char line[128];

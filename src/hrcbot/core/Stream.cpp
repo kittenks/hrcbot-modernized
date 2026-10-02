@@ -23,6 +23,8 @@ bool Stream::OpenForWrite(const char *path)
 	if (!ResolveGamePath(path, full, sizeof(full)))
 		return false;
 	m_fp = fopen(full, "wb");
+	if (!m_fp)
+		HRC_WARN("fopen(wb) failed for %s (resolved: %s)", path, full);
 	m_mode = 2;
 	m_good = m_fp != NULL;
 	return m_good;
