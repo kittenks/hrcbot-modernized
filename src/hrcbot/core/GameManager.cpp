@@ -565,13 +565,15 @@ void GameManager::OnGameFrame()
 
 void GameManager::OnHibernatingFrame()
 {
-	// Safety net for the case where the detour was not installed (unsupported
-	// build): if the engine ever reports a hibernation frame while bots are
-	// expected, keep the control flag current and still try to maintain the
-	// population.  With the detour active this path is normally never reached
-	// because the server is prevented from hibernating at all.
+	// Safety net for the case where the server reaches a hibernating tick
+	// before bots are present.  This MUST run even when the map has not been
+	// analysed yet: on a fresh map with no saved navigation, m_analysed is
+	// false and the only way out of hibernation is to add a bot (the engine
+	// wakes on client connect).  Once that bot spawns, MaybeSeedAnalysis
+	// uses its spawn point to rasterise the map.  Gating on m_analysed here
+	// would deadlock a fresh map forever (no bots -> no wake -> no seed).
 	UpdateHibernateControl();
-	if (!m_levelLoaded || !m_analysed)
+	if (!m_levelLoaded)
 		return;
 
 	// Throttle the actual population work with a frame counter because the
@@ -580,6 +582,7 @@ void GameManager::OnHibernatingFrame()
 	if (++m_hibernateTicks < 20)
 		return;
 	m_hibernateTicks = 0;
+	MaybeSeedAnalysis();
 	MaintainPopulation();
 }
 
