@@ -1,4 +1,4 @@
-# HRCBot（Hurricane Bot）现代化构建版
+# HRCBot（Hurricane Bot）现代化构建版 2.0.0
 
 面向 **Half-Life 2: Deathmatch（hl2dm）** 的机器人插件，基于原始
 Hurricane Bot 1.3.4 二进制重建为 **Metamod:Source 1.12** 插件。
@@ -20,11 +20,14 @@ Hurricane Bot 1.3.4 二进制重建为 **Metamod:Source 1.12** 插件。
   **功能性重写**：用引擎 hull 碰撞检测把可行走地面栅格化，再用 A*
   规划路径。它**不是**逐字节翻译，机器人行为细节会与 2013 版不同。
 * 旧的 `.hrcbot` 私有位流不可读取。现代版写入新的 `.hrcbot2` 缓存
-  （magic `"HRCBOT2"`）；新图首次加载时会自动分析地面。
+  （magic `"HRCBOT2"`）；新图首次加载时会从首个机器人出生点自动分析地面
+  并保存结果。
 
-本环境已验证四个目标**全部可编译通过**，但**未在真实 hl2dm 服务器里进
-游戏实测**（也无 Windows/MSVC 环境，Windows 产物靠 CI 首次构建校验）。
-请把它当作可用的起点并自行测试反馈。
+**2.0.0 版本**已在真实 64 位 Windows hl2dm 专用服务器上完成全部八张
+官方死亡竞赛地图（dm_lockdown、dm_overwatch、dm_powerhouse、dm_resistance、
+dm_runoff、dm_steamlab、dm_underpass、halls3）的实机测试。机器人可正常
+出生、导航、战斗、重生并承受换图；空图时服务器被保持唤醒以便机器人自动
+播种导航数据。
 
 原作者：**Hurricane**（hurricane.bot@gmail.com）。
 原文照见 `docs/original/`（LICENCE/README/LISEZMOI/IMPORTANT）。
@@ -35,12 +38,12 @@ Hurricane Bot 1.3.4 二进制重建为 **Metamod:Source 1.12** 插件。
 
 * 运行于 2013（Source SDK 2013 / SteamPipe）分支的 **hl2dm 专用服务器**。
   现代 hl2dm 同时提供 32 位与 64 位服务端。
-* **Metamod:Source 1.10 / 1.12**（本插件按 1.12 SDK 构建）。先按你的
+* **Metamod:Source 1.12**（本插件按 1.12 SDK 构建）。先按你的
   系统/架构装好 Metamod:Source。
 
 ## 3. 安装
 
-把 `hrcbot-<版本>-linux.tar.gz`（或 `-windows.zip`）解包到 `hl2mp/` 目录：
+把 `hrcbot-2.0.0-linux.tar.gz`（或 `-windows.zip`）解包到 `hl2mp/` 目录：
 
 ```
 hl2mp/
@@ -52,7 +55,7 @@ hl2mp/
 │   ├── hrcbot_mm.x64.dll            # 64 位 Windows
 │   └── hrcbot_server_plugin/
 │       ├── hrcbot_names.txt          # 机器人名字表
-│       └── *.hrcbot                 # 旧路径点文件（存档用）
+│       └── *.hrcbot2                # 每张地图的导航缓存（自动生成）
 ├── README.md / README.zh-CN.md
 ├── LICENCE
 └── docs/original/                   # 2013 原文（许可证要求附带）
@@ -65,9 +68,13 @@ Metamod 会根据 `hrcbot_mm.vdf` 自动选择正确架构的文件。Windows �
 
 ```
 hrcbot_enabled 1
+hrcbot_autobalancebots 1
+hrcbot_preferredcount 6
 hrcbot_minplayers 0
-hrcbot_maxplayers 6
-hrcbot_handicap 65
+hrcbot_maxplayers 10
+hrcbot_handicap 50
+hrcbot_player_spawnweapon smg1
+hrcbot_statusmsgs 1
 ```
 
 重启或 `meta refresh` 生效。
@@ -88,7 +95,7 @@ hrcbot_handicap 65
 | `hrcbot_autobalancebots` | `1` | 0 = 关闭自动填充，改用 `hrcbot_add/kick` 手动管理。 |
 | `hrcbot_waitforplayers` | `0` | 首个真人连接后才加机器人。 |
 | `hrcbot_freezeifnoplayers` | `0` | 最后一名真人离开后踢掉机器人。 |
-| `hrcbot_player_spawnweapon` | `smg1` | 出生武器：`smg1 pistol 357 crossbow shotgun ar2 rpg`。 |
+| `hrcbot_player_spawnweapon` | `smg1` | 出生武器：`smg1 pistol 357 crossbow shotgun ar2 frag rpg`。 |
 | `hrcbot_handicap` | `65` | 瞄准准度惩罚，越大机器人越弱；0 为无惩罚。 |
 | `hrcbot_mute` | `0` | 静音机器人语音。 |
 | `hrcbot_spawnprotectiontime` | `1800` | 出生保护时间（单位 1/60 秒）。 |
@@ -101,21 +108,23 @@ hrcbot_handicap 65
 | `hrcbot_dialogmsg` | `1` | 向每个客户端播报插件版本。 |
 | `hrcbot_kickcommand` | `kickid` | 踢机器人用的服务端命令（`<命令> <userid>`）。 |
 | `hrcbot_notifycriticals` | `0` | 输出详细内部日志。 |
+| `hrcbot_knownweapons` | *(内置列表)* | 机器人已知武器列表。 |
 | `hrcbot_namesfile` | `addons/hrcbot_server_plugin/hrcbot_names.txt` | 每行一个机器人名。 |
-| `hrcbot_clan` | 空 | 加在机器人名前的战队前缀。 |
-| `hrcbot_log` | `0` | 文件日志。 |
+| `hrcbot_clan` | *(空)* | 加在机器人名前的战队前缀。 |
+| `hrcbot_log` | `0` | 文件日志（开发用变量）。 |
+| `hrcbot_statusmsgs` | `1` | 在服务器控制台打印机器人加入、踢出、击杀、死亡状态消息（1=开，0=关）。 |
 
 ## 5. 控制台命令
 
 | 命令 | 说明 |
 |------|------|
-| `hrcbot_add [2|3]` | 添加机器人（2 联合军 / 3 反抗军）。仅手动模式可用。 |
-| `hrcbot_kick [2|3]` | 移除一个机器人（可指定队伍）。仅手动模式可用。 |
+| `hrcbot_add [2\|3]` | 添加机器人（2 联合军 / 3 反抗军）。仅手动模式可用（需 `hrcbot_autobalancebots 0`）。 |
+| `hrcbot_kick [2\|3]` | 移除一个机器人（可指定队伍）。仅手动模式可用。 |
 | `hrcbot_do "名字" 命令` | 让某个机器人以自身身份执行命令。 |
 | `hrcbot_info` | 打印导航/机器人状态用于调试。 |
 | `hrcbot_fire` | 调试：让机器人开火。 |
 | `hrcbot_move` | 调试移动辅助。 |
-| `hrcbot_analyseground` | 强制重新分析当前地图。 |
+| `hrcbot_analyseground [x y]` | 强制重新分析当前地图（可指定种子点）。 |
 | `hrcbot_version` | 打印插件版本。 |
 
 团队死斗模式请设 `mp_teamplay 1`。
@@ -168,15 +177,18 @@ sudo apt-get install gcc g++ gcc-multilib g++-multilib libc6-dev-i386
 ### 持续集成
 
 `.github/workflows/build.yml` 在每次推送时构建 Linux（x86+x64）与
-Windows（x86+x64），产出源码与二进制制品，并在 tag 发布时自动附到
-GitHub Release。本仓库默认不自动发布；推送形如 `v*` 的 tag 即可切版。
+Windows（x86+x64），产出各架构构建制品。推送 `v2.0.0`（或任意 `v*`）tag
+会触发发布流程，将源码包与四个二进制包附到 GitHub Release。
 
 ---
 
 ## 7. 说明 / 已知限制
 
-* 当前实现驱动移动，并提供基础的 漫游 / 搜索 / 攻击 状态机；拾取物品、
-  跳跃与导航在多数开阔地形可用，但在个别地图上仍需调参。
+* 机器人使用漫游/搜索/攻击状态机，基于自动生成的导航网格做 A* 寻路。
+  全部官方 hl2dm 死亡竞赛地图的可行走区域均已覆盖；自定义地图首次加载
+  时自动分析。
+* 引擎休眠 detour 保持空服唤醒，使机器人得以出生并播种导航。在 detour
+  无法安装的构建上，休眠帧回退机制仍会自动添加机器人。
 * 64 位依赖现代 hl2dm 服务端；旧的仅 32 位服务端请用
   `hrcbot_mm_i486.so`。
 * 原作者：**Hurricane**。本二进制分析工具与重建为社区存档性质工作。

@@ -330,7 +330,7 @@ static bool WriteHeader(Stream &s, const char *mapName, int crc,
 	memset(&hdr, 0, sizeof(hdr));
 	memcpy(hdr.magic, "HRCBOT2", 7);
 	snprintf(hdr.banner, sizeof(hdr.banner),
-	         "Hurricane Bot ver %s", HRCBOT_LEGACY_VERSION);
+	         "Hurricane Bot ver %s", HRCBOT_VERSION_STRING);
 	hdr.formatVersion = HRC_STREAM_VERSION;
 	hdr.mapCrc = crc;
 	snprintf(hdr.mapName, sizeof(hdr.mapName), "%s", mapName);

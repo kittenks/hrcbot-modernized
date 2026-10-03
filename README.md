@@ -1,4 +1,4 @@
-# HRCBot (Hurricane Bot) — modernized build
+# HRCBot (Hurricane Bot) — modernized build 2.0.0
 
 A bot plugin for **Half-Life 2: Deathmatch (hl2dm)**, rebuilt as a
 **Metamod:Source 1.12** plugin from the original Hurricane Bot 1.3.4 binary.
@@ -24,11 +24,13 @@ package is a **clean-room reconstruction**:
   detail from 2013.
 * The old `.hrcbot` private bitstream is unreadable. The modern build writes
   a new `.hrcbot2` cache (`magic "HRCBOT2"`); on a new map it analyses the
-  ground automatically the first time the map is loaded.
+  ground automatically from the first bot spawn point and saves the result.
 
-Builds are verified to **compile** for all four targets. They have **not**
-been play-tested inside a live hl2dm server from this environment. Treat it
-as a starting point and give feedback.
+**Version 2.0.0** has been tested on a live 64-bit Windows hl2dm dedicated
+server across all eight stock deathmatch maps (dm_lockdown, dm_overwatch,
+dm_powerhouse, dm_resistance, dm_runoff, dm_steamlab, dm_underpass, halls3).
+Bots spawn, navigate, fight, respawn and survive map changes; the server is
+kept awake on empty maps so bots can seed navigation automatically.
 
 Original authorship: **Hurricane** (hurricane.bot@gmail.com). See
 `docs/original/` for the verbatim LICENCE/README/LISEZMOI/IMPORTANT.
@@ -39,12 +41,12 @@ Original authorship: **Hurricane** (hurricane.bot@gmail.com). See
 
 * A Half-Life 2: Deathmatch **dedicated server** on the 2013 (Source SDK
   2013 / SteamPipe) branch. Modern hl2dm ships both 32-bit and 64-bit builds.
-* **Metamod:Source 1.10 / 1.12** (the plugin is built against the 1.12 SDK).
+* **Metamod:Source 1.12** (the plugin is built against the 1.12 SDK).
   Install Metamod:Source for your OS/arch first.
 
 ## 3. Installing the binary package
 
-Unpack `hrcbot-<version>-linux.tar.gz` (or `-windows.zip`) into your
+Unpack `hrcbot-2.0.0-linux.tar.gz` (or `-windows.zip`) into your
 `hl2mp/` directory so that you get:
 
 ```
@@ -57,7 +59,7 @@ hl2mp/
 │   ├── hrcbot_mm.x64.dll            # 64-bit Windows plugin
 │   └── hrcbot_server_plugin/
 │       ├── hrcbot_names.txt          # bot name list
-│       └── *.hrcbot                 # legacy waypoints (kept for reference)
+│       └── *.hrcbot2                # per-map navigation cache (auto-generated)
 ├── README.md
 ├── README.zh-CN.md
 ├── LICENCE
@@ -73,9 +75,13 @@ Add to your `cfg/server.cfg` (or a dedicated config) the cvars you want, e.g.:
 
 ```
 hrcbot_enabled 1
+hrcbot_autobalancebots 1
+hrcbot_preferredcount 6
 hrcbot_minplayers 0
-hrcbot_maxplayers 6
-hrcbot_handicap 65
+hrcbot_maxplayers 10
+hrcbot_handicap 50
+hrcbot_player_spawnweapon smg1
+hrcbot_statusmsgs 1
 ```
 
 Restart or `meta refresh`.
@@ -96,7 +102,7 @@ Defaults match the original 1.3.4 where confirmed.
 | `hrcbot_autobalancebots` | `1` | 0 disables automatic population; use `hrcbot_add/kick` manually. |
 | `hrcbot_waitforplayers` | `0` | Bots only added after the first human connects. |
 | `hrcbot_freezeifnoplayers` | `0` | Drop bots when the last human leaves. |
-| `hrcbot_player_spawnweapon` | `smg1` | `smg1 pistol 357 crossbow shotgun ar2 rpg`. |
+| `hrcbot_player_spawnweapon` | `smg1` | `smg1 pistol 357 crossbow shotgun ar2 frag rpg`. |
 | `hrcbot_handicap` | `65` | Aim skill penalty (higher = weaker bots; 0 = no handicap). |
 | `hrcbot_mute` | `0` | Mute bots' chatter. |
 | `hrcbot_spawnprotectiontime` | `1800` | Leave spawned players alone (1/60 s units). |
@@ -109,21 +115,23 @@ Defaults match the original 1.3.4 where confirmed.
 | `hrcbot_dialogmsg` | `1` | Announce the bot version on each client. |
 | `hrcbot_kickcommand` | `kickid` | Server command used to remove a bot (`<cmd> <userid>`). |
 | `hrcbot_notifycriticals` | `0` | Verbose internal logging. |
+| `hrcbot_knownweapons` | *(built-in list)* | List of weapons known to the bots. |
 | `hrcbot_namesfile` | `addons/hrcbot_server_plugin/hrcbot_names.txt` | One bot name per line. |
-| `hrcbot_clan` | `` | Prefix prepended to each bot name. |
-| `hrcbot_log` | `0` | File logging. |
+| `hrcbot_clan` | *(empty)* | Prefix prepended to each bot name. |
+| `hrcbot_log` | `0` | File logging (development-only cvar). |
+| `hrcbot_statusmsgs` | `1` | Print bot join, kick, kill and death status lines to the server console (1=on, 0=off). |
 
 ## 5. Console commands
 
 | Command | Meaning |
 |---------|---------|
-| `hrcbot_add [2|3]` | Add a bot (team 2 = combine, 3 = rebels). Manual mode only. |
-| `hrcbot_kick [2|3]` | Remove a bot (optionally from a team). Manual mode only. |
+| `hrcbot_add [2\|3]` | Add a bot (team 2 = combine, 3 = rebels). Manual mode only (`hrcbot_autobalancebots 0`). |
+| `hrcbot_kick [2\|3]` | Remove a bot (optionally from a team). Manual mode only. |
 | `hrcbot_do "name" command` | Make a bot run a command as itself. |
 | `hrcbot_info` | Dump navigation / bot state for debugging. |
 | `hrcbot_fire` | Debug: make bots fire. |
 | `hrcbot_move` | Debug movement helper. |
-| `hrcbot_analyseground` | Force a re-analysis of the current map. |
+| `hrcbot_analyseground [x y]` | Force a re-analysis of the current map (optionally from a seed point). |
 | `hrcbot_version` | Print the plugin version. |
 
 For team deathmatch, set `mp_teamplay 1`.
@@ -175,17 +183,20 @@ From an MSVC / Visual Studio environment (the CI uses `ilammy/msvc-dev-cmd`):
 ### CI
 
 `.github/workflows/build.yml` builds Linux (x86+x64) and Windows (x86+x64) on
-every push, produces source and binary artifacts, and attaches them to GitHub
-Release tags. (This repository does not auto-publish; push a tag `v*` to cut a
-release after you enable the workflow.)
+every push and produces per-architecture build artifacts. Pushing a tag
+`v2.0.0` (or any `v*`) triggers the release workflow which attaches the
+source tarball and all four binary packages to a GitHub Release.
 
 ---
 
 ## 7. Notes / known limitations
 
-* The plugin currently drives movement and a basic roam/hunt/attack state
-  machine; item pickup, jumps and navigation cover most open ground but will
-  need tuning on specific maps.
+* Bots use a roam/hunt/attack state machine with A* pathfinding over an
+  auto-generated navigation mesh. Navigation covers walkable ground on all
+  stock hl2dm deathmatch maps; custom maps are analysed on first load.
+* The engine hibernation detour keeps an empty server awake so bots can spawn
+  and seed navigation. On builds where the detour cannot be installed, the
+  hibernation-frame fallback adds bots anyway.
 * 64-bit support relies on the modern hl2dm server; older 32-bit-only servers
   use `hrcbot_mm_i486.so`.
 * Original credits: **Hurricane**. The binary analysis tooling and this

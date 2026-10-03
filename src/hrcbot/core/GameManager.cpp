@@ -683,7 +683,7 @@ void GameManager::CmdInfo(const CCommand &args)
 {
 	(void)args;
 	HRC_MSG("Hurricane Bot ver %s ; map=%s crc=%i ; bots=%i humans=%i",
-	        HRCBOT_LEGACY_VERSION, m_mapName, m_mapCrc, BotCount(),
+	        HRCBOT_VERSION_STRING, m_mapName, m_mapCrc, BotCount(),
 	        HumanPlayerCount());
 	HRC_MSG("Nodes=%i arcs=%i rooms=%i gateways=%i", m_network.NodeCount(),
 	        m_network.ArcCount(), m_network.RoomCount(),
