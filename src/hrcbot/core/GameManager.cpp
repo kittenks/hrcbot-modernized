@@ -183,6 +183,18 @@ void GameManager::OnServerActivate(edict_t *edictList, int edictCount,
 	m_maxClients = maxClients;
 	HRC_MSG("ServerActivate(edictCount=%i, max_clients=%i)", edictCount,
 	        maxClients);
+
+	// Install the wake detour as early as possible (before the first game
+	// frame) so an empty server cannot slip into hibernation in the window
+	// between OnLevelInit and the first OnGameFrame.  On a fresh map with no
+	// saved navigation we keep the server awake from the start so bots can
+	// spawn and their spawn point can seed the analysis.
+	if (HibernateReady())
+	{
+		bool want = m_levelLoaded && g_cvEnabled && g_cvEnabled->GetBool() &&
+		            (m_pendingSeed || BotsWanted());
+		HibernateSetKeepAwake(want);
+	}
 }
 
 void GameManager::OnLevelInit(const char *mapName)
