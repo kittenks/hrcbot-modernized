@@ -22,7 +22,17 @@
 namespace hrc
 {
 
-static const int HRC_NAV_CAPACITY = 4096;
+// Navigation container limits.  The raster is 96x96 cells (m_gridRadius=48),
+// so at most 9216 walkable cells can become nodes.  An 8-connected grid needs
+// roughly four undirected arcs per cell, hence the separate, larger arc cap.
+// Rooms and gateways are bounded by the node count in practice but are given
+// generous headroom because sparse intermediate graphs can fragment heavily.
+static const int HRC_MAX_NAV_NODES = 9216;
+static const int HRC_MAX_NAV_ARCS = 36864;
+static const int HRC_MAX_NAV_ROOMS = 9216;
+static const int HRC_MAX_NAV_GATEWAYS = 16384;
+// Kept for legacy callers / deserialization range checks.
+static const int HRC_NAV_CAPACITY = HRC_MAX_NAV_NODES;
 static const int HRC_MAX_LINKS_PER_NODE = 16;
 
 class Arc;
@@ -210,10 +220,10 @@ public:
 	Node *FindClosestNode2D(const Vector &v, float maxDist = 1e9f) const;
 
 private:
-	Node *m_nodes[HRC_NAV_CAPACITY];
-	Arc *m_arcs[HRC_NAV_CAPACITY];
-	Room *m_rooms[HRC_NAV_CAPACITY / 8];
-	Gateway *m_gateways[HRC_NAV_CAPACITY / 8];
+	Node *m_nodes[HRC_MAX_NAV_NODES];
+	Arc *m_arcs[HRC_MAX_NAV_ARCS];
+	Room *m_rooms[HRC_MAX_NAV_ROOMS];
+	Gateway *m_gateways[HRC_MAX_NAV_GATEWAYS];
 	int m_nodeCount;
 	int m_arcCount;
 	int m_roomCount;

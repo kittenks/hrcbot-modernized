@@ -281,7 +281,10 @@ bool Dedale::Deserialize(Stream &s)
 	int arcCount = s.ReadInt();
 	int roomCount = s.ReadInt();
 	int gatewayCount = s.ReadInt();
-	if (!s.Good() || nodeCount < 0 || nodeCount > HRC_NAV_CAPACITY)
+	if (!s.Good() || nodeCount < 0 || nodeCount > HRC_MAX_NAV_NODES ||
+	    arcCount < 0 || arcCount > HRC_MAX_NAV_ARCS ||
+	    roomCount < 0 || roomCount > HRC_MAX_NAV_ROOMS ||
+	    gatewayCount < 0 || gatewayCount > HRC_MAX_NAV_GATEWAYS)
 		return false;
 
 	for (int i = 0; i < nodeCount; ++i)

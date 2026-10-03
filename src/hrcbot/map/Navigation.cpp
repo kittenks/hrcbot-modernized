@@ -151,7 +151,7 @@ void Network::Clear()
 
 Node *Network::CreateNode(const Vector &origin)
 {
-	if (m_nodeCount >= HRC_NAV_CAPACITY)
+	if (m_nodeCount >= HRC_MAX_NAV_NODES)
 		return NULL;
 	Node *n = new Node(m_nodeCount, origin);
 	m_nodes[m_nodeCount++] = n;
@@ -160,7 +160,7 @@ Node *Network::CreateNode(const Vector &origin)
 
 Arc *Network::CreateArc(Node *a, Node *b)
 {
-	if (!a || !b || m_arcCount >= HRC_NAV_CAPACITY)
+	if (!a || !b || m_arcCount >= HRC_MAX_NAV_ARCS)
 		return NULL;
 	Arc *arc = new Arc(m_arcCount, a, b);
 	a->AddArc(arc);
@@ -171,7 +171,7 @@ Arc *Network::CreateArc(Node *a, Node *b)
 
 Room *Network::CreateRoom()
 {
-	if (m_roomCount >= HRC_NAV_CAPACITY / 8)
+	if (m_roomCount >= HRC_MAX_NAV_ROOMS)
 		return NULL;
 	Room *r = new Room(m_roomCount);
 	m_rooms[m_roomCount++] = r;
@@ -180,7 +180,7 @@ Room *Network::CreateRoom()
 
 Gateway *Network::CreateGateway(int roomA, int roomB, int nodeA, int nodeB)
 {
-	if (m_gatewayCount >= HRC_NAV_CAPACITY / 8)
+	if (m_gatewayCount >= HRC_MAX_NAV_GATEWAYS)
 		return NULL;
 	Gateway *g = new Gateway(m_gatewayCount, roomA, roomB, nodeA, nodeB);
 	if (roomA >= 0 && m_rooms[roomA])
